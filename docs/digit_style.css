@@ -1,0 +1,79 @@
+                   /* GENERAL STYLING */
+                   body {
+                   font-size: 1.2em;
+                   }
+       /* HEADER STYLE */
+                   
+header {
+    display:block;
+    text-align: center;
+    margin: auto;
+   /* font-size: larger;*/
+}
+
+div.navbar {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+a.navButton {
+    
+}
+
+
+                   
+       /* FOOTER STYLE */
+                   
+footer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: .9em;
+
+}
+
+div.foot#PSBlogo {
+    background-image: url(images/PSB_logo.png);
+    width: 250px;
+    height: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+div.foot {
+    float: left;
+    margin: auto;
+    line-height: .5em;
+    
+}
+
+h4.foot {
+    margin-bottom: 0px;
+}
+
+div.foot ul {
+    line-height: 1em;
+}
+
+
+                   
+                   /* HOMEPAGE STYLING */
+                   
+section {
+    margin: auto;
+    /*display: block;*/
+}
+                   
+div#homeImage {
+    background-image: url(images/DIGITpsb-arced1-instag.png);
+    width: 1500px;
+    height: 240px;
+    opacity: .75;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 1500px 240px;
+    margin:auto;
+   
+}
