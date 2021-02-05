@@ -2,6 +2,10 @@
                    body {
                    font-size: 1.2em;
                    }
+                   
+                   div {
+                       margin: auto;
+                   }
        /* HEADER STYLE */
                    
 header {
@@ -76,4 +80,28 @@ div#homeImage {
     background-size: 1500px 240px;
     margin:auto;
    
+}
+
+
+
+                /* ROADMAP STYLING */
+    
+    h1.roadmap {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    /* SVG STYLING */
+    
+svg {
+    display:flex;
+}
+
+ellipse {
+    display: flex;
+}
+    
+text {
+    font-size: 2em;
+    display: flex;
 }
