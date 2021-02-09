@@ -21,8 +21,17 @@ div.navbar {
 }
 
 a.navButton {
-    
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
+
+a.navButton:hover {
+    color: maroon;
+}
+
 
 
                    
@@ -79,7 +88,13 @@ div#homeImage {
     background-repeat: no-repeat;
     background-size: 1500px 240px;
     margin:auto;
+    display:flex;
    
+}
+
+div.indent {
+    margin: 20px;
+    display: flex;
 }
 
 
@@ -93,15 +108,25 @@ div#homeImage {
     
     /* SVG STYLING */
     
+    section#svgHolder {
+        
+    }
+    
+    div#svg {
+        display:flex;
+    }
+    
 svg {
     display:flex;
+    /* preserveAspectRatio 
+     * viewbox --> in */
 }
 
 ellipse {
-    display: flex;
+    
 }
     
 text {
     font-size: 2em;
-    display: flex;
+    
 }
