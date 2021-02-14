@@ -1,18 +1,28 @@
                    /* GENERAL STYLING */
                    body {
                    font-size: 1.2em;
+                   background-color: #e6e6e6;
                    }
                    
                    div {
                        margin: auto;
                    }
+                   
+                   span.WallpoetFont {
+                       font-family: 'Wallpoet', cursive;
+                       font-size: larger;
+                   }
+                   
        /* HEADER STYLE */
                    
 header {
     display:block;
     text-align: center;
     margin: auto;
-   /* font-size: larger;*/
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.5;
+    font-size: .7em;
+    padding: 10px;
 }
 
 div.navbar {
@@ -37,6 +47,10 @@ a.navButton:hover {
                    
        /* FOOTER STYLE */
                    
+hr {
+    margin: 0px;
+}
+
 footer {
     margin: auto;
     display: flex;
@@ -95,6 +109,11 @@ div#homeImage {
 div.indent {
     margin: 20px;
     display: flex;
+    flex-direction: column;
+}
+
+div.indent div {
+    margin: 10px;
 }
 
 
@@ -117,7 +136,7 @@ div.indent {
     }
     
 svg {
-    display:flex;
+    /*display:flex;*/
     /* preserveAspectRatio 
      * viewbox --> in */
 }
