@@ -149,3 +149,81 @@ text {
     font-size: 2em;
     
 }
+
+
+                /* SHOWCASE STYLE */
+                
+div.showcaseContent {
+    margin: 30px;
+}
+div.showcaseContent h1 {
+    text-align: center;
+}
+
+
+
+a img:hover {
+    opacity: .6;
+    transition: .4s;
+}
+
+
+div#projectContain {
+    
+}
+
+div#textEncoding {
+    display:flex;
+}
+
+div#textEncoding figure{
+    flex:1;
+}
+
+div#photography {
+    display:flex;
+}
+
+div#photography figure{
+    flex:1;
+}
+
+div#film {
+    display:flex;
+}
+
+div#film figure{
+    flex:1;
+}
+
+div#animation {
+    display:flex;
+}
+
+div#animation figure{
+    flex:1;
+}
+
+div#vector {
+    display:flex;
+}
+
+div#vector figure{
+    flex:1;
+}
+
+div#websites {
+    display:flex;
+}
+
+div#websites figure{
+    flex:1;
+}
+
+            /* 404 STYLING */
+
+div#errorimage {
+    display: flex;
+    margin:auto;
+    justify-content:center;
+}
