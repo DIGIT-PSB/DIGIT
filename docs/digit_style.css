@@ -1,22 +1,22 @@
-                   /* GENERAL STYLING */
-                   body {
-                   font-size: 1.2em;
-                   background-color: #e6e6e6;
-                   }
-                   
-                   div {
-                       margin: auto;
-                   }
-                   
-                   span.WallpoetFont {
-                       font-family: 'Wallpoet', cursive;
-                       font-size: larger;
-                   }
-                   
-       /* HEADER STYLE */
-                   
+/* GENERAL STYLING */
+body {
+    font-size: 1.2em;
+    background-color: #e6e6e6;
+}
+
+div.DIGIT {
+    margin: auto;
+}
+
+span.WallpoetFont {
+    font-family: 'Wallpoet', cursive;
+    font-size: larger;
+}
+
+/* HEADER STYLE */
+
 header {
-    display:block;
+    display: block;
     text-align: center;
     margin: auto;
     font-family: 'Press Start 2P', cursive;
@@ -44,9 +44,9 @@ a.navButton:hover {
 
 
 
-                   
-       /* FOOTER STYLE */
-                   
+
+/* FOOTER STYLE */
+
 hr {
     margin: 0px;
 }
@@ -73,7 +73,7 @@ div.foot {
     float: left;
     margin: auto;
     line-height: .5em;
-    
+
 }
 
 h4.foot {
@@ -85,14 +85,14 @@ div.foot ul {
 }
 
 
-                   
-                   /* HOMEPAGE STYLING */
-                   
+
+/* HOMEPAGE STYLING */
+
 section {
     margin: auto;
     /*display: block;*/
 }
-                   
+
 div#homeImage {
     background-image: url(images/DIGITpsb-arced1-instag.png);
     width: 1500px;
@@ -101,9 +101,9 @@ div#homeImage {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 1500px 240px;
-    margin:auto;
-    display:flex;
-   
+    margin: auto;
+    display: flex;
+
 }
 
 div.indent {
@@ -118,23 +118,23 @@ div.indent div {
 
 
 
-                /* ROADMAP STYLING */
-    
-    h1.roadmap {
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    
-    /* SVG STYLING */
-    
-    section#svgHolder {
-        
-    }
-    
-    div#svg {
-        display:flex;
-    }
-    
+/* ROADMAP STYLING */
+
+h1.roadmap {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* SVG STYLING */
+
+section#svgHolder {
+
+}
+
+div#svg {
+    display: flex;
+}
+
 svg {
     /*display:flex;*/
     /* preserveAspectRatio 
@@ -142,17 +142,17 @@ svg {
 }
 
 ellipse {
-    
+
 }
-    
+
 text {
     font-size: 2em;
-    
+
 }
 
 
-                /* SHOWCASE STYLE */
-                
+/* SHOWCASE STYLE */
+
 div.showcaseContent {
     margin: 30px;
 }
@@ -161,69 +161,51 @@ div.showcaseContent h1 {
 }
 
 
+img.icon {
+    width: 190px;
+    border-radius: 25px;
+}
 
 a img:hover {
     opacity: .6;
     transition: .4s;
 }
 
-
 div#projectContain {
+    display: flex;
+    flex-direction: row;
+}
+
+div#projectContain div {
+    flex: 1;
+}
+
+section {
+
+
+}
+
+section div {
     
+    display:inline-flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:flex-start;
 }
 
-div#textEncoding {
-    display:flex;
+section div figure {
+    flex: 1;
 }
 
-div#textEncoding figure{
-    flex:1;
-}
+/* ul.body {list-style-type: none; 
+ * display:flex;  justify-content:space-around; 
+ * align-items:flex-start; flex-direction:row; flex-wrap: wrap;}
+ */
 
-div#photography {
-    display:flex;
-}
-
-div#photography figure{
-    flex:1;
-}
-
-div#film {
-    display:flex;
-}
-
-div#film figure{
-    flex:1;
-}
-
-div#animation {
-    display:flex;
-}
-
-div#animation figure{
-    flex:1;
-}
-
-div#vector {
-    display:flex;
-}
-
-div#vector figure{
-    flex:1;
-}
-
-div#websites {
-    display:flex;
-}
-
-div#websites figure{
-    flex:1;
-}
-
-            /* 404 STYLING */
+/* 404 STYLING */
 
 div#errorimage {
     display: flex;
-    margin:auto;
-    justify-content:center;
+    margin: auto;
+    justify-content: center;
 }
