@@ -185,7 +185,7 @@ section {
 
 }
 
-section div {
+section.showSection div {
     
     display:inline-flex;
     flex-direction: row;
@@ -193,7 +193,7 @@ section div {
     align-items:flex-start;
 }
 
-section div figure {
+section.showSection div figure {
     flex: 1;
 }
 
