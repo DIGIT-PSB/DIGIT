@@ -15,6 +15,7 @@ span.WallpoetFont {
 
 /* HEADER STYLE */
 
+
 header {
     display: block;
     text-align: center;
@@ -41,9 +42,6 @@ a.navButton {
 a.navButton:hover {
     color: maroon;
 }
-
-
-
 
 /* FOOTER STYLE */
 
@@ -209,3 +207,9 @@ div#errorimage {
     margin: auto;
     justify-content: center;
 }
+/* DIGIT Works events posting */
+.worksTitle {color:purple; font-family: 'Wallpoet', cursive;
+    font-size: larger;}
+.worksEvent {outline-style: solid; outline-color:purple; outline-width:thin; padding: .75em;}
+
+
