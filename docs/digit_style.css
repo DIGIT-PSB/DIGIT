@@ -70,7 +70,8 @@ div.foot#PSBlogo {
 div.foot {
     float: left;
     margin: auto;
-    line-height: .5em;
+    line-height: 1em;
+    
 
 }
 
