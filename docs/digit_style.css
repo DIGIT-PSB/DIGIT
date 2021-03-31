@@ -2,6 +2,7 @@
 body {
     font-size: 1.2em;
     background-color: #e6e6e6;
+    font-family: arial, helvetica, sans-serif;
 }
 
 div.DIGIT {
@@ -20,9 +21,10 @@ header {
     display: block;
     text-align: center;
     margin: auto;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Wallpoet', cursive;
+    font-size: larger;
     line-height: 1.5;
-    font-size: .7em;
+   /* font-size: .7em;*/
     padding: 10px;
 }
 
@@ -203,7 +205,7 @@ section.showSection div figure {
 
 /* 404 STYLING */
 
-div#errorimage {
+div.errorimage {
     display: flex;
     margin: auto;
     justify-content: center;
