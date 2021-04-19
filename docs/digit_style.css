@@ -220,4 +220,6 @@ div.errorimage {
     font-size: larger;}
 .worksEvent {outline-style: solid; outline-color:purple; outline-width:thin; padding: .75em;}
 
+table.showCase {vertical-align: middle;}
+table.showCase tr:nth-child(even) {background-color:/*#dcd0ff*/ /*#dbd7d2*/ /*#c3cde6/ /*#e0c39e*/ #d9cab2;}
 
