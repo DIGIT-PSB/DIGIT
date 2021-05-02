@@ -230,3 +230,5 @@ table.showCase tr:nth-child(even) {background-color:/*#dcd0ff*/ /*#dbd7d2*/ /*#c
 
 th, td {padding-left: 1em; padding-right: 1em; padding-top: .5em; padding-bottom: .5em;}
 
+/* Embedded Zoom recordings: */
+.kmsembed {border:none; width:70%;}
