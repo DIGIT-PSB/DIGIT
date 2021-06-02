@@ -213,6 +213,44 @@ section.showSection div figure {
  * align-items:flex-start; flex-direction:row; flex-wrap: wrap;}
  */
 
+
+
+
+
+        /* ABOUT PAGE STYLE */
+        
+div.aboutHead {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+ 
+ img#faces1 {
+     width:250px;
+ }
+ 
+ img#faces2 {
+     width:200px;
+ }
+ 
+ div.portfolioWrap {
+     display:flex;
+     flex-direction:row;
+     justify-content:space-evenly;
+ }
+ 
+ img#faces3 {
+     width:200px;
+ }
+ 
+ div.portfolioList li {
+     line-height:2em;
+ }
+
+
+
+
+
 /* 404 STYLING */
 
 div.errorimage {
