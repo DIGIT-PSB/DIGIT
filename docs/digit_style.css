@@ -101,7 +101,7 @@ section {
     /*display: block;*/
 }
 
-div#homeImage { background-image: url(images/DIGITWorksBanner.png);
+div#homeImage { background-image: url(images/digit_collage_banner.png);
     /*   background-image: url(images/DIGITpsb-arced1-instag.png);*/
    /*   width: 1500px;
     height: 240px; */
@@ -110,7 +110,7 @@ div#homeImage { background-image: url(images/DIGITWorksBanner.png);
     opacity: .75;
       background-position: center center;
     background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: 100%;
    /* background-size: 1500px 240px; */
     margin: auto;
     display: flex;
