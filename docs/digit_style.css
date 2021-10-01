@@ -107,7 +107,7 @@ div#homeImage { background-image: url(images/digit_collage_banner.png);
     height: 240px; */
     /*width:100%;*/
     height: 30vw;
-    opacity: .75;
+    /*opacity: .75;*/
       background-position: center center;
     background-repeat: no-repeat;
   background-size: 100%;
