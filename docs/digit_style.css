@@ -6,6 +6,7 @@ body {
     font-family: arial, helvetica, sans-serif;
     padding-left:3vw;
     padding-right:3vw;
+    text-shadow: 1px 1px #fff;
 }
 /* Generate perfect curly quotes with the <q> element: */
 q{
@@ -66,6 +67,15 @@ footer {
 
 }
 
+a.footLinks {
+    color: maroon;
+    
+}
+
+a.footLinks:hover {
+    color: black;
+}
+
 div.foot#PSBlogo {
     background-image: url(images/PSB_logo.png);
     width: 250px;
@@ -94,6 +104,8 @@ div.foot ul {
 
 
 
+
+
 /* HOMEPAGE STYLING */
 
 section {
@@ -101,19 +113,20 @@ section {
     /*display: block;*/
 }
 
-div#homeImage { background-image: url(images/digit_collage_banner.png);
+div#homeImage { background-image: url(images/digit_collage_banner_NARROW.png);
     /*   background-image: url(images/DIGITpsb-arced1-instag.png);*/
    /*   width: 1500px;
     height: 240px; */
     /*width:100%;*/
-    height: 30vw;
+    height: 24.5vw;
     /*opacity: .75;*/
       background-position: center center;
     background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
    /* background-size: 1500px 240px; */
     margin: auto;
     display: flex;
+    
 
 }
 
@@ -150,6 +163,23 @@ svg {
     /*display:flex;*/
     /* preserveAspectRatio 
      * viewbox --> in */
+     background-image: linear-gradient(to bottom right, #dee0ec, #a9b8bb);
+border-radius: 50px;
+margin-bottom: 15px;
+}
+
+a.svg {
+    outline: grey solid 0px;
+    border-radius: 25px;
+  
+}
+
+@keyframes mymove {
+  50% {outline: white solid 10px;}
+}
+
+a.svg:hover {
+    animation: mymove 4s infinite;
 }
 
 ellipse {
@@ -226,7 +256,7 @@ div.aboutHead {
 }
  
  img#faces1 {
-     width:250px;
+     width:200px;
  }
  
  img#faces2 {
