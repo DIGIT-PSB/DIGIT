@@ -300,3 +300,76 @@ th, td {padding-left: 1em; padding-right: 1em; padding-top: .5em; padding-bottom
 
 /* Embedded Zoom recordings: */
 .kmsembed {border:none; width:70%;}
+
+
+/* banner photo*/
+.gallery{
+	border: 1px solid #371D10;
+}
+
+.gallery:hover {
+	border: 2px solid #4A2512;
+}
+
+.gallery img{
+	width: 100%;
+	height: auto;
+	opacity: 0.5;
+}
+
+.desc{
+	padding :15px;
+	text-align: center;
+	font-family: 'IM Fell English', serif;
+	font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+	padding: 0 2px;
+	float: left;
+	width: 24.9999999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textoverlay {
+  position: relative;
+  text-align: center;
+  color: #231709;
+  font-family: 'IM Fell English', serif;
+  font-size: 20px;
+}
+
+.centered mark{
+	background-color: #9A7B4F;
+}
+
