@@ -228,7 +228,7 @@ section {
 
 section.showSection div {
     
-    display:inline-flex;
+    /*display: inline-flex;*/
     flex-direction: row;
     justify-content:space-around;
     align-items:flex-start;
@@ -237,6 +237,15 @@ section.showSection div {
 section.showSection div figure {
     flex: 1;
 }
+section.showSection div figure img {
+   max-width:300px; 
+   width:100%;
+}
+section.showSection div figure figcaption {
+   display:inline-block;
+   font-size:smaller;
+}
+
 
 /* ul.body {list-style-type: none; 
  * display:flex;  justify-content:space-around; 
@@ -336,7 +345,7 @@ th, td {padding-left: 1em; padding-right: 1em; padding-top: .5em; padding-bottom
 
 @media only screen and (max-width: 700px) {
   .responsive {
-    width: 100;
+    width: 100%;
     margin: 6px 0;
   }
 }
