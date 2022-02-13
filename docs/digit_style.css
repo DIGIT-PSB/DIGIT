@@ -4,8 +4,7 @@ body {
     line-height: 1.3em;
     background-color: #e6e6e6;
     font-family: arial, helvetica, sans-serif;
-    padding-left:3vw;
-    padding-right:3vw;
+    
     text-shadow: 1px 1px #fff;
 }
 /* Generate perfect curly quotes with the <q> element: */
@@ -35,15 +34,29 @@ header {
     background-image:linear-gradient(grey, lightsteelblue);
     border-radius: 5px;
     padding-bottom: 2vh;
-   margin-bottom: 10px;
- 
+   
+   width: 90vw;
    /* font-size: .7em;*/
     /* padding: 10px; */
 }
 
+div#homeImage { background-image: url(images/digit_banner_updateCropped.png);
+    height: 25vw;
+    width: 98vw;
+      background-position: center center;
+    background-repeat: no-repeat;
+  background-size: cover;
+    margin: auto;
+    display: flex;
+/* position: relative; */
+/* display: block; */
+/* background-attachment: fixed; */
+
+}
+
 h1.head{
     margin-top:5px;
-    margin-bottom:2px;
+    margin-bottom:5px;
 }
 
 div.navbar {
@@ -68,9 +81,10 @@ a.navButton:hover {
     color: rgb(0, 0, 0);
     background-color:rgba(119, 136, 153, 0.199);
     border-radius:5px;
-    border-style:inset;
+    /* border-style:inset; */
     text-shadow:none;
-    border-width:.05em;
+    /* border-width:.05em; */
+    border-inline: .05em inset;
 }
 
 /* FOOTER STYLE */
@@ -84,16 +98,19 @@ footer {
     display: flex;
     justify-content: center;
     font-size: .9em;
-
+    background-image:linear-gradient(grey, lightsteelblue);
+    border-radius: 5px;
+    text-shadow: none;
 }
 
 a.footLinks {
-    color: maroon;
     
+    color: #1e407c;
+    transition: .4s;
 }
 
 a.footLinks:hover {
-    color: black;
+    color: white;
 }
 
 div.foot#PSBlogo {
@@ -128,9 +145,17 @@ div.foot ul {
 
 /* HOMEPAGE STYLING */
 
-section {
+/* section {
     margin: auto;
     /*display: block;*/
+/* } */
+
+section#home{
+    margin: 3.5vw;
+}
+
+section#svgHolder{
+    margin: 5vw;
 }
 
 div.indent{
@@ -139,17 +164,7 @@ div.indent{
     padding-right:5vw;
 }
 
-div#homeImage { background-image: url(images/digit_banner_update.png);
-    height: 22vw;
-    width: 80vw;
-      background-position: center center;
-    background-repeat: no-repeat;
-  background-size: cover;
-    margin: auto;
-    display: flex;
-    
 
-}
 
 div.indent {
     margin: 20px;
@@ -211,16 +226,28 @@ text {
 /* SHOWCASE STYLE */
 
 div.showcaseContent {
-    margin: 30px;
+  
+    display:flex;
+    justify-content:center;
+    margin-right: 5vw;
+    margin-left:5vw;
+    margin-top:1vw;
+    margin-bottom:1vw;
+flex-direction: column;
+align-content: center;
 }
 div.showcaseContent h1 {
     text-align: center;
 }
 
+/* section.showSection{
+  
+} */
 
 img.icon {
     width: 190px;
-    border-radius: 25px;
+    border-radius: 5px;
+    max-height: 10vw;
 }
 
 a img:hover {
@@ -229,34 +256,88 @@ a img:hover {
 }
 
 div#projectContain {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 31vw 25vw 31vw;
+    grid-template-rows: auto;
 }
 
 div#projectContain div {
     flex: 1;
 }
 
+section.showSection{
+    margin-right: 20px;
+}
+
+section.showSection h2{
+    text-align:center;
+    font-family: 'Wallpoet', cursive;
+}
+
+section.showSectionLarge h2{
+    text-align:center;
+}
 
 
 section.showSection div {
-    
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
     /*display: inline-flex;*/
-    flex-direction: row;
+    /* flex-direction: row;
     justify-content:space-around;
-    align-items:flex-start;
+    align-items:flex-start; */
 }
 
+section.showSectionLarge div {
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    /*display: inline-flex;*/
+    /* flex-direction: row;
+    justify-content:space-around;
+    align-items:flex-start; */
+}
+
+
 section.showSection div figure {
-    flex: 1;
+    margin: 2px;
 }
 section.showSection div figure img {
    max-width:300px; 
    width:100%;
+   max-height: 10vw;
 }
 section.showSection div figure figcaption {
    display:inline-block;
-   font-size:smaller;
+   font-size: .7em;
+}
+
+div.topShowRow{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-column: 1 / 4;
+}
+
+div.bottomShowRow{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-column: 1 / 4;
+}
+
+section.showSectionLarge div figure {
+    margin: 2px;
+}
+section.showSectionLarge div figure img {
+   max-width:300px; 
+   width:100%;
+   max-height: 10vw;
+}
+section.showSectionLarge div figure figcaption {
+   display:inline-block;
+   font-size: .7em;
 }
 
 
