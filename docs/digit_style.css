@@ -475,4 +475,9 @@ th, td {padding-left: 1em; padding-right: 1em; padding-top: .5em; padding-bottom
 .centered mark{
 	background-color: #9A7B4F;
 }
+/* Standard styling for figure figcaption on EVENTS and elsewwhere */
+
+figure {width:40%;}
+figure img {max-width:300px;}
+figcaption {font-size: .7em; line-height:1em;}
 
