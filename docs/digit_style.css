@@ -394,7 +394,7 @@ i:hover + .description{
 /* Footer ends */
 /* Projects page Begins*/
 .pcontainer {
-    height: 100vh;
+    height: 300vh;
     /* The rules below this message in this class should be applied 
      * site-wide or have something similar. Then we remove .pcontainer. */
     max-width: 960px;
@@ -409,6 +409,7 @@ i:hover + .description{
 .work {
     line-height: 0;
     float: left;
+    overflow: hidden;
     position: relative;
 }
 .work div.desc {
@@ -418,7 +419,7 @@ i:hover + .description{
     display: inherit;
 }
 /* PROJECT PAGE TABLET/COMPUTER VIEWING */
-@media (min-width: 455px) {
+@media (min-width: 456px) {
     div.work {
         width: 25%;
         display:inherit;
@@ -427,6 +428,7 @@ i:hover + .description{
         cursor: pointer;
         width: 100%;
         height: auto;
+        float: left;
     }
     .work div.desc {
         display: none;
