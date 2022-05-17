@@ -1,4 +1,4 @@
-function myFunction(menubar) {
+function Menubar() {
   var x = document.getElementById("myMenu");
   if (x.className === "menu") {
     x.className += " responsive";

@@ -66,7 +66,7 @@ html, body {
     display: none;
   }
 /* Menu ends */
-/* First page */
+/* (Homepage) First page */
 #container{
     position: relative;
     height: 100vh;
@@ -129,7 +129,7 @@ html, body {
 /* The layout of the second-section can be used in other pages */
 #second-section{
     background:#ebebeb;
-    padding-top:3rem;
+    padding-top:35px;
 }
 #second-section h3{
     font-size: 2rem;
@@ -144,14 +144,14 @@ html, body {
 .content img{
     width: 100%;
     height: auto;
-    border-radius: 1rem;
+    border-radius: 3px;
 }
 .content{
     max-width: 1080px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:2rem;
+    gap:20px;
     align-items: center;
     font-size: 20px;
     text-align: justify;
@@ -232,6 +232,127 @@ footer a{
 .box a:hover{
     color: #fff;
 }
+/* Homepage ennds */
+/* Background images*/
+#courses{
+    background-image:url("images/datavizBG.jpg"); /* This is more of a sample background */
+	background-attachment:fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100vw;
+}
+/* Courses titles */
+.roadmap h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4rem;
+    margin-top:3rem;
+    color: #fff;
+  }
+.roadmap h1 span {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 3em;
+    padding-left: 0.25em;
+    color: rgba(244, 240, 240, 0.7);
+    padding-bottom: 10px;
+  }
+.data{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 2rem;
+    text-align: justify;
+    color: #fff;
+}
+.data p{
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+}
+
+.data p:first-child::first-letter{
+    color:#041E42;
+    font-weight: bold;
+    font-size: 70px;
+    float: left;
+    line-height: 50px;
+    padding-right: 8px;
+    margin-top: -3px;
+}
+@media screen and (max-width:600px){
+    .data{
+        width: 80%;
+        padding: 2rem;
+    }
+}
+/* title ends */
+/* Courses list */
+.courseblock {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:14px;
+    transition: all 0.3s;
+  }
+.courseblock h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    color: #fff;
+} 
+.responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.responsive-table .table-header {
+    background-color: #041E42;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+.responsive-table .table-row {
+    background-color: #fff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.description{
+    display: none;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 15px;
+}
+i:hover + .description{
+ display: block;
+}
+.description:hover{
+    display: block;
+}
+.responsive-table .col-1 {
+    flex-basis: 10%;
+}
+.responsive-table .col-2 {
+    flex-basis: 10%;
+}
+.responsive-table .col-3 {
+    flex-basis: 55%;
+}
+.responsive-table .col-4 {
+    flex-basis: 25%;
+}
+@media all and (max-width: 600px) {
+    .responsive-table{
+        padding: 0;
+    }
+    .responsive-table .table-header{
+        font-size:10px;
+        text-align: center;
+    }
+}
+/* list ends */
 /* Footer responsiveness (kind of messy but works)*/
 @media screen and (max-width:1024px){
     .footer-right{
