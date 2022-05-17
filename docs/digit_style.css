@@ -392,3 +392,21 @@ i:hover + .description{
     }
 }
 /* Footer ends */
+/* Projects page Begins*/
+.works {
+    position: relative;
+    width: 100%;
+}
+.project {
+    width: 25%;
+    float: left;
+}
+.project img {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    
+}
+.info {
+    
+}
