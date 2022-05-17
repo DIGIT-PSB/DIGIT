@@ -186,7 +186,7 @@ html, body {
     transition: all ease 0.5s;
 }
 .TopBtn:hover{
-    background: rgba(193, 0, 0);
+    background: rgba(193, 0, 0, 0);
 }
 /* second-section ends */
 /* Footer starts */
@@ -393,20 +393,57 @@ i:hover + .description{
 }
 /* Footer ends */
 /* Projects page Begins*/
-.works {
+.pcontainer {
+    height: 100vh;
+    /* The rules below this message in this class should be applied 
+     * site-wide or have something similar. Then we remove .pcontainer. */
+    max-width: 960px;
+    min-width: 320px;
+    margin: 0px auto 0px auto;
+    
+}
+.projects {
     position: relative;
     width: 100%;
 }
-.project {
-    width: 25%;
+.work {
+    line-height: 0;
     float: left;
+    position: relative;
 }
-.project img {
-    cursor: pointer;
-    width: 100%;
-    height: auto;
+.work div.desc {
     
 }
-.info {
-    
+.focus {
+    display: inherit;
+}
+/* PROJECT PAGE TABLET/COMPUTER VIEWING */
+@media (min-width: 455px) {
+    div.work {
+        width: 25%;
+        display:inherit;
+    }       
+    .work img {
+        cursor: pointer;
+        width: 100%;
+        height: auto;
+    }
+    .work div.desc {
+        display: none;
+    }
+    .focus div.desc {
+        display: inherit;
+        float: left;
+        position: absolute;
+    }
+}
+/* PROJECT PAGE MOBILE VIEWING */
+@media (max-width: 455px){
+    .work {
+        width: 100%;
+    }
+    .work img {
+        width: 100%;
+        height: auto;
+    }
 }
