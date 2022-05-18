@@ -39,7 +39,6 @@ html, body {
     overflow: hidden;
     background-color: rgba(0, 0, 0, .2);
     top: 0;
-    width: 100vw;
   }
   
 .menu a {
@@ -394,7 +393,6 @@ i:hover + .description{
 /* Footer ends */
 /* Projects page Begins*/
 .pcontainer {
-    height: 300vh;
     /* The rules below this message in this class should be applied 
      * site-wide or have something similar. Then we remove .pcontainer. */
     max-width: 960px;
