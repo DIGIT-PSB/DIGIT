@@ -39,7 +39,6 @@ html, body {
     overflow: hidden;
     background-color: rgba(0, 0, 0, .2);
     top: 0;
-    width: 100vw;
   }
   
 .menu a {
@@ -191,7 +190,7 @@ html, body {
     transition: all ease 0.5s;
 }
 .TopBtn:hover{
-    background: rgba(193, 0, 0);
+    background: rgba(193, 0, 0, 0);
 }
 /* second-section ends */
 /* Footer starts */
@@ -397,3 +396,86 @@ i:hover + .description{
     }
 }
 /* Footer ends */
+/* Projects page Begins*/
+.pcontainer {
+    /* The rules below this message in this class should be applied 
+     * site-wide or have something similar. Then we remove .pcontainer. */
+    max-width: 960px;
+    min-width: 320px;
+    margin: 0px auto 0px auto;
+    
+    
+}
+.projects {
+    position: relative;
+    width: 100%;
+}
+.work {
+    line-height: 0;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.workContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: 100%;
+}
+.work div.desc {
+    left: 50%;
+    width: 50%;
+    min-height: 100%;
+}
+.focus {
+    display: inherit;
+}
+/* PROJECT PAGE TABLET/COMPUTER VIEWING */
+@media (min-width: 456px) {
+    div.work {
+        width: 25%;
+        display:inherit;
+    }
+    div.focus {
+        width: 100%;
+        float: left;
+    }
+    .work img {
+        cursor: pointer;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .focus img {
+        float: left;
+        width: 50%;
+    }
+    .work div.desc {
+        display: none;
+    }
+    .focus div.desc {
+        display: inherit;
+        float: left;
+        position: absolute;
+        background-color: blue;
+    }
+    .right {
+        float: right !important;
+    }
+    /* The FOCUS class is applied to only the WORK class on click. This removes the need to 
+     * place the class, or a similar but different class on the elements inside of a WORK */
+}
+/* PROJECT PAGE MOBILE VIEWING */
+@media (max-width: 455px){
+    .work {
+        width: 100%;
+    }
+    .work img {
+        width: 100%;
+        height: auto;
+    }
+    .work div.desc {
+        display: inherit;
+    }
+}
