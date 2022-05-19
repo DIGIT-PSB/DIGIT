@@ -1,8 +1,8 @@
 function Menubar() {
-  var x = document.getElementByClassName("work");
-  if (y.className === "work") {
-    y.className += " focus";
+  var x = document.getElementById("myMenu");
+  if (x.className === "menu") {
+    x.className += " responsive";
   } else {
-    y.className = "work";
+    x.className = "menu";
   }
 }
