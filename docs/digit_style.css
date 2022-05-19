@@ -399,6 +399,7 @@ i:hover + .description{
     min-width: 320px;
     margin: 0px auto 0px auto;
     
+    
 }
 .projects {
     position: relative;
@@ -410,8 +411,17 @@ i:hover + .description{
     overflow: hidden;
     position: relative;
 }
+.workContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: 100%;
+}
 .work div.desc {
-    
+    left: 50%;
+    width: 50%;
+    min-height: 100%;
 }
 .focus {
     display: inherit;
@@ -421,12 +431,20 @@ i:hover + .description{
     div.work {
         width: 25%;
         display:inherit;
-    }       
+    }
+    div.focus {
+        width: 100%;
+        float: left;
+    }
     .work img {
         cursor: pointer;
         width: 100%;
         height: auto;
         float: left;
+    }
+    .focus img {
+        float: left;
+        width: 50%;
     }
     .work div.desc {
         display: none;
@@ -435,7 +453,13 @@ i:hover + .description{
         display: inherit;
         float: left;
         position: absolute;
+        background-color: blue;
     }
+    .right {
+        float: right !important;
+    }
+    /* The FOCUS class is applied to only the WORK class on click. This removes the need to 
+     * place the class, or a similar but different class on the elements inside of a WORK */
 }
 /* PROJECT PAGE MOBILE VIEWING */
 @media (max-width: 455px){
@@ -445,5 +469,8 @@ i:hover + .description{
     .work img {
         width: 100%;
         height: auto;
+    }
+    .work div.desc {
+        display: inherit;
     }
 }
