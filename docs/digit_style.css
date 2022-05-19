@@ -91,6 +91,11 @@ html, body {
     text-align: center;
     height: 90%;
     line-height: 3rem;  
+    z-index: -1;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    right: 0;
 }
 .header h1{
     font-size: 8rem;
