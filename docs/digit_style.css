@@ -396,7 +396,7 @@ i:hover + .description{
     }
 }
 /* Footer ends */
-/* Projects page Begins*/
+/* Projects Showcase page Begins*/
 .pcontainer {
     /* The rules below this message in this class should be applied 
      * site-wide or have something similar. Then we remove .pcontainer. */
@@ -409,6 +409,15 @@ i:hover + .description{
 .projects {
     position: relative;
     width: 100%;
+ /*   display:inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+*/
+    
+    display:flex;
+    flex-direction:row;
+    flex-flow: wrap;
+    justify-content:space-evenly;
 }
 .work {
     line-height: 0;
@@ -427,7 +436,12 @@ i:hover + .description{
     left: 50%;
     width: 50%;
     min-height: 100%;
+    /* ebb: Apparently I needed to reset the flex direction for the block elements inside.
+     * otherwise it seems the display:flex with default row direction is inherited. */
+    display:flex;
+    flex-direction:column;
 }
+
 .focus {
     display: inherit;
 }
