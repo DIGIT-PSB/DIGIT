@@ -409,15 +409,14 @@ i:hover + .description{
 .projects {
     position: relative;
     width: 100%;
- /*   display:inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-*/
-    
-    display:flex;
-    flex-direction:row;
-    flex-flow: wrap;
-    justify-content:space-evenly;
+/*  display:inline-grid;
+    grid-template-columns: 3fr 2fr 1fr ;
+    grid-template-rows: auto;*/
+
+ /* CSS Guide to Flexboxes: https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */   
+  /*  display:flex;
+    flex-flow: row wrap;
+    justify-content:center;*/
 }
 .work {
     line-height: 0;
@@ -439,7 +438,13 @@ i:hover + .description{
     /* ebb: Apparently I needed to reset the flex direction for the block elements inside.
      * otherwise it seems the display:flex with default row direction is inherited. */
     display:flex;
-    flex-direction:column;
+    flex-flow:column wrap;
+}
+
+/* 2022-05-23 ebb: We are having some difficulty controlling for long stretches of text that seem to be forced 
+ * into one line. We are pretty sure we can solve this with some digging and asking for help. */
+.work div.desc p {
+    display:inline;
 }
 
 .focus {
