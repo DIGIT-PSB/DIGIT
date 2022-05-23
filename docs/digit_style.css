@@ -396,7 +396,7 @@ i:hover + .description{
     }
 }
 /* Footer ends */
-/* Projects page Begins*/
+/* Projects Showcase page Begins*/
 .pcontainer {
     /* The rules below this message in this class should be applied 
      * site-wide or have something similar. Then we remove .pcontainer. */
@@ -409,6 +409,14 @@ i:hover + .description{
 .projects {
     position: relative;
     width: 100%;
+/*  display:inline-grid;
+    grid-template-columns: 3fr 2fr 1fr ;
+    grid-template-rows: auto;*/
+
+ /* CSS Guide to Flexboxes: https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */   
+  /*  display:flex;
+    flex-flow: row wrap;
+    justify-content:center;*/
 }
 .work {
     line-height: 0;
@@ -427,7 +435,18 @@ i:hover + .description{
     left: 50%;
     width: 50%;
     min-height: 100%;
+    /* ebb: Apparently I needed to reset the flex direction for the block elements inside.
+     * otherwise it seems the display:flex with default row direction is inherited. */
+    display:flex;
+    flex-flow:column wrap;
 }
+
+/* 2022-05-23 ebb: We are having some difficulty controlling for long stretches of text that seem to be forced 
+ * into one line. We are pretty sure we can solve this with some digging and asking for help. */
+.work div.desc p {
+    display:inline;
+}
+
 .focus {
     display: inherit;
 }
