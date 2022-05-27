@@ -396,8 +396,6 @@ footer a{
     max-width: 960px;
     min-width: 320px;
     margin: 0px auto 0px auto;
-    
-    
 }
 .projects {
     position: relative;
@@ -448,6 +446,9 @@ footer a{
 }
 .focus {
     display: inherit;
+}
+.desc a {
+    font-family: iconfont; 
 }
 /* PROJECT PAGE TABLET/COMPUTER VIEWING */
 @media (min-width: 456px) {
