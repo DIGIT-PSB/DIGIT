@@ -3,14 +3,11 @@ const mainEntries = document.getElementsByClassName("col-3")
 window .onload = init;
 
 function init() {
-  Menubar();
 
   for (var i = 0; i < mainEntries.length; i++) {
     if (mainEntries[i].querySelector("span.more"))
 
-   /*mainEntries[i].addEventListener('mouseover', showMore, false);*/
     mainEntries[i].addEventListener('click', showMore, false);
-   /* mainEntries[i].addEventListener('mouseout', hideMore, false);*/
     mainEntries[i].addEventListener('dblclick', hideMore, false);
 
 }
@@ -41,4 +38,3 @@ function hideMore() {
   whatMore.style.display = "none";
   arrow.innerHTML = '⬇';
 }
-
