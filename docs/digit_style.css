@@ -431,6 +431,14 @@ footer a{
 }
 /* Footer ends */
 /* Loader starts */
+#preloader-index{
+background: #000 url(images/pacman-loader.gif) no-repeat center center;
+background-size: 30%;
+position: fixed;
+height: 100vh;
+width: 100%;
+z-index: 100;
+}
 #preloader{
     background: #e9e9eb url(images/duck-loader.gif) no-repeat center center;
     background-size: 30%;
