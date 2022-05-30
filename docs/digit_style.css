@@ -439,14 +439,6 @@ footer a{
     min-width: 320px;
     margin: 0px auto 0px auto;
 }
-/* Projects Showcase page Begins*/
-.pcontainer {
-    /* The rules below this message in this class should be applied 
-     * site-wide or have something similar. Then we remove .pcontainer. */
-    max-width: 960px;
-    min-width: 320px;
-    margin: 0px auto 0px auto;
-}
 .projects {
     position: relative;
     width: 100%;
@@ -504,6 +496,10 @@ footer a{
 }
 /* PROJECT PAGE TABLET/COMPUTER VIEWING */
 @media (min-width: 456px) {
+    .pTitle {
+        margin: 5vw 0 3.2vw 0;
+        font-size: 4.58vw;
+    }
     div.work {
         width: 25%;
         display:inherit;
@@ -557,6 +553,10 @@ footer a{
          * place the class, or a similar but different class on the elements inside of a WORK */
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
 @media (min-width: 960px) {
+    .pTitle {
+        margin: 1.1em 0 0.7em 0;
+        font-size: 2.2em;
+    }
     .work h2 {
         margin-bottom: 0.486487em;
         font-size: 1.776em;
@@ -579,6 +579,10 @@ footer a{
 }
 /* PROJECT PAGE MOBILE VIEWING */
 @media (max-width: 455px){
+    .pTitle {
+        margin: 4vw 3% 3vw 3%;
+        font-size: 2.2em;
+    }
     .work {
         width: 100%;
     }
