@@ -438,17 +438,17 @@ footer a{
     min-width: 320px;
     margin: 0px auto 0px auto;
 }
+/* Projects Showcase page Begins*/
+.pcontainer {
+    /* The rules below this message in this class should be applied 
+     * site-wide or have something similar. Then we remove .pcontainer. */
+    max-width: 960px;
+    min-width: 320px;
+    margin: 0px auto 0px auto;
+}
 .projects {
     position: relative;
     width: 100%;
-/*  display:inline-grid;
-    grid-template-columns: 3fr 2fr 1fr ;
-    grid-template-rows: auto;*/
-
- /* CSS Guide to Flexboxes: https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */   
-  /*  display:flex;
-    flex-flow: row wrap;
-    justify-content:center;*/
 }
 .work {
     float: left;
@@ -480,7 +480,7 @@ footer a{
 .work div.desc p {
     display:inline;
 }
-.work div.desc img {
+.blur {
     position: absolute;
     top: 0;
     left: 0;
@@ -494,14 +494,14 @@ footer a{
     display: inherit;
 }
 .desc a {
-    font-family: iconfont; 
-    font-size: 2.2em;
     text-decoration: none;
 }
 .desc {
     box-sizing: border-box;
 }
-
+.desc a svg:hover{
+    fill: rgb(193, 0, 0);
+}
 /* PROJECT PAGE TABLET/COMPUTER VIEWING */
 @media (min-width: 456px) {
     div.work {
@@ -540,20 +540,17 @@ footer a{
         margin-bottom: 0.9vw;
         font-size: 2.1vw;
     }
-    .desc a {
+    .desc a svg{
+        width: 4.65vw;
         position: absolute;
         bottom: 3%;
         left: 3%;
-        font-size: 3.9vw;
     }
-
 }
         /* The FOCUS class is applied to only the WORK class on click. This removes the need to 
          * place the class, or a similar but different class on the elements inside of a WORK */
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
 @media (min-width: 960px) {
-    /* Font-Size(em) = (Font-Size in body)px / (Font-Size(vw) at 960px)
-     * The numbers below are only changed if the body's font-size changes */
     .work h2 {
         margin-bottom: 0.486487em;
         font-size: 1.776em;
@@ -563,10 +560,10 @@ footer a{
         margin-bottom: 0.432em;
         font-size: 1.008em;
     }
-    .desc a {
-        bottom: .37777em;
-        left: .37777em;
-        font-size: 1.872em;
+    .desc a svg {
+        width: 2.232em;
+        bottom: 0.70707em;
+        left: 0.70707em;
     }
 }
 /* PROJECT PAGE MOBILE VIEWING */
@@ -593,8 +590,8 @@ footer a{
         margin-bottom: 1.8vw;
         font-size: 3.85vw;
     }
-    .desc a {
-        font-size: 6.25vw;
+    .desc a svg{
+        width: 6.25vw;
     }
 }
 /* Loader starts */
