@@ -466,7 +466,6 @@ footer a{
     line-height: 1;
     left: 50%;
     width: 50%;
-    min-height: 100%;
     padding: 3%;
 }
 .work h2 {
@@ -477,8 +476,8 @@ footer a{
     line-height: 0.97;
     font-weight: 400;
 }
-.work div.desc p {
-    display:inline;
+.work p {
+    line-height: 1.2;
 }
 .blur {
     position: absolute;
@@ -524,6 +523,7 @@ footer a{
     }
     .work div.desc {
         display: none;
+        min-height: 100%;
     }
     .focus div.desc {
         display: inherit;
@@ -538,7 +538,12 @@ footer a{
     .work h3 {
         margin-top: 0.3vw;
         margin-bottom: 0.9vw;
-        font-size: 2.1vw;
+        font-size: 2.7vw;
+    }
+    .work p {
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+        font-size: 2.2vw;
     }
     .desc a svg{
         width: 4.65vw;
@@ -560,6 +565,11 @@ footer a{
         margin-bottom: 0.432em;
         font-size: 1.008em;
     }
+    .work p {
+        margin-top: 1.66666em;
+        margin-bottom: 1.1111em;
+        font-size: 0.86em;
+    }
     .desc a svg {
         width: 2.232em;
         bottom: 0.70707em;
@@ -578,17 +588,22 @@ footer a{
     .work div.desc {
         display: inherit;
         width: 100%;
-        padding: 3% 3% 1% 3%;
+        padding: 3%;
     }
     .work h2 {
-        margin-bottom: 4.5vw;
+        margin-bottom: 2.3vw;
         letter-spacing: -0.15vw;
         font-size: 7vw;
     }
     .work h3 {
         margin-top: 1vw;
-        margin-bottom: 1.8vw;
-        font-size: 3.85vw;
+        margin-bottom: 1.7vw;
+        font-size: 4.65vw;
+    }
+    .work p {
+        margin-top: 4.1vw;
+        margin-bottom: 3.5vw;
+        font-size: 3.6vw;
     }
     .desc a svg{
         width: 6.25vw;
