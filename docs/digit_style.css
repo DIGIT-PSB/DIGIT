@@ -248,12 +248,12 @@ footer a{
 .footer-right{
     display: flex;
     padding: 10px;
-    margin-right: 50px;
+    /*margin-right: 50px;*/
     font-size: 10px;
 }
 .footer-right > *{
     flex: 1 50%;
-    margin-right: 1.25;
+    /*margin-right: 1.25px;*/
 }
 .features{
     margin-right: 20px;
@@ -275,6 +275,16 @@ footer a{
 	background-size: cover;
 	width: 100vw;
 }
+
+/* SVG Road Map Here */
+.roadmap h1 {
+  text-transform: capitalize;
+    text-align: center;
+    font-size: 4rem;
+    margin-top:3rem;
+    color: #fff;
+}
+
 /* Courses titles */
 .module h1 {
     text-transform: capitalize;
@@ -293,6 +303,13 @@ footer a{
     color: rgba(244, 240, 240, 0.7);
     padding-bottom: 10px;
   }
+#svgHolder {
+    text-align:center;
+    margin: auto;
+    width: 80%;
+}
+  
+  
 .data{
     width: 60%;
     margin: auto;
