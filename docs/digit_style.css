@@ -386,7 +386,7 @@ footer a{
 }
 .short-text { display: none; }
 
-@media (max-width: 600px) {
+@media (max-width: 820px) {
     .short-text { display: inline-block; }
     .full-text { display: none; }
 }
