@@ -477,10 +477,10 @@ footer a{
     left: 50%;
     width: 50%;
     padding: 3%;
+    color: white;
 }
 .
 .work h2 {
-    margin-top: 0;
     line-height: 1;
 }
 .work h3 {
@@ -542,7 +542,6 @@ footer a{
     .work div.desc {
         display: none;
         min-height: 100%;
-        color: white;
     }
     .focus div.desc {
         display: inherit;
@@ -550,6 +549,7 @@ footer a{
         position: absolute;
     }
     .work h2 {
+        margin-top: 0;
         margin-bottom: 1.8vw;
         letter-spacing: -0.1vw;
         font-size: 3.7vw;
@@ -580,6 +580,7 @@ footer a{
         font-size: 2.2em;
     }
     .work h2 {
+        margin-top: 0;
         margin-bottom: 0.486487em;
         font-size: 1.776em;
     }
@@ -618,6 +619,7 @@ footer a{
         padding: 3%;
     }
     .work h2 {
+        margin-top: 0;
         margin-bottom: 2.3vw;
         letter-spacing: -0.15vw;
         font-size: 7vw;
