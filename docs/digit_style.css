@@ -461,6 +461,7 @@ footer a{
     width: 50%;
     padding: 3%;
 }
+.
 .work h2 {
     margin-top: 0;
     line-height: 1;
@@ -480,7 +481,7 @@ footer a{
     height: 100%;
     z-index: -1;
     background-size: 100%;
-    filter: blur(175px);
+    filter: blur(100px);
 }
 .focus {
     display: inherit;
@@ -490,6 +491,9 @@ footer a{
 }
 .desc {
     box-sizing: border-box;
+}
+.desc a svg {
+    fill: white;
 }
 .desc a svg:hover{
     fill: rgb(193, 0, 0);
@@ -521,6 +525,7 @@ footer a{
     .work div.desc {
         display: none;
         min-height: 100%;
+        color: white;
     }
     .focus div.desc {
         display: inherit;
