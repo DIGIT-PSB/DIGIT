@@ -276,14 +276,14 @@ footer a{
 	width: 100vw;
 }
 /* Courses titles */
-.roadmap h1 {
+.module h1 {
     text-transform: capitalize;
     text-align: center;
     font-size: 4rem;
     margin-top:3rem;
     color: #fff;
   }
-.roadmap h1 span {
+.module h1 span {
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -615,6 +615,14 @@ footer a{
     }
 }
 /* Loader starts */
+#preloader-index{
+background: #000 url(images/pacman-loader.gif) no-repeat center center;
+background-size: 30%;
+position: fixed;
+height: 100vh;
+width: 100%;
+z-index: 100;
+}
 #preloader{
     background: #e9e9eb url(images/duck-loader.gif) no-repeat center center;
     background-size: 30%;
