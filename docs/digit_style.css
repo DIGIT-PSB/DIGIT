@@ -275,14 +275,14 @@ footer a{
 	width: 100vw;
 }
 /* Courses titles */
-.roadmap h1 {
+.module h1 {
     text-transform: capitalize;
     text-align: center;
     font-size: 4rem;
     margin-top:3rem;
     color: #fff;
   }
-.roadmap h1 span {
+.module h1 span {
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
