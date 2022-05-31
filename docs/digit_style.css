@@ -32,6 +32,7 @@
 html, body {
 	height: 100%;
     font-family: "Verdana", sans-serif;
+    font-size: 20px;
     margin: 0;
     scroll-behavior: smooth;
 }
@@ -39,7 +40,6 @@ html, body {
     overflow: hidden;
     background-color: rgba(0, 0, 0, .2);
     top: 0;
-    width: 100vw;
   }
   
 .menu a {
@@ -219,7 +219,7 @@ html, body {
     transition: all ease 0.5s;
 }
 .TopBtn:hover{
-    background: rgba(193, 0, 0);
+    background: rgba(193, 0, 0, 0);
 }
 /* second-section ends */
 /* Footer starts */
@@ -229,6 +229,7 @@ footer{
     color: #fff;
     background-color: #041E42;
     padding-bottom: 10px;
+    width: 100%;
 }
 .footer-left img{
     width: auto;
@@ -430,6 +431,194 @@ footer a{
     }
 }
 /* Footer ends */
+/* Projects Showcase page Begins*/
+.pcontainer {
+    /* The rules below this message in this class should be applied 
+     * site-wide or have something similar. Then we remove .pcontainer. */
+    max-width: 960px;
+    min-width: 320px;
+    margin: 0px auto 0px auto;
+}
+.projects {
+    position: relative;
+    width: 100%;
+}
+.work {
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.workContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: 100%;
+}
+.work div.desc {
+    line-height: 1;
+    left: 50%;
+    width: 50%;
+    padding: 3%;
+}
+.
+.work h2 {
+    margin-top: 0;
+    line-height: 1;
+}
+.work h3 {
+    line-height: 0.97;
+    font-weight: 400;
+}
+.work p {
+    line-height: 1.2;
+}
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: 100%;
+    filter: blur(100px);
+}
+.focus {
+    display: inherit;
+}
+.desc a {
+    text-decoration: none;
+}
+.desc {
+    box-sizing: border-box;
+}
+.desc a svg {
+    fill: white;
+}
+.desc a svg:hover{
+    fill: rgb(193, 0, 0);
+}
+/* PROJECT PAGE TABLET/COMPUTER VIEWING */
+@media (min-width: 456px) {
+    .pTitle {
+        margin: 5vw 0 3.2vw 0;
+        font-size: 4.58vw;
+    }
+    div.work {
+        width: 25%;
+        display:inherit;
+    }
+    div.focus {
+        width: 100%;
+        float: left;
+    }
+    .work img.art {
+        cursor: pointer;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .focus img.art {
+        float: left;
+        width: 50%;
+    }
+    .work div.desc {
+        display: none;
+        min-height: 100%;
+        color: white;
+    }
+    .focus div.desc {
+        display: inherit;
+        float: left;
+        position: absolute;
+    }
+    .work h2 {
+        margin-bottom: 1.8vw;
+        letter-spacing: -0.1vw;
+        font-size: 3.7vw;
+    }
+    .work h3 {
+        margin-top: 0.3vw;
+        margin-bottom: 0.9vw;
+        font-size: 2.7vw;
+    }
+    .work p {
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+        font-size: 2.2vw;
+    }
+    .desc a svg{
+        width: 4.65vw;
+        position: absolute;
+        bottom: 3%;
+        left: 3%;
+    }
+}
+        /* The FOCUS class is applied to only the WORK class on click. This removes the need to 
+         * place the class, or a similar but different class on the elements inside of a WORK */
+/* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
+@media (min-width: 960px) {
+    .pTitle {
+        margin: 1.1em 0 0.7em 0;
+        font-size: 2.2em;
+    }
+    .work h2 {
+        margin-bottom: 0.486487em;
+        font-size: 1.776em;
+    }
+    .work h3 {
+        margin-top: 0.144em;
+        margin-bottom: 0.432em;
+        font-size: 1.008em;
+    }
+    .work p {
+        margin-top: 1.66666em;
+        margin-bottom: 1.1111em;
+        font-size: 0.86em;
+    }
+    .desc a svg {
+        width: 2.232em;
+        bottom: 0.70707em;
+        left: 0.70707em;
+    }
+}
+/* PROJECT PAGE MOBILE VIEWING */
+@media (max-width: 455px){
+    .pTitle {
+        margin: 4vw 3% 3vw 3%;
+        font-size: 2.2em;
+    }
+    .work {
+        width: 100%;
+    }
+    .art {
+        width: 100%;
+        height: auto;
+    }
+    .work div.desc {
+        display: inherit;
+        width: 100%;
+        padding: 3%;
+    }
+    .work h2 {
+        margin-bottom: 2.3vw;
+        letter-spacing: -0.15vw;
+        font-size: 7vw;
+    }
+    .work h3 {
+        margin-top: 1vw;
+        margin-bottom: 1.7vw;
+        font-size: 4.65vw;
+    }
+    .work p {
+        margin-top: 4.1vw;
+        margin-bottom: 3.5vw;
+        font-size: 3.6vw;
+    }
+    .desc a svg{
+        width: 6.25vw;
+    }
+}
 /* Loader starts */
 #preloader-index{
 background: #000 url(images/pacman-loader.gif) no-repeat center center;
@@ -447,4 +636,3 @@ z-index: 100;
     width: 100%;
     z-index: 100;
 }
-
