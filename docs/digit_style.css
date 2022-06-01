@@ -348,6 +348,10 @@ footer a{
     .data{
         width: 80%;
         padding: 2rem;
+        text-align: left;
+    }
+    .module h1{
+        font-size: 2.5rem;
     }
 }
 /* title ends */
@@ -370,6 +374,8 @@ footer a{
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    font-size: 18px;
+    text-align: justify;
 }
 .responsive-table .table-header {
     background-color: #041E42;
@@ -388,7 +394,7 @@ footer a{
 .more{
     display: none;
 }
-.table-header .col-2{
+.col-2{
     text-align: center;
 }
 .responsive-table .col-1 {
@@ -409,9 +415,8 @@ footer a{
     }
     .responsive-table li{
         padding: 15px 20px;
-    }
-    .responsive-table .table-header{
-        font-size:10px;
+        font-size:12px;
+        text-align: left;
     }
 }
 .short-text { display: none; }
