@@ -90,28 +90,31 @@ html, body {
     align-items: center;
     text-align: center;
     height: 90%;
-    line-height: 3rem;  
-    z-index: -1;
+    line-height: 2rem;  
     position: absolute;
-    top: 59px;
+    top: 3.5vh;
     left: 0;
     right: 0;
 }
 .header h1{
     font-size: 8rem;
-	max-width: 900px;
-    padding: 1rem;
 }
 .header h3{
     font-size: 1.5rem;
-	max-width: 900px;
-    line-height: 40px;
-    padding: 1rem;
 } 
 .header h2{
     font-size: 2rem;
-	max-width: 900px;
-    padding: 1rem;
+}
+@media screen and (max-width: 960px) {
+    .header h1 {
+        font-size: 17.5vw;
+    }
+    .header h3 {
+        font-size: 3vw;
+    }
+    .header h2 {
+        font-size: 4vw;
+    }
 }
 @media screen and (max-width: 600px){
     .header h1{
@@ -842,3 +845,4 @@ word-spacing: 2px;
     left: 0;
     right: -55.8px;
 }
+z
