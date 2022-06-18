@@ -355,6 +355,62 @@ footer a{
     }
 }
 /* title ends */
+/* Courses titles */
+.module h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4rem;
+    margin-top:3rem;
+    color: #fff;
+  }
+.module h1 span {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 3em;
+    padding-left: 0.25em;
+    color: rgba(244, 240, 240, 0.7);
+    padding-bottom: 10px;
+  }
+#svgHolder {
+    text-align:center;
+    margin: auto;
+    width: 80%;
+}
+.data{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 2rem;
+    text-align: justify;
+    color: #fff;
+}
+.data p{
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+}
+
+.data p:first-child::first-letter{
+    color:#041E42;
+    font-weight: bold;
+    font-size: 70px;
+    float: left;
+    line-height: 50px;
+    padding-right: 8px;
+    margin-top: -3px;
+}
+@media screen and (max-width:600px){
+    .data{
+        width: 80%;
+        padding: 2rem;
+        text-align: left;
+    }
+    .module h1{
+        font-size: 2.5rem;
+    }
+}
+/* title ends */
 /* Courses list */
 .courseblock {
     max-width: 1080px;
@@ -375,7 +431,6 @@ footer a{
     justify-content: space-between;
     margin-bottom: 25px;
     font-size: 18px;
-    text-align: justify;
 }
 .responsive-table .table-header {
     background-color: #041E42;
@@ -383,6 +438,7 @@ footer a{
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #fff;
+    
 }
 .responsive-table .table-row {
     background-color: #fff;
@@ -393,6 +449,7 @@ footer a{
 }
 .more{
     display: none;
+    text-align: justify;
 }
 .col-2{
     text-align: center;
@@ -408,6 +465,11 @@ footer a{
 }
 .responsive-table .col-4 {
     flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+}
+.col span .more {
+    text-indent: 2rem;
 }
 @media all and (max-width: 600px) {
     .responsive-table{
