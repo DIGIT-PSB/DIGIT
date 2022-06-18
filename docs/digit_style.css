@@ -288,6 +288,14 @@ footer a{
 	background-size: cover;
 }
 
+#about{
+    background-image:url("images/datavizBG.jpg"); /* This is more of a sample background */
+	background-attachment:fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	filter: brightness(1.75);
+}
+
 /* SVG Road Map Here */
 .roadmap h1 {
   text-transform: capitalize;
@@ -596,6 +604,7 @@ footer a{
     text-decoration: none;
     color: #999;
 }
+
         /* The FOCUS class is applied to only the WORK class on click. This removes the need to 
          * place the class, or a similar but different class on the elements inside of a WORK */
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
@@ -867,4 +876,43 @@ word-spacing: 2px;
 .rtl .timeline .event::after {
     left: 0;
     right: -55.8px;
+}
+.center{
+    display: flex;
+}
+.portfolioWrap{
+    justify-content: center;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.portfolioList{
+    width:500px;
+/*    border:1px;
+    border-style: solid;*/
+    margin:20px 0 20px;
+}
+.portfolioList li:before{
+    content: "";
+    float:left;
+    width: 25px;
+    height: 25px;
+    background: lightblue linear-gradient(to bottom right, lightblue 25%, lightgrey);
+    display: inline-flex;
+    margin: 0 15px;
+    border-radius: 50% 50% 5% 50%;
+}
+.portfolioList li{
+    list-style:none;
+    color:white;
+    margin: 0 0 10px;
+}
+.portfolioList li a{
+    color:white;
+}
+.portfolioList li a:hover{
+    color:lightblue;
+}
+.portfolioList li a:visited{
+    color:pink;
 }
