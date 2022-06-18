@@ -15,18 +15,19 @@
         <script src="https://use.fontawesome.com/664cfabaeb.js"></script>
     </head>
     <body>
+      <div id="preloader"></div>
         <div id="courses">
         <div class="menu" id="myMenu">
                 <a href="index.html" class="active">Home</a>
                 <a href="about.html">About</a>
                 <a href="roadmap.html">Courses</a>
-                <a href="events.html">Students Projects</a>
-                <a href="showcase.html">Events</a>
-                <a href="javascript:void(0);" class="icon" onclick="Mennubar()">
-                    <i class="fa fa-bars"></i>
-                  </a>
+                <a href="showcase.html">Students Projects</a>
+                <a href="ev.html">Events</a>
+                <a href="javascript:void(0);" class="icon" onclick="Menubar()">
+                  <i class="fa fa-bars"></i>
+                </a>
         </div>
-        <div class="roadmap">
+        <div class="module">
             <h1>Data Visualization <br/>
               <span>Additional courses</span>
             </h1>
@@ -36,45 +37,45 @@
                 <h2>Course Options</h2>
                 <ul class="responsive-table">
                   <li class="table-header">
-                    <div class="col col-1">Subject</div>
-                    <div class="col col-2">Number</div>
+                    <div class="col col-1"><a class="full-text">Subject</a><a class="short-text">Subj</a></div>
+                    <div class="col col-2"><a class="full-text">Number</a><a class="short-text">N°</a></div>
                     <div class="col col-3">Name</div>
                     <div class="col col-4">Credits</div>
                   </li>
                   <li class="table-row">
                     <div class="col col-1" data-label="Subject">CMPSC</div>
                     <div class="col col-2" data-label="Number">203</div>
-                    <div class="col col-3" data-label="Name">Introduction to Spreadsheets and Databases <i class="fa fa-chevron-down" aria-hidden="true"></i><span class="description">Design, use, and programming of spreadsheets and data bases with applications from a range of disciplines.</span></div>
+                    <div class="col col-3" data-label="Name">Introduction to Spreadsheets and Databases <span class="dots">⬇</span><span class="more"><br/>Design, use, and programming of spreadsheets and data bases with applications from a range of disciplines.</span></div>
                     <div class="col col-4" data-label="Credits">3</div>
                   </li>
                   <li class="table-row">
                     <div class="col col-1" data-label="Subject">DIGIT</div>
                     <div class="col col-2" data-label="Number">410</div>
-                    <div class="col col-3" data-label="Name">Data Visualization <i class="fa fa-chevron-down" aria-hidden="true"></i><span class="description">In-depth understanding of techniques and software for data visualization. Students will be introduced to complex data sets and learn how to present findings in interactive and innovative ways.</p></span></div>
+                    <div class="col col-3" data-label="Name">Data Visualization <span class="dots">⬇</span><span class="more"><br/>In-depth understanding of techniques and software for data visualization. Students will be introduced to complex data sets and learn how to present findings in interactive and innovative ways.</p></span></div>
                     <div class="col col-4" data-label="Credits">3</div>
                   </li>
                   <li class="table-row">
                     <div class="col col-1" data-label="Subject">MIS</div>
                     <div class="col col-2" data-label="Number">204</div>
-                    <div class="col col-3" data-label="Name">Introduction to Management Information Systems <i class="fa fa-chevron-down" aria-hidden="true"></i><span class="description">MIS 204 provides an overview of the role of information systems in business process design, the current technologies used for obtaining, storing, securing, and communicating information in support of operations and decision-making within a business organization, as well as, the concepts and principles for developing and using popular spreadsheet and database tools.<br/> Applications focus on the development of quantitative problem-solving skills applied to specific examples of business problems and issues found in business disciplines, including accounting, finance, marketing, supply chain operations, and general management. Problem solving skills will be reinforced by assigning problem sets to students to do on their own.</span></div>
+                    <div class="col col-3" data-label="Name">Introduction to Management Information Systems <span class="dots">⬇</span><span class="more"><br/>MIS 204 provides an overview of the role of information systems in business process design, the current technologies used for obtaining, storing, securing, and communicating information in support of operations and decision-making within a business organization, as well as, the concepts and principles for developing and using popular spreadsheet and database tools.<br/> Applications focus on the development of quantitative problem-solving skills applied to specific examples of business problems and issues found in business disciplines, including accounting, finance, marketing, supply chain operations, and general management. Problem solving skills will be reinforced by assigning problem sets to students to do on their own.</span></div>
                     <div class="col col-4" data-label="Credits">3</div>
                   </li>
                   <li class="table-row">
                     <div class="col col-1" data-label="Subject">MIS</div>
                     <div class="col col-2" data-label="Number">336</div>
-                    <div class="col col-3" data-label="Name">Database Management Systems <i class="fa fa-chevron-down" aria-hidden="true"></i><span class="description">Theory and utilization of database management systems in organizations, including data modeling and applications development.</span></div>
+                    <div class="col col-3" data-label="Name">Database Management Systems <span class="dots">⬇</span><span class="more"><br/>Theory and utilization of database management systems in organizations, including data modeling and applications development.</span></div>
                     <div class="col col-4" data-label="Credits">3</div>
                   </li>
                   <li class="table-row">
                     <div class="col col-1" data-label="Subject">MIS</div>
                     <div class="col col-2" data-label="Number">345</div>
-                    <div class="col col-3" data-label="Name">Data Analytics <i class="fa fa-chevron-down" aria-hidden="true"></i><span class="description">An introduction to data analytics including data preparation, data visualization, dimension reduction, modeling techniques, and applications in different domain areas.</span></div>
+                    <div class="col col-3" data-label="Name">Data Analytics <span class="dots">⬇</span><span class="more"><br/>An introduction to data analytics including data preparation, data visualization, dimension reduction, modeling techniques, and applications in different domain areas.</span></div>
                     <div class="col col-4" data-label="Credits">3</div>
                   </li>
                   <li class="table-row">
                     <div class="col col-1" data-label="Subject">MIS</div>
                     <div class="col col-2" data-label="Number">430</div>
-                    <div class="col col-3" data-label="Name">System Analysis <i class="fa fa-chevron-down" aria-hidden="true"></i><span class="description">Information analysis and the logical specification of the system.</span></div>
+                    <div class="col col-3" data-label="Name">System Analysis <span class="dots">⬇</span><span class="more"><br/>Information analysis and the logical specification of the system.</span></div>
                     <div class="col col-4" data-label="Credits">3</div>
                   </li>
                 </ul>
@@ -97,7 +98,7 @@
                     <li class="features">
                         <h4>Useful links</h4>
                     <ul class="box">
-                        <li><a href="#">Contanct</a></li>
+                        <li><a href="#">Contact</a></li>
                         <li><a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs-1/digital-media-arts-and-technology/digit-faculty">Faculty</a></li>
                         <li><a href="https://psu.instructure.com/courses/1871837">Canvas Pride</a></li>
                         <li><a href="https://digit-psb.github.io/BOLDC/">BOLDC</a></li>
@@ -115,5 +116,11 @@
                 </ul>
           </div>
         </footer>
+        <script>
+          var loader = document.getElementById("preloader");
+           window.addEventListener("load", function(){
+               loader.style.display = "none"
+           })
+      </script>
     </body>
 </html>
