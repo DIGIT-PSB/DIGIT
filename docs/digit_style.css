@@ -868,3 +868,34 @@ word-spacing: 2px;
     left: 0;
     right: -55.8px;
 }
+/* Archive page */
+.archive{
+    max-width: 1080px;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+}
+.dates{
+    max-width: 1080px;
+    text-align: left;
+    margin: auto;
+}
+.dates h5{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+table.showCase {
+    vertical-align: middle;
+    max-width: 1080px;
+    margin: auto;
+}
+table.showCase tr:nth-child(even) {
+    background-color:/*#dcd0ff*/ /*#dbd7d2*/ /*#c3cde6/ /*#e0c39e*/ /*#d9cab2*/ lightsteelblue;
+}
+
+th, td {
+    padding-left: 1em; 
+    padding-right: 1em; 
+    padding-top: .5em; 
+    padding-bottom: 1em;
+}
