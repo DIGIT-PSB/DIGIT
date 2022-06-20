@@ -646,6 +646,17 @@ footer a{
         left: 3%;
     }
 }
+.forms p{
+    color: #fff;
+    max-width: 960px;
+    text-align: left;
+    margin: auto;
+    padding: 30px;
+}
+.forms a{
+    text-decoration: none;
+    color: #999;
+}
         /* The FOCUS class is applied to only the WORK class on click. This removes the need to 
          * place the class, or a similar but different class on the elements inside of a WORK */
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
@@ -773,6 +784,9 @@ word-spacing: 2px;
     font-size: 2.5rem;
 }
 }
+.info{
+    margin-top: 20px;
+}
 .digit-works{
     text-transform: capitalize;
     text-align: left;
@@ -783,9 +797,9 @@ word-spacing: 2px;
     margin: auto;
 }
 .digit-works span{
-    color: rgba(57, 51, 51, 0.7);
-    font-weight: 500;
-    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    font-size: 1rem;
 }
 .digit-works p{
     text-align: justify;
@@ -907,4 +921,34 @@ word-spacing: 2px;
     left: 0;
     right: -55.8px;
 }
-z
+/* Archive page */
+.archive{
+    max-width: 1080px;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+}
+.dates{
+    max-width: 1080px;
+    text-align: left;
+    margin: auto;
+}
+.dates h5{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+table.showCase {
+    vertical-align: middle;
+    max-width: 1080px;
+    margin: auto;
+}
+table.showCase tr:nth-child(even) {
+    background-color:/*#dcd0ff*/ /*#dbd7d2*/ /*#c3cde6/ /*#e0c39e*/ /*#d9cab2*/ lightsteelblue;
+}
+
+th, td {
+    padding-left: 1em; 
+    padding-right: 1em; 
+    padding-top: .5em; 
+    padding-bottom: 1em;
+}
