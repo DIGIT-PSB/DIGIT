@@ -322,6 +322,12 @@ footer a{
     color: rgba(244, 240, 240, 0.7);
     padding-bottom: 10px;
   }
+.about_module h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-top:3rem;
+    color: #fff;
+}
 #svgHolder {
     text-align:center;
     margin: auto;
@@ -888,9 +894,7 @@ word-spacing: 2px;
 }
 .portfolioList{
     width:500px;
-/*    border:1px;
-    border-style: solid;*/
-    margin:0 0 40px;
+
 }
 .portfolioList li:before{
     content: "";
@@ -899,7 +903,7 @@ word-spacing: 2px;
     height: 25px;
     background: lightblue linear-gradient(to bottom right, lightblue 25%, lightgrey);
     display: inline-flex;
-    margin: 0 15px;
+    margin: 0 10px;
     border-radius: 5% 50% 5% 50%;
 }
 .portfolioList li{
