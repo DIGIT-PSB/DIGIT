@@ -890,7 +890,7 @@ word-spacing: 2px;
     width:500px;
 /*    border:1px;
     border-style: solid;*/
-    margin:20px 0 20px;
+    margin:0 0 40px;
 }
 .portfolioList li:before{
     content: "";
@@ -900,7 +900,7 @@ word-spacing: 2px;
     background: lightblue linear-gradient(to bottom right, lightblue 25%, lightgrey);
     display: inline-flex;
     margin: 0 15px;
-    border-radius: 50% 50% 5% 50%;
+    border-radius: 5% 50% 5% 50%;
 }
 .portfolioList li{
     list-style:none;
