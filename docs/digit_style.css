@@ -610,6 +610,13 @@ footer a{
     text-decoration: none;
     color: #999;
 }
+.forms ul{
+    color: #fff;
+    max-width: 960px;
+    text-align: left;
+    margin: auto;
+    padding: 30px;
+}
 
         /* The FOCUS class is applied to only the WORK class on click. This removes the need to 
          * place the class, or a similar but different class on the elements inside of a WORK */
@@ -891,10 +898,10 @@ word-spacing: 2px;
     display: flex;
     flex-wrap:wrap;
     align-items: center;
+    margin-top: 10px;
 }
 .portfolioList{
     width:500px;
-
 }
 .portfolioList li:before{
     content: "";
