@@ -288,14 +288,6 @@ footer a{
 	background-size: cover;
 }
 
-#about{
-    background-image:url("images/datavizBG.jpg"); /* This is more of a sample background */
-	background-attachment:fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
-	filter: brightness(1.75);
-}
-
 /* SVG Road Map Here */
 .roadmap h1 {
   text-transform: capitalize;
@@ -606,14 +598,6 @@ footer a{
     text-decoration: none;
     color: #999;
 }
-.forms ul{
-    color: #fff;
-    max-width: 960px;
-    text-align: left;
-    margin: auto;
-    padding: 30px;
-}
-
         /* The FOCUS class is applied to only the WORK class on click. This removes the need to 
          * place the class, or a similar but different class on the elements inside of a WORK */
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
@@ -878,28 +862,61 @@ word-spacing: 2px;
     left: 0;
     right: -55.8px;
 }
+#about{
+    background: url("images/footprints.png"), radial-gradient(#24364a 40%, black);
+    background-position: center top, center;
+    background-repeat: repeat-y, no-repeat;
+}
 .center{
     display: flex;
+}
+.about_forms{
+    color: #fff;
+    margin:auto;
+    max-width: 960px;
+    text-align: left;
+}
+.about_forms li{
+    margin:12px;
+    list-style: none;
+}
+.about_forms a{
+    color: yellow;
+}
+.about_forms a:hover{
+    color: lightblue;
+}
+.about_forms a:visited{
+    color: pink;
+}
+/*.about_forms .name:before{
+    content: url('images/footprint.png');
+    margin: 0 10px 0 -35px;
+}*/
+.about_desc{
+    padding-bottom: 20px;
+}
+.contributeList p,ul{
+    margin:12px 0 12px 0;
+}
+.about_forms .name{
+    margin:0 auto 0 auto;
 }
 .portfolioWrap{
     justify-content: center;
     display: flex;
     flex-wrap:wrap;
     align-items: center;
-    margin-top: 10px;
+    margin: 10px 0 50px;
 }
+
 .portfolioList{
     width:500px;
 }
 .portfolioList li:before{
-    content: "";
-    float:left;
-    width: 25px;
-    height: 25px;
-    background: lightblue linear-gradient(to bottom right, lightblue 25%, lightgrey);
+    content: url('images/footprint.png');
     display: inline-flex;
-    margin: 0 10px;
-    border-radius: 5% 50% 5% 50%;
+    margin: 0 8px;
 }
 .portfolioList li{
     list-style:none;
