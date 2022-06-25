@@ -594,7 +594,7 @@ footer a{
 }
 .forms a{
     text-decoration: none;
-    color: #999;
+    color: rgb(0, 243, 255);
 }
         /* The FOCUS class is applied to only the WORK class on click. This removes the need to 
          * place the class, or a similar but different class on the elements inside of a WORK */
