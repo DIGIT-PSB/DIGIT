@@ -932,3 +932,30 @@ word-spacing: 2px;
 .portfolioList li a:visited{
     color:pink;
 }
+.github_button{
+    padding: 1px 0 1px 2.5px; 
+    width:85px;
+    height:15px;
+    border-radius: 3px;
+    background: white;
+    box-shadow: 0 1px 1px rgba(9,30,66,0.25), 0 0 1px 1px rgba(9,30,66,0.13);
+    user-select: text;
+    position: relative;
+}
+.github_button a{
+    color: grey;
+    position: absolute;
+    top:50%;
+    transform: translate(25%, -50%);
+}
+.github_button a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+.github_button img{
+    width: 14px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(-50%, -50%);
+}
