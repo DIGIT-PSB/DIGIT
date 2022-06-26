@@ -29,7 +29,7 @@ function showMore() {
   var whatMore = this.querySelector("span.more");
   console.log('whatMore = ' + whatMore);
   arrow.innerHTML = '⬆';
-  whatMore.style.display = "inline";
+  whatMore.style.display = "inherit";
 
 }
 

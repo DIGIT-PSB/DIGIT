@@ -82,10 +82,9 @@ html, body {
     align-items: center;
     text-align: center;
     height: 90%;
-    line-height: 3rem;  
-    z-index: -1;
+    line-height: 2rem;  
     position: absolute;
-    top: 59px;
+    top: 3.5vh;
     left: 0;
     right: 0;
 }
@@ -94,14 +93,20 @@ html, body {
 }
 .header h3{
     font-size: 1.5rem;
-    line-height: 40px;
 } 
 .header h2{
     font-size: 2rem;
 }
-.header h1, .header h2, .header h3{
-    padding: 1rem;
-	max-width: 900px;
+@media screen and (max-width: 960px) {
+    .header h1 {
+        font-size: 17.5vw;
+    }
+    .header h3 {
+        font-size: 3vw;
+    }
+    .header h2 {
+        font-size: 4vw;
+    }
 }
 @media screen and (max-width: 600px){
     .header h1{
@@ -288,7 +293,6 @@ footer a{
     margin-top:3rem;
     color: #fff;
 }
-
 /* Courses titles */
 .module h1 {
     text-transform: capitalize;
@@ -312,8 +316,62 @@ footer a{
     margin: auto;
     width: 80%;
 }
-  
-  
+.data{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 2rem;
+    text-align: justify;
+    color: #fff;
+}
+.data p{
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+}
+
+.data p:first-child::first-letter{
+    color:#041E42;
+    font-weight: bold;
+    font-size: 70px;
+    float: left;
+    line-height: 50px;
+    padding-right: 8px;
+    margin-top: -3px;
+}
+@media screen and (max-width:600px){
+    .data{
+        width: 80%;
+        padding: 2rem;
+        text-align: left;
+    }
+    .module h1{
+        font-size: 2.5rem;
+    }
+}
+/* title ends */
+/* Courses titles */
+.module h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4rem;
+    margin-top:3rem;
+    color: #fff;
+  }
+.module h1 span {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 3em;
+    padding-left: 0.25em;
+    color: rgba(244, 240, 240, 0.7);
+    padding-bottom: 10px;
+  }
+#svgHolder {
+    text-align:center;
+    margin: auto;
+    width: 80%;
+}
 .data{
     width: 60%;
     margin: auto;
@@ -367,7 +425,6 @@ footer a{
     justify-content: space-between;
     margin-bottom: 25px;
     font-size: 18px;
-    text-align: justify;
 }
 .responsive-table .table-header {
     background-color: #041E42;
@@ -375,6 +432,7 @@ footer a{
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #fff;
+    
 }
 .responsive-table .table-row {
     background-color: #fff;
@@ -385,6 +443,7 @@ footer a{
 }
 .more{
     display: none;
+    text-align: justify;
 }
 .col-2{
     text-align: center;
@@ -400,6 +459,11 @@ footer a{
 }
 .responsive-table .col-4 {
     flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+}
+.col span .more {
+    text-indent: 2rem;
 }
 @media all and (max-width: 600px) {
     .responsive-table{
@@ -576,6 +640,17 @@ footer a{
         left: 3%;
     }
 }
+.forms p{
+    color: #fff;
+    max-width: 960px;
+    text-align: left;
+    margin: auto;
+    padding: 30px;
+}
+.forms a{
+    text-decoration: none;
+    color: #999;
+}
         /* The FOCUS class is applied to only the WORK class on click. This removes the need to 
          * place the class, or a similar but different class on the elements inside of a WORK */
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
@@ -651,4 +726,223 @@ z-index: 100;
     height: 100vh;
     width: 100%;
     z-index: 100;
+}
+/* Events page */
+#events-page{
+    background-image:url("images/light-background.png"); 
+	background-attachment:fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.title-event {
+text-transform: capitalize;
+text-align: center;
+font-size: 2rem;
+margin-top:3rem;
+color: rgb(0, 0, 0);
+}
+.title-event h1 span {
+font-size: 0.8rem;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 4px;
+line-height: 3em;
+padding-left: 0.25em;
+color: rgba(57, 51, 51, 0.7);
+padding-bottom: 10px;
+}
+#svgHolder {
+text-align:center;
+margin: auto;
+width: 80%;
+}
+.data-event{
+width: 60%;
+margin: auto;
+padding-bottom: 2rem;
+text-align: justify;
+color: rgb(0, 0, 0);
+}
+.data-event p{
+line-height: 1.5;
+letter-spacing: 0.3px;
+word-spacing: 2px;
+}
+@media screen and (max-width:767px){
+.data-event{
+    width: 80%;
+    padding: 2rem;
+    text-align: left;
+}
+.title-event h1{
+    font-size: 2.5rem;
+}
+}
+.info{
+    margin-top: 20px;
+}
+.digit-works{
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 1rem;
+    margin-top:3rem;
+    color: rgb(0, 0, 0);
+    width:60%;
+    margin: auto;
+}
+.digit-works span{
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.digit-works p{
+    text-align: justify;
+}
+@media screen and (max-width:767px){
+    .digit-works{
+        width: 80%;
+        padding: 2rem;
+    }
+}
+/* DIGIT workspace list */
+.timeline {
+    border-left: 3px solid #727cf5;
+    border-radius: 10px;
+    background: rgba(114, 124, 245, 0.09);
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 0.9em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+}
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+.timeline h1 {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+.timeline h2,
+.timeline h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.timeline h5{
+    margin: 0 10;
+}
+.timeline .event {
+    border-bottom: 1px dashed #e8ebf1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.timeline a{
+    text-decoration: none;
+    color: #4e3cda;
+}
+@media (max-width: 767px) {
+    .timeline .event {
+        padding-top: 30px;
+    }
+}
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+@media (max-width: 767px) {
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+}
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px #727cf5;
+    box-shadow: 0 0 0 3px #727cf5;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+    transition: all ease 0.3s;
+}
+.timeline .event:hover:after{
+    background:#727cf5;
+}
+@media (max-width: 767px) {
+    .timeline .event:after {
+        left: -31.8px;
+    }
+}
+.rtl .timeline {
+    border-left: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: 3px solid #727cf5;
+}
+.rtl .timeline .event::before {
+    left: 0;
+    right: -170px;
+}
+.rtl .timeline .event::after {
+    left: 0;
+    right: -55.8px;
+}
+/* Archive page */
+.archive{
+    max-width: 1080px;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+}
+.dates{
+    max-width: 1080px;
+    text-align: left;
+    margin: auto;
+}
+.dates h5{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+table.showCase {
+    vertical-align: middle;
+    max-width: 1080px;
+    margin: auto;
+}
+table.showCase tr:nth-child(even) {
+    background-color:/*#dcd0ff*/ /*#dbd7d2*/ /*#c3cde6/ /*#e0c39e*/ /*#d9cab2*/ lightsteelblue;
+}
+
+th, td {
+    padding-left: 1em; 
+    padding-right: 1em; 
+    padding-top: .5em; 
+    padding-bottom: 1em;
 }
