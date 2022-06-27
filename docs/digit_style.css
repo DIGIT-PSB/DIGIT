@@ -255,7 +255,7 @@ html, body {
 }
 .features{
     margin-top: 20px;
-    padding: 0 2em;
+    padding: 0 1.75em;
 }
 .features p{
     font-size: 1.05em;
@@ -289,12 +289,6 @@ html, body {
     .footer-content{
          max-width: 1160px;
          justify-content: space-evenly;
-    }
-    .footer-left img{
-        align-items: center;
-        height: 100px;
-        width: auto;
-        margin: 10px;
     }
     .footer-content .break {
         display: flex;
