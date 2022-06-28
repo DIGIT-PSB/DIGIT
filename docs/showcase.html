@@ -1,277 +1,420 @@
-<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>DIGIT Project Showcase</title>
         <meta charset="UTF-8" />
-        <meta name="author" content="Mia Borgia" />
+        <meta name="author" content="William Stiller" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Special+Elite" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Wallpoet" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="digit_style.css" />
+        <link rel="stylesheet" type="text/css" href="digit_style.css"/>
 
+        <script src="DIGIT.js"></script>
+        <script src="project.js"></script>
+        <script src="https://use.fontawesome.com/664cfabaeb.js"></script>
     </head>
-    <body>
-        <header>
-            <h1 class="head">DIGIT Web Homebase</h1>
-            <div class="navbar">
-                <a class="navButton" href="index.html">Home</a> | 
-                <a class="navButton" href="about.html">About</a> | 
-                <a class="navButton" href="events.html">Events</a> | 
-                <a class="navButton" href="roadmap.html">Course Roadmap</a> | 
-                <a class="navButton" href="showcase.html">Student Projects</a>
-            </div>
-        </header>
-        <div id="homeImage">
-            
+    <body id="courses">
+        <!--     <h1>Menu Bar<h1> -->
+        <div class="menu" id="myMenu">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="roadmap.html">Courses</a>
+            <a href="showcase.html">Students Projects</a>
+            <a href="ev.html">Events</a>
+            <a href="javascript:void(0);" class="icon" onclick="Menubar()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <div class="showcaseContent">
-       <!--     <h1>DIGIT Student Project Showcase</h1>-->
-            <h5>Keep in mind, we KNOW that DIGIT is a wondrous soup with interlocking noodles, so
-                these projects can fall under many categories!</h5>
-            <div id="projectContain">
-
-                <!-- <div id="left"> -->
-                    <section class="showSection">
-                        <h2>Text and Data Analytics</h2>
-                        <div id="analytics">
-                            <figure><a href="http://kpop.newtfire.org/index.html"><img class="icon"
-                                        src="images/studentProj/kpop_analysis.jpg" width="400"
-                                     /></a>
-                                <figcaption><i>K-Pop Project</i> by Piper Barron and Are'anna
-                                    Russell</figcaption>
-                            </figure>
-                            <figure><a href="https://am0eba-byte.github.io/blues/"><img class="icon"
-                                src="https://am0eba-byte.github.io/blues/images/flamin_frets.jpg" width="400"
-                            /></a>
-                                <figcaption><i>Blues Analysis Project</i> by Mia Borgia and Nicky Versagli
-                                    Russell</figcaption>
-                            </figure>
-                            
-                            <figure><a href="https://amayadwillis.github.io/DisneySongs/"><img class="icon"
-                                src="https://amayadwillis.github.io/DisneySongs/images/composer_songTitle.png" width="400"
-                            /></a>
-                                <figcaption><i>Musically Disney</i> by Jacqueline Chan and Amaya Willis</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="https://radioholmes.newtfire.org/">
-                                    <img class="icon" src="images/studentProj/sherlockHolmsSmall.jpg" height="110px" alt="sherlock holms"/>
-                            </a>
-                            <figcaption><i>Sherlock Holmes on the British Airwaves</i> by Jacqueline Chan</figcaption>
-                        </figure>
-
-                        </div>
-                    </section>
-
-                    <section class="showSection">
-                        <h2>Archives &amp; Galleries</h2>
-                        <div id="archives">
-                            <figure>
-                                <a href="https://btrees.newtfire.org/">
-                                    <img class="icon" src="images/btrees.jpg" alt="behrend tress"/>
-                                </a>
-                                <figcaption><i>Behrend Trees</i> by Grace Dill, Destinee Killner, Garrett Hess</figcaption>
-                            </figure>   
-                            <figure>
-                                <a href="https://piperpoetry.newtfire.org/">
-                                    <img class="icon" src="images/studentProj/piperPoetrythumb.jpg" alt="piper poetry"/>
-                                </a>
-                                <figcaption><i>Poetry</i> by Piper Baron</figcaption>
-                            </figure> 
-                            <figure>
-                                <a href="https://digit-psb.github.io/student-art-show/">
-                                    <img class="icon" src="images/PYSpringArtShowPoster.jpg" alt="Pat Yahn art gallery"/>
-                                </a>
-                                <figcaption><i>Patricia Yahn Virtual Art Gallery</i> developed by Mia Borgia</figcaption>
-                            </figure>
-                        </div>
-                    </section>
-
-                    <section class="showSection">
-                        <h2>Photo Essays</h2>
-                        <div id="photo">
-                            <figure><a
-                                href="https://sites.psu.edu/piperdigit100/photo-essay-the-capitalism-of-public-parks/"
-                                ><img class="icon" src="images/studentProj/capitalism_pubpark_photo.jpg"
-                                    width="400" /></a>
-                                <figcaption><i>Capitalism of Public Parks</i> by Piper
-                                    Barron</figcaption></figure>
-                            <figure>
-                                <a href="https://www.youtube.com/watch_popup?v=shazikNQMlw">
-                                    <img class="icon" src='images/iadeluca-rainreverse.png' alt="Hannah Iadeluca's Rain in Reverse" width="400"/></a>
-                                <figcaption><i>Rain in Reverse</i> by Hannah Iadeluca</figcaption>
-                            </figure>
-                            
-                            <figure><a href="https://sites.psu.edu/flowingwater/"><img class="icon"
-                                src="images/studentProj/creekscene_site.jpg" width="400" /></a>
-                                <figcaption><i>The Creek Scene</i> by Isaac
-                                    Esterline</figcaption></figure>
-                            
-                            <figure><a href="https://sites.psu.edu/dannysblog/project-1/"><img class="icon"
-                                src="images/studentProj/landandstory_photo.jpg" width="450"
-                            /></a>
-                                <figcaption><i>Land and Story</i> by Danny Pakulski</figcaption></figure>
-                        </div>
-                    </section>
-                <!-- </div> -->
-
-
-                <!-- <div id="right"> -->
-                    <!-- <section class="showSection">
-                        <h2>Sound</h2>
-                        <div id="sound"></div>
-                    </section> -->
-<div class="bottomShowRow">
-    
-                        <section class="showSectionLarge">
-                            <h2>Motion, Film, 2D and 3D Animations</h2>
-                            <div id="motion">
-                                <figure><a href="https://www.oddityproductions.com/"><img
-                                    class="icon" src="images/studentProj/oddity.jpg" /></a>
-                                <figcaption>Oddity Productions: formed by recent grads</figcaption>
-                                </figure>
-                                <figure><a href="https://www.youtube.com/watch?v=YrtHZQGzvsA"><img
-                                    class="icon" src="images/LorinaRoom.png" /></a>
-                                    <figcaption><i>Lorina</i> by Jacqueline Chan</figcaption>
-                                </figure>
-                                <figure><a href="https://www.youtube.com/watch?v=c34UMKL2SSU"><img
-                                    class="icon" src="images/ART168_WEEKLYSKETCH6.png" /></a>
-                                    <figcaption><i>Demo Reel</i> by Jacqueline Chan</figcaption>
-                                </figure>
-                                <figure><a href="https://www.youtube.com/watch?v=uq3t5k1neLQ"><img
-                                    class="icon" src="images/mq2.jpg" /></a>
-                                    <figcaption><i>Stop Motion</i> by Jacqueline Chan</figcaption>
-                                </figure>
-                                <figure><a href="https://www.youtube.com/watch?v=SmH9_J_efGI"><img
-                                    class="icon" src="images/nightshift.jpg" /></a>
-                                    <figcaption><i>What Really Happens on the Night Shift</i> by Mia Borgia</figcaption>
-                                </figure>
-    
-                            </div>
-                        </section>
-    
-                        <section class="showSection">
-                            <h2>Games &amp; Interactive Media</h2>
-                            <div id="game">
-                                <figure><a href="https://masong9827.itch.io/"><img
-                                    class="icon" src="images/GameBackground.png" /></a>
-                                    <figcaption><i>Invicta</i> (and other games) by Mason Gossy</figcaption>
-                                </figure>
-                            </div>
-                            <div>
-                                <figure>
-                                    <a href="https://mayan.newtfire.org/">
-                                        <img class="icon" src="images/mayans.jpg" alt="mayans" width="300px"/>
-                                    </a>
-                                    <figcaption><i>Ancient Mayans Digitized</i> by Mia Borgia, Anthony Wlodarczyk, Samuel Andrew, and Brett Meyer</figcaption>
-                                </figure>
-                            </div>
-                        </section>
-</div>
-                <!-- </div> -->
-
-
-
-                <!--
-                <section>
-                    <h2>Digital Humanities Projects</h2>
-                    <div id="textEncoding">
-
-                        <figure><a href="http://kpop.newtfire.org/index.html"><img
-                                    src="images/studentProj/kpop_analysis.jpg" width="400" /></a>
-                            <figcaption><i>K-Pop Project</i> by Piper Barron and Are'anna
-                                Russell</figcaption>
-                        </figure>
-                       <!-\- <figure><a href="https://beeplosion.github.io/TheDracIsBack/"><img
-                                    src="images/studentProj/dracula_analysis.jpg" width="300" /></a>
-                            <figcaption><i>Dracula Project</i> by Eric(Rudy) Trumer Fefer, Samuel Andrew,
-                                Cameron Bigi, Destinee Kellner, Emily Levi, Sebastian Ortiz, Anthony
-                                Vangeli</figcaption>
-                        </figure>-\->
+        <!--  STUDENT PROJECTS    -->
+        <div class="module">
+            <h1>Student Projects</h1>
+        </div>
+        <div class="forms">
+            <p>Students! submit your work to be considered for this page." Link the text to here: <a href="https://forms.gle/VT8UwY9Thygz1bPHA">Project proposal form</a></p>
+        </div>
+        <div class="pcontainer">
+            <div class="projects">
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/kpop_analysis.jpg" alt="K-Pop Project" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/kpop_analysis.jpg" alt="K-Pop Project" />
+                        <h2>K-Pop Project</h2>
+                        <h3>Piper Baron and Are'anna Russell</h3>
+                        <h3>Data Analytics</h3>
+                        <p>A webpage that provides translations, background, and analysis to 10 of the most internationally popular songs from famous K-Pop groups.</p>
+                        <a href="http://kpop.newtfire.org/index.html" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
                     </div>
-                </section>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/flamin_frets.jpg" alt="Blues Analysis Project" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/flamin_frets.jpg" alt="Blues Analysis Project" />
+                        <h2>Blues Analysis Project</h2>
+                        <h3>Mia Borgia and Nicky Versagli</h3>
+                        <h3>Data Analytics</h3>
+                        <p></p>
+                        <a href="https://am0eba-byte.github.io/blues/index.html" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
                 
-                
-                <section></section>
-
-                <section>
-                    <h2>Photography Projects</h2>
-                    <div id="photography">
-
-                        <figure><a
-                                href="https://sites.psu.edu/piperdigit100/photo-essay-the-capitalism-of-public-parks/"
-                                    ><img src="images/studentProj/capitalism_pubpark_photo.jpg"
-                                    width="400" /></a>
-                            <figcaption><i>Capitalism of Public Parks</i> by Piper
-                                Barron</figcaption></figure>
-
-                        <figure><a href="https://sites.psu.edu/flowingwater/"><img
-                                    src="images/studentProj/creekscene_site.jpg" width="400" /></a>
-                            <figcaption><i>The Creek Scene</i> by Isaac
-                            Esterline</figcaption></figure>
-
-                        <figure><a href="https://sites.psu.edu/dannysblog/project-1/"><img
-                                    src="images/studentProj/landandstory_photo.jpg" width="450"
-                                 /></a>
-                        <figcaption><i>Land and Story</i> by Danny Pakulski</figcaption></figure>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/sherlockHolms.jpg" alt="Sherlock Holmes on the British Airwaves" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/sherlockHolms.jpg" alt="Sherlock Holmes on the British Airwaves" />
+                        <h2>Sherlock Holmes on the British Airwaves</h2>
+                        <h3>Jacqueline Chan</h3>
+                        <h3>Text Archive and Data Analytics</h3>
+                        <p></p>
+                        <a href="https://radioholmes.newtfire.org/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
                     </div>
-                </section>
-
-                <section>
-                    <h2>Student Films and Cinematic Projects</h2>
-                    <div id="film">
-
-                        <a href="https://www.oddityproductions.com/"><img
-                                src="images/studentProj/oddityprod_logo.jpg" /></a>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/btrees.jpg" alt="Behrend Trees" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/btrees.jpg" alt="Behrend Trees" />
+                        <h2>Behrend Trees</h2>
+                        <h3>Grace Dill, Destinee Killner, and Garrett Hess</h3>
+                        <h3>Archive</h3>
+                        <p> </p>
+                        <a href="https://btrees.newtfire.org/index.html" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
                     </div>
-                </section>
-
-                <section>
-                    <h2>Animations</h2>
-                    <div id="animation"> </div>
-                </section>
-
-                <section>
-                    <h2>Vector Art</h2>
-                    <div id="vector"> </div>
-                </section>
-
-                <section>
-                    <h2>Portfolio Websites</h2>
-                    <div id="websites">
-
-                       <a href="http://www.alicerong.com/"><img
-                                src="images/studentProj/aliceSite.jpg" width="400" /></a>
-
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/PYSpringArtShow.jpg" alt="Patricia Yahn art gallery" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/PYSpringArtShow.jpg" alt="Pat Yahn art gallery" />
+                        <h2>The Patricia Yahn Spring Art Show</h2>
+                        <h3>developed by Mia Borgia</h3>
+                        <h3>Gallery</h3>
+                        <p> </p>
+                        <a href="https://digit-psb.github.io/student-art-show/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
                     </div>
-                </section>-->
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/piperPoetry.jpg" alt="Piper Poetry" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/piperPoetry.jpg" alt="Piper Poetry" />
+                        <h2>Poetry</h2>
+                        <h3>Piper Baron</h3>
+                        <h3>Text Archive and Data Analytics</h3>
+                        <p> </p>
+                        <a href="https://piperpoetry.newtfire.org/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/capitalism_pubpark_photo.jpg" alt="Piper Baron's Captialism of Public Parks" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/capitalism_pubpark_photo.jpg" alt="Piper Baron's Captialism of Public Parks" />
+                        <h2>The Capitalism of Public Parks</h2>
+                        <h3>Piper Baron</h3>
+                        <h3>Photo Essay</h3>
+                        <p> </p>
+                        <a href="https://sites.psu.edu/piperdigit100/photo-essay-the-capitalism-of-public-parks/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/creekscene_site.jpg" alt="Isaac Esterline's The Creek Scene" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/creekscene_site.jpg" alt="Isaac Esterline's The Creek Scene" />
+                        <h2>The Creek Scene</h2>
+                        <h3>Isaac Esterline</h3>
+                        <h3>Photo Essay</h3>
+                        <p> </p>
+                        <a href="https://sites.psu.edu/flowingwater/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/iadeluca-rainreverse.jpg" alt="Hannah Iadeluca's Rain in Reverse" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/iadeluca-rainreverse.jpg" alt="Hannah Iadeluca's Rain in Reverse" />
+                        <h2>Rain in Reverse</h2>
+                        <h3>Hannah Iadeluca</h3>
+                        <h3>Film</h3>
+                        <p> </p>
+                        <a href="https://www.youtube.com/embed/shazikNQMlw" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/landandstory_photo.jpg" alt="Danny Pakulski's Land and Story" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/landandstory_photo.jpg" alt="Danny Pakulski's Land and Story" />
+                        <h2>Land And Story</h2>
+                        <h3>Danny Pakulski</h3>
+                        <h3>Photo Essay</h3>
+                        <p> </p>
+                        <a href="https://sites.psu.edu/dannysblog/project-1/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/oddity.jpg" alt="" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/oddity.jpg" alt="" />
+                        <h2>Oddity Productions</h2>
+                        <h3>DIGIT Graduates</h3>
+                        <h3>Video Production</h3>
+                        <p> </p>
+                        <a href="https://www.oddityproductions.com/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/mq2.jpg" alt="Jacqueline Chan's Stop Motion" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/mq2.jpg" alt="Jacqueline Chan's Stop Motion" />
+                        <h2>Stop Motion</h2>
+                        <h3>Jacqueline Chan</h3>
+                        <h3>Stop Motion Film</h3>
+                        <p> </p>
+                        <a href="https://www.youtube.com/watch?v=uq3t5k1neLQ" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/LorinaRoom.png" alt="Lorina by Jacqueline Chan" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/LorinaRoom.png" alt="Lorina by Jacqueline Chan" />
+                        <h2>Lorina</h2>
+                        <h3>Jacqueline Chan</h3>
+                        <h3>2D Animation</h3>
+                        <p> </p>
+                        <a href="https://www.youtube.com/watch?v=YrtHZQGzvsA" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/nightshift.jpg" alt="What Really Happens on the Night Shift by Mia Borgia" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/nightshift.jpg" alt="What Really Happens on the Night Shift by Mia Borgia" />
+                        <h2>What Really Happens on the Night Shift</h2>
+                        <h3>Mia Borgia</h3>
+                        <h3>Animation, Film</h3>
+                        <p> </p>
+                        <a href="https://www.youtube.com/watch?v=SmH9_J_efGI" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/ART168_WEEKLYSKETCH6.png" alt="Jacqueline Chan's Demo Reel" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/ART168_WEEKLYSKETCH6.png" alt="Jacqueline Chan's Demo Reel" />
+                        <h2>Demo Reel</h2>
+                        <h3>Jacqueline Chan</h3>
+                        <h3>Film</h3>
+                        <p> </p>
+                        <a href="https://www.youtube.com/watch?v=c34UMKL2SSU" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/GameBackground.png" alt="Invicta" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/GameBackground.png" alt="Invicta" />
+                        <h2>Invicta</h2>
+                        <h3>Mason Gossy</h3>
+                        <h3>Video Game</h3>
+                        <p> </p>
+                        <a href="https://masong9827.itch.io/invicta" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/mayans.jpg" alt="Ancient Mayans" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/mayans.jpg" alt="Ancient Mayans" />
+                        <h2>Ancient Mayans Digitized</h2>
+                        <h3>Mia Borgia, Anthony Wlodarczyk, Samuel Andrew, Brett Meyer</h3>
+                        <h3>Text Archive and Data Analytics</h3>
+                        <p> </p>
+                        <a href="https://mayan.newtfire.org/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/Star-Wars-Text-Analysis - Felipe Bassi.jpg" alt="Star Wars Text Analysis" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/Star-Wars-Text-Analysis - Felipe Bassi.jpg" alt="Star Wars Text Analysis" />
+                        <h2>Star Wars Text Analysis</h2>
+                        <h3>Joey Gardiner, Felipe Bassi, Thomas Hammer, Aidan Ray, Harrison Lilley</h3>
+                        <h3>Text Archive and Data Analytics</h3>
+                        <p>This text analytics project goes through the 5 original drafts of Star Wars a New Hope, and analyzes the differences in structure, characters and settings between the drafts.</p>
+                        <a href="https://jbg5721.github.io/StarWarsAnalysis/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="art" src="images/studentProj/1x1Ratio/VideoGameSound - Reece Cullen.jpg" alt="An Analysis on Video Game Sound" />
+                    <div class="desc">
+                        <img class="blur" src="images/studentProj/1x1Ratio/VideoGameSound - Reece Cullen.jpg" alt="An Analysis on Video Game Sound" />
+                        <h2>An Analysis on Video Game Sound</h2>
+                        <h3>Reece Cullen</h3>
+                        <h3>Video</h3>
+                        <p>This video explores sound's purpose in a video game environment. It was created using skills learned from DIGIT courses that taught the Adobe software and the Digital Sound course INART 258A.</p>
+                        <a href="https://www.youtube.com/watch?v=Eqk2uinRrqo&t=1727s" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- ADD MORE PROJECTS ABOVE THIS. BLANK PROJECT CODE:
+                <div class="work">
+                    <img class="art" src="" alt="" />
+                    <div class="desc">
+                        <img class="blur" src="" alt="" />
+                        <h2></h2>
+                        <h3></h3>
+                        <h3></h3>
+                        <p></p>
+                        <a href="" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+                                <path d="M216.5016,483.0691h0c18.8697,18.8697,49.4636,18.8697,68.3333,0L600.0016,167.9025l1.5,133.88c.2779,26.2894,21.6684,47.4549,47.9592,47.4549h0c26.4537,0,47.9124-21.4188,47.9618-47.8724l.4813-251.2691C697.9569,22.4817,675.6141,.053,647.9999,0c-.0639-.0001-.1278-.0001-.1917,0l-251.2691,.4813c-26.4536,.0494-47.8724,21.5081-47.8724,47.9618h0c0,26.2909,21.1655,47.6813,47.4549,47.9592l133.88,1.5L214.8349,413.0692c-18.8697,18.8697-18.8697,49.4635,0,68.3332h0l1.6667,1.6667Z"/>
+                                <path d="M297.3333,148.5675h0c0,27.6142-22.3858,50-50,50H97.3333v400H496.6667v-149c0-28.1665,22.8335-51,51-51h0c28.1665,0,51,22.8335,51,51v149.6667c0,55.2285-44.7715,100-100,100H100c-55.2285,0-100-44.7715-100-100V198.5675c0-55.2285,44.7715-100,100-100H247.3334c27.6142,0,49.9999,22.3858,49.9999,50Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                -->
             </div>
         </div>
-    
-        <footer>
-            <div class="foot" id="PSBlogo"> </div>
-            <div class="foot">
-                <p>We are at <a class="footLinks" href="https://www.behrend.psu.edu/">Penn State
-                        Erie, The Behrend College</a></p>
-                <p><a class="footLinks"
-                        href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs/digital-media-arts-and-technology"
-                        >DIGIT PSU Academic Programs Page</a></p>
-                <p><a class="footLinks"
-                        href="https://bulletins.psu.edu/undergraduate/colleges/behrend/digital-media-arts-technology-ba/"
-                        >DIGIT PSU Bulletin</a></p>
+            <div class="footer-wrap">
+                <div class="footer-content">
+                    <div class="features">
+                        
+                        <img src="images/PSB_logo.png" alt="Nittany Lion Shield Penn State Behrend Mark"/>
+                    </div>
+                    <div class="break"></div>
+                    <div class="features">
+                        <p>
+                            <strong>
+                                Learn More
+                                <br>
+                            </strong>
+                            <a href="https://behrend.psu.edu/">Penn State Behrend</a>
+                            <br>
+                            <a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/digital-media-arts-technology-ba/">DIGIT PSU Bulletin</a>
+                            <br>
+                            <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs/digital-media-arts-and-technology">Academic Programs</a>
+                        </p>
+                    </div>
+                    <div class="features">
+                        <p>
+                            <strong>
+                                Useful Links
+                                <br>
+                            </strong>
+                            <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs-1/digital-media-arts-and-technology/digit-faculty">Faculty</a>
+                            <br>
+                            <a href="https://psu.instructure.com/courses/1871837">Canvas Pride</a>
+                            <br>
+                            <a href="https://digit-psb.github.io/BOLDC/">BOLDC</a>
+                        </p>
+                    </div>
+                    <div class="features">
+                        <p>
+                            <strong>
+                                Penn State Behrend Campus
+                                <br>
+                            </strong>
+                            4701 College Drive
+                            <br>
+                            Erie, PA 16563
+                            <br>
+                            (814) 898-6000
+                        </p>
+                    </div>
+                    <div class="break"></div>
+                    <div class="features">
+                        <a href="https://github.com/DIGIT-PSB" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24">
+                                <path xmlns="http://www.w3.org/2000/svg" class="cls-11" d="M12,0C5.374,0,0,5.373,0,12c0,5.302,3.438,9.8,8.207,11.387,.599,.111,.793-.261,.793-.577v-2.234c-3.338,.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745,.083-.729,.083-.729,1.205,.084,1.839,1.237,1.839,1.237,1.07,1.834,2.807,1.304,3.492,.997,.107-.775,.418-1.305,.762-1.604-2.665-.305-5.467-1.334-5.467-5.931,0-1.311,.469-2.381,1.236-3.221-.124-.303-.535-1.524,.117-3.176,0,0,1.008-.322,3.301,1.23,.957-.266,1.983-.399,3.003-.404,1.02,.005,2.047,.138,3.006,.404,2.291-1.552,3.297-1.23,3.297-1.23,.653,1.653,.242,2.874,.118,3.176,.77,.84,1.235,1.911,1.235,3.221,0,4.609-2.807,5.624-5.479,5.921,.43,.372,.823,1.102,.823,2.222v3.293c0,.319,.192,.694,.801,.576,4.765-1.589,8.199-6.086,8.199-11.386C24,5.373,18.627,0,12,0Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="foot">
-                <h4 class="foot">Quick Links:</h4>
-                <ul>
-                    <li><a class="footLinks">Contact</a></li>
-                    <li><a class="footLinks">DIGIT Faculty</a></li>
-                    <li><a class="footLinks" href="https://psu.instructure.com/courses/1871837"
-                            >DIGIT Canvas Pride</a></li>
-                    <li><a class="footLinks" href="https://digit-psb.github.io/BOLDC/">Behrend Open
-                            Lab for Digital Cinema</a></li>
-                </ul>
-            </div>
-        </footer>
     </body>
 </html>

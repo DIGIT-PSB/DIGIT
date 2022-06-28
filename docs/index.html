@@ -1,79 +1,161 @@
-<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>PSB DIGIT Splash</title>
         <meta charset="UTF-8" />
-        <meta name="author" content="Mia Borgia" />
+        <meta name="author" content="Felipe Bassi" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Special+Elite" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Wallpoet" rel="stylesheet"/>
         <link rel="stylesheet" type="text/css" href="digit_style.css" />
+        
+        <script src="DIGIT.js"></script>
+        <script src="https://use.fontawesome.com/664cfabaeb.js"></script>
     </head>
     <body>
-      
-        <header>
-           
-            <h1 class="head">DIGIT Web Homebase</h1>
-            
-            <div class="navbar">
-                <a class="navButton" href="index.html">Home</a> | 
-                <a class="navButton" href="about.html">About</a> | 
-                <a class="navButton" href="events.html">Events</a> | 
-                <a class="navButton" href="roadmap.html">Course Roadmap</a> | 
-                <a class="navButton" href="showcase.html">Student Projects</a>
+        <div id="preloader-index"></div>
+        <div id="container">
+            <video autoplay loop muted>
+                <source src="images/banner-homepage.mp4" type="video/mp4"/>
+            </video>
+            <div class="menu" id="myMenu">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="roadmap.html">Courses</a>
+                <a href="showcase.html">Students Projects</a>
+                <a href="ev.html">Events</a>
+                <a href="javascript:void(0);" class="icon" onclick="Menubar()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
-           
-        </header>
-        <div id="homeImage">
+            <div class="title">
+                <div class="header">
+                    <h1>DIGIT</h1>
+                    <h3>Digital Media, Arts <br/>and Technology</h3>
+                    <h2>Penn State Behrend</h2>   
+                </div>
+            </div>
+            <div class="scroll">
+                <a href="#second-section"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i><br/><p>Scroll</p></a>
+            </div>
         </div>
-        <section id="home">
-            
-            <div class="indent">
-            <div class="DIGIT">
-                <h3><span class="WallpoetFont">Digital Media, Arts, and Technology at Penn State Behrend</span></h3>
-               <!-- <h3><span class="WallpoetFont">Welcome to the all-inclusive home base for all things DIGIT!</span></h3>-->
-                <p>
-                    This website holds the nexus of information, student project showcasing, and latest developments in the Digital Media, Arts, and Technology program at Penn State Erie.
-                    Whether you're a prospective DIGIT major, a current DIGIT major, or you are simply curious to learn what our DIGIT community is all about, you've come to the right place.
-                    DIGIT offers a plethora of opportunities for students and non-students alike to explore the possibilities of digital medium and become creators and leaders in the rapidly-evolving 
-                    digital world.
-                </p>
+        <div id="second-section">
+            <div class="content">   
+                <div class="left-side">
+                    <a>
+                        <i class="fa fa-question-circle-o fa-5x" aria-hidden="true"></i><br/>
+                        <h4>What is DIGIT?</h4>
+                    </a>
+                </div>
+                <div class="right-side">
+                    Digital Media, Arts, and Technology (DIGIT) is an interdisciplinary degree offered at Penn State
+                    Behrend, combining the technical skills needed in the field with the broad perspective of 
+                    the liberal arts. This degree prepares students for the real world by giving them a strong 
+                    coding foundation, teaching human-oriented design principles, and providing them with the 
+                    applications necessary to succeed.
+                </div>
             </div>
-            <div class="DIGIT">
-                <h3><span class="WallpoetFont">What is DIGIT?</span></h3>
-                <p>
-                    The Digital Media, Arts and Technology program invites students eager to become fluent in the creation, implementation, and expression of ideas and information through the digital medium.
-                    DIGIT is an interdisciplinary field which combines practical technical skill with broad liberal arts studies to prepare students to enter a world where both critical thinking skills and 
-                    technical literacy are in ever-increasing demand.
-                </p>
-                <p>
-                    We encourage students to become active in confronting the issues risen by the rapidly growing digital realm, and strive keep the human element in digital disciplines alive through 
-                    creative analysis and production of digital works.
-                </p>
+            <div class="content">
+                <div class="left-side">
+                    <a>
+                        <i class="fa fa-book fa-5x" aria-hidden="true"></i><br/>
+                        <h4>What will you study?</h4>
+                    </a>
+                </div>
+                <div class="right-side">
+                    The DIGIT major offers different focuses depending on what our undergraduates hope to achieve. 
+                    While some courses are required by all DIGIT students, they can choose between 
+                    <ul>
+                        <li>Data Visualization,</li>
+                        <li>Digital Humanities,</li>
+                        <li>Sound &amp; Motion,</li>
+                        <li>Modeling &amp; Simulation/Human Computer Interaction.</li> 
+                    </ul>
+                    DIGIT students will choose two categories to focus on out of four listed, gaining experience 
+                    needed to pursue the careers they want. 
+                    To see the full DIGIT curriculum, visit the
+                    <i href="https://bulletins.psu.edu/undergraduate/colleges/behrend/digital-media-arts-technology-ba/">
+                        PSU Undergraduate Bulletin
+                    </i>
+                </div>
             </div>
+            <div class="content">
+                <div class="left-side">
+                    <a>
+                        <i class="fa fa-info-circle fa-5x" aria-hidden="true"></i><br/>
+                        <h4>This Website</h4>
+                    </a>
+                </div>
+                <div class="right-side">
+                    This site hosts student projects, portfolios, and websites from upcoming and current DIGIT graduates,
+                    DIGIT-related news and events, and more information about the DIGIT program at Penn State Behrend. 
+                </div>
             </div>
-        </section>
- 
-        <footer>
-            <div class="foot" id="PSBlogo">
-                
+            <a href="#container" class="TopBtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer-wrap">
+            <div class="footer-content">
+                <div class="features">
+                    
+                    <img src="images/PSB_logo.png" alt="Nittany Lion Shield Penn State Behrend Mark"/>
+                </div>
+                <div class="break"></div>
+                <div class="features">
+                    <p>
+                        <strong>
+                            Learn More
+                            <br>
+                        </strong>
+                        <a href="https://behrend.psu.edu/">Penn State Behrend</a>
+                        <br>
+                        <a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/digital-media-arts-technology-ba/">DIGIT PSU Bulletin</a>
+                        <br>
+                        <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs/digital-media-arts-and-technology">Academic Programs</a>
+                    </p>
+                </div>
+                <div class="features">
+                    <p>
+                        <strong>
+                            Useful Links
+                            <br>
+                        </strong>
+                        <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs-1/digital-media-arts-and-technology/digit-faculty">Faculty</a>
+                        <br>
+                        <a href="https://psu.instructure.com/courses/1871837">Canvas Pride</a>
+                        <br>
+                        <a href="https://digit-psb.github.io/BOLDC/">BOLDC</a>
+                    </p>
+                </div>
+                <div class="features">
+                    <p>
+                        <strong>
+                            Penn State Behrend Campus
+                            <br>
+                        </strong>
+                        4701 College Drive
+                        <br>
+                        Erie, PA 16563
+                        <br>
+                        (814) 898-6000
+                    </p>
+                </div>
+                <div class="break"></div>
+                <div class="features">
+                    <a href="https://github.com/DIGIT-PSB" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24">
+                            <path xmlns="http://www.w3.org/2000/svg" class="cls-11" d="M12,0C5.374,0,0,5.373,0,12c0,5.302,3.438,9.8,8.207,11.387,.599,.111,.793-.261,.793-.577v-2.234c-3.338,.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745,.083-.729,.083-.729,1.205,.084,1.839,1.237,1.839,1.237,1.07,1.834,2.807,1.304,3.492,.997,.107-.775,.418-1.305,.762-1.604-2.665-.305-5.467-1.334-5.467-5.931,0-1.311,.469-2.381,1.236-3.221-.124-.303-.535-1.524,.117-3.176,0,0,1.008-.322,3.301,1.23,.957-.266,1.983-.399,3.003-.404,1.02,.005,2.047,.138,3.006,.404,2.291-1.552,3.297-1.23,3.297-1.23,.653,1.653,.242,2.874,.118,3.176,.77,.84,1.235,1.911,1.235,3.221,0,4.609-2.807,5.624-5.479,5.921,.43,.372,.823,1.102,.823,2.222v3.293c0,.319,.192,.694,.801,.576,4.765-1.589,8.199-6.086,8.199-11.386C24,5.373,18.627,0,12,0Z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
-            <div class="foot">
-                <p>We are at <a class="footLinks" href="https://www.behrend.psu.edu/">Penn State Erie, The Behrend College</a></p>
-                <p><a class="footLinks" href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs/digital-media-arts-and-technology">DIGIT PSU Academic Programs Page</a></p>
-                <p><a class="footLinks" href="https://bulletins.psu.edu/undergraduate/colleges/behrend/digital-media-arts-technology-ba/">DIGIT PSU Bulletin</a></p>
-            </div>
-            <div class="foot">
-            <h4 class="foot">Quick Links:</h4>
-                <ul>
-                    <li><a class="footLinks">Contact</a></li>
-                    <li><a class="footLinks">DIGIT Faculty</a></li>
-                    <li><a class="footLinks" href="https://psu.instructure.com/courses/1871837">DIGIT Canvas Pride</a></li>
-                    <li><a class="footLinks" href="https://digit-psb.github.io/BOLDC/">Behrend Open Lab for Digital Cinema</a></li>
-                </ul>
-            </div>
-        </footer>
+        </div>
+        <!--</div>-->
+        <script>
+       var loader = document.getElementById("preloader-index");
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        })
+   </script>
     </body>
 </html>
