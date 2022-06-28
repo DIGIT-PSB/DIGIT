@@ -198,13 +198,13 @@ html, body {
 .content i{
     text-decoration: none;
 }
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 960px) {
     .content{
         display: block;
         font-size: 15px;
     }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .content .right-side{
         font-size: 10px;
         text-align: left;
@@ -236,50 +236,86 @@ html, body {
 }
 /* second-section ends */
 /* Footer starts */
-footer{
-    display: flex;
-    flex-flow: row wrap;
+.footer-wrap {
     color: #fff;
     background-color: #041E42;
-    padding-bottom: 10px;
-    width: 100%;
+    padding: 1.25rem 3em;
 }
-.footer-left img{
-    width: auto;
-    margin-top: 20px;
-    margin-left: 50px;
+.footer-content img{
+    width: 200px;
+    margin: 0 2em 2em 0;
 }
-footer ul{
-   list-style:disc; 
-}
-footer li{
-    line-height: 2em;
-}
-footer a{
-    text-decoration: none;
-}
-.footer-right{
+.footer-content{
     display: flex;
-    padding: 10px;
-    /*margin-right: 50px;*/
+    flex-wrap: wrap;
+    justify-content: space-between;
     font-size: 10px;
-}
-.footer-right > *{
-    flex: 1 50%;
-    /*margin-right: 1.25px;*/
+    margin: 0 auto;
+    max-width: 1160px;
 }
 .features{
-    margin-right: 20px;
-    margin-left: 20px;
-    width:150px;
+    margin-top: 20px;
+    padding: 0 1.75em;
 }
-.box a{
-    color:#999;
+.features p{
+    font-size: 1.05em;
+    line-height: 2em;
+    margin-bottom: 2em;
+    margin-top: 0;
 }
-.box a:hover{
+.features p a{
+    text-decoration: none;
     color: #fff;
 }
-/* Homepage ennds */
+.features p a:hover{
+    text-decoration: underline;
+}
+.features a {
+    fill: #cccccc;
+}
+.features a:hover{
+    fill: #fff;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+  display: none;
+}
+/* Footer responsiveness*/
+@media screen and (max-width:960px){
+    .footer-wrap{
+        padding: 1.25em 2.25em;
+    }
+    .footer-content{
+         max-width: 1160px;
+         justify-content: space-evenly;
+    }
+    .footer-content .break {
+        display: flex;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:500px){
+    .footer-wrap {
+        padding: 2em 0%;
+        margin-bottom: 40px;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+    }
+    .features p {
+        text-align: center;
+    }
+}
+/* Footer ends */
+/* Homepage ends */
 /* Background images*/
 #courses{
     background-image:url("images/datavizBG.jpg"); /* This is more of a sample background */
@@ -423,45 +459,6 @@ footer a{
     .full-text { display: none; }
 }
 /* list ends */
-/* Footer responsiveness (kind of messy but works)*/
-@media screen and (max-width:1024px){
-    .footer-right{
-        margin: auto;
-    }
-    .footer-left img{
-        align-items: center;
-        height: 100px;
-        width: auto;
-        margin: 10px;
-    }
-}
-@media screen and (max-width:820px){
-    .footer-left img{
-        height: 80px;
-        margin:15px;
-    }
-    .footer-right{
-        flex-flow: row wrap;
-    }
-}
-@media screen and (max-width:300px){
-    .footer-left img{
-        height: 75px;
-        margin: 20px;
-    }
-}
-@media screen and (min-width:600px){
-    .footer-right > *{
-        flex: 1;
-    }
-    .footer-left{
-        flex: 1 0px;
-    }
-    .footer-right{
-        flex: 2 0px;
-    }
-}
-/* Footer ends */
 /* Projects Showcase page Begins*/
 .pcontainer {
     /* The rules below this message in this class should be applied 
@@ -469,6 +466,7 @@ footer a{
     max-width: 960px;
     min-width: 320px;
     margin: 0px auto 0px auto;
+    display: flex;
 }
 .projects {
     position: relative;
@@ -571,12 +569,12 @@ footer a{
     .work h3 {
         margin-top: 0.3vw;
         margin-bottom: 0.9vw;
-        font-size: 2.7vw;
+        font-size: 2.1vw;
     }
     .work p {
         margin-top: 3vw;
         margin-bottom: 2vw;
-        font-size: 2.2vw;
+        font-size: 1.8vw;
     }
     .desc a svg{
         width: 4.65vw;
@@ -594,7 +592,7 @@ footer a{
 }
 .forms a{
     text-decoration: none;
-    color: #999;
+    color: rgb(0, 243, 255);
 }
         /* The FOCUS class is applied to only the WORK class on click. This removes the need to 
          * place the class, or a similar but different class on the elements inside of a WORK */
