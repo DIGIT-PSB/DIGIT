@@ -875,6 +875,7 @@ word-spacing: 2px;
     margin:auto;
     max-width: 960px;
     text-align: left;
+    padding: 30px;
 }
 .about_forms li{
     margin:12px;
@@ -889,19 +890,19 @@ word-spacing: 2px;
 .about_forms a:visited{
     color: pink;
 }
-/*.about_forms .name:before{
-    content: url('images/footprint.png');
-    margin: 0 10px 0 -35px;
-}*/
 .about_desc{
     padding-bottom: 20px;
 }
 .contributeList p,ul{
     margin:12px 0 12px 0;
 }
-.about_forms .name{
-    margin:0 auto 0 auto;
+.contributeList ul{
+    height:200px; 
+    overflow:hidden;
+    overflow-y:scroll;
+    background: rgba(0,0,0,0.15);
 }
+
 .portfolioWrap{
     justify-content: center;
     display: flex;
