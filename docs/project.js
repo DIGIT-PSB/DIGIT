@@ -48,7 +48,7 @@ function restore(elements) {
         // console.log('elementToMove is here: ' + elementToMove);
     }
 }
-
+/*
 document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImages = document.querySelectorAll("img.lazy");    
   var lazyloadThrottleTimeout;
@@ -77,4 +77,4 @@ document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener("scroll", lazyload);
   window.addEventListener("resize", lazyload);
   window.addEventListener("orientationChange", lazyload);
-});
+});*/

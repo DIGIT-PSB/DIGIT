@@ -239,6 +239,7 @@ html, body {
 }
 .footer-content img{
     width: 200px;
+    height: auto;
     margin: 0 2em 2em 0;
 }
 .footer-content{
@@ -322,6 +323,7 @@ html, body {
 /* Homepage ends */
 /* Background images*/
 #courses{
+    background-color: #3e5467;
     background-image:url("images/datavizBG.jpg"); /* This is more of a sample background */
 	background-attachment:fixed;
 	-webkit-background-size: cover;
