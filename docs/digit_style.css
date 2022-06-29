@@ -602,7 +602,7 @@ html, body {
 /* PROJECT PAGE TABLET/COMPUTER VIEWING */
 @media screen and (min-width: 456px) {
     div.work {
-        width: 25%;
+        width: 33.33%;
         display:inherit;
     }
     div.focus {

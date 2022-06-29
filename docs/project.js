@@ -22,10 +22,10 @@ function expand() {
     restore(projects);
     /* djb: First, return everything to original size and order, before changing anything. */
     var position = this.dataset.defaultposition;
-    var rowNum = Math.ceil(position / 4);
+    var rowNum = Math.ceil(position / 3);
     // console.log('Show my position: ' + position);
     // console.log('Show my row number: ' + rowNum);
-    var currentRowOffset = (position - 1) % 4 + 1;
+    var currentRowOffset = (position - 1) % 3 + 1;
     // console.log('My current rowOffset position is: ' + currentRowOffset);
     var newPosition = position - currentRowOffset + 1;
     // console.log('My new sequence position is: ' + newPosition);
@@ -48,3 +48,33 @@ function restore(elements) {
         // console.log('elementToMove is here: ' + elementToMove);
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages = document.querySelectorAll("img.lazy");    
+  var lazyloadThrottleTimeout;
+  
+  function lazyload () {
+    if(lazyloadThrottleTimeout) {
+      clearTimeout(lazyloadThrottleTimeout);
+    }    
+    
+    lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+            }
+        });
+        if(lazyloadImages.length == 0) { 
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+    }, 20);
+  }
+  
+  document.addEventListener("scroll", lazyload);
+  window.addEventListener("resize", lazyload);
+  window.addEventListener("orientationChange", lazyload);
+});
