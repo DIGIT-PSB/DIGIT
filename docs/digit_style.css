@@ -19,8 +19,9 @@
       float: none;
       display: block;
       text-align: left;
-    }
+      background-color: rgba(0, 0, 0, .8);
   }
+} 
 html, body {
 	height: 100%;
     font-family: "Verdana", sans-serif;
