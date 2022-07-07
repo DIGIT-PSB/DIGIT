@@ -19,6 +19,9 @@ function init() {
 
 /* 2022-05-23 ebb Source: https://www.geeksforgeeks.org/how-to-make-the-images-bigger-when-clicked/  */
 function expand() {
+    // console.log(projects)
+    var focusOn = this.classList.contains('focus');
+    // console.log(this.classList.contains('focus'));
     restore(projects);
     /* djb: First, return everything to original size and order, before changing anything. */
     var position = this.dataset.defaultposition;
@@ -33,8 +36,14 @@ function expand() {
     var insertBeforeMe = document.querySelector('[data-defaultposition="' + newPosition + '"]')
     // console.log('Insert before this position: ' + insertBeforeMe.dataset.defaultposition);
     this.parentNode.insertBefore(this, insertBeforeMe);
-    // console.log('My new position will be: ' + newPos);
-    this.classList.add("focus"); //ebb: this changes the size and width
+    // console.log('My new position will be: ' + newPosition);
+    if (focusOn === true){
+        restore(projects);
+        this.classList.remove("focus");
+    } else {
+        this.classList.add("focus"); //ebb: this changes the size and width
+    }
+    
 }
 
 function restore(elements) {
@@ -48,33 +57,3 @@ function restore(elements) {
         // console.log('elementToMove is here: ' + elementToMove);
     }
 }
-/*
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyloadImages = document.querySelectorAll("img.lazy");    
-  var lazyloadThrottleTimeout;
-  
-  function lazyload () {
-    if(lazyloadThrottleTimeout) {
-      clearTimeout(lazyloadThrottleTimeout);
-    }    
-    
-    lazyloadThrottleTimeout = setTimeout(function() {
-        var scrollTop = window.pageYOffset;
-        lazyloadImages.forEach(function(img) {
-            if(img.offsetTop < (window.innerHeight + scrollTop)) {
-              img.src = img.dataset.src;
-              img.classList.remove('lazy');
-            }
-        });
-        if(lazyloadImages.length == 0) { 
-          document.removeEventListener("scroll", lazyload);
-          window.removeEventListener("resize", lazyload);
-          window.removeEventListener("orientationChange", lazyload);
-        }
-    }, 20);
-  }
-  
-  document.addEventListener("scroll", lazyload);
-  window.addEventListener("resize", lazyload);
-  window.addEventListener("orientationChange", lazyload);
-});*/
