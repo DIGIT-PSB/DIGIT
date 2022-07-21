@@ -141,7 +141,6 @@ html, body {
 }
 .scroll p{
     margin: 0;
-    
 }
 @media screen and (max-width: 455px){
     .scroll a{
@@ -362,62 +361,6 @@ html, body {
     margin-top:3rem;
     color: #fff;
 }
-#svgHolder {
-    text-align:center;
-    margin: auto;
-    width: 80%;
-}
-.data{
-    width: 60%;
-    margin: auto;
-    padding-bottom: 2rem;
-    text-align: justify;
-    color: #fff;
-}
-.data p{
-    line-height: 1.5;
-    letter-spacing: 0.3px;
-    word-spacing: 2px;
-}
-
-.data p:first-child::first-letter{
-    color:#041E42;
-    font-weight: bold;
-    font-size: 70px;
-    float: left;
-    line-height: 50px;
-    padding-right: 8px;
-    margin-top: -3px;
-}
-@media screen and (max-width:600px){
-    .data{
-        width: 80%;
-        padding: 2rem;
-        text-align: left;
-    }
-    .module h1{
-        font-size: 2.5rem;
-    }
-}
-/* title ends */
-/* Courses titles */
-.module h1 {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 4rem;
-    margin-top:3rem;
-    color: #fff;
-  }
-.module h1 span {
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    line-height: 3em;
-    padding-left: 0.25em;
-    color: rgba(244, 240, 240, 0.7);
-    padding-bottom: 10px;
-  }
 #svgHolder {
     text-align:center;
     margin: auto;
@@ -725,12 +668,12 @@ html, body {
 }
 /* Loader starts */
 #preloader-index{
-background: #000 url(images/pacman-loader.gif) no-repeat center center;
-background-size: 30%;
-position: fixed;
-height: 100vh;
-width: 100%;
-z-index: 100;
+    background: #000 url(images/pacman-loader.gif) no-repeat center center;
+    background-size: 30%;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
 }
 #preloader{
     background: #e9e9eb url(images/duck-loader.gif) no-repeat center center;
@@ -740,6 +683,7 @@ z-index: 100;
     width: 100%;
     z-index: 100;
 }
+/* Loader ends */
 /* Events page */
 #events-page{
     background-image:url("images/light-background.png"); 
@@ -748,48 +692,51 @@ z-index: 100;
 	background-size: cover;
 }
 .title-event {
-text-transform: capitalize;
-text-align: center;
-font-size: 2rem;
-margin-top:3rem;
-color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem 0 0px 0;
+    color: rgb(0, 0, 0);
 }
-.title-event h1 span {
-font-size: 0.8rem;
-font-weight: 500;
-text-transform: uppercase;
-letter-spacing: 4px;
-line-height: 3em;
-padding-left: 0.25em;
-color: rgba(57, 51, 51, 0.7);
-padding-bottom: 10px;
+.title-event h1 {
+    margin-bottom: 0;
+}
+.title-event span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 3em;
+    padding-left: 0.25em;
+    color: rgba(57, 51, 51, 0.7);
+    padding-bottom: 10px;
 }
 #svgHolder {
-text-align:center;
-margin: auto;
-width: 80%;
+    text-align:center;
+    margin: auto;
+    width: 80%;
 }
 .data-event{
-width: 60%;
-margin: auto;
-padding-bottom: 2rem;
-text-align: justify;
-color: rgb(0, 0, 0);
+    width: 60%;
+    margin: auto;
+    padding-bottom: 2rem;
+    text-align: justify;
+    color: rgb(0, 0, 0);
 }
 .data-event p{
-line-height: 1.5;
-letter-spacing: 0.3px;
-word-spacing: 2px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
 }
 @media screen and (max-width:767px){
-.data-event{
-    width: 80%;
-    padding: 2rem;
-    text-align: left;
-}
-.title-event h1{
-    font-size: 2.5rem;
-}
+    .data-event{
+        width: 80%;
+        padding: 2rem;
+        text-align: left;
+    }
+    .title-event h1{
+        font-size: 2.5rem;
+    }
 }
 .info{
     margin-top: 20px;
@@ -975,7 +922,7 @@ word-spacing: 2px;
     display: flex;
     flex-wrap:wrap;
     align-items: center;
-    margin: 10px 0 50px;
+    padding: 10px 0 50px;
 }
 
 .portfolioList{
