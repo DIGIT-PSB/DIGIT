@@ -1,72 +1,191 @@
-/* Menu bar responsiveness. Changes the text into a menu icon for mobile */
-@media screen and (max-width: 959px){
-    .menu a:not(:first-child) {display: none;}
-    .menu a.icon {
-      float: right;
-      display: block;
-    }
-}
-@media screen and (max-width: 959px) {
-    .menu.responsive {
-      position: relative;
-    }
-    .menu.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .menu.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-      background-color: rgba(0, 0, 0, .8);
-  }
-} 
-html, body {
-	height: 100%;
+html,
+body {
+    height: 100%;
     font-family: "Verdana", sans-serif;
     font-size: 20px;
     margin: 0;
     scroll-behavior: smooth;
 }
+/* WS:7/26 UNIVERSAL TEXT. Execptions can exist like project page font size and home page title */
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4rem;
+    margin: 3rem 1rem 2rem;
+}
+h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0 0 0.85rem;
+}
+h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.3rem 0 0.7rem;
+}
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.3rem 0 0.7rem;
+}
+h5 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0.3rem 0 0.7rem;
+}
+p {
+    font-size: 1rem;
+    margin: .4rem 0 1rem 0;
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul {
+    padding: 0 0 0 2rem;
+}
+li {
+    font-size: 1rem;
+}
+h1 span {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 3em;
+    padding-left: 0.25em;
+    padding-bottom: 10px;
+}
+@media screen and (max-width : 767px) {
+    h1 {
+        font-size: 2.5rem;
+        margin: 2rem 1rem 1rem;
+    }
+    h2 {
+        margin: 0 0 0.7rem;
+        font-size: 1.7rem;
+    }
+    h3 {
+        margin: 0 0 0.7rem;
+        font-size: 1.35rem;
+    }
+    h4 {
+        font-size: 1rem;
+        margin: 0 0 0.7rem;
+    }
+    h5 {
+        font-size: 0.8rem;
+        margin: 0 0 0.7rem;
+    }
+    p,
+    li {
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width : 455px) {
+    h1 {
+        font-size: 1.7rem;
+        margin: .9rem 1rem .6rem;
+    }
+    h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.3rem;
+    }
+    h3 {
+        margin: 0 0 0.4rem;
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: .8rem;
+        margin: 0 0 0.4rem;
+    }
+    h5 {
+        font-size: .7rem;
+        margin: 0 0 0.4rem;
+    }
+    p,
+    li {
+        font-size: 0.6rem;
+    }
+}
+/* Class Shortcuts */
+.center {
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+    display: none;
+}
+/* End Universal Font Size */
+/* Menu bar responsiveness. Changes the text into a menu icon for mobile */
+@media screen and (max-width : 960px) {
+    .menu a:not(:first-child) {
+        display: none;
+    }
+    .menu a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width : 960px) {
+    .menu.responsive {
+        position: relative;
+    }
+    .menu.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        background-color: rgba(0, 0, 0, .8);
+    }
+}
 .menu {
     overflow: hidden;
     background-color: rgba(0, 0, 0, .2);
     top: 0;
-  }
-  
+}
+
 .menu a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 20px;
-    text-decoration: none;
     font-size: 20px;
     transition: all ease 0.5s;
     letter-spacing: 2px;
     text-transform: uppercase;
-  }
-  
-  .menu a:hover {
+}
+
+.menu a:hover {
     background-color: rgba(193, 0, 0, 0.3);
     cursor: pointer;
-  }
-  .menu a.active {
+}
+.menu a.active {
     background-color: rgba(193, 0, 0, 0.3);
     color: white;
-  }
-  .menu .icon {
+}
+.menu .icon {
     display: none;
-  }
+}
 /* Menu ends */
-/* (Homepage) First page */
-#container{
+/* Homepage Begins */
+#container {
     position: relative;
     height: 100vh;
     overflow: hidden;
 }
-#container video{
+#container video {
     z-index: -2;
     position: absolute;
     height: auto;
@@ -77,7 +196,7 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.title{
+.title {
     z-index: -1;
     color: #fff;
     display: flex;
@@ -85,45 +204,52 @@ html, body {
     align-items: center;
     text-align: center;
     height: 90%;
-    line-height: 2rem;  
+    line-height: 2rem;
     position: absolute;
     top: 3.5vh;
     left: 0;
     right: 0;
 }
-.header h1{
-    font-size: 8rem;
+.header h1 {
+    font-size: 6rem;
+    margin: 4.5rem 1.5rem;
 }
-.header h3{
-    font-size: 1.5rem;
-} 
-.header h2{
-    font-size: 2rem;
+.header h2 {
+    font-size: 2.55rem;
+    margin: 0 0 1.275rem;
 }
-@media screen and (max-width: 960px) {
+.header h3 {
+    font-size: 1.95rem;
+    margin: 0.45rem 0 1.05rem;
+}
+@media screen and (max-width : 767px) {
     .header h1 {
-        font-size: 17.5vw;
-    }
-    .header h3 {
-        font-size: 3vw;
+        font-size: 3.75rem;
     }
     .header h2 {
-        font-size: 4vw;
+        margin: 0 0 1.05rem;
+        font-size: 2.55rem;
+    }
+    .header h3 {
+        margin: 0 0 1.05rem;
+        font-size: 2rem;
     }
 }
-@media screen and (max-width: 600px){
-    .header h1{
-        font-size: 5rem;
+@media screen and (max-width : 455px) {
+    .header h1 {
+        font-size: 3rem;
     }
-    .header h3{
-        font-size: 0.9rem;
+    .header h2 {
+        margin: 0 0 0.1125rem;
+        font-size: 2.4rem;
     }
-    .header h2{
-        font-size: 1.2rem;
+    .header h3 {
+        margin: 0 0 0.6rem;
+        font-size: 1.5rem;
     }
 }
 /* Scroll down button */
-.scroll a{
+.scroll a {
     max-width: 80px;
     margin: 0 auto 0 auto;
     color: #fff;
@@ -132,84 +258,71 @@ html, body {
     left: 0;
     bottom: 10px;
     text-align: center;
-    text-decoration: none;
     text-transform: uppercase;
     transition: all ease-in-out 0.3s;
 }
-.scroll a:hover{
+.scroll a:hover {
     transform: scale(1.2);
 }
-.scroll p{
+.scroll p {
     margin: 0;
 }
-@media screen and (max-width: 455px){
-    .scroll a{
+@media screen and (max-width : 455px) {
+    .scroll a {
         font-size: smaller;
     }
-    .scroll p{
+    .scroll p {
         display: none;
     }
+}*/
+ /* The layout of the second-section can be used in other pages */
+#second-section {
+    background: #ebebeb;
+    padding-top: 35px;
 }
-/* First page ends */
-/* The layout of the second-section can be used in other pages */
-#second-section{
-    background:#ebebeb;
-    padding-top:35px;
-}
-#second-section h3{
-    font-size: 2rem;
-    text-align: center;
-    margin: auto;
-    width: 30%;
-    border: 3px solid #041E42;
-    border-radius: 5px;
-    border-spacing: 5px;
-    padding:10px;
-}
-
-.content{
+.content {
     max-width: 1080px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:20px;
+    gap: 20px;
     font-size: 15px;
     text-align: justify;
     padding: 2rem;
     line-height: 25px;
 }
-.right-side{
+.right-side {
     padding: 30px;
     background-color: rgba(255, 248, 248, 0.7);
     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
 }
-.left-side{
+.right-side ul li {
+    font-size: 0.75rem;
+}
+.left-side {
     text-align: center;
     margin: auto;
 }
-.content h4{
+.content h4 {
     text-align: center;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: lighter;
 }
-.content i{
-    text-decoration: none;
-}
-@media only screen and (max-width: 960px) {
-    .content{
+@media only screen and (max-width : 960px) {
+    .content {
         display: block;
         font-size: 15px;
     }
 }
-
-@media screen and (max-width: 455px){
-    .content h4{
+@media screen and (max-width : 455px) {
+    .content h4 {
         font-size: 4.4vw;
     }
 }
-/* Go to Top button CSS */
-.TopBtn{
+/* Go to Top button CSS 
+ * WS:7/26 This was taken out a while ago. I'm leaving it in for now because I think it's neat.*/
+/*.TopBtn {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -226,9 +339,9 @@ html, body {
     border-radius: 5px;
     transition: all ease 0.5s;
 }
-.TopBtn:hover{
+.TopBtn:hover {
     background: rgba(193, 0, 0, 0);
-}
+}*/
 /* second-section ends */
 /* Footer starts */
 .footer-wrap {
@@ -236,12 +349,12 @@ html, body {
     background-color: #041E42;
     padding: 1.25rem 3em;
 }
-.footer-content img{
+.footer-content img {
     width: 200px;
     height: auto;
     margin: 0 2em 2em 0;
 }
-.footer-content{
+.footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -249,7 +362,7 @@ html, body {
     margin: 0 auto;
     max-width: 1160px;
 }
-.footer-content{
+.footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -257,42 +370,36 @@ html, body {
     margin: 0 auto;
     max-width: 1160px;
 }
-.features{
+.features {
     margin-top: 20px;
     padding: 0 1.75em;
 }
-.features p{
+.features p {
     font-size: 1.05em;
     line-height: 2em;
     margin-bottom: 2em;
     margin-top: 0;
 }
-.features p a{
-    text-decoration: none;
+.features p a {
     color: #fff;
 }
-.features p a:hover{
+.features p a:hover {
     text-decoration: underline;
 }
 .features a {
     fill: #cccccc;
 }
-.features a:hover{
+.features a:hover {
     fill: #fff;
 }
-.break {
-  flex-basis: 100%;
-  height: 0;
-  display: none;
-}
 /* Footer responsiveness*/
-@media screen and (max-width:960px){
-    .footer-wrap{
+@media screen and (max-width : 960px) {
+    .footer-wrap {
         padding: 1.25em 2.25em;
     }
-    .footer-content{
-         max-width: 1160px;
-         justify-content: space-evenly;
+    .footer-content {
+        max-width: 1160px;
+        justify-content: space-evenly;
     }
     .footer-content .break {
         display: flex;
@@ -302,12 +409,12 @@ html, body {
         justify-content: center;
     }
 }
-@media screen and (max-width:500px){
+@media screen and (max-width : 600px) {
     .footer-wrap {
         padding: 2em 0%;
         margin-bottom: 40px;
     }
-    .footer-content{
+    .footer-content {
         flex-direction: column;
     }
     .features {
@@ -319,68 +426,39 @@ html, body {
     }
 }
 /* Footer ends */
-/* Homepage ends */
-/* Background images*/
-#courses{
-    background-color: #3e5467;
-    background-image:url("images/datavizBG.jpg"); /* This is more of a sample background */
-	background-attachment:fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-
-/* SVG Road Map Here */
-.roadmap h1 {
-  text-transform: capitalize;
-    text-align: center;
-    font-size: 4rem;
-    margin-top:3rem;
-    color: #fff;
-}
 /* Courses titles */
+#courses {
+    background-color: #3e5467;
+    background-image: url("images/datavizBG.jpg"); /* This is more of a sample background */
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 .module h1 {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 4rem;
-    margin-top:3rem;
     color: #fff;
-  }
+}
 .module h1 span {
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    line-height: 3em;
-    padding-left: 0.25em;
     color: rgba(244, 240, 240, 0.7);
-    padding-bottom: 10px;
-  }
-.about_module h1{
-    text-align: center;
-    font-size: 4rem;
-    margin-top:3rem;
-    color: #fff;
 }
 #svgHolder {
-    text-align:center;
+    text-align: center;
     margin: auto;
     width: 80%;
 }
-.data{
+.data {
     width: 60%;
     margin: auto;
     padding-bottom: 2rem;
     text-align: justify;
     color: #fff;
 }
-.data p{
+.data p {
     line-height: 1.5;
     letter-spacing: 0.3px;
     word-spacing: 2px;
 }
-
-.data p:first-child::first-letter{
-    color:#041E42;
+.data p:first-child::first-letter {
+    color: #041E42;
     font-weight: bold;
     font-size: 70px;
     float: left;
@@ -388,14 +466,11 @@ html, body {
     padding-right: 8px;
     margin-top: -3px;
 }
-@media screen and (max-width:600px){
-    .data{
+@media screen and (max-width : 767px) {
+    .data {
         width: 80%;
         padding: 2rem;
         text-align: left;
-    }
-    .module h1{
-        font-size: 2.5rem;
     }
 }
 /* title ends */
@@ -404,21 +479,19 @@ html, body {
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
-    padding:14px;
+    padding: 14px;
     line-height: 25px;
-  }
+}
 .courseblock h2 {
-    font-size: 26px;
-    margin: 20px 0;
     color: #fff;
-} 
+}
 .responsive-table li {
     border-radius: 3px;
     padding: 25px 30px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-    font-size: 18px;
+    font-size: 1rem;
 }
 .responsive-table .table-header {
     background-color: #041E42;
@@ -426,20 +499,20 @@ html, body {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #fff;
-    
+
 }
 .responsive-table .table-row {
     background-color: #fff;
     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
 }
-.dots{
+.dots {
     cursor: pointer;
 }
-.more{
+.more {
     display: none;
     text-align: justify;
 }
-.col-2{
+.col-2 {
     text-align: center;
 }
 .responsive-table .col-1 {
@@ -459,24 +532,36 @@ html, body {
 .col span .more {
     text-indent: 2rem;
 }
-@media all and (max-width: 600px) {
-    .responsive-table{
+@media all and (max-width : 600px) {
+    .responsive-table {
         padding: 0;
     }
-    .responsive-table li{
+    .responsive-table li {
         padding: 15px 20px;
-        font-size:12px;
+        font-size: 12px;
         text-align: left;
     }
 }
-.short-text { display: none; }
+.short-text {
+    display: none;
+}
 
-@media (max-width: 820px) {
-    .short-text { display: inline-block; }
-    .full-text { display: none; }
+@media (max-width : 820px) {
+    .short-text {
+        display: inline-block;
+    }
+    .full-text {
+        display: none;
+    }
 }
 /* list ends */
 /* Projects Showcase page Begins*/
+.forms p {
+    color: #fff;
+}
+.forms a {
+    color: rgb(0, 243, 255);
+}
 .pcontainer {
     /* The rules below this message in this class should be applied 
      * site-wide or have something similar. Then we remove .pcontainer. */
@@ -532,23 +617,20 @@ html, body {
 .focus {
     display: inherit;
 }
-.desc a {
-    text-decoration: none;
-}
 .desc {
     box-sizing: border-box;
 }
 .desc a svg {
     fill: white;
 }
-.desc a svg:hover{
+.desc a svg:hover {
     fill: rgb(193, 0, 0);
 }
 /* PROJECT PAGE TABLET/COMPUTER VIEWING */
-@media screen and (min-width: 456px) {
+@media screen and (min-width : 456px) {
     div.work {
         width: 33.33%;
-        display:inherit;
+        display: inherit;
     }
     div.focus {
         width: 100%;
@@ -573,6 +655,8 @@ html, body {
         float: left;
         position: absolute;
     }
+    /* WS:7/26 The project page h2, h3, and p elements have different values in the media queries.
+     * This is to create fluid and screen based font sizing where it wouldnt work well on other pages. */
     .work h2 {
         margin-top: 0;
         margin-bottom: 1.8vw;
@@ -589,28 +673,18 @@ html, body {
         margin-bottom: 2vw;
         font-size: 1.8vw;
     }
-    .desc a svg{
+    .desc a svg {
         width: 4.65vw;
         position: absolute;
         bottom: 3%;
         left: 3%;
     }
 }
-.forms p{
-    color: #fff;
-    max-width: 960px;
-    text-align: left;
-    margin: auto;
-    padding: 30px;
-}
-.forms a{
-    text-decoration: none;
-    color: rgb(0, 243, 255);
-}
-        /* The FOCUS class is applied to only the WORK class on click. This removes the need to 
+
+/* The FOCUS class is applied to only the WORK class on click. This removes the need to 
          * place the class, or a similar but different class on the elements inside of a WORK */
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
-@media screen and (min-width: 960px) {
+@media screen and (min-width : 960px) {
     .work h2 {
         margin-top: 0;
         margin-bottom: 0.486487em;
@@ -633,7 +707,7 @@ html, body {
     }
 }
 /* PROJECT PAGE MOBILE VIEWING */
-@media screen and (max-width: 455px){
+@media screen and (max-width : 455px) {
     .work {
         width: 100%;
     }
@@ -662,12 +736,12 @@ html, body {
         margin-bottom: 3.5vw;
         font-size: 3.6vw;
     }
-    .desc a svg{
+    .desc a svg {
         width: 6.25vw;
     }
 }
 /* Loader starts */
-#preloader-index{
+#preloader-index {
     background: #000 url(images/pacman-loader.gif) no-repeat center center;
     background-size: 30%;
     position: fixed;
@@ -675,7 +749,7 @@ html, body {
     width: 100%;
     z-index: 100;
 }
-#preloader{
+#preloader {
     background: #e9e9eb url(images/duck-loader.gif) no-repeat center center;
     background-size: 30%;
     position: fixed;
@@ -685,81 +759,56 @@ html, body {
 }
 /* Loader ends */
 /* Events page */
-#events-page{
-    background-image:url("images/light-background.png"); 
-	background-attachment:fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
+#events-page {
+    background-image: url("images/light-background.png");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 .title-event {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 2rem;
-    margin: 3rem 0 0px 0;
     color: rgb(0, 0, 0);
 }
-.title-event h1 {
-    margin-bottom: 0;
-}
 .title-event span {
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    line-height: 3em;
-    padding-left: 0.25em;
     color: rgba(57, 51, 51, 0.7);
-    padding-bottom: 10px;
 }
 #svgHolder {
-    text-align:center;
+    text-align: center;
     margin: auto;
     width: 80%;
 }
-.data-event{
+.data-event {
     width: 60%;
     margin: auto;
-    padding-bottom: 2rem;
+    padding-bottom: .5rem;
     text-align: justify;
     color: rgb(0, 0, 0);
 }
-.data-event p{
-    line-height: 1.5;
-    letter-spacing: 0.3px;
-    word-spacing: 2px;
-}
-@media screen and (max-width:767px){
-    .data-event{
+@media screen and (max-width : 767px) {
+    .data-event {
         width: 80%;
         padding: 2rem;
         text-align: left;
     }
-    .title-event h1{
-        font-size: 2.5rem;
-    }
 }
-.info{
+.info {
     margin-top: 20px;
 }
-.digit-works{
+.digit-works {
     text-transform: capitalize;
     text-align: left;
     font-size: 1rem;
-    margin-top:3rem;
+    margin-top: 3rem;
     color: rgb(0, 0, 0);
-    width:60%;
+    width: 60%;
     margin: auto;
 }
-.digit-works span{
+.digit-works span {
     color: rgba(0, 0, 0, 0.7);
     font-weight: bold;
     font-size: 1rem;
 }
-.digit-works p{
-    text-align: justify;
-}
-@media screen and (max-width:767px){
-    .digit-works{
+@media screen and (max-width : 767px) {
+    .digit-works {
         width: 80%;
         padding: 2rem;
     }
@@ -779,24 +828,11 @@ html, body {
     text-align: left;
     max-width: 40%;
 }
-@media (max-width: 767px) {
+@media (max-width : 767px) {
     .timeline {
         max-width: 98%;
         padding: 25px;
     }
-}
-.timeline h1 {
-    font-weight: 300;
-    font-size: 1.2em;
-}
-.timeline h2,
-.timeline h3 {
-    font-weight: 600;
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-.timeline h5{
-    margin: 0 10;
 }
 .timeline .event {
     border-bottom: 1px dashed #e8ebf1;
@@ -804,11 +840,10 @@ html, body {
     margin-bottom: 25px;
     position: relative;
 }
-.timeline a{
-    text-decoration: none;
+.timeline a {
     color: #4e3cda;
 }
-@media (max-width: 767px) {
+@media (max-width : 767px) {
     .timeline .event {
         padding-top: 30px;
     }
@@ -832,7 +867,7 @@ html, body {
     font-size: 0.9em;
     min-width: 120px;
 }
-@media (max-width: 767px) {
+@media (max-width : 767px) {
     .timeline .event:before {
         left: 0px;
         text-align: left;
@@ -850,10 +885,10 @@ html, body {
     top: 5px;
     transition: all ease 0.3s;
 }
-.timeline .event:hover:after{
-    background:#727cf5;
+.timeline .event:hover:after {
+    background: #727cf5;
 }
-@media (max-width: 767px) {
+@media (max-width : 767px) {
     .timeline .event:after {
         left: -31.8px;
     }
@@ -875,91 +910,86 @@ html, body {
     left: 0;
     right: -55.8px;
 }
-
-#about{
+/* EVENT PAGE END */
+/* ABOUT PAGE BEGIN */
+#about {
     background: url("images/footprints.png"), radial-gradient(#24364a 40%, black);
     background-position: center top, center;
     background-repeat: repeat-y, no-repeat;
 }
-.center{
-    display: flex;
-}
-.about_forms{
+.about_forms {
     color: #fff;
-    margin:auto;
+    margin: auto;
     max-width: 960px;
     text-align: left;
     padding: 30px;
 }
-.about_forms li{
-    margin:12px;
+.about_forms li {
+    margin: .6rem 0 .6rem 0;
     list-style: none;
 }
-.about_forms a{
-    color: yellow;
+.about_forms a {
+    color: rgb(0, 243, 255);
 }
-.about_forms a:hover{
+.about_forms a:hover {
     color: lightblue;
 }
-.about_forms a:visited{
-    color: pink;
+.about_forms a:visited {
+    color: rgb(0, 243, 255);
 }
-.about_desc{
-    padding-bottom: 20px;
-}
-.contributeList p,ul{
-    margin:12px 0 12px 0;
-}
-.contributeList ul{
-    height:200px; 
-    overflow:hidden;
-    overflow-y:scroll;
-    background: rgba(0,0,0,0.15);
+.contributeList ul {
+    margin: .6rem 0 .6rem 0;
+    padding: 0 0 0 1.5rem;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0.15);
 }
 
-.portfolioWrap{
+.portfolioWrap {
     justify-content: center;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     align-items: center;
     padding: 10px 0 50px;
 }
 
-.portfolioList{
-    width:500px;
+.portfolioList {
+    width: 500px;
 }
-.portfolioList li:before{
+.portfolioList li:before {
     content: url('images/footprint.png');
     display: inline-flex;
-    margin: 0 8px;
+    margin: 0 .35rem;
 }
-.portfolioList li{
-    list-style:none;
-    color:white;
+.portfolioList li {
+    list-style: none;
+    color: white;
     margin: 0 0 10px;
 }
-.portfolioList li a{
-    color:white;
+.portfolioList li a {
+    color: white;
 }
-.portfolioList li a:hover{
-    color:lightblue;
+.portfolioList li a:hover {
+    color: lightblue;
 }
-.portfolioList li a:visited{
-    color:pink;
+.portfolioList li a:visited {
+    color: pink;
 }
+/* END ABOUT PAGE */
 /* Archive page */
-.archive{
+.archive {
     max-width: 1080px;
     margin: auto;
     text-align: center;
     padding: 40px;
 }
-.dates{
+.dates {
     max-width: 1080px;
     text-align: left;
     margin: auto;
 }
-.dates h5{
+.dates h5 {
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.7);
 }
@@ -969,12 +999,14 @@ table.showCase {
     margin: auto;
 }
 table.showCase tr:nth-child(even) {
-    background-color:/*#dcd0ff*/ /*#dbd7d2*/ /*#c3cde6/ /*#e0c39e*/ /*#d9cab2*/ lightsteelblue;
+    background-color: /*#dcd0ff*/ /*#dbd7d2*/ /*#c3cde6/ /*#e0c39e*/ /*#d9cab2*/ lightsteelblue;
 }
 
-th, td {
-    padding-left: 1em; 
-    padding-right: 1em; 
-    padding-top: .5em; 
+th,
+td {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .5em;
     padding-bottom: 1em;
 }
+
