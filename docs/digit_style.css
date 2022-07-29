@@ -6,7 +6,9 @@ body {
     margin: 0;
     scroll-behavior: smooth;
 }
-/* WS:7/26 UNIVERSAL TEXT. Execptions can exist like project page font size and home page title */
+/* WS:7/26 UNIVERSAL TEXT. Execptions can exist like project page font size, footer, and home page title. Expanding this rule over everything could be a goal.
+ * WS:7/28 h1 is reserved for page titles, h2 is for subsections, h3 is for important info but not titles or headers of page sections. The rest can be used as seen fit.
+ * Let margins and padding use rem units on the parent element surrounding text.*/
 h1 {
     text-transform: capitalize;
     text-align: center;
@@ -56,8 +58,8 @@ h1 span {
     text-transform: uppercase;
     letter-spacing: 4px;
     line-height: 3em;
-    padding-left: 0.25em;
-    padding-bottom: 10px;
+    padding-left: 0.25rem;
+    padding-bottom: .5rem;
 }
 @media screen and (max-width : 767px) {
     h1 {
@@ -117,6 +119,7 @@ h1 span {
     justify-content: center;
     margin: 0 1rem;
 }
+/* Goes on a div element */
 .break {
     flex-basis: 100%;
     height: 0;
@@ -157,14 +160,11 @@ h1 span {
 
 .menu a {
     float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-    transition: all ease 0.5s;
-    letter-spacing: 2px;
     text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    padding: 0.8rem 1rem;
+    color: #f2f2f2;
+    transition: all ease 0.5s;
 }
 
 .menu a:hover {
@@ -211,7 +211,7 @@ h1 span {
     right: 0;
 }
 .header h1 {
-    font-size: 6rem;
+    font-size: 6rem;    
     margin: 4.5rem 1.5rem;
 }
 .header h2 {
@@ -269,12 +269,12 @@ h1 span {
 }
 @media screen and (max-width : 455px) {
     .scroll a {
-        font-size: smaller;
+        font-size: 0.8rem;
     }
     .scroll p {
         display: none;
     }
-}*/
+}*
  /* The layout of the second-section can be used in other pages */
 #second-section {
     background: #ebebeb;
@@ -285,8 +285,8 @@ h1 span {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    font-size: 15px;
+    gap: 1rem;
+    font-size: .75rem;
     text-align: justify;
     padding: 2rem;
     line-height: 25px;
@@ -305,23 +305,16 @@ h1 span {
 }
 .content h4 {
     text-align: center;
-    font-size: 20px;
     text-transform: uppercase;
-    font-weight: lighter;
+    font-weight: 400;
 }
 @media only screen and (max-width : 960px) {
     .content {
         display: block;
-        font-size: 15px;
-    }
-}
-@media screen and (max-width : 455px) {
-    .content h4 {
-        font-size: 4.4vw;
     }
 }
 /* Go to Top button CSS 
- * WS:7/26 This was taken out a while ago. I'm leaving it in for now because I think it's neat.*/
+ * WS:7/26 This was taken out a while ago. I'm leaving it in for now because I think it's neat. Used to be a button to go back to top on home page.*/
 /*.TopBtn {
     position: fixed;
     width: 50px;
@@ -347,18 +340,17 @@ h1 span {
 .footer-wrap {
     color: #fff;
     background-color: #041E42;
-    padding: 1.25rem 3em;
+    padding: 25px 60px;
 }
 .footer-content img {
     width: 200px;
     height: auto;
-    margin: 0 2em 2em 0;
+    margin: 0 2rem 2rem 0;
 }
 .footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 10px;
     margin: 0 auto;
     max-width: 1160px;
 }
@@ -366,18 +358,17 @@ h1 span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 10px;
     margin: 0 auto;
     max-width: 1160px;
 }
 .features {
-    margin-top: 20px;
-    padding: 0 1.75em;
+    margin-top: 1rem;
+    padding: 0 35px;
 }
 .features p {
-    font-size: 1.05em;
-    line-height: 2em;
-    margin-bottom: 2em;
+    font-size: .525rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
     margin-top: 0;
 }
 .features p a {
@@ -395,7 +386,7 @@ h1 span {
 /* Footer responsiveness*/
 @media screen and (max-width : 960px) {
     .footer-wrap {
-        padding: 1.25em 2.25em;
+        padding: 25px 60px;
     }
     .footer-content {
         max-width: 1160px;
@@ -411,8 +402,8 @@ h1 span {
 }
 @media screen and (max-width : 600px) {
     .footer-wrap {
-        padding: 2em 0%;
-        margin-bottom: 40px;
+        padding: 40px 0%;
+        margin-bottom: 2rem;
     }
     .footer-content {
         flex-direction: column;
@@ -460,10 +451,10 @@ h1 span {
 .data p:first-child::first-letter {
     color: #041E42;
     font-weight: bold;
-    font-size: 70px;
-    float: left;
-    line-height: 50px;
-    padding-right: 8px;
+    font-size: 3rem;
+    float: left; 
+    line-height: 2.5rem;
+    padding-right: .4rem;
     margin-top: -3px;
 }
 @media screen and (max-width : 767px) {
@@ -491,11 +482,11 @@ h1 span {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 .responsive-table .table-header {
     background-color: #041E42;
-    font-size: 14px;
+    font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #fff;
@@ -538,7 +529,7 @@ h1 span {
     }
     .responsive-table li {
         padding: 15px 20px;
-        font-size: 12px;
+        font-size: .6rem;
         text-align: left;
     }
 }
@@ -563,8 +554,6 @@ h1 span {
     color: rgb(0, 243, 255);
 }
 .pcontainer {
-    /* The rules below this message in this class should be applied 
-     * site-wide or have something similar. Then we remove .pcontainer. */
     max-width: 960px;
     min-width: 320px;
     margin: 0px auto 0px auto;
@@ -614,6 +603,7 @@ h1 span {
     background-size: 100%;
     filter: blur(100px);
 }
+/* The FOCUS class is applied to only the WORK class on click through project.js. This is what expands the description. */
 .focus {
     display: inherit;
 }
@@ -655,8 +645,8 @@ h1 span {
         float: left;
         position: absolute;
     }
-    /* WS:7/26 The project page h2, h3, and p elements have different values in the media queries.
-     * This is to create fluid and screen based font sizing where it wouldnt work well on other pages. */
+    /* WS:7/28 The project page must have responsive text for smaller screens (vw units). Otherwise the descriptions will become unreadable.
+     * If root font-size changes, change the view-width accordingly. */
     .work h2 {
         margin-top: 0;
         margin-bottom: 1.8vw;
@@ -666,12 +656,13 @@ h1 span {
     .work h3 {
         margin-top: 0.3vw;
         margin-bottom: 0.9vw;
-        font-size: 2.1vw;
+        font-size: 2.53vw;
     }
     .work p {
         margin-top: 3vw;
         margin-bottom: 2vw;
         font-size: 1.8vw;
+        text-align: left;
     }
     .desc a svg {
         width: 4.65vw;
@@ -680,25 +671,22 @@ h1 span {
         left: 3%;
     }
 }
-
-/* The FOCUS class is applied to only the WORK class on click. This removes the need to 
-         * place the class, or a similar but different class on the elements inside of a WORK */
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
 @media screen and (min-width : 960px) {
     .work h2 {
-        margin-top: 0;
-        margin-bottom: 0.486487em;
-        font-size: 1.776em;
+        margin-top: 0rem;
+        margin-bottom: 0.486487rem;
+        font-size: 1.776rem;
     }
     .work h3 {
-        margin-top: 0.144em;
-        margin-bottom: 0.432em;
-        font-size: 1.008em;
+        margin-top: 0.144rem;
+        margin-bottom: 0.432rem;
+        font-size: 1.2rem;
     }
     .work p {
-        margin-top: 1.66666em;
-        margin-bottom: 1.1111em;
-        font-size: 0.86em;
+        margin-top: 1.66666rem;
+        margin-bottom: 1.1111rem;
+        font-size: 0.86rem;
     }
     .desc a svg {
         width: 2.232em;
@@ -779,14 +767,14 @@ h1 span {
 .data-event {
     width: 60%;
     margin: auto;
-    padding-bottom: .5rem;
+    padding-bottom: 10px;
     text-align: justify;
     color: rgb(0, 0, 0);
 }
 @media screen and (max-width : 767px) {
     .data-event {
         width: 80%;
-        padding: 2rem;
+        padding: 40px;
         text-align: left;
     }
 }
@@ -797,10 +785,9 @@ h1 span {
     text-transform: capitalize;
     text-align: left;
     font-size: 1rem;
-    margin-top: 3rem;
+    margin: 3rem auto 0;
     color: rgb(0, 0, 0);
     width: 60%;
-    margin: auto;
 }
 .digit-works span {
     color: rgba(0, 0, 0, 0.7);
@@ -810,7 +797,7 @@ h1 span {
 @media screen and (max-width : 767px) {
     .digit-works {
         width: 80%;
-        padding: 2rem;
+        padding: 40px;
     }
 }
 /* DIGIT workspace list */
@@ -822,7 +809,6 @@ h1 span {
     letter-spacing: 0.2px;
     position: relative;
     line-height: 1.4em;
-    font-size: 0.9em;
     padding: 50px;
     list-style: none;
     text-align: left;
@@ -864,7 +850,7 @@ h1 span {
     content: attr(data-date);
     text-align: right;
     font-weight: 100;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     min-width: 120px;
 }
 @media (max-width : 767px) {
@@ -1001,12 +987,10 @@ table.showCase {
 table.showCase tr:nth-child(even) {
     background-color: /*#dcd0ff*/ /*#dbd7d2*/ /*#c3cde6/ /*#e0c39e*/ /*#d9cab2*/ lightsteelblue;
 }
-
 th,
 td {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: .5em;
-    padding-bottom: 1em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
-
