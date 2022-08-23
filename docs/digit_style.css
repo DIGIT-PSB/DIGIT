@@ -1,72 +1,191 @@
-/* Menu bar responsiveness. Changes the text into a menu icon for mobile */
-@media screen and (max-width: 959px){
-    .menu a:not(:first-child) {display: none;}
-    .menu a.icon {
-      float: right;
-      display: block;
-    }
-}
-@media screen and (max-width: 959px) {
-    .menu.responsive {
-      position: relative;
-    }
-    .menu.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .menu.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-      background-color: rgba(0, 0, 0, .8);
-  }
-} 
-html, body {
-	height: 100%;
+html,
+body {
+    height: 100%;
     font-family: "Verdana", sans-serif;
     font-size: 20px;
     margin: 0;
     scroll-behavior: smooth;
 }
+/* WS:7/26 UNIVERSAL TEXT. Execptions can exist like project page font size, footer, and home page title. Expanding this rule over everything could be a goal.
+ * WS:7/28 h1 is reserved for page titles, h2 is for subsections, h3 is for important info but not titles or headers of page sections. The rest can be used as seen fit.
+ * Let margins and padding use rem units on the parent element surrounding text.*/
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4rem;
+    margin: 3rem 1rem 2rem;
+}
+h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0 0 0.85rem;
+}
+h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.3rem 0 0.7rem;
+}
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.3rem 0 0.7rem;
+}
+h5 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0.3rem 0 0.7rem;
+}
+p {
+    font-size: 1rem;
+    margin: .4rem 0 1rem 0;
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul {
+    padding: 0 0 0 2rem;
+}
+li {
+    font-size: 1rem;
+}
+h1 span {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 3em;
+    padding-left: 0.25rem;
+    padding-bottom: .5rem;
+}
+@media screen and (max-width : 767px) {
+    h1 {
+        font-size: 2.5rem;
+        margin: 2rem 1rem 1rem;
+    }
+    h2 {
+        margin: 0 0 0.7rem;
+        font-size: 1.7rem;
+    }
+    h3 {
+        margin: 0 0 0.7rem;
+        font-size: 1.35rem;
+    }
+    h4 {
+        font-size: 1rem;
+        margin: 0 0 0.7rem;
+    }
+    h5 {
+        font-size: 0.8rem;
+        margin: 0 0 0.7rem;
+    }
+    p,
+    li {
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width : 455px) {
+    h1 {
+        font-size: 1.7rem;
+        margin: .9rem 1rem .6rem;
+    }
+    h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.3rem;
+    }
+    h3 {
+        margin: 0 0 0.4rem;
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: .8rem;
+        margin: 0 0 0.4rem;
+    }
+    h5 {
+        font-size: .7rem;
+        margin: 0 0 0.4rem;
+    }
+    p,
+    li {
+        font-size: 0.6rem;
+    }
+}
+/* Class Shortcuts */
+.center {
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem;
+}
+/* Goes on a div element */
+.break {
+    flex-basis: 100%;
+    height: 0;
+    display: none;
+}
+/* End Universal Font Size */
+/* Menu bar responsiveness. Changes the text into a menu icon for mobile */
+@media screen and (max-width : 960px) {
+    .menu a:not(:first-child) {
+        display: none;
+    }
+    .menu a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width : 960px) {
+    .menu.responsive {
+        position: relative;
+    }
+    .menu.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        background-color: rgba(0, 0, 0, .8);
+    }
+}
 .menu {
     overflow: hidden;
     background-color: rgba(0, 0, 0, .2);
     top: 0;
-  }
-  
+}
+
 .menu a {
     float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 20px;
-    transition: all ease 0.5s;
-    letter-spacing: 2px;
     text-transform: uppercase;
-  }
-  
-  .menu a:hover {
+    letter-spacing: 0.05rem;
+    padding: 0.8rem 1rem;
+    color: #f2f2f2;
+    transition: all ease 0.5s;
+}
+
+.menu a:hover {
     background-color: rgba(193, 0, 0, 0.3);
     cursor: pointer;
-  }
-  .menu a.active {
+}
+.menu a.active {
     background-color: rgba(193, 0, 0, 0.3);
     color: white;
-  }
-  .menu .icon {
+}
+.menu .icon {
     display: none;
-  }
+}
 /* Menu ends */
-/* (Homepage) First page */
-#container{
+/* Homepage Begins */
+#container {
     position: relative;
     height: 100vh;
     overflow: hidden;
 }
-#container video{
+#container video {
     z-index: -2;
     position: absolute;
     height: auto;
@@ -77,7 +196,7 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.title{
+.title {
     z-index: -1;
     color: #fff;
     display: flex;
@@ -85,45 +204,52 @@ html, body {
     align-items: center;
     text-align: center;
     height: 90%;
-    line-height: 2rem;  
+    line-height: 2rem;
     position: absolute;
     top: 3.5vh;
     left: 0;
     right: 0;
 }
-.header h1{
-    font-size: 8rem;
+.header h1 {
+    font-size: 6rem;    
+    margin: 4.5rem 1.5rem;
 }
-.header h3{
-    font-size: 1.5rem;
-} 
-.header h2{
-    font-size: 2rem;
+.header h2 {
+    font-size: 2.55rem;
+    margin: 0 0 1.275rem;
 }
-@media screen and (max-width: 960px) {
+.header h3 {
+    font-size: 1.95rem;
+    margin: 0.45rem 0 1.05rem;
+}
+@media screen and (max-width : 767px) {
     .header h1 {
-        font-size: 17.5vw;
-    }
-    .header h3 {
-        font-size: 3vw;
+        font-size: 3.75rem;
     }
     .header h2 {
-        font-size: 4vw;
+        margin: 0 0 1.05rem;
+        font-size: 2.55rem;
+    }
+    .header h3 {
+        margin: 0 0 1.05rem;
+        font-size: 2rem;
     }
 }
-@media screen and (max-width: 600px){
-    .header h1{
-        font-size: 5rem;
+@media screen and (max-width : 455px) {
+    .header h1 {
+        font-size: 3rem;
     }
-    .header h3{
-        font-size: 0.9rem;
+    .header h2 {
+        margin: 0 0 0.1125rem;
+        font-size: 2.4rem;
     }
-    .header h2{
-        font-size: 1.2rem;
+    .header h3 {
+        margin: 0 0 0.6rem;
+        font-size: 1.5rem;
     }
 }
 /* Scroll down button */
-.scroll a{
+.scroll a {
     max-width: 80px;
     margin: 0 auto 0 auto;
     color: #fff;
@@ -132,85 +258,64 @@ html, body {
     left: 0;
     bottom: 10px;
     text-align: center;
-    text-decoration: none;
     text-transform: uppercase;
     transition: all ease-in-out 0.3s;
 }
-.scroll a:hover{
+.scroll a:hover {
     transform: scale(1.2);
 }
-.scroll p{
+.scroll p {
     margin: 0;
-    
 }
-@media screen and (max-width: 455px){
-    .scroll a{
-        font-size: smaller;
+@media screen and (max-width : 455px) {
+    .scroll a {
+        font-size: 0.8rem;
     }
-    .scroll p{
+    .scroll p {
         display: none;
     }
+}*
+ /* The layout of the second-section can be used in other pages */
+#second-section {
+    background: #ebebeb;
+    padding-top: 35px;
 }
-/* First page ends */
-/* The layout of the second-section can be used in other pages */
-#second-section{
-    background:#ebebeb;
-    padding-top:35px;
-}
-#second-section h3{
-    font-size: 2rem;
-    text-align: center;
-    margin: auto;
-    width: 30%;
-    border: 3px solid #041E42;
-    border-radius: 5px;
-    border-spacing: 5px;
-    padding:10px;
-}
-
-.content{
+.content {
     max-width: 1080px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:20px;
-    font-size: 15px;
+    gap: 1rem;
+    font-size: .75rem;
     text-align: justify;
     padding: 2rem;
     line-height: 25px;
 }
-.right-side{
+.right-side {
     padding: 30px;
     background-color: rgba(255, 248, 248, 0.7);
     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
 }
-.left-side{
+.right-side ul li {
+    font-size: 0.75rem;
+}
+.left-side {
     text-align: center;
     margin: auto;
 }
-.content h4{
+.content h4 {
     text-align: center;
-    font-size: 20px;
     text-transform: uppercase;
-    font-weight: lighter;
+    font-weight: 400;
 }
-.content i{
-    text-decoration: none;
-}
-@media only screen and (max-width: 960px) {
-    .content{
+@media only screen and (max-width : 960px) {
+    .content {
         display: block;
-        font-size: 15px;
     }
 }
-
-@media screen and (max-width: 455px){
-    .content h4{
-        font-size: 4.4vw;
-    }
-}
-/* Go to Top button CSS */
-.TopBtn{
+/* Go to Top button CSS 
+ * WS:7/26 This was taken out a while ago. I'm leaving it in for now because I think it's neat. Used to be a button to go back to top on home page.*/
+/*.TopBtn {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -227,73 +332,65 @@ html, body {
     border-radius: 5px;
     transition: all ease 0.5s;
 }
-.TopBtn:hover{
+.TopBtn:hover {
     background: rgba(193, 0, 0, 0);
-}
+}*/
 /* second-section ends */
 /* Footer starts */
-#footer-wrap {
+.footer-wrap {
     color: #fff;
     background-color: #041E42;
-    padding: 1.25rem 3em;
+    padding: 25px 60px;
 }
-.footer-content img{
+.footer-content img {
     width: 200px;
     height: auto;
-    margin: 0 2em 2em 0;
+    margin: 0 2rem 2rem 0;
 }
-.footer-content{
+.footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 10px;
     margin: 0 auto;
     max-width: 1160px;
 }
-.footer-content{
+.footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 10px;
     margin: 0 auto;
     max-width: 1160px;
 }
-.features{
-    margin-top: 20px;
-    padding: 0 1.75em;
+.features {
+    margin-top: 1rem;
+    padding: 0 35px;
 }
-.features p{
-    font-size: 1.05em;
-    line-height: 2em;
-    margin-bottom: 2em;
+.features p {
+    font-size: .525rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
     margin-top: 0;
 }
-.features p a{
-    text-decoration: none;
+.features p a {
     color: #fff;
 }
-.features p a:hover{
+.features p a:hover {
     text-decoration: underline;
 }
 .features a {
     fill: #cccccc;
 }
-.features a:hover{
+.features a:hover {
     fill: #fff;
 }
-.break {
-  flex-basis: 100%;
-  height: 0;
-  display: none;
-}
 /* Footer responsiveness*/
-@media screen and (max-width:960px){
-    .footer-wrap{
-        padding: 1.25em 2.25em;
+@media screen and (max-width : 960px) {
+    .footer-wrap {
+        padding: 25px 60px;
     }
-    .footer-content{
-         max-width: 1160px;
-         justify-content: space-evenly;
+    .footer-content {
+        max-width: 1160px;
+        justify-content: space-evenly;
     }
     .footer-content .break {
         display: flex;
@@ -303,12 +400,12 @@ html, body {
         justify-content: center;
     }
 }
-@media screen and (max-width:500px){
+@media screen and (max-width : 600px) {
     .footer-wrap {
-        padding: 2em 0%;
-        margin-bottom: 40px;
+        padding: 40px 0%;
+        margin-bottom: 2rem;
     }
-    .footer-content{
+    .footer-content {
         flex-direction: column;
     }
     .features {
@@ -320,139 +417,51 @@ html, body {
     }
 }
 /* Footer ends */
-/* Homepage ends */
-/* Background images*/
-#courses{
+/* Courses titles */
+#courses {
     background-color: #3e5467;
-    background-image:url("images/datavizBG.jpg"); /* This is more of a sample background */
-	background-attachment:fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
+    background-image: url("images/datavizBG.jpg"); /* This is more of a sample background */
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
-
-/* SVG Road Map Here */
-.roadmap h1 {
-  text-transform: capitalize;
-    text-align: center;
-    font-size: 4rem;
-    margin-top:3rem;
-    color: #fff;
-}
-/* Courses titles */
 .module h1 {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 4rem;
-    margin-top:3rem;
     color: #fff;
-  }
+}
 .module h1 span {
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    line-height: 3em;
-    padding-left: 0.25em;
     color: rgba(244, 240, 240, 0.7);
-    padding-bottom: 10px;
-  }
-.about_module h1{
-    text-align: center;
-    font-size: 4rem;
-    margin-top:3rem;
-    color: #fff;
 }
 #svgHolder {
-    text-align:center;
+    text-align: center;
     margin: auto;
     width: 80%;
 }
-.data{
+.data {
     width: 60%;
     margin: auto;
     padding-bottom: 2rem;
     text-align: justify;
     color: #fff;
 }
-.data p{
+.data p {
     line-height: 1.5;
     letter-spacing: 0.3px;
     word-spacing: 2px;
 }
-
-.data p:first-child::first-letter{
-    color:#041E42;
+.data p:first-child::first-letter {
+    color: #041E42;
     font-weight: bold;
-    font-size: 70px;
-    float: left;
-    line-height: 50px;
-    padding-right: 8px;
+    font-size: 3rem;
+    float: left; 
+    line-height: 2.5rem;
+    padding-right: .4rem;
     margin-top: -3px;
 }
-@media screen and (max-width:600px){
-    .data{
+@media screen and (max-width : 767px) {
+    .data {
         width: 80%;
         padding: 2rem;
         text-align: left;
-    }
-    .module h1{
-        font-size: 2.5rem;
-    }
-}
-/* title ends */
-/* Courses titles */
-.module h1 {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 4rem;
-    margin-top:3rem;
-    color: #fff;
-  }
-.module h1 span {
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    line-height: 3em;
-    padding-left: 0.25em;
-    color: rgba(244, 240, 240, 0.7);
-    padding-bottom: 10px;
-  }
-#svgHolder {
-    text-align:center;
-    margin: auto;
-    width: 80%;
-}
-.data{
-    width: 60%;
-    margin: auto;
-    padding-bottom: 2rem;
-    text-align: justify;
-    color: #fff;
-}
-.data p{
-    line-height: 1.5;
-    letter-spacing: 0.3px;
-    word-spacing: 2px;
-}
-
-.data p:first-child::first-letter{
-    color:#041E42;
-    font-weight: bold;
-    font-size: 70px;
-    float: left;
-    line-height: 50px;
-    padding-right: 8px;
-    margin-top: -3px;
-}
-@media screen and (max-width:600px){
-    .data{
-        width: 80%;
-        padding: 2rem;
-        text-align: left;
-    }
-    .module h1{
-        font-size: 2.5rem;
     }
 }
 /* title ends */
@@ -461,42 +470,40 @@ html, body {
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
-    padding:14px;
+    padding: 14px;
     line-height: 25px;
-  }
+}
 .courseblock h2 {
-    font-size: 26px;
-    margin: 20px 0;
     color: #fff;
-} 
+}
 .responsive-table li {
     border-radius: 3px;
     padding: 25px 30px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-    font-size: 18px;
+    font-size: 0.7rem;
 }
 .responsive-table .table-header {
     background-color: #041E42;
-    font-size: 14px;
+    font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #fff;
-    
+
 }
 .responsive-table .table-row {
     background-color: #fff;
     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
 }
-.dots{
+.dots {
     cursor: pointer;
 }
-.more{
+.more {
     display: none;
     text-align: justify;
 }
-.col-2{
+.col-2 {
     text-align: center;
 }
 .responsive-table .col-1 {
@@ -516,27 +523,37 @@ html, body {
 .col span .more {
     text-indent: 2rem;
 }
-@media all and (max-width: 600px) {
-    .responsive-table{
+@media all and (max-width : 600px) {
+    .responsive-table {
         padding: 0;
     }
-    .responsive-table li{
+    .responsive-table li {
         padding: 15px 20px;
-        font-size:12px;
+        font-size: .6rem;
         text-align: left;
     }
 }
-.short-text { display: none; }
+.short-text {
+    display: none;
+}
 
-@media (max-width: 820px) {
-    .short-text { display: inline-block; }
-    .full-text { display: none; }
+@media (max-width : 820px) {
+    .short-text {
+        display: inline-block;
+    }
+    .full-text {
+        display: none;
+    }
 }
 /* list ends */
 /* Projects Showcase page Begins*/
+.forms p {
+    color: #fff;
+}
+.forms a {
+    color: rgb(0, 243, 255);
+}
 .pcontainer {
-    /* The rules below this message in this class should be applied 
-     * site-wide or have something similar. Then we remove .pcontainer. */
     max-width: 960px;
     min-width: 320px;
     margin: 0px auto 0px auto;
@@ -586,11 +603,9 @@ html, body {
     background-size: 100%;
     filter: blur(100px);
 }
+/* The FOCUS class is applied to only the WORK class on click through project.js. This is what expands the description. */
 .focus {
     display: inherit;
-}
-.desc a {
-    text-decoration: none;
 }
 .desc {
     box-sizing: border-box;
@@ -598,14 +613,14 @@ html, body {
 .desc a svg {
     fill: white;
 }
-.desc a svg:hover{
+.desc a svg:hover {
     fill: rgb(193, 0, 0);
 }
 /* PROJECT PAGE TABLET/COMPUTER VIEWING */
-@media screen and (min-width: 456px) {
+@media screen and (min-width : 456px) {
     div.work {
         width: 33.33%;
-        display:inherit;
+        display: inherit;
     }
     div.focus {
         width: 100%;
@@ -630,6 +645,8 @@ html, body {
         float: left;
         position: absolute;
     }
+    /* WS:7/28 The project page must have responsive text for smaller screens (vw units). Otherwise the descriptions will become unreadable.
+     * If root font-size changes, change the view-width accordingly. */
     .work h2 {
         margin-top: 0;
         margin-bottom: 1.8vw;
@@ -639,49 +656,37 @@ html, body {
     .work h3 {
         margin-top: 0.3vw;
         margin-bottom: 0.9vw;
-        font-size: 2.1vw;
+        font-size: 2.53vw;
     }
     .work p {
         margin-top: 3vw;
         margin-bottom: 2vw;
         font-size: 1.8vw;
+        text-align: left;
     }
-    .desc a svg{
+    .desc a svg {
         width: 4.65vw;
         position: absolute;
         bottom: 3%;
         left: 3%;
     }
 }
-.forms p{
-    color: #fff;
-    max-width: 960px;
-    text-align: left;
-    margin: auto;
-    padding: 30px;
-}
-.forms a{
-    text-decoration: none;
-    color: rgb(0, 243, 255);
-}
-        /* The FOCUS class is applied to only the WORK class on click. This removes the need to 
-         * place the class, or a similar but different class on the elements inside of a WORK */
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
-@media screen and (min-width: 960px) {
+@media screen and (min-width : 960px) {
     .work h2 {
-        margin-top: 0;
-        margin-bottom: 0.486487em;
-        font-size: 1.776em;
+        margin-top: 0rem;
+        margin-bottom: 0.486487rem;
+        font-size: 1.776rem;
     }
     .work h3 {
-        margin-top: 0.144em;
-        margin-bottom: 0.432em;
-        font-size: 1.008em;
+        margin-top: 0.144rem;
+        margin-bottom: 0.432rem;
+        font-size: 1.2rem;
     }
     .work p {
-        margin-top: 1.66666em;
-        margin-bottom: 1.1111em;
-        font-size: 0.86em;
+        margin-top: 1.66666rem;
+        margin-bottom: 1.1111rem;
+        font-size: 0.86rem;
     }
     .desc a svg {
         width: 2.232em;
@@ -690,7 +695,7 @@ html, body {
     }
 }
 /* PROJECT PAGE MOBILE VIEWING */
-@media screen and (max-width: 455px){
+@media screen and (max-width : 455px) {
     .work {
         width: 100%;
     }
@@ -719,20 +724,20 @@ html, body {
         margin-bottom: 3.5vw;
         font-size: 3.6vw;
     }
-    .desc a svg{
+    .desc a svg {
         width: 6.25vw;
     }
 }
 /* Loader starts */
-#preloader-index{
-background: #000 url(images/pacman-loader.gif) no-repeat center center;
-background-size: 30%;
-position: fixed;
-height: 100vh;
-width: 100%;
-z-index: 100;
+#preloader-index {
+    background: #000 url(images/pacman-loader.gif) no-repeat center center;
+    background-size: 30%;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
 }
-#preloader{
+#preloader {
     background: #e9e9eb url(images/duck-loader.gif) no-repeat center center;
     background-size: 30%;
     position: fixed;
@@ -740,81 +745,59 @@ z-index: 100;
     width: 100%;
     z-index: 100;
 }
+/* Loader ends */
 /* Events page */
-#events-page{
-    background-image:url("images/light-background.png"); 
-	background-attachment:fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
+#events-page {
+    background-image: url("images/light-background.png");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 .title-event {
-text-transform: capitalize;
-text-align: center;
-font-size: 2rem;
-margin-top:3rem;
-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
-.title-event h1 span {
-font-size: 0.8rem;
-font-weight: 500;
-text-transform: uppercase;
-letter-spacing: 4px;
-line-height: 3em;
-padding-left: 0.25em;
-color: rgba(57, 51, 51, 0.7);
-padding-bottom: 10px;
+.title-event span {
+    color: rgba(57, 51, 51, 0.7);
 }
 #svgHolder {
-text-align:center;
-margin: auto;
-width: 80%;
-}
-.data-event{
-width: 60%;
-margin: auto;
-padding-bottom: 2rem;
-text-align: justify;
-color: rgb(0, 0, 0);
-}
-.data-event p{
-line-height: 1.5;
-letter-spacing: 0.3px;
-word-spacing: 2px;
-}
-@media screen and (max-width:767px){
-.data-event{
+    text-align: center;
+    margin: auto;
     width: 80%;
-    padding: 2rem;
-    text-align: left;
 }
-.title-event h1{
-    font-size: 2.5rem;
+.data-event {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 10px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
 }
+@media screen and (max-width : 767px) {
+    .data-event {
+        width: 80%;
+        padding: 40px;
+        text-align: left;
+    }
 }
-.info{
+.info {
     margin-top: 20px;
 }
-.digit-works{
+.digit-works {
     text-transform: capitalize;
     text-align: left;
     font-size: 1rem;
-    margin-top:3rem;
+    margin: 3rem auto 0;
     color: rgb(0, 0, 0);
-    width:60%;
-    margin: auto;
+    width: 60%;
 }
-.digit-works span{
+.digit-works span {
     color: rgba(0, 0, 0, 0.7);
     font-weight: bold;
     font-size: 1rem;
 }
-.digit-works p{
-    text-align: justify;
-}
-@media screen and (max-width:767px){
-    .digit-works{
+@media screen and (max-width : 767px) {
+    .digit-works {
         width: 80%;
-        padding: 2rem;
+        padding: 40px;
     }
 }
 /* DIGIT workspace list */
@@ -826,30 +809,16 @@ word-spacing: 2px;
     letter-spacing: 0.2px;
     position: relative;
     line-height: 1.4em;
-    font-size: 0.9em;
     padding: 50px;
     list-style: none;
     text-align: left;
     max-width: 40%;
 }
-@media (max-width: 767px) {
+@media (max-width : 767px) {
     .timeline {
         max-width: 98%;
         padding: 25px;
     }
-}
-.timeline h1 {
-    font-weight: 300;
-    font-size: 1.2em;
-}
-.timeline h2,
-.timeline h3 {
-    font-weight: 600;
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-.timeline h5{
-    margin: 0 10;
 }
 .timeline .event {
     border-bottom: 1px dashed #e8ebf1;
@@ -857,11 +826,10 @@ word-spacing: 2px;
     margin-bottom: 25px;
     position: relative;
 }
-.timeline a{
-    text-decoration: none;
+.timeline a {
     color: #4e3cda;
 }
-@media (max-width: 767px) {
+@media (max-width : 767px) {
     .timeline .event {
         padding-top: 30px;
     }
@@ -882,10 +850,10 @@ word-spacing: 2px;
     content: attr(data-date);
     text-align: right;
     font-weight: 100;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     min-width: 120px;
 }
-@media (max-width: 767px) {
+@media (max-width : 767px) {
     .timeline .event:before {
         left: 0px;
         text-align: left;
@@ -903,10 +871,10 @@ word-spacing: 2px;
     top: 5px;
     transition: all ease 0.3s;
 }
-.timeline .event:hover:after{
-    background:#727cf5;
+.timeline .event:hover:after {
+    background: #727cf5;
 }
-@media (max-width: 767px) {
+@media (max-width : 767px) {
     .timeline .event:after {
         left: -31.8px;
     }
@@ -928,91 +896,86 @@ word-spacing: 2px;
     left: 0;
     right: -55.8px;
 }
-
-#about{
+/* EVENT PAGE END */
+/* ABOUT PAGE BEGIN */
+#about {
     background: url("images/footprints.png"), radial-gradient(#24364a 40%, black);
     background-position: center top, center;
     background-repeat: repeat-y, no-repeat;
 }
-.center{
-    display: flex;
-}
-.about_forms{
+.about_forms {
     color: #fff;
-    margin:auto;
+    margin: auto;
     max-width: 960px;
     text-align: left;
     padding: 30px;
 }
-.about_forms li{
-    margin:12px;
+.about_forms li {
+    margin: .6rem 0 .6rem 0;
     list-style: none;
 }
-.about_forms a{
-    color: yellow;
+.about_forms a {
+    color: rgb(0, 243, 255);
 }
-.about_forms a:hover{
+.about_forms a:hover {
     color: lightblue;
 }
-.about_forms a:visited{
-    color: pink;
+.about_forms a:visited {
+    color: rgb(0, 243, 255);
 }
-.about_desc{
-    padding-bottom: 20px;
-}
-.contributeList p,ul{
-    margin:12px 0 12px 0;
-}
-.contributeList ul{
-    height:200px; 
-    overflow:hidden;
-    overflow-y:scroll;
-    background: rgba(0,0,0,0.15);
+.contributeList ul {
+    margin: .6rem 0 .6rem 0;
+    padding: 0 0 0 1.5rem;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0.15);
 }
 
-.portfolioWrap{
+.portfolioWrap {
     justify-content: center;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 10px 0 50px;
+    padding: 10px 0 50px;
 }
 
-.portfolioList{
-    width:500px;
+.portfolioList {
+    width: 500px;
 }
-.portfolioList li:before{
+.portfolioList li:before {
     content: url('images/footprint.png');
     display: inline-flex;
-    margin: 0 8px;
+    margin: 0 .35rem;
 }
-.portfolioList li{
-    list-style:none;
-    color:white;
+.portfolioList li {
+    list-style: none;
+    color: white;
     margin: 0 0 10px;
 }
-.portfolioList li a{
-    color:white;
+.portfolioList li a {
+    color: white;
 }
-.portfolioList li a:hover{
-    color:lightblue;
+.portfolioList li a:hover {
+    color: lightblue;
 }
-.portfolioList li a:visited{
-    color:pink;
+.portfolioList li a:visited {
+    color: pink;
 }
+/* END ABOUT PAGE */
 /* Archive page */
-.archive{
+.archive {
     max-width: 1080px;
     margin: auto;
     text-align: center;
     padding: 40px;
 }
-.dates{
+.dates {
     max-width: 1080px;
     text-align: left;
     margin: auto;
 }
-.dates h5{
+.dates h5 {
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.7);
 }
@@ -1022,12 +985,12 @@ table.showCase {
     margin: auto;
 }
 table.showCase tr:nth-child(even) {
-    background-color:/*#dcd0ff*/ /*#dbd7d2*/ /*#c3cde6/ /*#e0c39e*/ /*#d9cab2*/ lightsteelblue;
+    background-color: /*#dcd0ff*/ /*#dbd7d2*/ /*#c3cde6/ /*#e0c39e*/ /*#d9cab2*/ lightsteelblue;
 }
-
-th, td {
-    padding-left: 1em; 
-    padding-right: 1em; 
-    padding-top: .5em; 
-    padding-bottom: 1em;
+th,
+td {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
