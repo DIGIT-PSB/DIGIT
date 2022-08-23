@@ -42,9 +42,13 @@ p {
 }
 a {
     text-decoration: none;
+    color: rgb(78,114,166);
 }
-a:hover {
-    text-decoration: underline;
+a:visited {
+    color: rgb(21,45,87);
+}
+a:hover{
+    color: rgb(150, 190, 230);
 }
 ul {
     padding: 0 0 0 2rem;
@@ -173,7 +177,7 @@ h1 span {
 }
 .menu a.active {
     background-color: rgba(193, 0, 0, 0.3);
-    color: white;
+    color: #fff;
 }
 .menu .icon {
     display: none;
@@ -291,6 +295,9 @@ h1 span {
     padding: 2rem;
     line-height: 25px;
 }
+.content div a  {
+    color: #000;
+}
 .right-side {
     padding: 30px;
     background-color: rgba(255, 248, 248, 0.7);
@@ -337,7 +344,7 @@ h1 span {
 }*/
 /* second-section ends */
 /* Footer starts */
-.footer-wrap {
+#footer-wrap {
     color: #fff;
     background-color: #041E42;
     padding: 25px 60px;
@@ -419,17 +426,12 @@ h1 span {
 /* Footer ends */
 /* Courses titles */
 #courses {
-    background-color: #3e5467;
-    background-image: url("images/datavizBG.jpg"); /* This is more of a sample background */
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-.module h1 {
-    color: #fff;
+    background: url("images/footprints.png");
+    background-position: center top, center;
+    /*background-repeat: repeat-y, no-repeat;*/
 }
 .module h1 span {
-    color: rgba(244, 240, 240, 0.7);
+    color: rgba(57, 51, 51, 0.7);
 }
 #svgHolder {
     text-align: center;
@@ -441,7 +443,6 @@ h1 span {
     margin: auto;
     padding-bottom: 2rem;
     text-align: justify;
-    color: #fff;
 }
 .data p {
     line-height: 1.5;
@@ -473,9 +474,6 @@ h1 span {
     padding: 14px;
     line-height: 25px;
 }
-.courseblock h2 {
-    color: #fff;
-}
 .responsive-table li {
     border-radius: 3px;
     padding: 25px 30px;
@@ -490,7 +488,9 @@ h1 span {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #fff;
-
+}
+.table-header div a {
+    color: #fff;
 }
 .responsive-table .table-row {
     background-color: #fff;
@@ -547,12 +547,6 @@ h1 span {
 }
 /* list ends */
 /* Projects Showcase page Begins*/
-.forms p {
-    color: #fff;
-}
-.forms a {
-    color: rgb(0, 243, 255);
-}
 .pcontainer {
     max-width: 960px;
     min-width: 320px;
@@ -580,7 +574,7 @@ h1 span {
     left: 50%;
     width: 50%;
     padding: 3%;
-    color: white;
+    color: #fff;
 }
 
 .work h2 {
@@ -747,18 +741,6 @@ h1 span {
 }
 /* Loader ends */
 /* Events page */
-#events-page {
-    background-image: url("images/light-background.png");
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-.title-event {
-    color: rgb(0, 0, 0);
-}
-.title-event span {
-    color: rgba(57, 51, 51, 0.7);
-}
 #svgHolder {
     text-align: center;
     margin: auto;
@@ -825,9 +807,6 @@ h1 span {
     padding-bottom: 25px;
     margin-bottom: 25px;
     position: relative;
-}
-.timeline a {
-    color: #4e3cda;
 }
 @media (max-width : 767px) {
     .timeline .event {
@@ -898,13 +877,7 @@ h1 span {
 }
 /* EVENT PAGE END */
 /* ABOUT PAGE BEGIN */
-#about {
-    background: url("images/footprints.png"), radial-gradient(#24364a 40%, black);
-    background-position: center top, center;
-    background-repeat: repeat-y, no-repeat;
-}
 .about_forms {
-    color: #fff;
     margin: auto;
     max-width: 960px;
     text-align: left;
@@ -914,22 +887,13 @@ h1 span {
     margin: .6rem 0 .6rem 0;
     list-style: none;
 }
-.about_forms a {
-    color: rgb(0, 243, 255);
-}
-.about_forms a:hover {
-    color: lightblue;
-}
-.about_forms a:visited {
-    color: rgb(0, 243, 255);
-}
 .contributeList ul {
     margin: .6rem 0 .6rem 0;
     padding: 0 0 0 1.5rem;
     height: 200px;
     overflow: hidden;
     overflow-y: scroll;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.07);
 }
 
 .portfolioWrap {
@@ -950,17 +914,7 @@ h1 span {
 }
 .portfolioList li {
     list-style: none;
-    color: white;
     margin: 0 0 10px;
-}
-.portfolioList li a {
-    color: white;
-}
-.portfolioList li a:hover {
-    color: lightblue;
-}
-.portfolioList li a:visited {
-    color: pink;
 }
 /* END ABOUT PAGE */
 /* Archive page */
