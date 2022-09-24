@@ -42,10 +42,10 @@ p {
 }
 a {
     text-decoration: none;
-    color: rgb(78,114,166);
+    color: rgb(37,160,219);
 }
 a:visited {
-    color: rgb(21,45,87);
+    color: rgb(78,114,166);
 }
 a:hover{
     color: rgb(150, 190, 230);
@@ -294,9 +294,6 @@ h1 span {
     text-align: justify;
     padding: 2rem;
     line-height: 25px;
-}
-.content div a  {
-    color: #000;
 }
 .right-side {
     padding: 30px;
