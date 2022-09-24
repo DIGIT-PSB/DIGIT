@@ -23,7 +23,7 @@ function expand() {
     /* 2022-09-24 ws The page adds the focus class even when on a mobile view, where it shouldn't. Detecting the pagewidth after a click 
      * and continuing to run expand() would solve the issue. Be sure to change the pagewidth value here if mobile width changes in the css. */
     var w = window.innerWidth;
-    console.log(window.innerWidth);
+    /*console.log(window.innerWidth);*/
     if (w > 455) {
         var focusOn = this.classList.contains('focus');
         // console.log(this.classList.contains('focus'));
