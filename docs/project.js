@@ -20,30 +20,35 @@ function init() {
 /* 2022-05-23 ebb Source: https://www.geeksforgeeks.org/how-to-make-the-images-bigger-when-clicked/  */
 function expand() {
     // console.log(projects)
-    var focusOn = this.classList.contains('focus');
-    // console.log(this.classList.contains('focus'));
-    restore(projects);
-    /* djb: First, return everything to original size and order, before changing anything. */
-    var position = this.dataset.defaultposition;
-    var rowNum = Math.ceil(position / 3);
-    // console.log('Show my position: ' + position);
-    // console.log('Show my row number: ' + rowNum);
-    var currentRowOffset = (position - 1) % 3 + 1;
-    // console.log('My current rowOffset position is: ' + currentRowOffset);
-    var newPosition = position - currentRowOffset + 1;
-    // console.log('My new sequence position is: ' + newPosition);
-    /* Now we can move this (what's clicked on) back to its new sequence position */
-    var insertBeforeMe = document.querySelector('[data-defaultposition="' + newPosition + '"]')
-    // console.log('Insert before this position: ' + insertBeforeMe.dataset.defaultposition);
-    this.parentNode.insertBefore(this, insertBeforeMe);
-    // console.log('My new position will be: ' + newPosition);
-    if (focusOn === true){
+    /* 2022-09-24 ws The page adds the focus class even when on a mobile view, where it shouldn't. Detecting the pagewidth after a click 
+     * and continuing to run expand() would solve the issue. Be sure to change the pagewidth value here if mobile width changes in the css. */
+    var w = window.innerWidth;
+    console.log(window.innerWidth);
+    if (w > 455) {
+        var focusOn = this.classList.contains('focus');
+        // console.log(this.classList.contains('focus'));
         restore(projects);
-        this.classList.remove("focus");
-    } else {
-        this.classList.add("focus"); //ebb: this changes the size and width
-    }
-    
+        /* djb: First, return everything to original size and order, before changing anything. */
+        var position = this.dataset.defaultposition;
+        var rowNum = Math.ceil(position / 3);
+        // console.log('Show my position: ' + position);
+        // console.log('Show my row number: ' + rowNum);
+        var currentRowOffset = (position - 1) % 3 + 1;
+        // console.log('My current rowOffset position is: ' + currentRowOffset);
+        var newPosition = position - currentRowOffset + 1;
+        // console.log('My new sequence position is: ' + newPosition);
+        /* Now we can move this (what's clicked on) back to its new sequence position */
+        var insertBeforeMe = document.querySelector('[data-defaultposition="' + newPosition + '"]')
+        // console.log('Insert before this position: ' + insertBeforeMe.dataset.defaultposition);
+        this.parentNode.insertBefore(this, insertBeforeMe);
+        // console.log('My new position will be: ' + newPosition);
+        if (focusOn === true){
+            restore(projects);
+            this.classList.remove("focus");
+        } else {
+            this.classList.add("focus"); //ebb: this changes the size and width
+        }
+    } else {}
 }
 
 function restore(elements) {

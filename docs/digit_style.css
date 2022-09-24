@@ -686,6 +686,7 @@ h1 span {
     }
 }
 /* PROJECT PAGE MOBILE VIEWING */
+/* 2022-09-24 ws Change if else statement of mobile viewing width in project.js if it changes here */
 @media screen and (max-width : 455px) {
     .work {
         width: 100%;
