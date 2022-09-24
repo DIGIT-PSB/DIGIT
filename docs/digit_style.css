@@ -8,7 +8,7 @@ body {
 }
 /* WS:7/26 UNIVERSAL TEXT. Execptions can exist like project page font size, footer, and home page title. Expanding this rule over everything could be a goal.
  * WS:7/28 h1 is reserved for page titles, h2 is for subsections, h3 is for important info but not titles or headers of page sections. The rest can be used as seen fit.
- * Let margins and padding use rem units on the parent element surrounding text.*/
+ * Margins and padding use rem units if not % or vw. */
 h1 {
     text-transform: capitalize;
     text-align: center;
@@ -60,8 +60,8 @@ h1 span {
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    line-height: 3em;
+    letter-spacing: .2rem;
+    line-height: 3rem;
     padding-left: 0.25rem;
     padding-bottom: .5rem;
 }
@@ -270,6 +270,7 @@ h1 span {
 }
 .scroll p {
     margin: 0;
+    text-align: center;
 }
 @media screen and (max-width : 455px) {
     .scroll a {
@@ -282,7 +283,7 @@ h1 span {
  /* The layout of the second-section can be used in other pages */
 #second-section {
     background: #ebebeb;
-    padding-top: 35px;
+    padding-top: 1.75rem;
 }
 .content {
     max-width: 1080px;
@@ -293,10 +294,10 @@ h1 span {
     font-size: .75rem;
     text-align: justify;
     padding: 2rem;
-    line-height: 25px;
+    line-height: 1.25rem;
 }
 .right-side {
-    padding: 30px;
+    padding: 1.5rem;
     background-color: rgba(255, 248, 248, 0.7);
     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
 }
@@ -443,8 +444,8 @@ h1 span {
 }
 .data p {
     line-height: 1.5;
-    letter-spacing: 0.3px;
-    word-spacing: 2px;
+    letter-spacing: 0.15rem;
+    word-spacing: .1rem;
 }
 .data p:first-child::first-letter {
     color: #041E42;
@@ -453,7 +454,7 @@ h1 span {
     float: left; 
     line-height: 2.5rem;
     padding-right: .4rem;
-    margin-top: -3px;
+    margin-top: -.15rem;
 }
 @media screen and (max-width : 767px) {
     .data {
@@ -468,22 +469,22 @@ h1 span {
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
-    padding: 14px;
-    line-height: 25px;
+    padding: .7rem;
+    line-height: 1.25rem;
 }
 .responsive-table li {
     border-radius: 3px;
-    padding: 25px 30px;
+    padding: 1.25rem 1.5rem;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 1.25rem;
     font-size: 0.7rem;
 }
 .responsive-table .table-header {
     background-color: #041E42;
     font-size: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03rem;
     color: #fff;
 }
 .table-header div a {
@@ -525,7 +526,7 @@ h1 span {
         padding: 0;
     }
     .responsive-table li {
-        padding: 15px 20px;
+        padding: .75rem 1rem;
         font-size: .6rem;
         text-align: left;
     }
@@ -680,9 +681,9 @@ h1 span {
         font-size: 0.86rem;
     }
     .desc a svg {
-        width: 2.232em;
-        bottom: 0.70707em;
-        left: 0.70707em;
+        width: 2.232rem;
+        bottom: 0.70707rem;
+        left: 0.70707rem;
     }
 }
 /* PROJECT PAGE MOBILE VIEWING */
@@ -747,19 +748,19 @@ h1 span {
 .data-event {
     width: 60%;
     margin: auto;
-    padding-bottom: 10px;
+    padding-bottom: .5rem;
     text-align: justify;
     color: rgb(0, 0, 0);
 }
 @media screen and (max-width : 767px) {
     .data-event {
         width: 80%;
-        padding: 40px;
+        padding: 2rem;
         text-align: left;
     }
 }
 .info {
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 .digit-works {
     text-transform: capitalize;
@@ -777,7 +778,7 @@ h1 span {
 @media screen and (max-width : 767px) {
     .digit-works {
         width: 80%;
-        padding: 40px;
+        padding: 2rem;
     }
 }
 /* DIGIT workspace list */
@@ -786,10 +787,10 @@ h1 span {
     border-radius: 10px;
     background: rgba(114, 124, 245, 0.09);
     margin: 0 auto;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.01rem;
     position: relative;
-    line-height: 1.4em;
-    padding: 50px;
+    line-height: 1.4rem;
+    padding: 2.5rem;
     list-style: none;
     text-align: left;
     max-width: 40%;
@@ -797,18 +798,18 @@ h1 span {
 @media (max-width : 767px) {
     .timeline {
         max-width: 98%;
-        padding: 25px;
+        padding: 1.25rem;
     }
 }
 .timeline .event {
     border-bottom: 1px dashed #e8ebf1;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
     position: relative;
 }
 @media (max-width : 767px) {
     .timeline .event {
-        padding-top: 30px;
+        padding-top: 1.5rem;
     }
 }
 .timeline .event:last-of-type {
@@ -879,7 +880,7 @@ h1 span {
     margin: auto;
     max-width: 960px;
     text-align: left;
-    padding: 30px;
+    padding: 1.5rem;
 }
 .about_forms li {
     margin: .6rem 0 .6rem 0;
@@ -899,7 +900,7 @@ h1 span {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 10px 0 50px;
+    padding: 0.5rem 0 2.5rem;
 }
 
 .portfolioList {
@@ -912,7 +913,7 @@ h1 span {
 }
 .portfolioList li {
     list-style: none;
-    margin: 0 0 10px;
+    margin: 0 0 .5rem;
 }
 /* END ABOUT PAGE */
 /* Archive page */
@@ -920,7 +921,7 @@ h1 span {
     max-width: 1080px;
     margin: auto;
     text-align: center;
-    padding: 40px;
+    padding: 2rem;
 }
 .dates {
     max-width: 1080px;
@@ -941,8 +942,8 @@ table.showCase tr:nth-child(even) {
 }
 th,
 td {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
 }
