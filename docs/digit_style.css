@@ -1,6 +1,5 @@
 html,
 body {
-    height: 100%;
     font-family: "Verdana", sans-serif;
     font-size: 20px;
     margin: 0;
@@ -12,7 +11,7 @@ body {
 h1 {
     text-transform: capitalize;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin: 3rem 1rem 2rem;
 }
 h2 {
@@ -42,13 +41,17 @@ p {
 }
 a {
     text-decoration: none;
-    color: rgb(37,160,219);
+/*    color: rgb(37,160,219);*/
+    color: rgb(150, 190, 230);
 }
 a:visited {
-    color: rgb(78,114,166);
+/*    color: rgb(78,114,166);*/
+/*    color: #fad6a5; /\* opposite color of the background color #05295a *\/*/
+    color: pink;
 }
 a:hover{
-    color: rgb(150, 190, 230);
+/*    color: rgb(150, 190, 230);*/
+    color: #d4f4f5;
 }
 ul {
     padding: 0 0 0 2rem;
@@ -296,6 +299,9 @@ h1 span {
     padding: 2rem;
     line-height: 1.25rem;
 }
+.content a{
+    color: rgb(37,160,219);
+}
 .right-side {
     padding: 1.5rem;
     background-color: rgba(255, 248, 248, 0.7);
@@ -424,12 +430,14 @@ h1 span {
 /* Footer ends */
 /* Courses titles */
 #courses {
-    background: url("images/footprints.png");
+    background: url("images/footprints.png"), radial-gradient(#05295a 40%, black);
     background-position: center top, center;
-    /*background-repeat: repeat-y, no-repeat;*/
+    background-repeat: repeat-y, no-repeat;
+    color: white;
 }
 .module h1 span {
-    color: rgba(57, 51, 51, 0.7);
+/*    color: rgba(57, 51, 51, 0.7);*/
+    color: rgba(255,255,255,0.7);
 }
 #svgHolder {
     text-align: center;
@@ -475,7 +483,7 @@ h1 span {
 .responsive-table li {
     border-radius: 3px;
     padding: 1.25rem 1.5rem;
-    display: flex;
+    display: flex;#co
     justify-content: space-between;
     margin-bottom: 1.25rem;
     font-size: 0.7rem;
@@ -551,10 +559,11 @@ h1 span {
     margin: 0px auto 0px auto;
     display: flex;
 }
-.projects {
+/* yxj: does not matter */
+/*.projects {
     position: relative;
     width: 100%;
-}
+}*/
 .work {
     float: left;
     overflow: hidden;
@@ -750,7 +759,7 @@ h1 span {
     margin: auto;
     padding-bottom: .5rem;
     text-align: justify;
-    color: rgb(0, 0, 0);
+/*    color: rgb(0, 0, 0);*/
 }
 @media screen and (max-width : 767px) {
     .data-event {
@@ -767,11 +776,12 @@ h1 span {
     text-align: left;
     font-size: 1rem;
     margin: 3rem auto 0;
-    color: rgb(0, 0, 0);
+/*    color: rgb(0, 0, 0);*/
     width: 60%;
 }
 .digit-works span {
-    color: rgba(0, 0, 0, 0.7);
+/*    color: rgba(0, 0, 0, 0.7);*/
+    color: rgba(255,255,255,0.7);
     font-weight: bold;
     font-size: 1rem;
 }
@@ -907,7 +917,7 @@ h1 span {
     width: 500px;
 }
 .portfolioList li:before {
-    content: url('images/footprint.png');
+    content: url('images/footprint.svg');
     display: inline-flex;
     margin: 0 .35rem;
 }
