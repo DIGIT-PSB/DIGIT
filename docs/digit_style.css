@@ -944,7 +944,7 @@ h1 span {
 }
 .dates h5 {
     font-size: 1rem;
-    color: rgba(0, 0, 0, 0.7);
+/*    color: rgba(0, 0, 0, 0.7);*/
 }
 table.showCase {
     vertical-align: middle;
@@ -952,7 +952,7 @@ table.showCase {
     margin: auto;
 }
 table.showCase tr:nth-child(even) {
-    background-color: /*#dcd0ff*/ /*#dbd7d2*/ /*#c3cde6/ /*#e0c39e*/ /*#d9cab2*/ lightsteelblue;
+    background-color: /*#dcd0ff*/ /*#dbd7d2*/ /*#c3cde6*/ /*#e0c39e*/ /*#d9cab2*/ /*lightsteelblue*/rgba(148,175,210,0.3);
 }
 th,
 td {
