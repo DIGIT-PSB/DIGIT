@@ -456,7 +456,8 @@ h1 span {
     word-spacing: .1rem;
 }
 .data p:first-child::first-letter {
-    color: #041E42;
+/*    color: #041E42;*/
+    color: lightsteelblue;
     font-weight: bold;
     font-size: 3rem;
     float: left; 
@@ -479,6 +480,9 @@ h1 span {
     margin-right: auto;
     padding: .7rem;
     line-height: 1.25rem;
+}
+.courseblock ul{
+    color: black;
 }
 .responsive-table li {
     border-radius: 3px;
