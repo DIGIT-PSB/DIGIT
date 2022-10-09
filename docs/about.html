@@ -16,9 +16,9 @@
         <script src="DIGIT.js"></script>
         <script src="https://use.fontawesome.com/664cfabaeb.js"></script>
     </head>
-    <body>
+    <body id="courses">
         <section id="preloader"></section>
-        <section id="courses">
+        <section>
             <div class="menu" id="myMenu">
                 <a href="index.html">Home</a>
                 <a href="about.html" class="active">About</a>
@@ -58,7 +58,7 @@
                 <div class="portfolioList">
                     <ul>
                         <li><a href="https://beealex.github.io/beealex_repo/index.html" target="_blank">Bianka Alexander</a></li>
-                        <li><a href="https://am0eba-byte.github.io/miabo-bia/" target="_blank">Mia Borgia</a> | <a href="https://am0eba-byte.github.io/internshipblog-3js/">Internship blog in 3D</a></li>
+                        <li><a href="https://am0eba-byte.github.io/miabo-bia/" target="_blank">Mia Borgia</a> | <a href="https://am0eba-byte.github.io/internshipblog-3js/" target="_blank">Internship blog in 3D</a></li>
                         <li><a href="https://newtfire.org/~jkc5782/" target="_blank">Jackie Chan</a></li>
                         <li><a href="https://www.isaacesterline.com/" target="_blank">Isaac Esterline</a></li>
                         <li><a href="https://sites.psu.edu/sammysspace/senior-project/" target="_blank">Sammy Fillar</a></li>
@@ -90,22 +90,22 @@
                     <p>
                         <strong> Learn More <br />
                         </strong>
-                        <a href="https://behrend.psu.edu/">Penn State Behrend</a>
+                        <a href="https://behrend.psu.edu/" target="_blank">Penn State Behrend</a>
                         <br />
-                        <a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/digital-media-arts-technology-ba/">DIGIT PSU Bulletin</a>
+                        <a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/digital-media-arts-technology-ba/" target="_blank">DIGIT PSU Bulletin</a>
                         <br />
-                        <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs/digital-media-arts-and-technology">Academic Programs</a>
+                        <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs/digital-media-arts-and-technology" target="_blank">Academic Programs</a>
                     </p>
                 </div>
                 <div class="features">
                     <p>
                         <strong> Useful Links <br />
                         </strong>
-                        <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs-1/digital-media-arts-and-technology/digit-faculty">Faculty</a>
+                        <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs-1/digital-media-arts-and-technology/digit-faculty" target="_blank">Faculty</a>
                         <br />
-                        <a href="https://psu.instructure.com/courses/1871837">Canvas Pride</a>
+                        <a href="https://psu.instructure.com/courses/1871837" target="_blank">Canvas Pride</a>
                         <br />
-                        <a href="https://digit-psb.github.io/BOLDC/">BOLDC</a>
+                        <a href="https://digit-psb.github.io/BOLDC/" target="_blank">BOLDC</a>
                     </p>
                 </div>
                 <div class="features">
@@ -127,6 +127,8 @@
             var loader = document.getElementById("preloader");
             window.addEventListener("load", function () {
                 loader.style.display = "none"
-            })</script>
+            })
+            hideMenu()
+        </script>
     </body>
 </html>

@@ -161,8 +161,12 @@ h1 span {
 }
 .menu {
     overflow: hidden;
+    width:100%;
+    position: fixed;
     background-color: rgba(0, 0, 0, .2);
     top: 0;
+    transition: top 0.25s;
+    z-index: 99;
 }
 
 .menu a {
@@ -435,6 +439,9 @@ h1 span {
     background-repeat: repeat-y, no-repeat;
     color: white;
 }
+.module{
+    padding-top: 3rem;
+}
 .module h1 span {
 /*    color: rgba(57, 51, 51, 0.7);*/
     color: rgba(255,255,255,0.7);
@@ -560,7 +567,7 @@ h1 span {
 .pcontainer {
     max-width: 960px;
     min-width: 320px;
-    margin: 0px auto 0px auto;
+    margin: 0 auto 2rem auto;
     display: flex;
 }
 /* yxj: does not matter */
@@ -894,7 +901,7 @@ h1 span {
     margin: auto;
     max-width: 960px;
     text-align: left;
-    padding: 1.5rem;
+    padding: 1rem 0 0 0;
 }
 .about_forms li {
     margin: .6rem 0 .6rem 0;
@@ -908,7 +915,6 @@ h1 span {
     overflow-y: scroll;
     background: rgba(0, 0, 0, 0.07);
 }
-
 .portfolioWrap {
     justify-content: center;
     display: flex;
@@ -916,7 +922,6 @@ h1 span {
     align-items: center;
     padding: 0.5rem 0 2.5rem;
 }
-
 .portfolioList {
     width: 500px;
 }
