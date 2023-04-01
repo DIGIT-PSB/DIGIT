@@ -40,3 +40,16 @@ function hideMore() {
   whatMore.style.display = "none";
   arrow.innerHTML = '⬇';
 }
+
+function hideMenu() {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos || 150 > document.documentElement.scrollTop) {
+        document.getElementsByClassName("menu")[0].style.top = "0";
+      } else {
+        document.getElementsByClassName("menu")[0].style.top = "-3.5rem";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+}
