@@ -915,6 +915,12 @@ h1 span {
     overflow-y: scroll;
     background: rgba(0, 0, 0, 0.07);
 }
+
+.contributeIndent {
+      padding-left: 60px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+}
 .portfolioWrap {
     justify-content: center;
     display: flex;
