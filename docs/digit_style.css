@@ -969,3 +969,15 @@ td {
     padding-top: 0.5rem;
     padding-bottom: 1rem;
 }
+iframe.newtfire{
+    display: block;
+    margin: auto;
+    border: none; 
+    width: 80vw; 
+    height: 40vw; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border: .5vw;
+    border-style: solid;
+    border-color: rgb(30,64,124, .8);
+    border-radius: .5vw;
+}
