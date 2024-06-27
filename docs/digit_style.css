@@ -287,12 +287,81 @@ h1 span {
         display: none;
     }
 }*
- /* The layout of the second-section can be used in other pages */
+
+#homeBackground {
+    background: url("images/footprints.png"), radial-gradient(#05295a 40%, black);
+    background-position: center top, center;
+    background-repeat: repeat-y, no-repeat;
+    color: white;
+}
+
+.content {
+    max-width: 1080px;
+    margin: 0 auto;
+    gap: 1rem;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 2rem;
+    line-height: 1.25rem;
+}
+
+.videoFormat video{
+    width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homeCenter {
+    text-align: center;
+    margin: auto;
+}
+
+.homeTopPadding {
+    padding-top: 20px;
+}
+
+.content h4 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0 0 0.85rem;
+}
+
+.contactButton {
+background-color: #1E407C;
+color: white !important;
+border: none;
+padding: 20px 34px;
+text-align: center;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+/*fix button background to be transparent
+*/
+.contactButtonAlign {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+}
+
+/*Carousel CSS test code*/
+
+/*Carousel Practice end code
+*/
+
+
+ /* The layout of the second-section can be used in other pages, but is currently not in use */
 #second-section {
     background: #ebebeb;
     padding-top: 1.75rem;
 }
-.content {
+
+/*Can delete .contentWithGrid - no longer use*/
+.contentWithGrid {
     max-width: 1080px;
     margin: 0 auto;
     display: grid;
@@ -303,9 +372,12 @@ h1 span {
     padding: 2rem;
     line-height: 1.25rem;
 }
+
 .content a{
     color: rgb(37,160,219);
 }
+
+/*Can delete .right-side - no longer use*/
 .right-side {
     padding: 1.5rem;
     background-color: rgba(255, 248, 248, 0.7);
@@ -314,15 +386,15 @@ h1 span {
 .right-side ul li {
     font-size: 0.75rem;
 }
+
+/*Can delete .left-side - no longer use*/
 .left-side {
     text-align: center;
     margin: auto;
 }
-.content h4 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 400;
-}
+
+
+
 @media only screen and (max-width : 960px) {
     .content {
         display: block;
@@ -917,6 +989,12 @@ text-align: center;
     overflow: hidden;
     overflow-y: scroll;
     background: rgba(0, 0, 0, 0.07);
+}
+
+.contributeIndent {
+      padding-left: 60px;
+      padding-top: 5px;
+      padding-bottom: 5px;
 }
 .portfolioWrap {
     justify-content: center;
