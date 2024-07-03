@@ -393,7 +393,7 @@ h1 span {
     text-decoration: underline;
 }
 .features a {
-    fill: #cccccc;
+    fill: #fff;
 }
 .features a:hover {
     fill: #fff;
@@ -498,7 +498,7 @@ text-align: center;
     border-radius: 3px;
     padding: 1.25rem 1.5rem;
     display: flex;#co
-    justify-content: space-between;
+    justify-content:space-between;
     margin-bottom: 1.25rem;
     font-size: 0.7rem;
 }
