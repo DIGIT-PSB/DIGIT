@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="441e5e36-7940-45d2-a445-1adf49504801" name="Changes" comment="" />
+    <list default="true" id="441e5e36-7940-45d2-a445-1adf49504801" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/archive.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/archive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dataviz.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dataviz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/digit_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/digit_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/digithuman.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/digithuman.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ev.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ev.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modeling-simulation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modeling-simulation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/roadmap.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/roadmap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/showcase.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/showcase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/soundmotion.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/soundmotion.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,28 +30,29 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2iTd7woxYIN1uvbreX6jyz2c1q5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Savannah",
-    "last_opened_file_path": "C:/Users/savan/Documents/github/DIGIT",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Savannah&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/savan/Documents/github/DIGIT&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,7 +61,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719518336459</updated>
-      <workItem from="1719518337908" duration="1543000" />
+      <workItem from="1719518337908" duration="6801000" />
+      <workItem from="1719525508090" duration="14000" />
+      <workItem from="1719778298482" duration="3874000" />
+      <workItem from="1719864076774" duration="6393000" />
+      <workItem from="1719942868448" duration="4599000" />
+      <workItem from="1720027216689" duration="332000" />
     </task>
     <servers />
   </component>
