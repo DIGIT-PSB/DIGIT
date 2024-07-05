@@ -339,8 +339,6 @@ margin: 4px 2px;
 cursor: pointer;
 }
 
-/*fix button background to be transparent
-*/
 .contactButtonAlign {
     text-align: center;
     padding-top: 60px;
@@ -972,6 +970,31 @@ text-align: center;
 }
 /* EVENT PAGE END */
 /* ABOUT PAGE BEGIN */
+
+.tabbingBtn {
+background-color: #1E407C;
+color: white !important;
+border: none;
+padding: 17px 30px;
+display: inline-block;
+font-size: 20px;
+cursor: pointer;
+}
+
+.tabbingBtn:hover {
+    background-color: #009CDE;
+}
+
+.tabbingBtnsAlign {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 275px;
+}
+
+/*test*/
+
+
 .about_forms {
     margin: auto;
     max-width: 960px;
