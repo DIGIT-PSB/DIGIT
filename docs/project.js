@@ -11,9 +11,13 @@ window.onload = init;
 
 function init() {
     //console.log('init is firing');
+    var theParent = document.querySelector(".projects");
+    //theParent.addEventListener("mouseover", infoPeek, false)
+
     for (var i = 0; i < projects.length; i++) {
         projects[i].dataset.defaultposition = i + 1;
         projects[i].addEventListener('click', expand, false);
+
     }
 }
 
@@ -25,15 +29,16 @@ function expand() {
     var w = window.innerWidth;
     /*console.log(window.innerWidth);*/
     if (w > 455) {
-        var focusOn = this.classList.contains('focus');
+        var focusOn = this.classList.contains('focus'); //srr: places 'focus' into THIS classlist
         // console.log(this.classList.contains('focus'));
+
         restore(projects);
         /* djb: First, return everything to original size and order, before changing anything. */
         var position = this.dataset.defaultposition;
         var rowNum = Math.ceil(position / 3);
         // console.log('Show my position: ' + position);
         // console.log('Show my row number: ' + rowNum);
-        var currentRowOffset = (position - 1) % 3 + 1;
+        var currentRowOffset = (position - 1) % 3 + 1; //srr: jumbles order after click
         // console.log('My current rowOffset position is: ' + currentRowOffset);
         var newPosition = position - currentRowOffset + 1;
         // console.log('My new sequence position is: ' + newPosition);
@@ -52,7 +57,7 @@ function expand() {
 }
 
 function restore(elements) {
-    /* ebb djb: Here we will restore the elements in their original order 
+    /* ebb djb: Here we will restore the elements in their original order //srr: unjumbles
      * following the data.defaultposition attribute values we set in init  */ 
     for (var i = 1; i <= elements.length; i++) {
         // console.log('we are in the restore function now and i is ' + i)
@@ -60,5 +65,16 @@ function restore(elements) {
         elementToMove.classList.remove("focus");
         elementToMove.parentNode.insertBefore(elementToMove, elements[ 'data-defaultposition = ' + i + 1]);
         // console.log('elementToMove is here: ' + elementToMove);
+    }
+}
+
+function infoPeek(e){
+    if (e.target !== e.currentTarget){
+        let mousedItem = e.target.id;
+        alert("Hello " + mousedItem);
+        var peek = this.classList.contains('hover')
+        if(this.classList.contains('focus')){
+            this.classList.remove("hover");
+        }
     }
 }
