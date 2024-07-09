@@ -36,9 +36,9 @@ function showMore() {
 function hideMore() {
   var arrow = this.querySelector("span.dots");
   var whatMore = this.querySelector("span.more");
-
+   arrow.innerHTML = '⬇';
   whatMore.style.display = "none";
-  arrow.innerHTML = '⬇';
+ 
 }
 
 function hideMenu() {
