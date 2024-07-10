@@ -681,7 +681,7 @@ text-align: center;
 .work p {
     line-height: 1.2;
 }
-.blur {
+.largeblur {
     position: absolute;
     top: 0;
     left: 0;
@@ -694,6 +694,22 @@ text-align: center;
 /* The FOCUS class is applied to only the WORK class on click through project.js. This is what expands the description. */
 .focus {
     display: inherit;
+}
+.hover img{
+    position: absolute;
+    filter: blur(100px);
+    z-index: 2;
+}
+.hover .desc{
+    display: inherit;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    z-index: 3;
 }
 .desc {
     box-sizing: border-box;
@@ -728,19 +744,19 @@ text-align: center;
         display: none;
         min-height: 100%;
     }
-    .work:hover img{
-        filter: blur(100px);
-    }
-    .work:hover .desc{
-        display: inherit;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-    }
+    /*.work:hover img{*/
+    /*    filter: blur(100px);*/
+    /*}*/
+    /*.work:hover .desc{*/
+    /*    display: inherit;*/
+    /*    position: absolute;*/
+    /*    top: 0;*/
+    /*    bottom: 0;*/
+    /*    left: 0;*/
+    /*    right: 0;*/
+    /*    height: 100%;*/
+    /*    width: 100%;*/
+    /*}*/
 
     .focus div.desc {
         display: inherit;
