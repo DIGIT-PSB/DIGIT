@@ -4,8 +4,10 @@
         <title>DIGIT Course Roadmap</title>
         <meta charset="UTF-8" />
         <meta name="author" content="Felipe Bassi" />
+        <meta name="author" content="Reece Cullen" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="The PSU Behrend DIGIT site, made by DIGIT students for the interested. DIGIT course info and events. Behrend Trees, data analysis, text archives, student projects, and a few galleries." />
+        <meta name="description"
+            content="The PSU Behrend DIGIT site, made by DIGIT students for the interested. DIGIT course info and events. Behrend Trees, data analysis, text archives, student projects, and a few galleries." />
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?" />
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Special+Elite" rel="stylesheet" />
@@ -20,19 +22,810 @@
         <section>
             <div class="menu" id="myMenu">
                 <a href="index.html">Home</a>
+                <a href="showcase.html">Our Students</a>
+                <a href="roadmap.html">Education</a>
                 <a href="about.html">About</a>
-                <a href="roadmap.html">Courses</a>
-                <a href="showcase.html">Students Projects</a>
-                <a href="ev.html" class="active">Events</a>
+                <a href="ev.html">Events</a>
+                <!--                <a href="https://newtfire.org/courses/DIGITShowcase.html" target="_blank">DIGIT Works</a>-->
                 <a href="javascript:void(0);" class="icon" onclick="Menubar()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
             <div class="archive">
+                <br />
                 <h2>This is an archive of previous DIGIT works series</h2>
+                <p class="archive">Jump down page: <a href="#F2020">Fall 2020</a>, <a href="#S2021"
+                        >Spring 2021</a>, <a href="#F2021">Fall 2021</a>, <a href="#S2022">Spring
+                        2022</a>, <a href="#F2022">Fall 2022</a>, <a href="#S2023">Spring 2023</a>,
+                    <a href="#F2023">Fall 2023</a><!--, <a href="#S2024">Spring 2024</a>--></p> 
             </div>
+            <!-- 
+            Template:
             <div class="dates">
-                <h3>Fall 2021</h3>
+                <h3 id="Xyear">SEMESTER HERE</h3>
+                <h5>DATE HERE</h5>
+            </div>
+            <table class="showCase">
+                <tr>
+                    <th>Time</th>
+                    <th>Projects and Presenters</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>TIME HERE</td>
+                    <td>PROJECT NAME and PRESENTERS HERE</td>
+                    <td>COURSE HERE</td>
+                </tr>
+                ETC (New tr for every project)
+            </table>
+            -->
+            <!-- The most recent DIGIT Works! 
+            <div class="dates">
+                <h3 id="S2024">Spring 2024</h3>
+                <h5>April 26, 2024</h5>
+            </div>
+            <table class="showCase">
+                <tr>
+                    <th>Time</th>
+                    <th>Projects and Presenters</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>11:00am–11:15</td>
+                    <td>Preliminary Tech Checks / Open Slot and Welcome!<br /> Profs. Beshero-Bondar
+                        and Hartung</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:15 –11:45am</td>
+                    <td> Advanced Digital Creations presentations: including these animated scenes :<br />
+                        <ul>
+                            <li>Remington Orange: <a
+                                    href="https://www.youtube.com/watch?v=IBrJg1t4MA0"
+                                    target="_blank">Routine Rust</a></li>
+                        </ul></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:45 –12:15pm</td>
+                    <td>Senior project presentations<br />
+                        <ul>
+                            <li>Jaxon Abele</li>
+                            <li>Harrison Lilley</li>
+                            <li>Hattie Sosia</li>
+                            <li>Thomas Hammer</li>
+                            <li>Egan Peck</li>
+                        </ul></td>
+                    <td>DIGIT 494</td>
+                </tr>
+                <tr>
+                    <td>12: 15–12:20</td>
+                    <td>Break</td>
+                    <td><img src="images/cuppa-white.png" alt="cup of steaming hot beverage"
+                            width="30" /></td>
+                </tr>
+                <tr>
+                    <td>12:20–12:28</td>
+                    <td> Reel of Data Visualizations: Part 1<br />
+                        <ul>
+                            <li>Samantha Moniot</li>
+                            <li>Lindsey Wood</li>
+                            <li>Savannah Ricks</li>
+                        </ul></td>
+                    <td>DIGIT 410</td>
+                </tr>
+                <tr>
+                    <td>12:30–12:40</td>
+                    <td><a href="https://zschleger.github.io/locke-anthology2.0/" target="_blank"
+                            >Locke Anthology 2.0</a>
+                        <a href="https://github.com/ZSchleger/locke-anthology2.0" target="_blank"
+                            >[GitHub]</a><br /> Zachary Schleger (Senior Project)</td>
+                    <td>DIGIT 494</td>
+                </tr>
+                <tr>
+                    <td>12:40–12:50</td>
+                    <td><a href="https://graydonk.itch.io/everyday" target="_blank">Everyday -
+                            v1.1</a>
+                        <a href="https://github.com/gak5275/GK-HonorsProject/" target="_blank"
+                            >[GitHub]</a><br /> Graydon Kupfer (Schreyer Honors Senior Thesis
+                        Project)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:50–1:05</td>
+                    <td><a
+                            href="https://docs.google.com/presentation/d/1YYJSu395nnsu4eVwVudaASh789P525mHRuPIAXXm4xI/edit#slide=id.p"
+                            target="_blank">Rethinking Image Protection in the Time of AI</a><br />
+                        Rachel Gerzevske</td>
+                    <td>Independent senior research presentation</td>
+                </tr>
+                <tr>
+                    <td>1:05–1:25</td>
+                    <td>GAME 480 team project presentation: <a
+                            href="https://graydonk.itch.io/the-way-of-words">The Way of
+                        Words</a></td>
+                    <td>GAME 480</td>
+                </tr>
+                <tr>
+                    <td>1:25–1:30</td>
+                    <td>Break</td>
+                    <td><img src="images/cuppa-white.png" alt="cup of steaming hot beverage"
+                            width="30" /></td>
+                </tr>
+                <tr>
+                    <td>1:30–2:00</td>
+                    <td>GAME 250 team project presentations (~85 minutes)</td>
+                    <td>GAME 250</td>
+                </tr>
+                <tr>
+                    <td>2:00 - 2:20</td>
+                    <td><a href="https://slides.com/elisabeshero-bondar/dracula-copyright"
+                            target="_blank">Dracula, Nosferatu, and Copyright in Our Time</a><br />
+                        Dr. Beshero-Bondar</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2:20 - 2:50</td>
+                    <td>Open Slots or Intermission</td>
+                    <td><img src="images/cuppa-white.png" alt="cup of steaming hot beverage"
+                            width="30" /></td>
+                </tr>
+                <tr>
+                    <td>2:50–3:00</td>
+                    <td> Reel of Data Visualizations: Part 2<br />
+                        <ul>
+                            <li>Harrison Lilley</li>
+                            <li>Zachary Schleger</li>
+                            <li>Tyler Gaydos</li>
+                            <li>Felipe Bassi</li>
+                        </ul></td>
+                    <td>DIGIT 410</td>
+                </tr>
+                <tr>
+                    <td>3:00–3:05</td>
+                    <td>Break</td>
+                    <td><img src="images/cuppa-white.png" alt="cup of steaming hot beverage"
+                            width="30" /></td>
+                </tr>
+                <tr>
+                    <td>3:05–3:13</td>
+                    <td><a href="https://lindseyxwood.github.io/oliviarodrigo/" target="_blank">The
+                            Olivia Rodrigo Project</a>
+                        <a href="https://github.com/lindseyxwood/oliviarodrigo" target="_blank"
+                            >[GitHub]</a><br /> Lindsey Wood, Lauren McCurdy, Alisson Gossage</td>
+                    <td>DIGIT 210</td>
+                </tr>
+                <tr>
+                    <td>3:15–3:25</td>
+                    <td>Tyler Akam <a
+                            href="https://behrendblog.com/2024/04/15/standout-seniors-meet-tyler-akam-digital-media-arts-and-technology/"
+                            target="_blank">(Behrend standout senior profile!)</a>, <a
+                            href="https://www.youtube.com/watch?v=uZYiCB9ex_4" target="_blank">The
+                            Proclaimed Legend of Clayton Rider</a> (Senior Project: animation)</td>
+                    <td>DIGIT 494</td>
+                </tr>
+                <tr>
+                    <td>3:25–3:33</td>
+                    <td><a href="https://gylertaydos.github.io/Elder-Scrolls-Dovahzul/"
+                            target="_blank">Elder Scrolls Dovahzul Project</a>
+                        <a href="https://github.com/gylertaydos/Elder-Scrolls-Dovahzul"
+                            target="_blank">[GitHub]</a> Tyler Gaydos and Owen Helm</td>
+                    <td>DIGIT 210</td>
+                </tr>
+                <tr>
+                    <td>3:35–3:43</td>
+                    <td><a href="https://rcc5418.github.io/CourtRecord/" target="_blank">Ace
+                            Attorney Project</a>
+                        <a href="https://github.com/rcc5418/CourtRecord" target="_blank"
+                            >[GitHub]</a><br /> Reece Cullen, Alyssa Hopple, Kayla Hopple</td>
+                    <td>DIGIT 210</td>
+                </tr>
+                <tr>
+                    <td>3:45–3:53</td>
+                    <td>
+                        <a href="https://josiahr21.github.io/FamilyGuy1/" target="_blank">Family Guy
+                            Project</a>
+                        <a href="https://github.com/josiahr21/FamilyGuy1" target="_blank"
+                            >[GitHub]</a><br /> Josiah Ruiz, Hattie Sosia, Liz Chavez</td>
+                    <td>DIGIT 210</td>
+                </tr>
+                <tr>
+                    <td>3:55–4:03</td>
+                    <td><a href="https://cal16king.github.io/Finance-Sentiment-Analysis/"
+                            target="_blank">Finance News Sentiment Analysis</a>
+                        <a href="https://github.com/Cal16king/Finance-Sentiment-Analysis"
+                            target="_blank">[GitHub]</a><br /> Andrew Bond, Caleb King</td>
+                    <td>DIGIT 210</td>
+                </tr>
+                <tr>
+                    <td>4:05–4:13</td>
+                    <td><a href="https://mystkitteh.github.io/TeamFuturama/" target="_blank"
+                            >Futurama Project</a>
+                        <a href="https://github.com/MystKitteh/TeamFuturama" target="_blank"
+                            >[GitHub]</a><br /> Mistie McColm, Charlie Vazquez, Samantha Moniot,
+                        Tyler Dollard</td>
+                    <td>DIGIT 210</td>
+                </tr>
+                <tr>
+                    <td>4:15 - 4:25</td>
+                    <td>Reed Coyle: <a
+                            href="https://drive.google.com/drive/folders/1-bU_6J44VVPgvJFbfkgIcu1S0R5KAeND"
+                            target="_blank">Electronic music composition and process</a>. To learn
+                        from Reed and stay in contact, go to <a href="https://discord.gg/MgACshDWsa"
+                            target="_blank">this Discord</a> for the Behrend Music Production
+                        Club.</td>
+                    <td>MUSIC 458</td>
+                </tr>
+                <tr>
+                    <td>4:25 - 4:35</td>
+                    <td>Open Slot; Concluding Discussion; Preview of <a
+                            href="https://keystonedh.network/2024/" target="_blank">Keystone DH
+                            Conference</a></td>
+                    <td></td>
+                </tr>
+            </table>
+            -->
+            <div class="dates">
+                <h3 id="F2023">Fall 2023</h3>
+                <h5>December, 2023</h5>
+            </div>
+            <table class="showCase">
+                <tr>
+                    <th>Time</th>
+                    <th>Projects and Presenters</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>11:00 - 11:05 AM</td>
+                    <td>Welcome!</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:05 - 11:12am</td>
+                    <td><a href="https://rcc5418.github.io/NotSoFastEgghead/" target="_blank">Sonic
+                            the Hedgehog CBML project</a>
+                        <a href="https://github.com/rcc5418/NotSoFastEgghead" target="_blank"
+                            >[GitHub]</a>
+                        <br /> Reece Cullen, Kayla Hopple, and Alyssa Hopple</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>11:15 - 11:23am</td>
+                    <td><a
+                            href="https://madisonsciarrillo.github.io/AliceUndergroundProject/index.html"
+                            target="_blank">Alice's Adventures Underground</a>
+                        <a href="https://github.com/MadisonSciarrillo/AliceUndergroundProject"
+                            target="_blank">[GitHub]</a><br /> Tyler Gaydos, Madison Sciarrillo,
+                        Charlie Vazquez, and Matthew Weitzel</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>11:25 - 11:33am</td>
+                    <td><a href="https://digitalmitford.github.io/stu2023_Journal/subDocs/"
+                            target="_blank">Mary Russell Mitford’s Notebook (1819-1823)</a>
+                        <a href="https://github.com/DigitalMitford/stu2023_Journal" target="_blank"
+                            >[GitHub]</a><br /> Hadleigh Jae Bills, Nathan Hammer, and Josiah
+                        Ruiz</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>11:35 - 11:42am</td>
+                    <td><a href="https://cbl5678.github.io/fluffyFishstick/index.html"
+                            target="_blank">Quark Magazine</a>
+                        <a href="https://github.com/cbl5678/fluffyFishstick/tree/main"
+                            target="_blank">[GitHub]</a><br /> Connor Lengyel, Tommy
+                        Moffett-Clanton, Liz Chavez, and Hattie Sosia</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>11:45 - 11:53am</td>
+                    <td><a href="https://ceq5032.github.io/ComicBookTWD/" target="_blank">The
+                            Walking Dead CBML project</a>
+                        <a href="https://github.com/ceq5032/ComicBookTWD" target="_blank"
+                            >[GitHub]</a><br /> Chelsea Quijas, Tyler Dollard, and Mistie
+                        McColm</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>11:55 - 12:03pm</td>
+                    <td><a href="https://sammoniot.github.io/FA23BehrendArchive/" target="_blank"
+                            >Founding of Penn State Behrend</a>
+                        <a href="https://github.com/sammoniot/FA23BehrendArchive" target="_blank"
+                            >[GitHub]</a> Samantha Moniot and Lindsey Wood</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>12:05 - 12:10pm</td>
+                    <td><a href="https://youtu.be/eIK2yASMurc?si=ZzFzD2YjReUUc2xL" target="_blank"
+                            >Alien documentary</a><br /> Reece Cullen</td>
+                    <td>GAME 180N</td>
+                </tr>
+                <tr>
+                    <td>12:07 - 12:15pm</td>
+                    <td><a href="https://jordanj7.github.io/DigitMangaProject/" target="_blank"
+                            >Jujutsu Kaisen! CBML project</a>
+                        <a href="https://github.com/JordanJ7/DigitMangaProject" target="_blank"
+                            >[GitHub]</a> Jordan James and George Koncerak</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>12:18 - 12:25 pm</td>
+                    <td><a href="https://remdog712.github.io/ComicBook_DIGIT110/" target="_blank"
+                            >Dennis the Menace CBML project</a>
+                        <a href="https://github.com/Remdog712/ComicBook_DIGIT110" target="_blank"
+                            >[GitHub]</a>
+                        <br /> Remington Orange, Lyndon Herschell, and Lauren McCurdy</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>12:28 - 12:35pm</td>
+                    <td><a
+                            href="https://gak5275.github.io/GK-HonorsProject/Everyday-0.2.1_HelloWorld-web/index.html"
+                            target="_blank">Everyday, version 0.2</a>
+                        <a href="https://github.com/gak5275/GK-HonorsProject/" target="_blank"
+                            >[GitHub]</a><br /> Graydon Kupfer</td>
+                    <td>DIGIT 496H: Schreyer Honors thesis project</td>
+                </tr>
+                <tr>
+                    <td>12:38 - 1:10pm</td>
+                    <td><b>Virtual Worlds!</b></td>
+                    <td>GAME 180N projects</td>
+                </tr>
+                <tr>
+                    <td>1:10 - 1:18pm</td>
+                    <td><a href="https://newtfire.github.io/Lord-of-the-Rings/" target="_blank">Lord
+                            of the Rings interactive website: JavaScript and SVG experiments</a>
+                        <a href="https://github.com/newtfire/Lord-of-the-Rings" target="_blank"
+                            >[GitHub]</a> Noah Stachera</td>
+                    <td>DIGIT 494 senior project</td>
+                </tr>
+                <tr>
+                    <td>1:20 - 1:30pm</td>
+                    <td>Online ARG World Development and Site Creation<br /> Milo Witcher</td>
+                    <td>GAME 420 and DIGIT 494 senior project</td>
+                </tr>
+                <tr>
+                    <td>1:30 - 1:40pm</td>
+                    <td><a href="https://minwu859.github.io/senior-project/" target="_blank">Deep
+                            into menstruation products: Care for women's health</a>
+                        <a href="https://github.com/newtfire/Lord-of-the-Rings" target="_blank"
+                            >[GitHub]</a> Min Wu</td>
+                    <td>DIGIT 494 senior project</td>
+                </tr>
+                <tr>
+                    <td>1:42 - 1:52pm</td>
+                    <td>The Cartographer (game)<br /> Tyler Akam, Stephen Catledge, and Ethan
+                        Bartley</td>
+                    <td>Game 480 capstone</td>
+                </tr>
+                <tr>
+                    <td>1:55 - 2:15pm</td>
+                    <td>The Perils and Possibilities of JavaScript Frameworks for Web Work: A
+                        discussion with digital evidence<br /> DIGIT 400 student React developers
+                        and Dr. B</td>
+                    <td>DIGIT 400</td>
+                </tr>
+                <tr>
+                    <td>2:15 - 2:30pm</td>
+                    <td>GAME 480 / Open slots / Discussion</td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="dates">
+                <h3 id="S2023">Spring 2023</h3>
+                <h5>April 28, 2023</h5>
+            </div>
+            <table class="showCase">
+                <tr>
+                    <th>Time</th>
+                    <th>Projects and Presenters</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>12:00 - 12:05am</td>
+                    <td>Welcome!<br /> Profs. Beshero-Bondar and Hartung</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:05 - 12:13pm</td>
+                    <td><a href="https://lizardwizard01.github.io/Dark-Souls-Lore-ChatGPT/"
+                            target="_blank">AI-Generated Game Lore</a>
+                        <a href="https://github.com/LizardWizard01/Dark-Souls-Lore-ChatGPT"
+                            target="_blank">[GitHub]</a><br /> Tyler Akam and Stephen Catledge</td>
+                    <td>DIGIT 210</td>
+                </tr>
+                <tr>
+                    <td>12:15 - 12:23pm</td>
+                    <td><a href="https://zschleger.github.io/Star-Wars-Project/" target="_blank"
+                            >Star Wars Analysis: Episodes I - IX</a>
+                        <a href="https://github.com/ZSchleger/Star-Wars-Project" target="_blank"
+                            >[GitHub]</a><br /> Jaxon Abele, Jordan James, Shaun Massenburg, and
+                        Zach Schleger</td>
+                    <td>DIGIT 210</td>
+                </tr>
+                <tr>
+                    <td>12:24 - 12:32pm</td>
+                    <td><a href="https://nhammer514.github.io/textfiles-politics/" target="_blank"
+                            >Conspiracy Textfiles</a>
+                        <a href="https://github.com/nhammer514/textfiles-politics" target="_blank"
+                            >[GitHub]</a><br /> Hadleigh Bills, Nathan Hammer, and Jermaine
+                        Shields</td>
+                    <td>DIGIT 210</td>
+                </tr>
+                <tr>
+                    <td>12:33 - 12:41pm</td>
+                    <td>
+                        <a href="https://stach13.github.io/Lord-of-the-Rings/" target="_blank">Lord
+                            of the Rings Text Analysis</a>
+                        <a href="https://github.com/Stach13/Lord-of-the-Rings" target="_blank"
+                            >[GitHub]</a><br /> Jimin Kim, Noah Stachera, and Min Wu</td>
+                    <td>DIGIT 210</td>
+                </tr>
+                <tr>
+                    <td>12:42 - 12:50pm</td>
+                    <td><a href="https://gak5275.github.io/StardewDIGIT210/" target="_blank">Stardew
+                            Valley Analysis</a>
+                        <a href="https://github.com/gak5275/StardewDIGIT210" target="_blank"
+                            >[GitHub]</a>
+                        <br /> Graydon Kupfer, Yuying Jin, and Will Stiller</td>
+                    <td>DIGIT 210</td>
+                </tr>
+                <tr>
+                    <td>12:51 - 12:59pm</td>
+                    <td>
+                        <a href="https://spookybeetle.github.io/bojack/" target="_blank">Bojack
+                            Horseman (defunct)</a>
+                        <a href="https://github.com/spookybeetle/bojack" target="_blank">[GitHub]
+                            (defunct)</a><br /> Savannah Ricks and Milo Witcher</td>
+                    <td>DIGIT 210</td>
+                </tr>
+                <tr>
+                    <td>1:00 - 1:08pm</td>
+                    <td>
+                        <a href="https://epp5198.github.io/TheSimpProject/" target="_blank">The
+                            Simpsons Project</a>
+                        <a href="https://github.com/epp5198/TheSimpProject" target="_blank"
+                            >[GitHub]</a><br /> Lyndon Herschell, Remington Orange, and Egan
+                        Peck</td>
+                    <td>DIGIT 210</td>
+                </tr>
+                <tr>
+                    <td>1:09 - 1:15pm</td>
+                    <td>Intermission</td>
+                    <td><img src="images/cuppa-white.png" alt="cup of steaming hot beverage"
+                            width="30" /></td>
+                </tr>
+                <tr>
+                    <td>1:15 - 1:23pm</td>
+                    <td>Tyler Cameron</td>
+                    <td>DIGIT 409</td>
+                </tr>
+                <tr>
+                    <td>1:24-1:34</td>
+                    <td> Remaking the <a href="https://frankensteinvariorum.org/" target="_blank"
+                            >Frankenstein Variorum</a>
+                        <a href="https://github.com/FrankensteinVariorum" target="_blank"
+                            >[GitHub]</a><br /> Yuying Jin</td>
+                    <td>Senior Project</td>
+                </tr>
+                <tr>
+                    <td>1:35 - 1:45pm</td>
+                    <td>Joey Gardiner</td>
+                    <td>Senior Project</td>
+                </tr>
+                <tr>
+                    <td>1:46 - 1:56pm</td>
+                    <td>Kyarra Parish, Zak Murphy, Geng Chen, and Tyler Cameron</td>
+                    <td>Senior Project</td>
+                </tr>
+                <tr>
+                    <td>1:56 - 2:04pm</td>
+                    <td>Remaking the <a href="https://sites.psu.edu/behrendtheatre/" target="_blank"
+                            >Behrend Theatre website</a><br /> Natalya Myers</td>
+                    <td>Senior project</td>
+                </tr>
+                <tr>
+                    <td>2:05 - 2:10pm</td>
+                    <td>Angelic Anguish<br /> Julian Giles</td>
+                    <td>GAME 250</td>
+                </tr>
+                <tr>
+                    <td>2:11 - 2:16pm</td>
+                    <td>BaccaRat<br /> Stephen Catledge and Tyler Akam</td>
+                    <td>GAME 250</td>
+                </tr>
+                <tr>
+                    <td>2:17 - 2:22pm</td>
+                    <td>The Lost of Bob<br /> Yuba Nupane</td>
+                    <td>GAME 250</td>
+                </tr>
+                <tr>
+                    <td>2:23 - 2:28pm</td>
+                    <td> SlimeQuest<br /> Reece Cullen</td>
+                    <td>GAME 250</td>
+                </tr>
+                <tr>
+                    <td>2:29 - 2:34pm</td>
+                    <td> Shardian<br /> John Pham</td>
+                    <td>GAME 250</td>
+                </tr>
+                <tr>
+                    <td>2:35 - 3:20pm</td>
+                    <td><b>Advanced Digital Creations</b> student presentations</td>
+                    <td>DIGIT 409</td>
+                </tr>
+                <tr>
+                    <td>3:20 - 3:35pm</td>
+                    <td>Digital Art Projects</td>
+                    <td>INART 258A</td>
+                </tr>
+                <tr>
+                    <td>3:35 - 3:45pm</td>
+                    <td>Open slot / concluding discussion</td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="dates">
+                <h3 id="F2022">Fall 2022</h3>
+                <h5>December 9, 2022</h5>
+            </div>
+            <table class="showCase">
+                <tr>
+                    <th>Time</th>
+                    <th>Projects and Presenters</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>11:00 - 11:05am</td>
+                    <td>Welcome!<br /> Profs. Beshero-Bondar and Hartung</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:05 - 11:12am</td>
+                    <td>Video: Dirtbike: the drama, the crisis, the adventure!<br /> Geng Chen and
+                        Zak Murphy</td>
+                    <td>COMM 242</td>
+                </tr>
+                <tr>
+                    <td>11:13 - 11:19am</td>
+                    <td>Music video: Bland music, cool edits!<br /> Tyler Cameron, Zak Murphy, Kyara
+                        Parrish</td>
+                    <td>COMM 242</td>
+                </tr>
+                <tr>
+                    <td>11:20 - 11:30am</td>
+                    <td><a href="https://newtfire.github.io/locke-anthology/" target="_blank">Harlem
+                            Renaissance Anthology</a>
+                        <a href="https://github.com/newtfire/locke-anthology" target="_blank"
+                            >[GitHub]</a> - Zack Dominick, Julian Giles, Zach Schleger, Noah
+                        Stachera</td>
+                    <td>DIGIT 110: Digital Humanities Open Lab Collaboration</td>
+                </tr>
+                <tr>
+                    <td>11:30 - 11:40am</td>
+                    <td><a href="https://digitalmitford.github.io/DM_Journal_1819-1823/"
+                            target="_blank">Mary Russell Mitford’s Journal (1819-1823)</a>
+                        <a href="https://github.com/DigitalMitford/DM_Journal_1819-1823"
+                            target="_blank">[GitHub]</a>: a collaboration with the <a
+                            href="https://digitalmitford.org/" target="_blank">Digital Mitford
+                            project</a>. <br /> Tyler Cameron, Savannah Ricks, Tyler Akam, Jacob
+                        Huellen</td>
+                    <td>DIGIT 110: Digital Humanities Open Lab Collaboration</td>
+                </tr>
+                <tr>
+                    <td>11:40 - 11:45am</td>
+                    <td>Joey Gardiner - Virtual world-building: Desert World with Three Suns</td>
+                    <td>GAME 180N</td>
+                </tr>
+                <tr>
+                    <td>11:45 - 11:52am</td>
+                    <td><a
+                            href="https://gzc5211.github.io/Hilaire-Belloc-1-Cautionary-Tales-for-Children/"
+                            target="_blank">Cautionary Tales for Children</a>
+                        <a href="https://github.com/JiayuanWen/Belloc-More-Beasts" target="_blank"
+                            >[GitHub]</a>: digitally remodeling an early 20th-century picture book
+                        for children - Geng Chen, Kyara Parrish, Min Wu, Shaun Massenburg</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>11:52 - 12pm</td>
+                    <td><a href="https://jiayuanwen.github.io/Belloc-More-Beasts/" target="_blank"
+                            >More Beasts for Worse Children</a>
+                        <a href="" target="_blank">[GitHub]</a>: digitally remodeling an early
+                        20th-century picture book for children - Jiayuan Wen, Graydon Kupfer,
+                        Myeisha Frost, Jermaine Shields</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 12:07pm</td>
+                    <td><a href="https://fkb5105.github.io/Letters-from-Europe-FA2022/"
+                            target="blank">Mary and Ernst Behrend's Travel Letters from Europe,
+                            1950s</a>
+                        <a href="https://github.com/fkb5105/Letters-from-Europe-FA2022"
+                            target="blank">[GitHub]</a> - Felipe Bassi, Tonya Velcko, Stephen
+                        Catledge, Egan Peck</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>12:08 - 12:15pm</td>
+                    <td><a href="https://spookybeetle.github.io/foundingOfPSB/" target="_blank"
+                            >Founding of Penn State Erie, The Behrend College</a>
+                        <a href="https://github.com/spookybeetle/foundingOfPSB" target="_blank"
+                            >[GitHub]</a> - Milo Witcher, Jax Abele, Will Stiller</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>12:15 - 12:25 pm</td>
+                    <td><a href="https://newtfire.github.io/Behrend75th/" target="_blank">Behrend
+                            75</a>
+                        <a href="https://github.com/newtfire/Behrend75th" target="_blank"
+                            >[GitHub]</a> - <b>Presenters TBA</b></td>
+                    <td>DIGIT 400</td>
+                </tr>
+                <tr>
+                    <td>12:25 - 12:30pm</td>
+                    <td>Logan Hering - Virtual world-building: Tropical Island Tour </td>
+                    <td>GAME 180N</td>
+                </tr>
+                <tr>
+                    <td>12:30 - 12:35pm</td>
+                    <td>Dionel A Cabán Cordero - Graphic Design: Bullet Graph and Stacked Bar </td>
+                    <td>GD 115N</td>
+                </tr>
+                <tr>
+                    <td>12:35pm - 12:45pm</td>
+                    <td>Video: <a href="https://www.youtube.com/watch?v=wbjFaPs6tkw" target="_blank"
+                            >The Intervention</a><br /> Tyler Akam and <a
+                            href="https://www.youtube.com/@Chiefofbricks" target="_blank"
+                            >Chiefofbricks</a></td>
+                    <td>Independent Student Film Production</td>
+                </tr>
+                <tr>
+                    <td>12:45 - 12:55pm</td>
+                    <td>Sam Deeter - Virtual world-building: Waterworld as a Pirate Ship </td>
+                    <td>Game 180N</td>
+                </tr>
+                <tr>
+                    <td>12:55 - 1pm</td>
+                    <td><em>Concluding discussion</em></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="dates">
+                <h3 id="S2022">Spring 2022</h3>
+                <h5>Friday, April 29, 2022</h5>
+            </div>
+            <table class="showCase">
+                <tr>
+                    <th>Time</th>
+                    <th>Projects and Presenters</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>1:00 - 1:05pm</td>
+                    <td>Welcome!<br /> Profs. Beshero-Bondar and Hartung</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1:05 - 1:10pm</td>
+                    <td>Ruby Trumer Fefer - Videogame Sound Design/Music Reel</td>
+                    <td>Senior Design Project</td>
+                </tr>
+                <tr>
+                    <td>1:10 - 1:15pm</td>
+                    <td>Reece Cullen - <a href="https://www.youtube.com/watch?v=Eqk2uinRrqo"
+                            target="_blank">Videogame Sound Video Essay</a></td>
+                    <td>INART 258A</td>
+                </tr>
+
+                <tr>
+                    <td>1:15 - 1:20pm</td>
+                    <td>Thomas Hammer - 3D procedural-based rendering</td>
+                    <td>DIGIT 409</td>
+                </tr>
+
+                <tr>
+                    <td>1:20 - 1:30pm</td>
+                    <td><a href="https://jbg5721.github.io/StarWarsAnalysis/" target="_blank">Star
+                            Wars Analysis</a>
+                        <a href="https://github.com/jbg5721/StarWarsAnalysis" target="_blank"
+                            >[Github]</a> - Joey Gardiner, Felipe Bassi, Thomas Hammer, Harrison
+                        Lilley, Aidan Ray</td>
+                    <td>DIGIT 210</td>
+                </tr>
+
+                <tr>
+                    <td>1:30 - 1:35pm</td>
+                    <td>Joey Gardiner - 3D procedural-based rendering</td>
+                    <td>DIGIT 409</td>
+                </tr>
+
+                <tr>
+                    <td>1:35 - 1:45pm</td>
+                    <td>Dr. Hunt and students - Digital Audio Projects</td>
+                    <td>INART 258A</td>
+                </tr>
+
+                <tr>
+                    <td>1:45 - 1:50pm</td>
+                    <td>Mia Borgia - 3D procedural-based rendering</td>
+                    <td>DIGIT 409</td>
+                </tr>
+
+                <tr>
+                    <td>1:50 - 2:00pm</td>
+                    <td><a href="https://gvt5036.github.io/Avatar/" target="_blank">Avatar: The Last
+                            Airbender Text Analysis</a><a href="https://github.com/gvt5036/Avatar"
+                            target="_blank"> [Github]</a> - Graesyn Tefft, Tyler Cameron, Zack
+                        Dominick, Julian Giles, Erin Mooney, Kyara Parrish</td>
+                    <td>DIGIT 210</td>
+                </tr>
+
+                <tr>
+                    <td>2:00 - 2:05pm</td>
+                    <td>Garrett Hess - SARC (Sentient Autonomous Robotic Companion)</td>
+                    <td>DART 204</td>
+                </tr>
+
+                <tr>
+                    <td>2:05 - 2:15pm</td>
+                    <td><a href="https://luh429.github.io/Dr_Seuss/" target="_blank">Seuss
+                            Analysis</a>
+                        <a href="https://github.com/gvt5036/Avatar" target="_blank">[Github]</a> -
+                        Logan Hering, Geng Chen, Sam Deeter, Zak Murphy, Katherine Hendricks, Janet
+                        Pituch, Emily Wargo</td>
+                    <td>DIGIT 210</td>
+                </tr>
+
+                <tr>
+                    <td>2:15 - 2:20pm</td>
+                    <td>Cameron Bigi - "Daniel"</td>
+                    <td>DART 204</td>
+                </tr>
+
+                <tr>
+                    <td>2:20 - 2:30pm</td>
+                    <td><a href="https://emotion-web.github.io/Senior_Project/" target="_blank"
+                            >EmotionWeb Game (defunct)</a>
+                        <a href="https://github.com/Emotion-Web/Senior_Project" target="_blank"
+                            >[Github] (defunct)</a> - Cameron Bigi</td>
+                    <td>Senior Design Project</td>
+                </tr>
+
+                <tr>
+                    <td>2:30 - 2:35pm</td>
+                    <td>Rachel Gerzevske - Gizmo (G1Z-M0)</td>
+                    <td>DART 204</td>
+                </tr>
+
+                <tr>
+                    <td>2:35 - 2:40pm</td>
+                    <td>Noah Stachera - "Haon"</td>
+                    <td>DART 204</td>
+                </tr>
+
+                <tr>
+                    <td>2:40 - 2:55pm</td>
+                    <td><a href="https://tiny-pickles.github.io/NativeGone/" target="_blank">The
+                            NativeGone Digital Project</a> - Grace Dill</td>
+                    <td>Senior Design Project</td>
+                </tr>
+
+                <tr>
+                    <td>2:55 - 3:00pm</td>
+                    <td>Mia Borgia and Sam Andrew - Erie climate change video footage</td>
+                    <td>Senior Design Project</td>
+                </tr>
+
+                <tr>
+                    <td>3:00 - 3:10pm</td>
+                    <td>Conclusion<br />Discussion, announcements, farewells and best wishes to our
+                        graduates!</td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="dates">
+                <h3 id="F2021">Fall 2021</h3>
                 <h5>Friday, December 10, 2021</h5>
             </div>
             <table class="showCase">
@@ -48,7 +841,9 @@
                 </tr>
                 <tr>
                     <td>10:03 - 10:10am</td>
-                    <td><a href="https://khearts.newtfire.org/" target="_blank">Kingdom Hearts</a>. [<a href="https://github.com/austinmurry/KingdomHeartOfTheCards">GitHub</a>] Austin Murry and Cameron Bigi</td>
+                    <td><a href="https://khearts.newtfire.org/" target="_blank">Kingdom Hearts</a>.
+                            [<a href="https://github.com/austinmurry/KingdomHeartOfTheCards"
+                            >GitHub</a>] Austin Murry and Cameron Bigi</td>
                     <td>DIGIT 400</td>
                 </tr>
                 <tr>
@@ -93,7 +888,10 @@
                 </tr>
                 <tr>
                     <td>10:43 - 10:53am</td>
-                    <td><a href="https://piperpoetry.newtfire.org/" target="_blank">Poetry by Piper Baron</a>: Senior project integrating poetry and animated artwork with text analysis. [<a href="https://github.com/PiperBaron/PoetrybyPiperBaron" target="_blank">GitHub</a>]<br /> Piper Baron</td>
+                    <td><a href="https://piperpoetry.newtfire.org/" target="_blank">Poetry by Piper
+                            Baron</a>: Senior project integrating poetry and animated artwork with
+                        text analysis. [<a href="https://github.com/PiperBaron/PoetrybyPiperBaron"
+                            target="_blank">GitHub</a>]<br /> Piper Baron</td>
                     <td>DIGIT 494</td>
                 </tr>
                 <tr>
@@ -109,36 +907,58 @@
                 <tr>
                     <td>11:02 - 11:06</td>
                     <td>Brief Intermission</td>
-                    <td><img src="images/cuppa.png" alt="cup of steaming hot beverage" width="30" /></td>
+                    <td><img src="images/cuppa.png" alt="cup of steaming hot beverage" width="30"
+                         /></td>
                 </tr>
                 <tr>
                     <td>11:07 - 11:15am</td>
-                    <td><a href="https://austinmurry.github.io/Warren-Letters-Team-1/" target="_blank">Warren Behrend’s Last Letters</a>. [<a href="https://github.com/austinmurry/Warren-Letters-Team-1">GitHub</a>]<br />Team 1: Austin Murry, Grace Dill, Sydney Beal. Team 2: Joey Gardiner, Thomas Hammer, Nicky Versagli</td>
+                    <td><a href="https://austinmurry.github.io/Warren-Letters-Team-1/"
+                            target="_blank">Warren Behrend’s Last Letters</a>. [<a
+                            href="https://github.com/austinmurry/Warren-Letters-Team-1"
+                        >GitHub</a>]<br />Team 1: Austin Murry, Grace Dill, Sydney Beal. Team 2:
+                        Joey Gardiner, Thomas Hammer, Nicky Versagli</td>
                     <td>DIGIT 110</td>
                 </tr>
                 <tr>
                     <td>11:16- 11:24am</td>
-                    <td><a href="https://mayan.newtfire.org" target="_blank">Ancient Mayans Digitized</a>. [<a href="https://github.com/am0eba-byte/mayan">GitHub</a>]<br /> Mia Borgia, Anthony Wlodarczyk, Sam Andrew, Brett Meyer</td>
+                    <td><a href="https://mayan.newtfire.org" target="_blank">Ancient Mayans
+                            Digitized</a>. [<a href="https://github.com/am0eba-byte/mayan"
+                            >GitHub</a>]<br /> Mia Borgia, Anthony Wlodarczyk, Sam Andrew, Brett
+                        Meyer</td>
                     <td>DIGIT 400</td>
                 </tr>
                 <tr>
                     <td>11:25 - 11:33am</td>
-                    <td><a href="https://janman813.github.io/Travel_Letters_1950s/" target="_blank">Behrend family's travel letters, 1950s</a>. [<a href="https://github.com/Janman813/Travel_Letters_1950s" target="_blank">GitHub</a>]<br />Janet Pituch, Katharine Hendricks. Eric Sandbloom</td>
+                    <td><a href="https://janman813.github.io/Travel_Letters_1950s/" target="_blank"
+                            >Behrend family's travel letters, 1950s</a>. [<a
+                            href="https://github.com/Janman813/Travel_Letters_1950s" target="_blank"
+                            >GitHub</a>]<br />Janet Pituch, Katharine Hendricks. Eric Sandbloom</td>
                     <td>DIGIT 110</td>
                 </tr>
                 <tr>
                     <td>11:34 - 11:42am</td>
-                    <td><a href="https://arrowarchive.github.io/behrendcalendar/archive.html" target="_blank">Mary Behrend’s 1909 calendar</a>. [<a href="https://github.com/arrowarchive/behrendcalendar" target="_blank">GitHub</a>]<br />Rachel Gerzevske, Amory Coleman-Reeves, Logan Hering, Zak Murphy</td>
+                    <td><a href="https://arrowarchive.github.io/behrendcalendar/archive.html"
+                            target="_blank">Mary Behrend’s 1909 calendar</a>. [<a
+                            href="https://github.com/arrowarchive/behrendcalendar" target="_blank"
+                            >GitHub</a>]<br />Rachel Gerzevske, Amory Coleman-Reeves, Logan Hering,
+                        Zak Murphy</td>
                     <td>DIGIT 110</td>
                 </tr>
                 <tr>
                     <td>11:43 - 11:51am</td>
-                    <td><a href="https://digit-110.github.io/Digit-110-Project/" target="_blank">Letter from Paul Siple to Mr. Behrend</a>. [<a href="https://github.com/Digit-110/Digit-110-Project" target="_blank">GitHub</a>]<br />Graesyn Tefft, Sam Deeter, Harrison Lilley </td>
+                    <td><a href="https://digit-110.github.io/Digit-110-Project/" target="_blank"
+                            >Letter from Paul Siple to Mr. Behrend</a>. [<a
+                            href="https://github.com/Digit-110/Digit-110-Project" target="_blank"
+                            >GitHub</a>]<br />Graesyn Tefft, Sam Deeter, Harrison Lilley </td>
                     <td>DIGIT 110</td>
                 </tr>
                 <tr>
                     <td>11:52am - 12:00pm</td>
-                    <td><a href="https://erinmooney.github.io/Storybook/" target="_blank">Encoding a picture book: <i>Kew Gardens</i> by Virginia Woolf, illustrated by Vanessa Bell</a>. [<a href="https://github.com/erinmooney/Storybook" target="_blank">GitHub</a>]<br />Erin Mooney, Yuying Jin, Aidan Ray, Sudarshan Veludandi, Nicholas Wright </td>
+                    <td><a href="https://erinmooney.github.io/Storybook/" target="_blank">Encoding a
+                            picture book: <i>Kew Gardens</i> by Virginia Woolf, illustrated by
+                            Vanessa Bell</a>. [<a href="https://github.com/erinmooney/Storybook"
+                            target="_blank">GitHub</a>]<br />Erin Mooney, Yuying Jin, Aidan Ray,
+                        Sudarshan Veludandi, Nicholas Wright </td>
                     <td>DIGIT 110</td>
                 </tr>
                 <tr>
@@ -149,10 +969,14 @@
                 <tr>
                     <td>12:05 - 2:30pm</td>
                     <td>Long Intermission</td>
-                    <td><img src="images/cuppa-white.png" alt="cup of steaming hot beverage" width="30" />
-                        <img src="images/cuppa-white.png" alt="cup of steaming hot beverage" width="30" />
-                        <img src="images/cuppa-white.png" alt="cup of steaming hot beverage" width="30" />
-                        <img src="images/cuppa-white.png" alt="cup of steaming hot beverage" width="30" />
+                    <td><img src="images/cuppa-white.png" alt="cup of steaming hot beverage"
+                            width="30" />
+                        <img src="images/cuppa-white.png" alt="cup of steaming hot beverage"
+                            width="30" />
+                        <img src="images/cuppa-white.png" alt="cup of steaming hot beverage"
+                            width="30" />
+                        <img src="images/cuppa-white.png" alt="cup of steaming hot beverage"
+                            width="30" />
                     </td>
                 </tr>
                 <tr>
@@ -162,32 +986,48 @@
                 </tr>
                 <tr>
                     <td>2:33 - 2:41pm</td>
-                    <td><a href="https://btrees.newtfire.org" target="_blank">Behrend Trees</a>. [<a href="https://github.com/N00000DLE/BehrendTrees" target="_blank">GitHub</a>]<br /> Destinee Kellner, Grace Dill, Garrett Hess</td>
+                    <td><a href="https://btrees.newtfire.org" target="_blank">Behrend Trees</a>. [<a
+                            href="https://github.com/N00000DLE/BehrendTrees" target="_blank"
+                            >GitHub</a>]<br /> Destinee Kellner, Grace Dill, Garrett Hess</td>
                     <td>DIGIT 400</td>
                 </tr>
                 <tr>
                     <td>2:42 - 2:50pm</td>
-                    <td><a href="https://letsrock.newtfire.org/" target="_blank">Guilty Gear / Let’s Rock</a>. [<a href="https://github.com/trumerfe/LetsRock" target="_blank">GitHub</a>]<br />Ruby Trumer, Sebastian Ortiz</td>
+                    <td><a href="https://letsrock.newtfire.org/" target="_blank">Guilty Gear / Let’s
+                            Rock</a>. [<a href="https://github.com/trumerfe/LetsRock"
+                            target="_blank">GitHub</a>]<br />Ruby Trumer, Sebastian Ortiz</td>
                     <td>DIGIT 400</td>
                 </tr>
                 <tr>
                     <td>2:51 - 2:59pm</td>
-                    <td><a href="https://smashtiers.newtfire.org/" target="_blank">Super Smash Bros. Tiers</a>. [<a href="https://github.com/BarbieCessar/SmashBrosSite-" target="_blank">GitHub</a>]<br />Barbie Cessar, Emily Levi, Aidan Olsen, Anthony Vangeli</td>
+                    <td><a href="https://smashtiers.newtfire.org/" target="_blank">Super Smash Bros.
+                            Tiers</a>. [<a href="https://github.com/BarbieCessar/SmashBrosSite-"
+                            target="_blank">GitHub</a>]<br />Barbie Cessar, Emily Levi, Aidan Olsen,
+                        Anthony Vangeli</td>
                     <td>DIGIT 400</td>
                 </tr>
                 <tr>
                     <td>3:00 - 3:08pm</td>
-                    <td><a href="https://auto.newtfire.org/" target="_blank">Nissan Datsun DIGIT project</a>. [<a href="https://github.com/Kennaab/auto_Digit400" target="_blank">GitHub</a>]<br />McKenna Ballew and Syed Naqvi</td>
+                    <td><a href="https://auto.newtfire.org/" target="_blank">Nissan Datsun DIGIT
+                            project</a>. [<a href="https://github.com/Kennaab/auto_Digit400"
+                            target="_blank">GitHub</a>]<br />McKenna Ballew and Syed Naqvi</td>
                     <td>DIGIT 400</td>
                 </tr>
                 <tr>
                     <td>3:09 - 3:17pm</td>
-                    <td><a href="https://musicallydisney.newtfire.org/" target="_blank">Musically Disney</a>. [<a href="https://github.com/amayadwillis/DisneySongs" target="_blank">GitHub</a>]<br />Amaya Willis, Jacqueline Chan</td>
+                    <td><a href="https://musicallydisney.newtfire.org/" target="_blank">Musically
+                            Disney</a>. [<a href="https://github.com/amayadwillis/DisneySongs"
+                            target="_blank">GitHub</a>]<br />Amaya Willis, Jacqueline Chan</td>
                     <td>DIGIT 400</td>
                 </tr>
                 <tr>
                     <td>3:18 - 3:26pm</td>
-                    <td><a href="https://radioholmes.newtfire.org/" target="_blank">Sherlock Holmes on the British Airwaves</a>: Schreyer Honors project investigating radio scripts from the World War II era adapting Arthur Conan Doyle’s serial publications. [<a href="https://github.com/wdjacca/SherlockHolmesRadioScripts" target="_blank">GitHub</a>]<br /> Jacqueline Chan</td>
+                    <td><a href="https://radioholmes.newtfire.org/" target="_blank">Sherlock Holmes
+                            on the British Airwaves</a>: Schreyer Honors project investigating radio
+                        scripts from the World War II era adapting Arthur Conan Doyle’s serial
+                        publications. [<a
+                            href="https://github.com/wdjacca/SherlockHolmesRadioScripts"
+                            target="_blank">GitHub</a>]<br /> Jacqueline Chan</td>
                     <td>DIGIT 496H</td>
                 </tr>
                 <tr>
@@ -197,7 +1037,7 @@
                 </tr>
             </table>
             <div class="dates">
-                <h3>Spring 2021</h3>
+                <h3 id="S2021">Spring 2021</h3>
                 <h5>Friday ,April 30, 2021</h5>
             </div>
             <table class="showCase">
@@ -208,22 +1048,31 @@
                 </tr>
                 <tr>
                     <td>1:00 - 1:04pm</td>
-                    <td><strong>Prequel: introducing the Pitt-Greensburg guest presentations</strong><br /> Profs. Beshero-Bondar and William Campbell (Pitt-Greensburg) </td>
+                    <td><strong>Prequel: introducing the Pitt-Greensburg guest
+                            presentations</strong><br /> Profs. Beshero-Bondar and William Campbell
+                        (Pitt-Greensburg) </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>1:04 - 1:12pm</td>
-                    <td><a href="http://avatar.newtfire.org/" target="_blank">Avatar: The Journey of Aang and Zuko</a>. [<a href="https://github.com/mjo43/Avatar" target="_blank">GitHub</a>]<br /> Michael O’Malley and Andrew Soberdash</td>
+                    <td><a href="http://avatar.newtfire.org/" target="_blank">Avatar: The Journey of
+                            Aang and Zuko</a>. [<a href="https://github.com/mjo43/Avatar"
+                            target="_blank">GitHub</a>]<br /> Michael O’Malley and Andrew
+                        Soberdash</td>
                     <td>Pitt-Greensburg: Coding &amp; Data Visualization</td>
                 </tr>
                 <tr>
                     <td>1:12 - 1:20pm</td>
-                    <td><a href="http://finalfantasy.newtfire.org" target="_blank">Final Fantasy VII: Dialogue Analysis</a>. [<a href="https://github.com/Bennediction/FinalFantasy" target="_blank">GitHub</a>]<br /> Benjamin Hill and Aeris Day</td>
+                    <td><a href="http://finalfantasy.newtfire.org" target="_blank">Final Fantasy
+                            VII: Dialogue Analysis</a>. [<a
+                            href="https://github.com/Bennediction/FinalFantasy" target="_blank"
+                            >GitHub</a>]<br /> Benjamin Hill and Aeris Day</td>
                     <td>Pitt-Greensburg: Coding &amp; Data Visualization</td>
                 </tr>
                 <tr>
                     <td>1:20 - 1:24pm</td>
-                    <td><strong>Introducing the Penn State Behrend DIGIT 210 and 409 projects</strong><br /> Profs. Beshero-Bondar and Hartung</td>
+                    <td><strong>Introducing the Penn State Behrend DIGIT 210 and 409
+                            projects</strong><br /> Profs. Beshero-Bondar and Hartung</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -233,7 +1082,10 @@
                 </tr>
                 <tr>
                     <td>1:28 - 1:36pm</td>
-                    <td><a href="https://arrowarchive.github.io/LoZ/" target="_blank">The Legend of Zelda Text Analysis</a>. [<a href="https://github.com/arrowarchive/LoZ" target="_blank">GitHub</a>]<br /> Rachel Gerzevske, Eric Sandbloom, Joel Watson</td>
+                    <td><a href="https://arrowarchive.github.io/LoZ/" target="_blank">The Legend of
+                            Zelda Text Analysis</a>. [<a href="https://github.com/arrowarchive/LoZ"
+                            target="_blank">GitHub</a>]<br /> Rachel Gerzevske, Eric Sandbloom, Joel
+                        Watson</td>
                     <td>DIGIT 210</td>
                 </tr>
                 <tr>
@@ -250,7 +1102,11 @@
                 </tr>
                 <tr>
                     <td>1:45 - 1:53pm</td>
-                    <td><a href="https://amw6765.github.io/AssassinsCreedPROJECT/" target="_blank">Assassin’s Creed Odyssey Text Analysis</a>. [<a href="https://github.com/amw6765/AssassinsCreedPROJECT" target="_blank">GitHub</a>]<br /> Anthony Wlodarczyk, Isaac Esterline, Danny Hough, Josh Sige</td>
+                    <td><a href="https://amw6765.github.io/AssassinsCreedPROJECT/" target="_blank"
+                            >Assassin’s Creed Odyssey Text Analysis</a>. [<a
+                            href="https://github.com/amw6765/AssassinsCreedPROJECT" target="_blank"
+                            >GitHub</a>]<br /> Anthony Wlodarczyk, Isaac Esterline, Danny Hough,
+                        Josh Sige</td>
                     <td>DIGIT 210</td>
                 </tr>
                 <tr>
@@ -267,7 +1123,9 @@
                 </tr>
                 <tr>
                     <td>2:02 - 2:10pm</td>
-                    <td><a href="https://am0eba-byte.github.io/blues/" target="_blank">Blues Analysis Project</a>. [<a href="https://github.com/am0eba-byte/blues" target="_blank">GitHub</a>]<br /> Mia Borgia and Nicky Versagli</td>
+                    <td><a href="https://am0eba-byte.github.io/blues/" target="_blank">Blues
+                            Analysis Project</a>. [<a href="https://github.com/am0eba-byte/blues"
+                            target="_blank">GitHub</a>]<br /> Mia Borgia and Nicky Versagli</td>
                     <td>DIGIT 210</td>
                 </tr>
                 <tr>
@@ -284,7 +1142,10 @@
                 </tr>
                 <tr>
                     <td>2:19 - 2:27pm</td>
-                    <td><a href="https://amayadwillis.github.io/DisneySongs/" target="_blank">Disney Songs Project</a>. [<a href="https://github.com/amayadwillis/DisneySongs" target="_blank">GitHub</a>]<br /> Amaya Willis, Jacqueline Chan, Tom Sheehy</td>
+                    <td><a href="https://amayadwillis.github.io/DisneySongs/" target="_blank">Disney
+                            Songs Project</a>. [<a
+                            href="https://github.com/amayadwillis/DisneySongs" target="_blank"
+                            >GitHub</a>]<br /> Amaya Willis, Jacqueline Chan, Tom Sheehy</td>
                     <td>DIGIT 210</td>
                 </tr>
                 <tr>
@@ -295,11 +1156,15 @@
                 <tr>
                     <td>2:32 - 2:37pm</td>
                     <td>Intermission</td>
-                    <td><img src="images/cuppa-white.png" alt="cup of steaming hot beverage" width="30" /></td>
+                    <td><img src="images/cuppa-white.png" alt="cup of steaming hot beverage"
+                            width="30" /></td>
                 </tr>
                 <tr>
                     <td>2:38 - 2:46pm</td>
-                    <td><a href="https://stf5123.github.io/Grimm_project/" target="_blank">Grimm Brothers Project</a>. [<a href="https://github.com/STF5123/Grimm_project" target="_blank">GitHub</a>]<br /> Natalya Myers, Sheridan Fassett, Emily Levi</td>
+                    <td><a href="https://stf5123.github.io/Grimm_project/" target="_blank">Grimm
+                            Brothers Project</a>. [<a
+                            href="https://github.com/STF5123/Grimm_project" target="_blank"
+                            >GitHub</a>]<br /> Natalya Myers, Sheridan Fassett, Emily Levi</td>
                     <td>DIGIT 210</td>
                 </tr>
                 <tr>
@@ -320,7 +1185,11 @@
             </tr>-->
                 <tr>
                     <td>2:42 - 2:50pm</td>
-                    <td><a href="https://beeplosion.github.io/KingdomHeartOfTheCards/" target="_blank">Kingdom of Hearts Text Analysis</a>. [<a href="https://github.com/Beeplosion/KingdomHeartOfTheCards" target="_blank">GitHub</a>]<br /> Sebastian Ortiz, Jesse Beckwith, Austin Murry</td>
+                    <td><a href="https://beeplosion.github.io/KingdomHeartOfTheCards/"
+                            target="_blank">Kingdom of Hearts Text Analysis</a>. [<a
+                            href="https://github.com/Beeplosion/KingdomHeartOfTheCards"
+                            target="_blank">GitHub</a>]<br /> Sebastian Ortiz, Jesse Beckwith,
+                        Austin Murry</td>
                     <td>DIGIT 210</td>
                 </tr>
                 <tr>
@@ -391,11 +1260,171 @@
                     <td></td>
                 </tr>
             </table>
+            <div class="dates">
+                <h3 id="F2020">Fall 2020</h3>
+                <h5>December 11, 2020</h5>
+            </div>
+            <table class="showCase">
+                <tr>
+                    <th>Time</th>
+                    <th>Projects and Presenters</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>10:00 - 10:05 AM</td>
+                    <td>Welcome!<br /> Profs. Beshero-Bondar and Hartung</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:05 - 10:10 AM</td>
+                    <td><a href="https://sites.psu.edu/intechnocracywetrust/" target="_blank">In
+                            Technocracy We Trust</a><br /> Zak Teyssier</td>
+                    <td>PHOTO 200</td>
+                </tr>
+                <tr>
+                    <td>10:12 - 10:22 AM</td>
+                    <td>James Bond: Music, Culture, and Influence. <a
+                            href="https://github.com/zteyssier/JamesBondMCI" target="_blank"
+                            >[GitHub]</a><br /> Zak Teyssier, Daniel Pakulski, Chase Trohoske</td>
+                    <td>DIGIT 400</td>
+                </tr>
+                <tr>
+                    <td>10:24 - 10:29 AM</td>
+                    <td>Land and Story<br /> Daniel Pakulski</td>
+                    <td>PHOTO 200</td>
+                </tr>
+                <tr>
+                    <td>10:31 - 10:41 AM</td>
+                    <td><a href="http://recipe.newtfire.org/" target="_blank">Historic Recipes.</a>
+                        <a href="https://github.com/beealex/historicRecipes" target="_blank"
+                            >[GitHub]</a><br /> Bianka Alexander and Samantha Fillar</td>
+                    <td>DIGIT 400</td>
+                </tr>
+                <tr>
+                    <td>10:43 - 10:53 AM</td>
+                    <td><a href="https://beeplosion.github.io/TheDracIsBack/" target="_blank"
+                            >Dracula, by Bram Stoker. (defunct)</a>
+                        <a href="https://github.com/Beeplosion/TheDracIsBack" target="_blank"
+                            >[GitHub] (defunct)</a><br /> Eric Trumer Fefer, Samuel Andrew, Cameron
+                        Bigi, Destinee Kellner, Emily Levi, Sebastian Ortiz, Anthony Vangeli</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>10:55 - 11:00 AM</td>
+                    <td>A Response to the Panopticon and The Cruelty of Light<br /> William
+                        Stiller</td>
+                    <td>PHOTO 200</td>
+                </tr>
+                <tr>
+                    <td>11:02 - 11:12 AM</td>
+                    <td> Game Pitch Documents Analysis. <a
+                            href="https://github.com/MasonG27/GameDesignAnalysis" target="_blank"
+                            >[GitHub]</a><br /> Mason Gossy and Elizabeth Wheeler</td>
+                    <td>DIGIT 400</td>
+                </tr>
+                <tr>
+                    <td>11:14 - 11:19 AM</td>
+                    <td><a href="https://youtu.be/PVG4jGfeQqw" target="_blank">The Top of the
+                            World</a><br /> Amory Coleman-Reeves</td>
+                    <td>PHOTO 200</td>
+                </tr>
+                <tr>
+                    <td>11:21 - 11:26 AM</td>
+                    <td><a href="https://sites.psu.edu/fallphoto/" target="_blank">West County
+                            Outdoors</a><br /> Cash Platz</td>
+                    <td>PHOTO 200</td>
+                </tr>
+                <tr>
+                    <td>11:28 - 11:35AM</td>
+                    <td>Intermission</td>
+                    <td><img src="images/cuppa-white.png" alt="cup of steaming hot beverage"
+                            width="30" /></td>
+                </tr>
+                <tr>
+                    <td>11:35 - 11:45 AM</td>
+                    <td>Elder Scrolls: Morrowind. <a
+                            href="https://github.com/JeremyF5737/Elder_Scrolls.git" target="_blank"
+                            >[GitHub]</a> Jeremy Fischer, Joel Watson, Isaac Esterline</td>
+                    <td>DIGIT 400</td>
+                </tr>
+                <tr>
+                    <td>11:47 - 11:52 AM</td>
+                    <td>Possibility.OBJ<br /> Eric Sandbloom</td>
+                    <td>PHOTO 200</td>
+                </tr>
+                <tr>
+                    <td>11:54 AM - 11:59 AM</td>
+                    <td><a
+                            href="https://sites.psu.edu/piperdigit100/photo-essay-the-capitalism-of-public-parks/"
+                            target="_blank">The Capitalism of Public Parks</a><br /> Piper
+                        Baron</td>
+                    <td>PHOTO 200</td>
+                </tr>
+                <tr>
+                    <td>12:01 - 12:11 PM</td>
+                    <td><a href="https://argynarg.github.io/DharmaProject/" target="_blank">Dharma
+                            Bums</a>, by Jack Kerouac. <a
+                            href="https://github.com/argynarg/DharmaProject" target="_blank"
+                            >[GitHub]</a><br /> Benjamin Simon and Joel Watson</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>12:13 - 12:23 PM</td>
+                    <td><a href="https://dxh405.github.io/hughes_project/" target="_blank">Montage
+                            of a Dream Deferred</a>, by Langston Hughes. <a
+                            href="https://github.com/dxh405/hughes_project" target="_blank"
+                            >[GitHub]</a><br /> Daniel Hough, Jacqueline Chan, Barbara Cessar, Aidan
+                        Olsen, Amaya Willis</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>12:25 - 12:35 PM</td>
+                    <td>
+                        <a href="http://kpop.newtfire.org/" target="_blank">K-Pop and
+                            Translation.</a>
+                        <a href="https://github.com/PiperBaron/KPopRepo" target="_blank"
+                            >[GitHub]</a><br /> Piper Baron and Are'anna Russell</td>
+                    <td>DIGIT 400</td>
+                </tr>
+                <tr>
+                    <td>12:37 - 12:47 PM</td>
+                    <td><a href="https://am0eba-byte.github.io/BallotandMe/" target="_blank">The
+                            Ballot and Me</a>, by Langston Hughes. <a
+                            href="https://github.com/am0eba-byte/BallotandMe/" target="_blank"
+                            >[GitHub]</a> Mia Borgia, McKenna Ballew, Brett Meyer</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>12:49 - 12:59 PM</td>
+                    <td><a href="https://alicer98.github.io/DIGIT-110-AJC-Survey/" target="_blank"
+                            >Anna Julia Cooper’s responses to the Survey of Negro College
+                            Graduates.</a>
+                        <a href="https://github.com/AliceR98/DIGIT-110-AJC-Survey" target="_blank"
+                            >[GitHub]</a>
+                        <br />Alice Rong and Syed Naqvi</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>1:01 - 1:11 PM</td>
+                    <td><a href="https://alexvanwoert.github.io/AJC-Project-Group/" target="_blank"
+                            >Christmas Bells: A One Act Play for Children, by Anna Julia Cooper.</a>
+                        <a href="https://github.com/alexvanwoert/AJC-Project-Group" target="_blank"
+                            >[GitHub]</a><br /> Natalya Meyers, Zak Teyssier, Alexander Van Woert,
+                        Anthony Wlodarczyk</td>
+                    <td>DIGIT 110</td>
+                </tr>
+                <tr>
+                    <td>1:11 - 1:15 PM</td>
+                    <td>Concluding discussion.</td>
+                    <td></td>
+                </tr>
+            </table>
         </section>
         <footer id="footer-wrap">
             <div class="footer-content">
                 <div class="features">
-                    <img src="images/PSB_logo.png" alt="Nittany Lion Shield Penn State Behrend Mark" />
+                    <img src="images/PSB_logo.png" alt="Nittany Lion Shield Penn State Behrend Mark"
+                     />
                 </div>
                 <div class="break"></div>
                 <div class="features">
@@ -404,18 +1433,25 @@
                         </strong>
                         <a href="https://behrend.psu.edu/" target="_blank">Penn State Behrend</a>
                         <br />
-                        <a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/digital-media-arts-technology-ba/" target="_blank">DIGIT PSU Bulletin</a>
+                        <a
+                            href="https://bulletins.psu.edu/undergraduate/colleges/behrend/digital-media-arts-technology-ba/"
+                            target="_blank">DIGIT PSU Bulletin</a>
                         <br />
-                        <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs/digital-media-arts-and-technology" target="_blank">Academic Programs</a>
+                        <a
+                            href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs/digital-media-arts-and-technology"
+                            target="_blank">Academic Programs</a>
                     </p>
                 </div>
                 <div class="features">
                     <p>
                         <strong> Useful Links <br />
                         </strong>
-                        <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs-1/digital-media-arts-and-technology/digit-faculty" target="_blank">Faculty</a>
+                        <a
+                            href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs-1/digital-media-arts-and-technology/digit-faculty"
+                            target="_blank">Faculty</a>
                         <br />
-                        <a href="https://psu.instructure.com/courses/1871837" target="_blank">Canvas Pride</a>
+                        <a href="https://psu.instructure.com/courses/1871837" target="_blank">Canvas
+                            Pride</a>
                         <br />
                         <a href="https://digit-psb.github.io/BOLDC/" target="_blank">BOLDC</a>
                     </p>
@@ -423,13 +1459,17 @@
                 <div class="features">
                     <p>
                         <strong> Penn State Behrend Campus <br />
-                        </strong> 4701 College Drive <br /> Erie, PA 16563 <br /> (814) 898-6000 </p>
+                        </strong> 4701 College Drive <br /> Erie, PA 16563 <br /> (814) 898-6000
+                    </p>
                 </div>
                 <div class="break"></div>
                 <div class="features">
                     <a href="https://github.com/DIGIT-PSB" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24">
-                            <path xmlns="http://www.w3.org/2000/svg" class="cls-11" d="M12,0C5.374,0,0,5.373,0,12c0,5.302,3.438,9.8,8.207,11.387,.599,.111,.793-.261,.793-.577v-2.234c-3.338,.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745,.083-.729,.083-.729,1.205,.084,1.839,1.237,1.839,1.237,1.07,1.834,2.807,1.304,3.492,.997,.107-.775,.418-1.305,.762-1.604-2.665-.305-5.467-1.334-5.467-5.931,0-1.311,.469-2.381,1.236-3.221-.124-.303-.535-1.524,.117-3.176,0,0,1.008-.322,3.301,1.23,.957-.266,1.983-.399,3.003-.404,1.02,.005,2.047,.138,3.006,.404,2.291-1.552,3.297-1.23,3.297-1.23,.653,1.653,.242,2.874,.118,3.176,.77,.84,1.235,1.911,1.235,3.221,0,4.609-2.807,5.624-5.479,5.921,.43,.372,.823,1.102,.823,2.222v3.293c0,.319,.192,.694,.801,.576,4.765-1.589,8.199-6.086,8.199-11.386C24,5.373,18.627,0,12,0Z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"
+                            viewBox="0 0 24 24">
+                            <path xmlns="http://www.w3.org/2000/svg" class="cls-11"
+                                d="M12,0C5.374,0,0,5.373,0,12c0,5.302,3.438,9.8,8.207,11.387,.599,.111,.793-.261,.793-.577v-2.234c-3.338,.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745,.083-.729,.083-.729,1.205,.084,1.839,1.237,1.839,1.237,1.07,1.834,2.807,1.304,3.492,.997,.107-.775,.418-1.305,.762-1.604-2.665-.305-5.467-1.334-5.467-5.931,0-1.311,.469-2.381,1.236-3.221-.124-.303-.535-1.524,.117-3.176,0,0,1.008-.322,3.301,1.23,.957-.266,1.983-.399,3.003-.404,1.02,.005,2.047,.138,3.006,.404,2.291-1.552,3.297-1.23,3.297-1.23,.653,1.653,.242,2.874,.118,3.176,.77,.84,1.235,1.911,1.235,3.221,0,4.609-2.807,5.624-5.479,5.921,.43,.372,.823,1.102,.823,2.222v3.293c0,.319,.192,.694,.801,.576,4.765-1.589,8.199-6.086,8.199-11.386C24,5.373,18.627,0,12,0Z"
+                            />
                         </svg>
                     </a>
                 </div>
@@ -440,7 +1480,6 @@
             window.addEventListener("load", function () {
                 loader.style.display = "none"
             })
-            hideMenu()
-        </script>
+            hideMenu()</script>
     </body>
 </html>

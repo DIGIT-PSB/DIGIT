@@ -287,12 +287,79 @@ h1 span {
         display: none;
     }
 }*
- /* The layout of the second-section can be used in other pages */
+
+#homeBackground {
+    background: url("images/footprints.png"), radial-gradient(#05295a 40%, black);
+    background-position: center top, center;
+    background-repeat: repeat-y, no-repeat;
+    color: white;
+}
+
+.content {
+    max-width: 1080px;
+    margin: 0 auto;
+    gap: 1rem;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 2rem;
+    line-height: 1.25rem;
+}
+
+.videoFormat video{
+    width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homeCenter {
+    text-align: center;
+    margin: auto;
+}
+
+.homeTopPadding {
+    padding-top: 20px;
+}
+
+.content h4 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0 0 0.85rem;
+}
+
+.contactButton {
+background-color: #1E407C;
+color: white !important;
+border: none;
+padding: 20px 34px;
+text-align: center;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+.contactButtonAlign {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+}
+
+/*Carousel CSS test code*/
+
+/*Carousel Practice end code
+*/
+
+
+ /* The layout of the second-section can be used in other pages, but is currently not in use */
 #second-section {
     background: #ebebeb;
     padding-top: 1.75rem;
 }
-.content {
+
+/*Can delete .contentWithGrid - no longer use*/
+.contentWithGrid {
     max-width: 1080px;
     margin: 0 auto;
     display: grid;
@@ -303,9 +370,12 @@ h1 span {
     padding: 2rem;
     line-height: 1.25rem;
 }
+
 .content a{
     color: rgb(37,160,219);
 }
+
+/*Can delete .right-side - no longer use*/
 .right-side {
     padding: 1.5rem;
     background-color: rgba(255, 248, 248, 0.7);
@@ -314,15 +384,15 @@ h1 span {
 .right-side ul li {
     font-size: 0.75rem;
 }
+
+/*Can delete .left-side - no longer use*/
 .left-side {
     text-align: center;
     margin: auto;
 }
-.content h4 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 400;
-}
+
+
+
 @media only screen and (max-width : 960px) {
     .content {
         display: block;
@@ -499,8 +569,8 @@ text-align: center;
 .responsive-table li {
     border-radius: 3px;
     padding: 1.25rem 1.5rem;
-    display: flex;#co
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 1.25rem;
     font-size: 0.7rem;
 }
@@ -600,6 +670,7 @@ text-align: center;
     color: #fff;
 }
 
+
 .work h2 {
     line-height: 1;
 }
@@ -657,6 +728,20 @@ text-align: center;
         display: none;
         min-height: 100%;
     }
+    .work:hover img{
+        filter: blur(100px);
+    }
+    .work:hover .desc{
+        display: inherit;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+    }
+
     .focus div.desc {
         display: inherit;
         float: left;
@@ -902,6 +987,31 @@ text-align: center;
 }
 /* EVENT PAGE END */
 /* ABOUT PAGE BEGIN */
+
+.tabbingBtn {
+background-color: #1E407C;
+color: white !important;
+border: none;
+padding: 17px 30px;
+display: inline-block;
+font-size: 20px;
+cursor: pointer;
+}
+
+.tabbingBtn:hover {
+    background-color: #009CDE;
+}
+
+.tabbingBtnsAlign {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 275px;
+}
+
+/*test*/
+
+
 .about_forms {
     margin: auto;
     max-width: 960px;
@@ -919,6 +1029,12 @@ text-align: center;
     overflow: hidden;
     overflow-y: scroll;
     background: rgba(0, 0, 0, 0.07);
+}
+
+.contributeIndent {
+      padding-left: 60px;
+      padding-top: 5px;
+      padding-bottom: 5px;
 }
 .portfolioWrap {
     justify-content: center;
@@ -970,4 +1086,16 @@ td {
     padding-right: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
+}
+iframe.newtfire{
+    display: block;
+    margin: auto;
+    border: none; 
+    width: 80vw; 
+    height: 40vw; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border: .5vw;
+    border-style: solid;
+    border-color: rgb(30,64,124, .8);
+    border-radius: .5vw;
 }
