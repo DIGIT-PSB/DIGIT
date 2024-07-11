@@ -14,7 +14,7 @@ function init() {
 
 
     for (var i = 0; i < projects.length; i++) {
-        // projects[i].addEventListener('mouseover', infoPeek, false);
+        projects[i].addEventListener('mouseover', infoPeek, false);
         projects[i].dataset.defaultposition = i + 1;
         projects[i].addEventListener('click', expand, false);
 
@@ -47,18 +47,19 @@ function expand() {
         // console.log('My new sequence position is: ' + newPosition);
         /* Now we can move this (what's clicked on) back to its new sequence position */
         var insertBeforeMe = document.querySelector('[data-defaultposition="' + newPosition + '"]')
-        // console.log('Insert before this position: ' + insertBeforeMe.dataset.defaultposition);
+         console.log('Insert before this position: ' + insertBeforeMe.dataset.defaultposition);
         this.parentNode.insertBefore(this, insertBeforeMe);
-        // console.log('My new position will be: ' + newPosition);
+         console.log('My new position will be: ' + newPosition);
         if (focusOn === true){
             restore(projects);
             this.classList.remove("focus");
-            // this.classList.add("hover");
+            //this.classList.add("hover");
             // console.log(this.classList.contains('hover'));
         } else {
             this.classList.add("focus"); //ebb: this changes the size and width
             // focus only added to the work class
-            // this.classList.remove("hover");
+           // this.classList.remove("hover");
+
         }
     } else {}
 }
@@ -77,13 +78,20 @@ function restore(elements) {
 
 
 
-// function infoPeek(e){
-//     if (e.target !== e.currentTarget){
-//         let mousedItem = e.target.id;
-//         alert("Hello " + mousedItem);
-//         var peek = this.classList.contains('hover')
-//         if(this.classList.contains('focus')){
-//             this.classList.remove("hover");
-//         }
-//     }
-// }
+function infoPeek(){
+    this.classList.add('hover');
+
+    if(this.classList.contains("focus")){
+        this.classList.remove("hover");
+    }
+    else{}
+
+
+
+
+        // var peek = this.classList.contains('hover')
+        // if(this.classList.contains('focus')){
+        //     this.classList.remove("hover");
+        // }
+        //
+}

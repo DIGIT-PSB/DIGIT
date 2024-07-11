@@ -698,35 +698,39 @@ text-align: center;
 .focus {
     display: inherit;
 }
-.hover{
-    float: left;
-    overflow: hidden;
-    position: relative;
-    width: 33.33%;
+.hover:hover .desc{
     display: inherit;
-}
-.hover img{
     position: absolute;
-    filter: blur(100px);
-    /*z-index: 2;*/
-}
-.hover img.art{
-    cursor: pointer;
-    width: 100%;
-    height: auto;
-    float: left;
-}
-.hover .desc{
-    display: inherit;
-    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: auto;
+    height: 100%;
     width: 100%;
-    z-index: 3;
 }
+
+/*.hover img{*/
+/*    position: absolute;*/
+/*    filter: blur(100px);*/
+/*    !*z-index: 2;*!*/
+/*}*/
+/*.hover img.art{*/
+/*    cursor: pointer;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    float: left;*/
+/*}*/
+/*.hover .desc{*/
+/*    display: inherit;*/
+/*    position: relative;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    height: auto;*/
+/*    width: 100%;*/
+/*    z-index: 3;*/
+/*}*/
 /*.hover div.desc {*/
 /*    line-height: 1;*/
 /*    left: 50%;*/
@@ -768,19 +772,12 @@ text-align: center;
         display: none;
         min-height: 100%;
     }
+    /********************TESTING**************************/
     /*.work:hover img{*/
     /*    filter: blur(100px);*/
     /*}*/
-    /*.work:hover .desc{*/
-    /*    display: inherit;*/
-    /*    position: absolute;*/
-    /*    top: 0;*/
-    /*    bottom: 0;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    height: 100%;*/
-    /*    width: 100%;*/
-    /*}*/
+    /*.work*/
+    /**********************************************/
 
     .focus div.desc {
         display: inherit;
