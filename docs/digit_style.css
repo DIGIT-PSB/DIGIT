@@ -465,7 +465,7 @@ text-align: center;
 .data p {
     line-height: 1.5;
     letter-spacing: 0.15rem;
-    word-spacing: .1rem;
+    word-spacing: .02rem;
 }
 .data p:first-child::first-letter {
 /*    color: #041E42;*/
