@@ -650,6 +650,9 @@ text-align: center;
     position: relative;
     width: 100%;
 }*/
+.projects {
+    align-items: center;
+}
 .work {
     float: left;
     overflow: hidden;
@@ -752,9 +755,10 @@ text-align: center;
     }
     .work img.art {
         cursor: pointer;
-        width: 100%;
+        width: 90%;
         height: auto;
         float: left;
+        padding: 10px;
     }
     .focus img.art {
         float: left;
