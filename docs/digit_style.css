@@ -1096,13 +1096,12 @@ cursor: pointer;
 
 /*figure out how to make font-size smaller for the prof captions*/
 .profCaption {
-  font-size: 10px !important;
   padding-left: 40px;
   max-width: 50%;
 }
 
 body.about-professors p{
-      font-size: 10px !important;
+      font-size: 1vw !important;
 }
 /* ABOUT SITE SECTION*/
 
