@@ -14,7 +14,8 @@ function init() {
 
 
     for (var i = 0; i < projects.length; i++) {
-        projects[i].addEventListener('mouseover', infoPeek, false);
+        // projects[i].addEventListener('mouseover', infoPeek, false);
+        // projects[i].addEventListener('mouseout', infoPeekOut, false)//takes class="hover" off of each project
         projects[i].dataset.defaultposition = i + 1;
         projects[i].addEventListener('click', expand, false);
 
@@ -78,20 +79,18 @@ function restore(elements) {
 
 
 
-function infoPeek(){
-    this.classList.add('hover');
-
-    if(this.classList.contains("focus")){
-        this.classList.remove("hover");
-    }
-    else{}
-
-
-
-
-        // var peek = this.classList.contains('hover')
-        // if(this.classList.contains('focus')){
-        //     this.classList.remove("hover");
-        // }
-        //
-}
+// function infoPeek(){
+//     this.classList.add('hover');
+//
+//     if(this.classList.contains("focus")){
+//         this.classList.remove("hover");
+//     }
+//     else{}
+// }
+//
+// function infoPeekOut() {
+//     if(this.classList.contains("hover")){
+//         this.classList.remove("hover");
+//     }
+//     else{}
+// }

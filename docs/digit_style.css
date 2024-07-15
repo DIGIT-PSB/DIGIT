@@ -5,34 +5,39 @@ body {
     margin: 0;
     scroll-behavior: smooth;
 }
-/* WS:7/26 UNIVERSAL TEXT. Execptions can exist like project page font size, footer, and home page title. Expanding this rule over everything could be a goal.
- * WS:7/28 h1 is reserved for page titles, h2 is for subsections, h3 is for important info but not titles or headers of page sections. The rest can be used as seen fit.
+/* WS:7/26/22 UNIVERSAL TEXT. Execptions can exist like project page font size, footer, and home page title. Expanding this rule over everything could be a goal.
+ * WS:7/28/22 h1 is reserved for page titles, h2 is for subsections, h3 is for important info but not titles or headers of page sections. The rest can be used as seen fit.
  * Margins and padding use rem units if not % or vw. */
 h1 {
     text-transform: capitalize;
     text-align: center;
     font-size: 3.5rem;
+    font-weight: 300;
     margin: 3rem 1rem 2rem;
 }
 h2 {
     font-size: 1.7rem;
-    font-weight: 600;
+    font-weight: 300;
     margin: 0 0 0.85rem;
+    line-height: normal;
 }
 h3 {
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 300;
     margin: 0.3rem 0 0.7rem;
+    line-height: normal;
 }
 h4 {
     font-size: 1rem;
     font-weight: 600;
     margin: 0.3rem 0 0.7rem;
+    line-height: normal;
 }
 h5 {
     font-size: 0.8rem;
     font-weight: 600;
     margin: 0.3rem 0 0.7rem;
+    line-height: normal;
 }
 p {
     font-size: 1rem;
@@ -132,8 +137,8 @@ h1 span {
     height: 0;
     display: none;
 }
-/* End Universal Font Size */
-/* Menu bar responsiveness. Changes the text into a menu icon for mobile */
+/* End Universal Font Size********************************************************************************* */
+/* Menu bar responsiveness. Changes the text into a menu icon for mobile *************************************/
 @media screen and (max-width : 960px) {
     .menu a:not(:first-child) {
         display: none;
@@ -211,55 +216,60 @@ h1 span {
     z-index: -1;
     color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     text-align: center;
+    /*align-items: center;*/
     height: 90%;
     line-height: 2rem;
     position: absolute;
-    top: 3.5vh;
+    top: 10vh;
     left: 0;
     right: 0;
 }
+/*.title div{*/
+/*    align-items: center;*/
+/*}*/
+#psbLogoDiv{
+    padding: 0 3rem;
+    text-align: left;
+}
+#behrendLogo{
+    max-width: 10rem;
+
+}
+/*srr: class header (only used on home page)**********************************************************/
+.header{
+    margin: 4rem 0 0 0;
+}
 .header h1 {
-    font-size: 6rem;    
-    margin: 4.5rem 1.5rem;
+    font-size: 6rem;
+    margin: 4rem 1.5rem;
 }
 .header h2 {
-    font-size: 2.55rem;
+    font-size: 2rem;
     margin: 0 0 1.275rem;
-}
-.header h3 {
-    font-size: 1.95rem;
-    margin: 0.45rem 0 1.05rem;
 }
 @media screen and (max-width : 767px) {
     .header h1 {
+        margin: 2.5rem 1.5rem;
         font-size: 3.75rem;
     }
     .header h2 {
         margin: 0 0 1.05rem;
-        font-size: 2.55rem;
-    }
-    .header h3 {
-        margin: 0 0 1.05rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 @media screen and (max-width : 455px) {
     .header h1 {
         font-size: 3rem;
+        margin: 1.5rem 1.5rem;
     }
     .header h2 {
         margin: 0 0 0.1125rem;
-        font-size: 2.4rem;
-    }
-    .header h3 {
-        margin: 0 0 0.6rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
-/* Scroll down button */
+/* Scroll down button **************************************************************************************/
 .scroll a {
     max-width: 80px;
     margin: 0 auto 0 auto;
@@ -286,7 +296,7 @@ h1 span {
     .scroll p {
         display: none;
     }
-}*
+}
 
 #homeBackground {
     background: url("images/footprints.png"), radial-gradient(#05295a 40%, black);
@@ -421,7 +431,9 @@ cursor: pointer;
     background: rgba(193, 0, 0, 0);
 }*/
 /* second-section ends */
-/* Footer starts */
+
+
+/* Footer starts ****************************************************************************************************/
 #footer-wrap {
     color: #fff;
     background-color: #041E42;
@@ -470,8 +482,13 @@ cursor: pointer;
 }
 /* Footer responsiveness*/
 @media screen and (max-width : 960px) {
-    .footer-wrap {
+    #footer-wrap {
         padding: 25px 60px;
+    }
+    .footer-content img {
+        width: 200px;
+        height: auto;
+        margin: 0 0 1rem 0;
     }
     .footer-content {
         max-width: 1160px;
@@ -486,9 +503,8 @@ cursor: pointer;
     }
 }
 @media screen and (max-width : 600px) {
-    .footer-wrap {
-        padding: 40px 0%;
-        margin-bottom: 2rem;
+    #footer-wrap {
+        padding: 40px 0;
     }
     .footer-content {
         flex-direction: column;
@@ -501,7 +517,7 @@ cursor: pointer;
         text-align: center;
     }
 }
-/* Footer ends */
+/* Footer ends ********************************************************************************/
 /* Courses titles */
 #courses {
     background: url("images/footprints.png"), radial-gradient(#05295a 40%, black);
@@ -699,6 +715,7 @@ text-align: center;
     display: inherit;
 }
 .hover:hover .desc{
+    z-index: 99;
     display: inherit;
     position: absolute;
     top: 0;
@@ -708,36 +725,9 @@ text-align: center;
     height: 100%;
     width: 100%;
 }
-
-/*.hover img{*/
-/*    position: absolute;*/
-/*    filter: blur(100px);*/
-/*    !*z-index: 2;*!*/
-/*}*/
-/*.hover img.art{*/
-/*    cursor: pointer;*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*    float: left;*/
-/*}*/
-/*.hover .desc{*/
-/*    display: inherit;*/
-/*    position: relative;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    height: auto;*/
-/*    width: 100%;*/
-/*    z-index: 3;*/
-/*}*/
-/*.hover div.desc {*/
-/*    line-height: 1;*/
-/*    left: 50%;*/
-/*    width: 50%;*/
-/*    padding: 3%;*/
-/*    color: #fff;*/
-/*}*/
+.hover:hover .art {
+    filter: blur(100px);
+}
 .desc {
     box-sizing: border-box;
 }
@@ -750,8 +740,9 @@ text-align: center;
 /* PROJECT PAGE TABLET/COMPUTER VIEWING */
 @media screen and (min-width : 456px) {
     div.work {
-        width: 33.33%;
+        width: 30%;
         display: inherit;
+        margin: 15px;
     }
     div.focus {
         width: 100%;
@@ -759,10 +750,9 @@ text-align: center;
     }
     .work img.art {
         cursor: pointer;
-        width: 90%;
+        width: 100%;
         height: auto;
         float: left;
-        padding: 10px;
     }
     .focus img.art {
         float: left;
