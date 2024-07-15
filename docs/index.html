@@ -22,7 +22,18 @@
                 <source src="images/banner-homepage.mp4" type="video/mp4" />
             </video>
             -->
-            
+            <video id="JSTest" loop="" muted="">
+                <source src="images/DIGITShowcaseBackground1080.mp4" type="video/mp4" />
+            </video>
+            <!-- rcc: This Javascript function should play the video starting at a random time in its duration. Couldn't get it to work in an outside js file, sorry... -->
+            <script>
+                var video = document.getElementById('JSTest');
+                video.addEventListener('loadedmetadata', function () {
+                    var duration = video.duration;
+                    var randomTime = Math.random() * duration;
+                    video.currentTime = randomTime;
+                    video.play();
+                });</script>
             <div class="menu" id="myMenu">
                 <a href="index.html" class="active">Home</a>
                 <a href="showcase.html">Our Students</a>
@@ -62,7 +73,7 @@
             </div>
 
             <div class="videoFormat">
-                
+
                 <video controls="controls">
                     <source src="images/banner-homepage.mp4" type="video/mp4" />
                 </video>
@@ -117,8 +128,8 @@
                 <div class="homeCenter">
                     <h2 class="homeTopPadding">Annual DIGIT Works Showcase</h2>
                     <h3>December 2024 Showcase TBA!</h3>
-                    <a href="https://newtfire.org/courses/DIGITShowcase.html" target="_blank"
-                            >Look at Past Showcase Schedules</a>
+                    <a href="https://newtfire.org/courses/DIGITShowcase.html" target="_blank">Look
+                        at Past Showcase Schedules</a>
                 </div>
             </div>
 
