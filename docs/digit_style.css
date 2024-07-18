@@ -1,3 +1,5 @@
+/*DELETED ALL CLASS="CONTENT"*/
+
 html,
 body {
     font-family: "Verdana", sans-serif;
@@ -5,34 +7,40 @@ body {
     margin: 0;
     scroll-behavior: smooth;
 }
-/* WS:7/26 UNIVERSAL TEXT. Execptions can exist like project page font size, footer, and home page title. Expanding this rule over everything could be a goal.
- * WS:7/28 h1 is reserved for page titles, h2 is for subsections, h3 is for important info but not titles or headers of page sections. The rest can be used as seen fit.
+
+/* WS:7/26/22 UNIVERSAL TEXT. Execptions can exist like project page font size, footer, and home page title. Expanding this rule over everything could be a goal.
+ * WS:7/28/22 h1 is reserved for page titles, h2 is for subsections, h3 is for important info but not titles or headers of page sections. The rest can be used as seen fit.
  * Margins and padding use rem units if not % or vw. */
 h1 {
     text-transform: capitalize;
     text-align: center;
     font-size: 3.5rem;
+    font-weight: 300;
     margin: 3rem 1rem 2rem;
 }
 h2 {
     font-size: 1.7rem;
-    font-weight: 600;
-    margin: 0 0 0.85rem;
+    font-weight: 300;
+    margin: 1rem 0;
+    line-height: normal;
 }
 h3 {
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 300;
     margin: 0.3rem 0 0.7rem;
+    line-height: normal;
 }
 h4 {
     font-size: 1rem;
     font-weight: 600;
     margin: 0.3rem 0 0.7rem;
+    line-height: normal;
 }
 h5 {
     font-size: 0.8rem;
     font-weight: 600;
     margin: 0.3rem 0 0.7rem;
+    line-height: normal;
 }
 p {
     font-size: 1rem;
@@ -74,7 +82,7 @@ h1 span {
         margin: 2rem 1rem 1rem;
     }
     h2 {
-        margin: 0 0 0.7rem;
+        margin: 1rem 0 0.7rem;
         font-size: 1.7rem;
     }
     h3 {
@@ -100,7 +108,7 @@ h1 span {
         margin: .9rem 1rem .6rem;
     }
     h2 {
-        margin: 0 0 0.5rem;
+        margin: 1rem 0 0.5rem;
         font-size: 1.3rem;
     }
     h3 {
@@ -132,8 +140,8 @@ h1 span {
     height: 0;
     display: none;
 }
-/* End Universal Font Size */
-/* Menu bar responsiveness. Changes the text into a menu icon for mobile */
+/* End Universal Font Size********************************************************************************* */
+/* Menu bar responsiveness. Changes the text into a menu icon for mobile *************************************/
 @media screen and (max-width : 960px) {
     .menu a:not(:first-child) {
         display: none;
@@ -211,55 +219,41 @@ h1 span {
     z-index: -1;
     color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     text-align: center;
+    /*align-items: center;*/
     height: 90%;
     line-height: 2rem;
     position: absolute;
-    top: 3.5vh;
+    top: 10vh;
     left: 0;
     right: 0;
 }
+/*.title div{*/
+/*    align-items: center;*/
+/*}*/
+#psbLogoDiv{
+    padding: 0 3rem;
+    text-align: left;
+}
+#behrendLogo{
+    max-width: 10rem;
+
+}
+/*srr: class header (only used on home page)**********************************************************/
+.header{
+    margin: 4rem 0 0 0;
+}
 .header h1 {
-    font-size: 6rem;    
-    margin: 4.5rem 1.5rem;
+    font-size: 6rem;
+    margin: 4rem 1.5rem;
 }
 .header h2 {
-    font-size: 2.55rem;
+    font-size: 2rem;
     margin: 0 0 1.275rem;
 }
-.header h3 {
-    font-size: 1.95rem;
-    margin: 0.45rem 0 1.05rem;
-}
-@media screen and (max-width : 767px) {
-    .header h1 {
-        font-size: 3.75rem;
-    }
-    .header h2 {
-        margin: 0 0 1.05rem;
-        font-size: 2.55rem;
-    }
-    .header h3 {
-        margin: 0 0 1.05rem;
-        font-size: 2rem;
-    }
-}
-@media screen and (max-width : 455px) {
-    .header h1 {
-        font-size: 3rem;
-    }
-    .header h2 {
-        margin: 0 0 0.1125rem;
-        font-size: 2.4rem;
-    }
-    .header h3 {
-        margin: 0 0 0.6rem;
-        font-size: 1.5rem;
-    }
-}
-/* Scroll down button */
+
+/* Scroll down button **************************************************************************************/
 .scroll a {
     max-width: 80px;
     margin: 0 auto 0 auto;
@@ -286,46 +280,32 @@ h1 span {
     .scroll p {
         display: none;
     }
-}*
+}
 
 #homeBackground {
     background: url("images/footprints.png"), radial-gradient(#05295a 40%, black);
     background-position: center top, center;
     background-repeat: repeat-y, no-repeat;
     color: white;
+    padding: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#homeBackground h2 {
+    text-align: center;
 }
 
-.content {
-    max-width: 1080px;
-    margin: 0 auto;
-    gap: 1rem;
-    font-size: 1rem;
-    text-align: justify;
-    padding: 2rem;
-    line-height: 1.25rem;
-}
 
 .videoFormat video{
-    width: 60%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.homeCenter {
-    text-align: center;
-    margin: auto;
-}
-
-.homeTopPadding {
-    padding-top: 20px;
-}
-
-.content h4 {
-    font-size: 1.7rem;
-    font-weight: 600;
-    margin: 0 0 0.85rem;
-}
+/*@media screen and (max-width: ) {*/
+/*    */
+/*}*/
 
 .contactButton {
 background-color: #1E407C;
@@ -334,22 +314,20 @@ border: none;
 padding: 20px 34px;
 text-align: center;
 display: inline-block;
-font-size: 20px;
 margin: 4px 2px;
 cursor: pointer;
 }
 
-.contactButtonAlign {
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 20px;
-
+.contactButton:hover {
+    background-color: #009CDE;
 }
 
-/*Carousel CSS test code*/
+.contactButtonSz {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size: .8rem;
 
-/*Carousel Practice end code
-*/
+}
 
 
  /* The layout of the second-section can be used in other pages, but is currently not in use */
@@ -371,9 +349,6 @@ cursor: pointer;
     line-height: 1.25rem;
 }
 
-.content a{
-    color: rgb(37,160,219);
-}
 
 /*Can delete .right-side - no longer use*/
 .right-side {
@@ -391,13 +366,6 @@ cursor: pointer;
     margin: auto;
 }
 
-
-
-@media only screen and (max-width : 960px) {
-    .content {
-        display: block;
-    }
-}
 /* Go to Top button CSS 
  * WS:7/26 This was taken out a while ago. I'm leaving it in for now because I think it's neat. Used to be a button to go back to top on home page.*/
 /*.TopBtn {
@@ -421,7 +389,9 @@ cursor: pointer;
     background: rgba(193, 0, 0, 0);
 }*/
 /* second-section ends */
-/* Footer starts */
+
+
+/* Footer starts ****************************************************************************************************/
 #footer-wrap {
     color: #fff;
     background-color: #041E42;
@@ -470,8 +440,13 @@ cursor: pointer;
 }
 /* Footer responsiveness*/
 @media screen and (max-width : 960px) {
-    .footer-wrap {
+    #footer-wrap {
         padding: 25px 60px;
+    }
+    .footer-content img {
+        width: 200px;
+        height: auto;
+        margin: 0 0 1rem 0;
     }
     .footer-content {
         max-width: 1160px;
@@ -486,9 +461,8 @@ cursor: pointer;
     }
 }
 @media screen and (max-width : 600px) {
-    .footer-wrap {
-        padding: 40px 0%;
-        margin-bottom: 2rem;
+    #footer-wrap {
+        padding: 40px 0;
     }
     .footer-content {
         flex-direction: column;
@@ -501,7 +475,33 @@ cursor: pointer;
         text-align: center;
     }
 }
-/* Footer ends */
+/* Footer ends ********************************************************************************/
+
+/*Home Page Content Flexability***********************************************************************/
+@media screen and (max-width : 767px) {
+    .header h1 {
+        margin: 2.5rem 1.5rem;
+        font-size: 3.75rem;
+    }
+    .header h2 {
+        margin: 0 0 1.05rem;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width : 455px) {
+    .header h1 {
+        font-size: 3rem;
+        margin: 1.5rem 1.5rem;
+    }
+    .header h2 {
+        margin: 0 0 0.1125rem;
+        font-size: 1rem;
+    }
+}
+
+
+
+
 /* Courses titles */
 #courses {
     background: url("images/footprints.png"), radial-gradient(#05295a 40%, black);
@@ -654,7 +654,10 @@ text-align-last: center;
 .projects {
     align-items: center;
 }
+
 .work {
+    transition-timing-function: ease;
+    transition-delay: 2s;
     float: left;
     overflow: hidden;
     position: relative;
@@ -672,6 +675,7 @@ text-align-last: center;
     width: 50%;
     padding: 3%;
     color: #fff;
+
 }
 
 
@@ -699,7 +703,19 @@ text-align-last: center;
 .focus {
     display: inherit;
 }
+
+.deschov{
+    opacity: 0;
+    transition: opacity 2000ms;
+
+}
+.deschov:hover{
+    opacity: 1;
+}
+
 .hover:hover .desc{
+
+    z-index: 99;
     display: inherit;
     position: absolute;
     top: 0;
@@ -708,37 +724,23 @@ text-align-last: center;
     right: 0;
     height: 100%;
     width: 100%;
+    padding: 7%;
 }
-
-/*.hover img{*/
-/*    position: absolute;*/
-/*    filter: blur(100px);*/
-/*    !*z-index: 2;*!*/
-/*}*/
-/*.hover img.art{*/
-/*    cursor: pointer;*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*    float: left;*/
-/*}*/
-/*.hover .desc{*/
-/*    display: inherit;*/
-/*    position: relative;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    height: auto;*/
-/*    width: 100%;*/
-/*    z-index: 3;*/
-/*}*/
-/*.hover div.desc {*/
-/*    line-height: 1;*/
-/*    left: 50%;*/
-/*    width: 50%;*/
-/*    padding: 3%;*/
-/*    color: #fff;*/
-/*}*/
+.hover:hover .art {
+    filter: blur(100px);
+}
+.hover:hover h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.hover:hover h3 {
+    font-size: .9rem;
+}
+.hover:hover p {
+    font-size: .7rem;
+    margin: 0;
+}
 .desc {
     box-sizing: border-box;
 }
@@ -751,19 +753,19 @@ text-align-last: center;
 /* PROJECT PAGE TABLET/COMPUTER VIEWING */
 @media screen and (min-width : 456px) {
     div.work {
-        width: 33.33%;
+        width: 30%;
         display: inherit;
+        margin: 15px;
     }
     div.focus {
-        width: 100%;
+        width: 95.8%;
         float: left;
     }
     .work img.art {
         cursor: pointer;
-        width: 90%;
+        width: 100%;
         height: auto;
         float: left;
-        padding: 10px;
     }
     .focus img.art {
         float: left;
@@ -798,6 +800,9 @@ text-align-last: center;
         margin-bottom: 0.9vw;
         font-size: 2.53vw;
     }
+    .work h3.creator {
+        letter-spacing: .3rem;
+    }
     .work p {
         margin-top: 3vw;
         margin-bottom: 2vw;
@@ -815,11 +820,11 @@ text-align-last: center;
 @media screen and (min-width : 960px) {
     .work h2 {
         margin-top: 0rem;
-        margin-bottom: 0.486487rem;
+        margin-bottom: 0.3rem;
         font-size: 1.776rem;
     }
     .work h3 {
-        margin-top: 0.144rem;
+        margin-top: 0.5rem;
         margin-bottom: 0.432rem;
         font-size: 1.2rem;
     }
@@ -1025,7 +1030,7 @@ text-align-last: center;
 }
 /* EVENT PAGE END */
 /* ABOUT PAGE BEGIN */
-
+/*General Code*/
 .tabbingBtn {
 background-color: #1E407C;
 color: white !important;
@@ -1047,9 +1052,6 @@ cursor: pointer;
     padding-left: 275px;
 }
 
-/*test*/
-
-
 .about_forms {
     margin: auto;
     max-width: 960px;
@@ -1060,20 +1062,33 @@ cursor: pointer;
     margin: .6rem 0 .6rem 0;
     list-style: none;
 }
-.contributeList ul {
-    margin: .6rem 0 .6rem 0;
-    padding: 0 0 0 1.5rem;
-    height: 200px;
-    overflow: hidden;
-    overflow-y: scroll;
-    background: rgba(0, 0, 0, 0.07);
+
+.aboutSubHeading {
+    font-size: 35px;
+    text-align: left;
+    margin: auto;
+    max-width: 960px;
+    padding: 2.5rem 1rem 0.5rem 0;
 }
 
-.contributeIndent {
-      padding-left: 60px;
-      padding-top: 5px;
-      padding-bottom: 5px;
+/*ABOUT STUDENT SECTION*/
+
+.aboutImageFormat {
+    width: 100%;
+    display: block;
 }
+
+
+.aboutGalleryFlex {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    /*adjust this width to increase image size*/
+    width: 70%;
+    gap: 100px;
+}
+
 .portfolioWrap {
     justify-content: center;
     display: flex;
@@ -1093,6 +1108,73 @@ cursor: pointer;
     list-style: none;
     margin: 0 0 .5rem;
 }
+
+.aboutImageCaption {
+    text-align:center;
+    padding-top: 10px;
+}
+
+/* ABOUT PROFESSORS SECTION*/
+
+
+.profHeading{
+    font-size: 35px;
+    margin: auto;
+    padding-left: 268px;
+    padding-bottom:25px;
+    padding-top: 20px;
+}
+
+.profContainer {
+    display: flex;
+    padding: 0rem 0rem 90px 268px;
+}
+
+
+.profImage {
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+
+}
+
+/*figure out how to make font-size smaller for the prof captions*/
+.profCaption {
+  padding-left: 40px;
+  max-width: 50%;
+}
+
+body.about-professors p{
+      font-size: 1vw !important;
+}
+/* ABOUT SITE SECTION*/
+
+.dropdownFormat{
+    padding: 0rem 1rem 2.5rem;
+}
+
+.dropdownVersion{
+        font-weight: bold;
+}
+
+
+.dropdownIndent {
+      padding-left: 60px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+}
+
+/*contributeList not used anymore*/
+.contributeList ul {
+    margin: .6rem 0 .6rem 0;
+    padding: 0 0 0 1.5rem;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0.07);
+}
+
+
 /* END ABOUT PAGE */
 /* Archive page */
 .archive {
