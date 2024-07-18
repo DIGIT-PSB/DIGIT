@@ -242,7 +242,10 @@ h1 span {
 }
 /*srr: class header (only used on home page)**********************************************************/
 .header{
-    margin: 4rem 0 0 0;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .header h1 {
     font-size: 6rem;
@@ -306,29 +309,23 @@ h1 span {
 /*@media screen and (max-width: ) {*/
 /*    */
 /*}*/
-
-.contactButton {
-background-color: #1E407C;
-color: white !important;
-border: none;
-padding: 20px 34px;
-text-align: center;
-display: inline-block;
-margin: 4px 2px;
-cursor: pointer;
-}
-
-.contactButton:hover {
-    background-color: #009CDE;
-}
-
 .contactButtonSz {
     padding-top: 60px;
     padding-bottom: 20px;
-    font-size: .8rem;
+    font-size: 1.5rem;
 
 }
-
+.contactButtonSz a{
+    background-color: #1E407C;
+    color: white !important;
+    padding: 20px 34px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+.contactButtonSz:hover {
+    background-color: #009CDE;
+}
 
  /* The layout of the second-section can be used in other pages, but is currently not in use */
 #second-section {
@@ -478,6 +475,7 @@ cursor: pointer;
 /* Footer ends ********************************************************************************/
 
 /*Home Page Content Flexability***********************************************************************/
+/*WIDTH FLEXABILITY*/
 @media screen and (max-width : 767px) {
     .header h1 {
         margin: 2.5rem 1.5rem;
@@ -486,6 +484,9 @@ cursor: pointer;
     .header h2 {
         margin: 0 0 1.05rem;
         font-size: 1.5rem;
+    }
+    .contactButtonSz {
+        font-size: 1rem;
     }
 }
 @media screen and (max-width : 455px) {
@@ -497,7 +498,80 @@ cursor: pointer;
         margin: 0 0 0.1125rem;
         font-size: 1rem;
     }
+    .contactButtonSz a{
+        font-size: .8rem;
+        padding: 15px 20px;
+    }
 }
+@media screen and (min-width : 1700px) {
+    .title {
+        padding: 0 10vw;
+    }
+    #psbLogoDiv{
+        padding: 0;
+    }
+
+}
+@media screen and (min-width : 2000px) {
+    .header h1 {
+        font-size: 8rem
+    }
+    .header h2 {
+        font-size: 3rem;
+    }
+    .title {
+        padding: 0 20vw;
+    }
+    #homeBackground {
+        padding: 10vw 20vw;
+    }
+}
+
+/*HEIGHT FLEXIBILITY*/
+@media screen and (max-height: 660px) {
+    .scroll p {
+        display: none;
+    }
+    #psbLogoDiv{
+        padding: .5rem 3rem;
+    }
+}
+@media screen and (max-height: 600px) {
+    .header h1{
+        margin: 2rem;
+    }
+}
+@media screen and (max-height: 500px) {
+    .scroll{
+        display: none;
+    }
+    .header h1{
+        font-size: 3.75rem;
+    }
+    .header h2 {
+        font-size: 1.5rem;
+    }
+    #psbLogoDiv{
+        padding: 1rem 3rem;
+    }
+    .header {
+        height: 50%;
+    }
+}
+@media screen and (max-height: 360px) {
+    .header {
+        height: 40%;
+    }
+}
+@media screen and (max-height: 300px) {
+    .header h1{
+        margin: 1rem;
+    }
+}
+
+
+
+
 
 
 
