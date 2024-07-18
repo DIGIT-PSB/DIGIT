@@ -518,6 +518,7 @@ cursor: pointer;
 }
 .roadtext{
 text-align: center; 
+text-align-last: center;
  font-size:20px;
  font-family: Verdana, Helvetica,sans-serif
 }
@@ -535,7 +536,7 @@ text-align: center;
 .data p {
     line-height: 1.5;
     letter-spacing: 0.15rem;
-    word-spacing: .1rem;
+    word-spacing: .02rem;
 }
 .data p:first-child::first-letter {
 /*    color: #041E42;*/
