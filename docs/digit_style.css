@@ -1,3 +1,5 @@
+/*DELETED ALL CLASS="CONTENT"*/
+
 html,
 body {
     font-family: "Verdana", sans-serif;
@@ -5,6 +7,7 @@ body {
     margin: 0;
     scroll-behavior: smooth;
 }
+
 /* WS:7/26/22 UNIVERSAL TEXT. Execptions can exist like project page font size, footer, and home page title. Expanding this rule over everything could be a goal.
  * WS:7/28/22 h1 is reserved for page titles, h2 is for subsections, h3 is for important info but not titles or headers of page sections. The rest can be used as seen fit.
  * Margins and padding use rem units if not % or vw. */
@@ -18,7 +21,7 @@ h1 {
 h2 {
     font-size: 1.7rem;
     font-weight: 300;
-    margin: 0 0 0.85rem;
+    margin: 1rem 0;
     line-height: normal;
 }
 h3 {
@@ -79,7 +82,7 @@ h1 span {
         margin: 2rem 1rem 1rem;
     }
     h2 {
-        margin: 0 0 0.7rem;
+        margin: 1rem 0 0.7rem;
         font-size: 1.7rem;
     }
     h3 {
@@ -105,7 +108,7 @@ h1 span {
         margin: .9rem 1rem .6rem;
     }
     h2 {
-        margin: 0 0 0.5rem;
+        margin: 1rem 0 0.5rem;
         font-size: 1.3rem;
     }
     h3 {
@@ -249,26 +252,7 @@ h1 span {
     font-size: 2rem;
     margin: 0 0 1.275rem;
 }
-@media screen and (max-width : 767px) {
-    .header h1 {
-        margin: 2.5rem 1.5rem;
-        font-size: 3.75rem;
-    }
-    .header h2 {
-        margin: 0 0 1.05rem;
-        font-size: 1.5rem;
-    }
-}
-@media screen and (max-width : 455px) {
-    .header h1 {
-        font-size: 3rem;
-        margin: 1.5rem 1.5rem;
-    }
-    .header h2 {
-        margin: 0 0 0.1125rem;
-        font-size: 1rem;
-    }
-}
+
 /* Scroll down button **************************************************************************************/
 .scroll a {
     max-width: 80px;
@@ -303,39 +287,25 @@ h1 span {
     background-position: center top, center;
     background-repeat: repeat-y, no-repeat;
     color: white;
+    padding: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#homeBackground h2 {
+    text-align: center;
 }
 
-.content {
-    max-width: 1080px;
-    margin: 0 auto;
-    gap: 1rem;
-    font-size: 1rem;
-    text-align: justify;
-    padding: 2rem;
-    line-height: 1.25rem;
-}
 
 .videoFormat video{
-    width: 60%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.homeCenter {
-    text-align: center;
-    margin: auto;
-}
-
-.homeTopPadding {
-    padding-top: 20px;
-}
-
-.content h4 {
-    font-size: 1.7rem;
-    font-weight: 600;
-    margin: 0 0 0.85rem;
-}
+/*@media screen and (max-width: ) {*/
+/*    */
+/*}*/
 
 .contactButton {
 background-color: #1E407C;
@@ -344,7 +314,6 @@ border: none;
 padding: 20px 34px;
 text-align: center;
 display: inline-block;
-font-size: 20px;
 margin: 4px 2px;
 cursor: pointer;
 }
@@ -353,10 +322,10 @@ cursor: pointer;
     background-color: #009CDE;
 }
 
-.contactButtonAlign {
-    text-align: center;
+.contactButtonSz {
     padding-top: 60px;
     padding-bottom: 20px;
+    font-size: .8rem;
 
 }
 
@@ -380,9 +349,6 @@ cursor: pointer;
     line-height: 1.25rem;
 }
 
-.content a{
-    color: rgb(37,160,219);
-}
 
 /*Can delete .right-side - no longer use*/
 .right-side {
@@ -400,13 +366,6 @@ cursor: pointer;
     margin: auto;
 }
 
-
-
-@media only screen and (max-width : 960px) {
-    .content {
-        display: block;
-    }
-}
 /* Go to Top button CSS 
  * WS:7/26 This was taken out a while ago. I'm leaving it in for now because I think it's neat. Used to be a button to go back to top on home page.*/
 /*.TopBtn {
@@ -517,6 +476,32 @@ cursor: pointer;
     }
 }
 /* Footer ends ********************************************************************************/
+
+/*Home Page Content Flexability***********************************************************************/
+@media screen and (max-width : 767px) {
+    .header h1 {
+        margin: 2.5rem 1.5rem;
+        font-size: 3.75rem;
+    }
+    .header h2 {
+        margin: 0 0 1.05rem;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width : 455px) {
+    .header h1 {
+        font-size: 3rem;
+        margin: 1.5rem 1.5rem;
+    }
+    .header h2 {
+        margin: 0 0 0.1125rem;
+        font-size: 1rem;
+    }
+}
+
+
+
+
 /* Courses titles */
 #courses {
     background: url("images/footprints.png"), radial-gradient(#05295a 40%, black);
@@ -668,7 +653,10 @@ text-align: center;
 .projects {
     align-items: center;
 }
+
 .work {
+    transition-timing-function: ease;
+    transition-delay: 2s;
     float: left;
     overflow: hidden;
     position: relative;
@@ -686,6 +674,7 @@ text-align: center;
     width: 50%;
     padding: 3%;
     color: #fff;
+
 }
 
 
@@ -713,7 +702,18 @@ text-align: center;
 .focus {
     display: inherit;
 }
+
+.deschov{
+    opacity: 0;
+    transition: opacity 2000ms;
+
+}
+.deschov:hover{
+    opacity: 1;
+}
+
 .hover:hover .desc{
+
     z-index: 99;
     display: inherit;
     position: absolute;
@@ -723,9 +723,22 @@ text-align: center;
     right: 0;
     height: 100%;
     width: 100%;
+    padding: 7%;
 }
 .hover:hover .art {
     filter: blur(100px);
+}
+.hover:hover h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.hover:hover h3 {
+    font-size: .9rem;
+}
+.hover:hover p {
+    font-size: .7rem;
+    margin: 0;
 }
 .desc {
     box-sizing: border-box;
@@ -744,7 +757,7 @@ text-align: center;
         margin: 15px;
     }
     div.focus {
-        width: 100%;
+        width: 95.8%;
         float: left;
     }
     .work img.art {
@@ -786,6 +799,9 @@ text-align: center;
         margin-bottom: 0.9vw;
         font-size: 2.53vw;
     }
+    .work h3.creator {
+        letter-spacing: .3rem;
+    }
     .work p {
         margin-top: 3vw;
         margin-bottom: 2vw;
@@ -803,11 +819,11 @@ text-align: center;
 @media screen and (min-width : 960px) {
     .work h2 {
         margin-top: 0rem;
-        margin-bottom: 0.486487rem;
+        margin-bottom: 0.3rem;
         font-size: 1.776rem;
     }
     .work h3 {
-        margin-top: 0.144rem;
+        margin-top: 0.5rem;
         margin-bottom: 0.432rem;
         font-size: 1.2rem;
     }
