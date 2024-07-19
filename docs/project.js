@@ -6,19 +6,25 @@
  * It also resizes and unhides a div displaying information about the selected image.
  *  */
 const projects = document.getElementsByClassName("work");
+// const desc = document.getElementsByClassName("desc");
 window.onload = init;
 
 
 function init() {
     //console.log('init is firing');
-    var theParent = document.querySelector(".projects");
-    //theParent.addEventListener("mouseover", infoPeek, false)
+
 
     for (var i = 0; i < projects.length; i++) {
+        projects[i].addEventListener('mouseover', infoPeek, false);
+        projects[i].addEventListener('mouseout', infoPeekOut, false);//takes class="hover" off of each project
         projects[i].dataset.defaultposition = i + 1;
         projects[i].addEventListener('click', expand, false);
-
     }
+    // for (var i = 0; i < desc.length; i++){
+    //     desc[i].addEventListener('mouseover', phaseIn, false);
+    // }
+
+    console.log(`There are ${desc.length} desc classes present`) //srr: displays 28
 }
 
 /* 2022-05-23 ebb Source: https://www.geeksforgeeks.org/how-to-make-the-images-bigger-when-clicked/  */
@@ -29,8 +35,10 @@ function expand() {
     var w = window.innerWidth;
     /*console.log(window.innerWidth);*/
     if (w > 455) {
-        var focusOn = this.classList.contains('focus'); //srr: places 'focus' into THIS classlist
-        // console.log(this.classList.contains('focus'));
+        var focusOn = this.classList.contains('focus'); //asks if class focus is present
+        // console.log(this.classList.contains('focus')); //displays answer ^^
+
+        // console.log(this.classList.contains('hover')); //displays answer ^^
 
         restore(projects);
         /* djb: First, return everything to original size and order, before changing anything. */
@@ -44,14 +52,19 @@ function expand() {
         // console.log('My new sequence position is: ' + newPosition);
         /* Now we can move this (what's clicked on) back to its new sequence position */
         var insertBeforeMe = document.querySelector('[data-defaultposition="' + newPosition + '"]')
-        // console.log('Insert before this position: ' + insertBeforeMe.dataset.defaultposition);
+         console.log('Insert before this position: ' + insertBeforeMe.dataset.defaultposition);
         this.parentNode.insertBefore(this, insertBeforeMe);
-        // console.log('My new position will be: ' + newPosition);
+         console.log('My new position will be: ' + newPosition);
         if (focusOn === true){
             restore(projects);
             this.classList.remove("focus");
+            //this.classList.add("hover");
+            // console.log(this.classList.contains('hover'));
         } else {
             this.classList.add("focus"); //ebb: this changes the size and width
+            // focus only added to the work class
+           // this.classList.remove("hover");
+
         }
     } else {}
 }
@@ -68,13 +81,52 @@ function restore(elements) {
     }
 }
 
-function infoPeek(e){
-    if (e.target !== e.currentTarget){
-        let mousedItem = e.target.id;
-        alert("Hello " + mousedItem);
-        var peek = this.classList.contains('hover')
-        if(this.classList.contains('focus')){
+
+
+function infoPeek(){
+    var w = window.innerWidth;
+    /*console.log(window.innerWidth);*/
+    if (w > 455) {
+        this.classList.add('hover');
+        console.log(this.childNodes[3]);//srr: displays div.desc for some reason
+        this.childNodes[3].classList.add('deschov');
+
+
+        // let work = this;
+        // let thisDesc = this.children;
+        // console.log(`There are ${thisDesc} children`);
+
+        // if(this.children.classList.contains("desc")){
+            // console.log("desc is here");
+            // this.children.classList.add("deschov");
+        // }
+        // else{}
+
+
+
+        if (this.classList.contains("focus")) {
             this.classList.remove("hover");
-        }
+            this.childNodes[3].classList.remove('deschov');
+
+
+            // if(this.children.classList.contains("deschov")){
+            //     this.children.classList.remove("deschov");
+            //  }
+            // else{}
+
+
+        } else {}
+        // phaseIn(desc);
     }
+    else{}
 }
+
+function infoPeekOut() {
+    if(this.classList.contains("hover")){
+        this.classList.remove("hover");
+        this.childNodes[3].classList.remove('deschov');
+    }
+    else{}
+}
+
+
