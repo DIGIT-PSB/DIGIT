@@ -22,12 +22,12 @@
                 <source src="images/banner-homepage.mp4" type="video/mp4" />
             </video>
             -->
-            <video id="JSTest" loop="" muted="">
+            <video id="backgroundVid" loop="" muted="">
                 <source src="images/DIGITShowcaseBackground1080.mp4" type="video/mp4" />
             </video>
             <!-- rcc: This Javascript function should play the video starting at a random time in its duration. Couldn't get it to work in an outside js file, sorry... -->
             <script>
-                var video = document.getElementById('JSTest');
+                var video = document.getElementById('backgroundVid');
                 video.addEventListener('loadedmetadata', function () {
                     var duration = video.duration;
                     var randomTime = Math.random() * duration;
