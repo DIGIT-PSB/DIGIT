@@ -17,9 +17,23 @@
     </head>
     <body>
         <section id="container">
+            <!--rcc: old video
             <video autoplay="" loop="" muted="">
                 <source src="images/banner-homepage.mp4" type="video/mp4" />
             </video>
+            -->
+            <video id="backgroundVid" loop="" muted="">
+                <source src="images/DIGITShowcaseBackground1080.mp4" type="video/mp4" />
+            </video>
+            <!-- rcc: This Javascript function should play the video starting at a random time in its duration. Couldn't get it to work in an outside js file, sorry... -->
+            <script>
+                var video = document.getElementById('backgroundVid');
+                video.addEventListener('loadedmetadata', function () {
+                    var duration = video.duration;
+                    var randomTime = Math.random() * duration;
+                    video.currentTime = randomTime;
+                    video.play();
+                });</script>
             <div class="menu" id="myMenu">
                 <a href="index.html" class="active">Home</a>
                 <a href="showcase.html">Our Students</a>
@@ -63,8 +77,14 @@
             <!--            banner-homepage.mp4 is just a place holder til we can add Reece's video-->
 
             <div class="videoFormat">
+
+                <!--rcc: old video
+                    <video controls="controls">
+                        <source src="images/banner-homepage.mp4" type="video/mp4" />
+                    </video>
+                -->
                 <video controls="controls">
-                    <source src="images/banner-homepage.mp4" type="video/mp4" />
+                    <source src="images/DIGITShowcase1.mp4" type="video/mp4" />
                 </video>
             </div>
 
@@ -76,6 +96,7 @@
             <h2>Annual DIGIT Works Showcase</h2>
             <p>December 2024 Showcase TBA!</p>
             <p><a href="ev.html">Look at Past Showcase Schedules</a></p>
+
 
 
 
