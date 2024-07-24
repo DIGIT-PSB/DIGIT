@@ -130,9 +130,8 @@ h1 span {
 }
 /* Class Shortcuts */
 .center {
-    display: flex;
-    justify-content: center;
-    margin: 0 1rem;
+    width: fit-content;
+    margin: 0 auto;
 }
 /* Goes on a div element */
 .break {
@@ -479,6 +478,7 @@ h1 span {
 
 /*Home Page Content Flexability***********************************************************************/
 /*WIDTH FLEXABILITY*/
+
 @media screen and (max-width : 767px) {
     .header h1 {
         margin: 2.5rem 1.5rem;
@@ -729,7 +729,10 @@ text-align: center;
     width: 100%;
 }*/
 .projects {
-    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .work {
@@ -738,6 +741,8 @@ text-align: center;
     float: left;
     overflow: hidden;
     position: relative;
+    margin: 1%;
+    width: 30%
 }
 .workContainer {
     position: absolute;
@@ -780,12 +785,11 @@ text-align: center;
 .focus {
     display: inherit;
 }
-
 .deschov{
     opacity: 0;
     transition: opacity 2000ms;
-
 }
+/*DEFAULT*/
 .deschov:hover{
     opacity: 1;
 }
@@ -818,6 +822,37 @@ text-align: center;
     font-size: .7rem;
     margin: 0;
 }
+
+
+
+
+
+.detection:before {
+    content: 'UNKNOWN';
+    color: red;
+}
+
+@media(hover) { /*if able to use hover*/
+    .detection:before {
+        content: 'YES';
+        color: green;
+    }
+}
+
+@media (hover: none) { /*if NOT able to use hover*/
+    .detection:before {
+        content: 'NO';
+    }
+}
+
+
+
+
+
+
+
+
+
 .desc {
     box-sizing: border-box;
 }
@@ -829,13 +864,9 @@ text-align: center;
 }
 /* PROJECT PAGE TABLET/COMPUTER VIEWING */
 @media screen and (min-width : 456px) {
-    div.work {
-        width: 30%;
-        display: inherit;
-        margin: 15px;
-    }
+
     div.focus {
-        width: 95.8%;
+        width: 100%;
         float: left;
     }
     .work img.art {
@@ -850,7 +881,7 @@ text-align: center;
     }
     .work div.desc {
         display: none;
-        min-height: 100%;
+        height: 100%;
     }
     /********************TESTING**************************/
     /*.work:hover img{*/
@@ -860,7 +891,7 @@ text-align: center;
     /**********************************************/
 
     .focus div.desc {
-        display: inherit;
+        display: block;
         float: left;
         position: absolute;
     }
@@ -893,6 +924,9 @@ text-align: center;
         left: 3%;
     }
 }
+@media screen and (min-width: 1125px){
+}
+
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
 @media screen and (min-width : 960px) {
     .work h2 {
@@ -921,6 +955,7 @@ text-align: center;
 @media screen and (max-width : 455px) {
     .work {
         width: 100%;
+        margin: 1vh 0;
     }
     .art {
         width: 100%;
@@ -949,6 +984,9 @@ text-align: center;
     }
     .desc a svg {
         width: 6.25vw;
+    }
+    .pcontainer{
+        min-width: auto;
     }
 }
 /* Loader starts */
