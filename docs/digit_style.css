@@ -236,7 +236,7 @@ h1 span {
 #psbLogoDiv{
     padding: 0 3rem;
     text-align: left;
-
+    }
 .header h1 {
     font-size: 6rem;
     margin: 4.5rem 1.5rem;
@@ -312,6 +312,29 @@ h1 span {
     margin-left: auto;
     margin-right: auto;
 }
+#backgroundVid{
+    filter:brightness(.4);
+}
+/*rcc: These iframe ids are specifically for the videos featured on the hompage, should git LFS not be a viable option.*/
+#backgroundVidIFrame{
+    filter:brightness(.4);
+    z-index: -2;
+    position: absolute;
+    height: auto;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.videoFormat iframe{
+    width: 70vw;
+    height: 60vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*@media screen and (max-width: ) {*/
 /*    */
 /*}*/
@@ -343,8 +366,7 @@ cursor: pointer;
 
 /* The layout of the second-section can be used in other pages, but is currently not in use */
 #second-section {
-    background: #ebebeb;
-    padding-top: 1.75rem;
+    
 }
 
 /*Can delete .contentWithGrid - no longer use*/
