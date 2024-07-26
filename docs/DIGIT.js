@@ -10,7 +10,8 @@ function init() {
     mainEntries[i].addEventListener('click', showMore, false);
     mainEntries[i].addEventListener('dblclick', hideMore, false);
     mainEntries[i].addEventListener('touchstart', hideMore, false);
-    
+
+
 
 }
 }
