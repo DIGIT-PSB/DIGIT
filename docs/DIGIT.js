@@ -1,21 +1,16 @@
 const mainEntries = document.getElementsByClassName("table-row")
-
 window .onload = init;
 
 
 function init() {
-
-
   for (var i = 0; i < mainEntries.length; i++) {
     if (mainEntries[i].querySelector("span.dots")) /*if table-row contains element with class="dots" AKA if it has an arrow button*/
-
       mainEntries[i].addEventListener('click', showMore, false);
-    mainEntries[i].addEventListener('dblclick', hideMore, false);
-    mainEntries[i].addEventListener('touchstart', hideMore, false);
-
-
-  }
+      }
 }
+
+
+
 
 function Menubar() {
   var x = document.getElementById("myMenu");
@@ -34,49 +29,38 @@ function showMore() {
   let arrow = this.querySelector("span.dots");
   let whatMoreBig = this.querySelector("span.moreBigScr");
   let whatMoreSmall = this.querySelector("div.moreSmallScr");
+  let inheritSmall = window.getComputedStyle(whatMoreSmall).getPropertyValue('display');
+  //console.log(inheritSmall);
+  let inheritLarge = window.getComputedStyle(whatMoreBig).getPropertyValue('display');
+  // console.log(inheritLarge);
 
-  console.log('whatMoreBig = ' + whatMoreBig);
-  console.log('whatMoreSmall = ' + whatMoreSmall);
-
-  if(w < 455){
-    console.log('whatMoreSmall = ' + whatMoreSmall);
-    arrow.innerHTML = '⬆';
-    whatMoreSmall.style.display = "inherit";
-
+  if( inheritSmall !== "none" || inheritLarge !== "none"){
+    // console.log("description is on display");
+    if(w < 455){
+      console.log('whatMoreSmall = ' + whatMoreSmall);
+      arrow.innerHTML = '⬇';
+      whatMoreSmall.style.display = "none";
+    }else{
+      console.log('whatMoreBig = ' + whatMoreBig);
+      arrow.innerHTML = '⬇';
+      whatMoreBig.style.display = "none";
+    }
   }
   else{
-    console.log('whatMoreBig = ' + whatMoreBig);
-    arrow.innerHTML = '⬆';
-    whatMoreBig.style.display = "inherit";
-
+    if(w < 455){
+      arrow.innerHTML = '⬆';
+      whatMoreSmall.style.display = "inherit";
+    }
+    else{
+      arrow.innerHTML = '⬆';
+      whatMoreBig.style.display = "inherit";
+    }
+    // console.log("description is NOT on display");
   }
-  // this.addEventListener('click', hideMore(), false);
-
-
-
 }
-
-function hideMore() {
-  let w = window.innerWidth;
-  let arrow = this.querySelector("span.dots");
-  var whatMoreBig = this.querySelector("span.moreBigScr");
-  var whatMoreSmall = this.querySelector("div.moreSmallScr");
-  if(w < 455){
-    console.log('whatMoreSmall = ' + whatMoreSmall);
-    arrow.innerHTML = '⬇';
-    whatMoreSmall.style.display = "none";
-
-
-  }else{
-
-    console.log('whatMoreBig = ' + whatMoreBig);
-    arrow.innerHTML = '⬇';
-    whatMoreBig.style.display = "none";
-  }
-
 
  
-}
+
 
 function hideMenu() {
     var prevScrollpos = window.pageYOffset;

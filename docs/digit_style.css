@@ -68,7 +68,7 @@ li {
     font-size: 1rem;
 }
 h1 span {
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -103,6 +103,9 @@ h1 span {
     li {
         font-size: 0.85rem;
     }
+    h1 span {
+        font-size: 1rem;
+    }
 }
 @media screen and (max-width : 455px) {
     h1 {
@@ -135,6 +138,9 @@ h1 span {
     p,
     li {
         font-size: 0.6rem;
+    }
+    h1 span {
+        font-size: .75rem;
     }
 
 }
