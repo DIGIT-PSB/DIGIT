@@ -45,7 +45,7 @@ h5 {
 p {
     font-size: 1rem;
     margin: .4rem 0 1rem 0;
-    text-align: justify;
+    text-align: left;
 }
 a {
     text-decoration: none;
@@ -72,10 +72,12 @@ h1 span {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    line-height: 3rem;
-    padding-left: 0.25rem;
-    padding-bottom: .5rem;
+    /*line-height: 3rem;*/
+    /*padding-left: 0.25rem;*/
+    /*padding-bottom: .5rem;*/
 }
+
+
 @media screen and (max-width : 767px) {
     h1 {
         font-size: 2.5rem;
@@ -107,6 +109,13 @@ h1 span {
         font-size: 1.7rem;
         margin: .9rem 1rem .6rem;
     }
+    h1 span {
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        line-height: 3rem;
+    }
     h2 {
         margin: 1rem 0 0.5rem;
         font-size: 1.3rem;
@@ -127,11 +136,15 @@ h1 span {
     li {
         font-size: 0.6rem;
     }
+
 }
 /* Class Shortcuts */
 .center {
     width: fit-content;
     margin: 0 auto;
+}
+.b {
+    font-weight: 600;
 }
 /* Goes on a div element */
 .break {
@@ -620,27 +633,20 @@ h1 span {
 
 }
 .module {
-    padding-top: 3rem;
+    /*padding-top: 3rem;*/
 }
 .module h1 span {
     /*    color: rgba(57, 51, 51, 0.7);*/
     color: rgba(255, 255, 255, 0.7);
 }
 
-.roadtext{
-text-align: center; 
-text-align-last: center;
- font-size:20px;
- font-family: Verdana, Helvetica,sans-serif
-
-}
 #svgHolder {
     text-align: center;
     margin: auto;
     width: 80%;
 }
 .data {
-    width: 60%;
+    /*width: 60%;*/
     margin: auto;
     padding-bottom: 2rem;
     text-align: justify;
@@ -661,29 +667,31 @@ text-align-last: center;
     margin-top: -.15rem;
 }
 @media screen and (max-width : 767px) {
-    .data {
-        width: 80%;
-        padding: 2rem;
-        text-align: left;
-    }
+    /*.data {*/
+    /*    width: 80%;*/
+    /*    padding: 2rem;*/
+    /*    text-align: left;*/
+    /*}*/
 }
 /* title ends */
-/* Courses list */
+/* Courses list******************************************************************* */
 .courseblock {
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
-    padding: .7rem;
+    /*padding: .7rem;*/
     line-height: 1.25rem;
 }
 .courseblock ul {
     color: black;
 }
+
+.responsive-table {
+    padding: 0;
+}
 .responsive-table li {
     border-radius: 3px;
     padding: 1.25rem 1.5rem;
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 1.25rem;
     font-size: 0.7rem;
 }
@@ -693,10 +701,17 @@ text-align-last: center;
     text-transform: uppercase;
     letter-spacing: 0.03rem;
     color: #fff;
+    display: flex;
+    flex-direction: row;
 }
 .table-header div a {
     color: #fff;
 }
+.table-row {
+    display: flex;
+    flex-direction: column;
+}
+
 .responsive-table .table-row {
     background-color: #fff;
     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
@@ -704,28 +719,65 @@ text-align-last: center;
 .dots {
     cursor: pointer;
 }
-.more {
+.moreBigScr {
     display: none;
-    text-align: justify;
+}
+.moreSmallScr {
+    display: none;
+}
+.cat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .col-2 {
     text-align: center;
 }
-.responsive-table .col-1 {
-    flex-basis: 10%;
+
+.table-header{
+    justify-content: space-between;
+
+
+    .col-1 {
+        flex-basis: 10%;
+        padding-right: 5px;
+    }
+    .col-2 {
+        flex-basis: 10%;
+        padding-right: 5px;
+    }
+    .col-3 {
+        flex-basis: 65%;
+    }
+    .col-4 {
+        flex-basis: 5%;
+        padding-left: 5px;
+        display: flex;
+        justify-content: center;
+    }
 }
-.responsive-table .col-2 {
-    flex-basis: 10%;
+
+.table-row {
+    .col-1 {
+        flex-basis: 10%;
+        padding-right: 5px;
+    }
+    .col-2 {
+        flex-basis: 10%;
+        padding-right: 5px;
+    }
+    .col-3 {
+        flex-basis: 65%;
+    }
+    .col-4 {
+        flex-basis: 5%;
+        padding-left: 5px;
+        display: flex;
+        justify-content: center;
+    }
 }
-.responsive-table .col-3 {
-    flex-basis: 65%;
-}
-.responsive-table .col-4 {
-    flex-basis: 25%;
-    display: flex;
-    justify-content: center;
-}
-.col span .more {
+
+.col span .moreBigScr {
     text-indent: 2rem;
 }
 @media all and (max-width : 600px) {
