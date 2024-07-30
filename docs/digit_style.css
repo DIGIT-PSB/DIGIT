@@ -235,25 +235,27 @@ h1 span {
 /*.title div{*/
 /*    align-items: center;*/
 /*}*/
-#psbLogoDiv{
+#psbLogoDiv {
     padding: 0 3rem;
     text-align: left;
-    }
+}
 .header h1 {
     font-size: 6rem;
     margin: 4.5rem 1.5rem;
 
 }
-#behrendLogo{
+#behrendLogo {
     max-width: 10rem;
 
 }
 /*srr: class header (only used on home page)**********************************************************/
+
 .header{
     height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 .header h1 {
     font-size: 6rem;
@@ -311,18 +313,18 @@ h1 span {
 }
 
 
-.videoFormat video{
+.videoFormat video {
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-#backgroundVid{
-    filter:brightness(.4);
+#backgroundVid {
+    filter: brightness(.4);
 }
 /*rcc: These iframe ids are specifically for the videos featured on the hompage, should git LFS not be a viable option.*/
-#backgroundVidIFrame{
-    filter:brightness(.4);
+#backgroundVidIFrame {
+    filter: brightness(.4);
     z-index: -2;
     position: absolute;
     height: auto;
@@ -333,16 +335,64 @@ h1 span {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.videoFormat iframe{
+.videoFormat iframe {
     width: 70vw;
     height: 60vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+#creditsContainer {
+
+}
+#more {
+    display: none;
+}
+#more a {
+    font-size: 1.2em;
+    display: block;
+    text-decoration: none;
+    padding-top: 2vh;
+}
+#more a:hover {
+    text-decoration: underline;
+}
+#creditsP {
+    text-align: center;
+    max-height: 50vh;
+    min-width: 60vw;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+#myBtn {
+    color: white;
+    font-size: 1.2em;
+    background-color: #000066;
+}
+
+
 /*@media screen and (max-width: ) {*/
 /*    */
 /*}*/
+
+.contactButton {
+
+    background-color: #1E407C;
+    color: white !important;
+    border: none;
+    padding: 20px 34px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.contactButton:hover {
+    background-color: #009CDE;
+}
 
 .contactButtonSz {
     padding-top: 60px;
@@ -364,7 +414,7 @@ h1 span {
 
 /* The layout of the second-section can be used in other pages, but is currently not in use */
 #second-section {
-    
+
 }
 
 /*Can delete .contentWithGrid - no longer use*/
@@ -627,11 +677,11 @@ h1 span {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.roadtext{
-text-align: center; 
-text-align-last: center;
- font-size:20px;
- font-family: Verdana, Helvetica,sans-serif
+.roadtext {
+    text-align: center;
+    text-align-last: center;
+    font-size: 20px;
+    font-family: Verdana, Helvetica, sans-serif
 
 }
 #svgHolder {
@@ -821,16 +871,18 @@ text-align-last: center;
     display: inherit;
 }
 
-.deschov{
+.deschov {
+
     opacity: 0;
     transition: opacity 2000ms;
 }
+
 /*DEFAULT*/
 .deschov:hover{
     opacity: 1;
 }
 
-.hover:hover .desc{
+.hover:hover .desc {
 
     z-index: 99;
 
@@ -848,7 +900,7 @@ text-align-last: center;
 .hover:hover .art {
     filter: blur(100px);
 }
-.hover:hover h2{
+.hover:hover h2 {
     font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 2px;
@@ -1266,18 +1318,18 @@ text-align-last: center;
 }
 
 .aboutImageCaption {
-    text-align:center;
+    text-align: center;
     padding-top: 10px;
 }
 
 /* ABOUT PROFESSORS SECTION*/
 
 
-.profHeading{
+.profHeading {
     font-size: 35px;
     margin: auto;
     padding-left: 268px;
-    padding-bottom:25px;
+    padding-bottom: 25px;
     padding-top: 20px;
 }
 
@@ -1296,28 +1348,28 @@ text-align-last: center;
 
 /*figure out how to make font-size smaller for the prof captions*/
 .profCaption {
-  padding-left: 40px;
-  max-width: 50%;
+    padding-left: 40px;
+    max-width: 50%;
 }
 
-body.about-professors p{
-      font-size: 1vw !important;
+body.about-professors p {
+    font-size: 1vw !important;
 }
 /* ABOUT SITE SECTION*/
 
-.dropdownFormat{
+.dropdownFormat {
     padding: 0rem 1rem 2.5rem;
 }
 
-.dropdownVersion{
-        font-weight: bold;
+.dropdownVersion {
+    font-weight: bold;
 }
 
 
 .dropdownIndent {
-      padding-left: 60px;
-      padding-top: 5px;
-      padding-bottom: 5px;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /*contributeList not used anymore*/

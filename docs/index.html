@@ -128,6 +128,107 @@
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen=""></iframe>
                 -->
+            <h2>Credits</h2>
+            <p id="creditsP">
+                <span id="dots">...</span>
+                <span id="more">
+                    <br /> Music:<br /> "Real Love" - "V" Reed Coyle V.<br /> Untitled - Parker
+                    Pearce Yohe<br />
+                    <br /> Featured DIGIT Projects (in order):<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=uq3t5k1neLQ" target="_blank">Stop
+                        Motion Animation</a><br /> Jacqueline Chan<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=SmH9_J_efGI" target="_blank">What
+                        Really Happens on the Night Shift</a><br /> Mia Borgia<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=u-rXxk5X4nQ" target="_blank"
+                        >BaccaRat</a><br /> Tyler Akam, Stephen Catledge<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=lAX6nRM3JtM" target="_blank">VR
+                        Landscape</a><br /> Reece Cullen<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=_kRVYOzWCsI" target="_blank">The
+                        Cartographer</a><br /> Tyler Akam, Ethan Bartley, Stephen Catledge<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=i1gtU4WhAuI" target="_blank">Slime
+                        Quest</a><br /> Reece Cullen<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=efnSRGQMCio" target="_blank">Motion
+                        Slickness</a><br /> Mia Borgia<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=eIK2yASMurc" target="_blank">The
+                        Glorps</a><br /> Reece Cullen<br />
+                    <br />
+                    <a href="https://mayan.newtfire.org/index.html" target="_blank">Ancient Mayans
+                        Digitized</a><br /> Samuel Andrew, Mia Borgia, Brett Meyer, Anthony Wlordarczyk<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=MNiOmQjFND4" target="_blank"
+                        >Blissful</a><br /> Noah Stachera, Tyler Akam<br />
+                    <br />
+                    <a href="https://ztd5049.github.io/Zack-Dominick/videos.html" target="_blank"
+                        >Piano Animations</a><br /> Zack Dominick<br />
+                    <br />
+                    <a href="https://purpleninja39.itch.io/we-have-a-problem" target="_blank">WE
+                        HAVE A PROBLEM</a><br /> Reece Cullen, Liam Dougherty, Roland Grande, Logan
+                    Salas, Andy Zhuang<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=YrtHZQGzvsA" target="_blank"
+                    >Lorina</a><br /> Jacqueline Chan<br />
+                    <br />
+                    <a href="https://graydonk.itch.io/the-way-of-words" target="_blank">The Way of
+                        the Words</a><br /> Raymond Fogle, Saiid Koroma, Graydon Kupfer, Jeremy
+                    Myers, Paul Pritchard<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=ndmmKXo-Xuc" target="_blank">Kilgore
+                        and Kozack</a><br /> Mia Borgia<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=IBrJg1t4MA0" target="_blank">Routine
+                        Rust</a><br /> Remington Orange<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=Zif4hhLf1PU" target="_blank">Angelic
+                        Anguish</a><br /> Julian Giles<br />
+                    <br />
+                    <a href="https://youtu.be/cjfzaY3pdJo?si=9qfcRUD6I5DrVdjp" target="_blank"
+                        >Fortune Machine</a><br /> Tyler Akam, Noah Stachera<br />
+                    <br />
+                    <a href="https://youtu.be/NS1sqKvisoM?si=1gPTHUXMpsh37XJg" target="_blank">A
+                        Fireside Chat</a><br /> Tyler Akam<br />
+                    <br />
+                    <a href="https://graydonk.itch.io/everyday" target="_blank">Everyday</a><br />
+                    Graydon Kupfer<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=Ngz0f-O4pGo" target="_blank">Eclipse
+                        Animation</a><br /> Noah Stachera<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=T5IBdmVY5Z0" target="_blank"
+                        >Pandoramerica</a><br /> Remington Orange<br />
+                    <br />
+                    <a href="https://youtu.be/whUbrnS_otg?si=VOl6WIx2I7LBpFNo" target="_blank">The
+                        Aquarium in Your Dreams</a><br /> Mia Borgia<br />
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=uZYiCB9ex_4" target="_blank">The
+                        Proclaimed Legend of Clayton Rider</a><br /> Tyler Akam<br />
+                </span>
+                <br />
+            </p>
+            <button onclick="creditsExpand()" id="myBtn">Expand</button>
+            <script>
+                function creditsExpand() {
+                    var dots = document.getElementById("dots");
+                    var moreText = document.getElementById("more");
+                    var btnText = document.getElementById("myBtn");
+                    
+                    if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Expand";
+                        moreText.style.display = "none";
+                    } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read less";
+                        moreText.style.display = "inline";
+                    }
+                }</script>
 
             <!--            What will you study and This Website Sections-->
 
