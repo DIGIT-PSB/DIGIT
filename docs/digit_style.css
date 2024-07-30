@@ -130,15 +130,17 @@ h1 span {
 }
 /* Class Shortcuts */
 .center {
-    display: flex;
-    justify-content: center;
-    margin: 0 1rem;
+    width: fit-content;
+    margin: 0 auto;
 }
 /* Goes on a div element */
 .break {
     flex-basis: 100%;
     height: 0;
     display: none;
+}
+.contAlign {
+    padding: 10vw;
 }
 /* End Universal Font Size********************************************************************************* */
 /* Menu bar responsiveness. Changes the text into a menu icon for mobile *************************************/
@@ -247,8 +249,13 @@ h1 span {
 
 }
 /*srr: class header (only used on home page)**********************************************************/
-.header {
-    margin: 4rem 0 0 0;
+
+.header{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 .header h1 {
     font-size: 6rem;
@@ -390,10 +397,20 @@ h1 span {
 .contactButtonSz {
     padding-top: 60px;
     padding-bottom: 20px;
-    font-size: .8rem;
+    font-size: 1.5rem;
 
 }
-
+.contactButtonSz a{
+    background-color: #1E407C;
+    color: white !important;
+    padding: 20px 34px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+.contactButtonSz:hover {
+    background-color: #009CDE;
+}
 
 /* The layout of the second-section can be used in other pages, but is currently not in use */
 #second-section {
@@ -542,6 +559,8 @@ h1 span {
 /* Footer ends ********************************************************************************/
 
 /*Home Page Content Flexability***********************************************************************/
+/*WIDTH FLEXABILITY*/
+
 @media screen and (max-width : 767px) {
     .header h1 {
         margin: 2.5rem 1.5rem;
@@ -550,6 +569,9 @@ h1 span {
     .header h2 {
         margin: 0 0 1.05rem;
         font-size: 1.5rem;
+    }
+    .contactButtonSz {
+        font-size: 1rem;
     }
 }
 @media screen and (max-width : 455px) {
@@ -561,7 +583,80 @@ h1 span {
         margin: 0 0 0.1125rem;
         font-size: 1rem;
     }
+    .contactButtonSz a{
+        font-size: .8rem;
+        padding: 15px 20px;
+    }
 }
+@media screen and (min-width : 1700px) {
+    .title {
+        padding: 0 10vw;
+    }
+    #psbLogoDiv{
+        padding: 0;
+    }
+
+}
+@media screen and (min-width : 2000px) {
+    .header h1 {
+        font-size: 8rem
+    }
+    .header h2 {
+        font-size: 3rem;
+    }
+    .title {
+        padding: 0 20vw;
+    }
+    #homeBackground {
+        padding: 10vw 20vw;
+    }
+}
+
+/*HEIGHT FLEXIBILITY*/
+@media screen and (max-height: 660px) {
+    .scroll p {
+        display: none;
+    }
+    #psbLogoDiv{
+        padding: .5rem 3rem;
+    }
+}
+@media screen and (max-height: 600px) {
+    .header h1{
+        margin: 2rem;
+    }
+}
+@media screen and (max-height: 500px) {
+    .scroll{
+        display: none;
+    }
+    .header h1{
+        font-size: 3.75rem;
+    }
+    .header h2 {
+        font-size: 1.5rem;
+    }
+    #psbLogoDiv{
+        padding: 1rem 3rem;
+    }
+    .header {
+        height: 50%;
+    }
+}
+@media screen and (max-height: 360px) {
+    .header {
+        height: 40%;
+    }
+}
+@media screen and (max-height: 300px) {
+    .header h1{
+        margin: 1rem;
+    }
+}
+
+
+
+
 
 
 
@@ -572,6 +667,7 @@ h1 span {
     background-position: center top, center;
     background-repeat: repeat-y, no-repeat;
     color: white;
+
 }
 .module {
     padding-top: 3rem;
@@ -718,7 +814,10 @@ h1 span {
     width: 100%;
 }*/
 .projects {
-    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .work {
@@ -727,6 +826,8 @@ h1 span {
     float: left;
     overflow: hidden;
     position: relative;
+    margin: 1%;
+    width: 30%
 }
 .workContainer {
     position: absolute;
@@ -770,13 +871,14 @@ h1 span {
     display: inherit;
 }
 
-
 .deschov {
+
     opacity: 0;
     transition: opacity 2000ms;
-
 }
-.deschov:hover {
+
+/*DEFAULT*/
+.deschov:hover{
     opacity: 1;
 }
 
@@ -810,6 +912,37 @@ h1 span {
     font-size: .7rem;
     margin: 0;
 }
+
+
+
+
+
+.detection:before {
+    content: 'UNKNOWN';
+    color: red;
+}
+
+@media(hover) { /*if able to use hover*/
+    .detection:before {
+        content: 'YES';
+        color: green;
+    }
+}
+
+@media (hover: none) { /*if NOT able to use hover*/
+    .detection:before {
+        content: 'NO';
+    }
+}
+
+
+
+
+
+
+
+
+
 .desc {
     box-sizing: border-box;
 }
@@ -821,13 +954,9 @@ h1 span {
 }
 /* PROJECT PAGE TABLET/COMPUTER VIEWING */
 @media screen and (min-width : 456px) {
-    div.work {
-        width: 30%;
-        display: inherit;
-        margin: 15px;
-    }
+
     div.focus {
-        width: 95.8%;
+        width: 100%;
         float: left;
     }
     .work img.art {
@@ -842,7 +971,7 @@ h1 span {
     }
     .work div.desc {
         display: none;
-        min-height: 100%;
+        height: 100%;
     }
     /********************TESTING**************************/
     /*.work:hover img{*/
@@ -852,7 +981,7 @@ h1 span {
     /**********************************************/
 
     .focus div.desc {
-        display: inherit;
+        display: block;
         float: left;
         position: absolute;
     }
@@ -885,6 +1014,9 @@ h1 span {
         left: 3%;
     }
 }
+@media screen and (min-width: 1125px){
+}
+
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
 @media screen and (min-width : 960px) {
     .work h2 {
@@ -913,6 +1045,7 @@ h1 span {
 @media screen and (max-width : 455px) {
     .work {
         width: 100%;
+        margin: 1vh 0;
     }
     .art {
         width: 100%;
@@ -942,6 +1075,9 @@ h1 span {
     .desc a svg {
         width: 6.25vw;
     }
+    .pcontainer{
+        min-width: auto;
+    }
 }
 /* Loader starts */
 #preloader-index {
@@ -960,7 +1096,8 @@ h1 span {
     width: 100%;
     z-index: 100;
 }
-/* Loader ends */
+/* Loader ends and showcase ends******************************************************************************/
+
 /* Events page */
 #svgHolder {
     text-align: center;
