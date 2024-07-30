@@ -49,16 +49,16 @@ p {
 }
 a {
     text-decoration: none;
-/*    color: rgb(37,160,219);*/
+    /*    color: rgb(37,160,219);*/
     color: rgb(150, 190, 230);
 }
 a:visited {
-/*    color: rgb(78,114,166);*/
-/*    color: #fad6a5; /\* opposite color of the background color #05295a *\/*/
+    /*    color: rgb(78,114,166);*/
+    /*    color: #fad6a5; /\* opposite color of the background color #05295a *\/*/
     color: pink;
 }
-a:hover{
-/*    color: rgb(150, 190, 230);*/
+a:hover {
+    /*    color: rgb(150, 190, 230);*/
     color: #d4f4f5;
 }
 ul {
@@ -130,15 +130,17 @@ h1 span {
 }
 /* Class Shortcuts */
 .center {
-    display: flex;
-    justify-content: center;
-    margin: 0 1rem;
+    width: fit-content;
+    margin: 0 auto;
 }
 /* Goes on a div element */
 .break {
     flex-basis: 100%;
     height: 0;
     display: none;
+}
+.contAlign {
+    padding: 10vw;
 }
 /* End Universal Font Size********************************************************************************* */
 /* Menu bar responsiveness. Changes the text into a menu icon for mobile *************************************/
@@ -169,7 +171,7 @@ h1 span {
 }
 .menu {
     overflow: hidden;
-    width:100%;
+    width: 100%;
     position: fixed;
     background-color: rgba(0, 0, 0, .2);
     top: 0;
@@ -229,12 +231,18 @@ h1 span {
     left: 0;
     right: 0;
 }
+
 /*.title div{*/
 /*    align-items: center;*/
 /*}*/
 #psbLogoDiv{
     padding: 0 3rem;
     text-align: left;
+    }
+.header h1 {
+    font-size: 6rem;
+    margin: 4.5rem 1.5rem;
+
 }
 #behrendLogo{
     max-width: 10rem;
@@ -242,7 +250,10 @@ h1 span {
 }
 /*srr: class header (only used on home page)**********************************************************/
 .header{
-    margin: 4rem 0 0 0;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .header h1 {
     font-size: 6rem;
@@ -282,6 +293,7 @@ h1 span {
     }
 }
 
+
 #homeBackground {
     background: url("images/footprints.png"), radial-gradient(#05295a 40%, black);
     background-position: center top, center;
@@ -292,7 +304,9 @@ h1 span {
     flex-direction: column;
     align-items: center;
 }
+
 #homeBackground h2 {
+
     text-align: center;
 }
 
@@ -303,37 +317,54 @@ h1 span {
     margin-left: auto;
     margin-right: auto;
 }
+#backgroundVid{
+    filter:brightness(.4);
+}
+/*rcc: These iframe ids are specifically for the videos featured on the hompage, should git LFS not be a viable option.*/
+#backgroundVidIFrame{
+    filter:brightness(.4);
+    z-index: -2;
+    position: absolute;
+    height: auto;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.videoFormat iframe{
+    width: 70vw;
+    height: 60vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*@media screen and (max-width: ) {*/
 /*    */
 /*}*/
 
-.contactButton {
-background-color: #1E407C;
-color: white !important;
-border: none;
-padding: 20px 34px;
-text-align: center;
-display: inline-block;
-margin: 4px 2px;
-cursor: pointer;
-}
-
-.contactButton:hover {
-    background-color: #009CDE;
-}
-
 .contactButtonSz {
     padding-top: 60px;
     padding-bottom: 20px;
-    font-size: .8rem;
+    font-size: 1.5rem;
 
 }
+.contactButtonSz a{
+    background-color: #1E407C;
+    color: white !important;
+    padding: 20px 34px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+.contactButtonSz:hover {
+    background-color: #009CDE;
+}
 
-
- /* The layout of the second-section can be used in other pages, but is currently not in use */
+/* The layout of the second-section can be used in other pages, but is currently not in use */
 #second-section {
-    background: #ebebeb;
-    padding-top: 1.75rem;
+    
 }
 
 /*Can delete .contentWithGrid - no longer use*/
@@ -478,6 +509,8 @@ cursor: pointer;
 /* Footer ends ********************************************************************************/
 
 /*Home Page Content Flexability***********************************************************************/
+/*WIDTH FLEXABILITY*/
+
 @media screen and (max-width : 767px) {
     .header h1 {
         margin: 2.5rem 1.5rem;
@@ -486,6 +519,9 @@ cursor: pointer;
     .header h2 {
         margin: 0 0 1.05rem;
         font-size: 1.5rem;
+    }
+    .contactButtonSz {
+        font-size: 1rem;
     }
 }
 @media screen and (max-width : 455px) {
@@ -497,7 +533,80 @@ cursor: pointer;
         margin: 0 0 0.1125rem;
         font-size: 1rem;
     }
+    .contactButtonSz a{
+        font-size: .8rem;
+        padding: 15px 20px;
+    }
 }
+@media screen and (min-width : 1700px) {
+    .title {
+        padding: 0 10vw;
+    }
+    #psbLogoDiv{
+        padding: 0;
+    }
+
+}
+@media screen and (min-width : 2000px) {
+    .header h1 {
+        font-size: 8rem
+    }
+    .header h2 {
+        font-size: 3rem;
+    }
+    .title {
+        padding: 0 20vw;
+    }
+    #homeBackground {
+        padding: 10vw 20vw;
+    }
+}
+
+/*HEIGHT FLEXIBILITY*/
+@media screen and (max-height: 660px) {
+    .scroll p {
+        display: none;
+    }
+    #psbLogoDiv{
+        padding: .5rem 3rem;
+    }
+}
+@media screen and (max-height: 600px) {
+    .header h1{
+        margin: 2rem;
+    }
+}
+@media screen and (max-height: 500px) {
+    .scroll{
+        display: none;
+    }
+    .header h1{
+        font-size: 3.75rem;
+    }
+    .header h2 {
+        font-size: 1.5rem;
+    }
+    #psbLogoDiv{
+        padding: 1rem 3rem;
+    }
+    .header {
+        height: 50%;
+    }
+}
+@media screen and (max-height: 360px) {
+    .header {
+        height: 40%;
+    }
+}
+@media screen and (max-height: 300px) {
+    .header h1{
+        margin: 1rem;
+    }
+}
+
+
+
+
 
 
 
@@ -508,19 +617,22 @@ cursor: pointer;
     background-position: center top, center;
     background-repeat: repeat-y, no-repeat;
     color: white;
+
 }
-.module{
+.module {
     padding-top: 3rem;
 }
 .module h1 span {
-/*    color: rgba(57, 51, 51, 0.7);*/
-    color: rgba(255,255,255,0.7);
+    /*    color: rgba(57, 51, 51, 0.7);*/
+    color: rgba(255, 255, 255, 0.7);
 }
+
 .roadtext{
 text-align: center; 
 text-align-last: center;
  font-size:20px;
  font-family: Verdana, Helvetica,sans-serif
+
 }
 #svgHolder {
     text-align: center;
@@ -539,11 +651,11 @@ text-align-last: center;
     word-spacing: .02rem;
 }
 .data p:first-child::first-letter {
-/*    color: #041E42;*/
+    /*    color: #041E42;*/
     color: lightsteelblue;
     font-weight: bold;
     font-size: 3rem;
-    float: left; 
+    float: left;
     line-height: 2.5rem;
     padding-right: .4rem;
     margin-top: -.15rem;
@@ -564,7 +676,7 @@ text-align-last: center;
     padding: .7rem;
     line-height: 1.25rem;
 }
-.courseblock ul{
+.courseblock ul {
     color: black;
 }
 .responsive-table li {
@@ -652,7 +764,10 @@ text-align-last: center;
     width: 100%;
 }*/
 .projects {
-    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .work {
@@ -661,6 +776,8 @@ text-align-last: center;
     float: left;
     overflow: hidden;
     position: relative;
+    margin: 1%;
+    width: 30%
 }
 .workContainer {
     position: absolute;
@@ -707,8 +824,8 @@ text-align-last: center;
 .deschov{
     opacity: 0;
     transition: opacity 2000ms;
-
 }
+/*DEFAULT*/
 .deschov:hover{
     opacity: 1;
 }
@@ -716,6 +833,8 @@ text-align-last: center;
 .hover:hover .desc{
 
     z-index: 99;
+
+
     display: inherit;
     position: absolute;
     top: 0;
@@ -741,6 +860,37 @@ text-align-last: center;
     font-size: .7rem;
     margin: 0;
 }
+
+
+
+
+
+.detection:before {
+    content: 'UNKNOWN';
+    color: red;
+}
+
+@media(hover) { /*if able to use hover*/
+    .detection:before {
+        content: 'YES';
+        color: green;
+    }
+}
+
+@media (hover: none) { /*if NOT able to use hover*/
+    .detection:before {
+        content: 'NO';
+    }
+}
+
+
+
+
+
+
+
+
+
 .desc {
     box-sizing: border-box;
 }
@@ -752,13 +902,9 @@ text-align-last: center;
 }
 /* PROJECT PAGE TABLET/COMPUTER VIEWING */
 @media screen and (min-width : 456px) {
-    div.work {
-        width: 30%;
-        display: inherit;
-        margin: 15px;
-    }
+
     div.focus {
-        width: 95.8%;
+        width: 100%;
         float: left;
     }
     .work img.art {
@@ -773,7 +919,7 @@ text-align-last: center;
     }
     .work div.desc {
         display: none;
-        min-height: 100%;
+        height: 100%;
     }
     /********************TESTING**************************/
     /*.work:hover img{*/
@@ -783,7 +929,7 @@ text-align-last: center;
     /**********************************************/
 
     .focus div.desc {
-        display: inherit;
+        display: block;
         float: left;
         position: absolute;
     }
@@ -816,6 +962,9 @@ text-align-last: center;
         left: 3%;
     }
 }
+@media screen and (min-width: 1125px){
+}
+
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
 @media screen and (min-width : 960px) {
     .work h2 {
@@ -844,6 +993,7 @@ text-align-last: center;
 @media screen and (max-width : 455px) {
     .work {
         width: 100%;
+        margin: 1vh 0;
     }
     .art {
         width: 100%;
@@ -873,6 +1023,9 @@ text-align-last: center;
     .desc a svg {
         width: 6.25vw;
     }
+    .pcontainer{
+        min-width: auto;
+    }
 }
 /* Loader starts */
 #preloader-index {
@@ -891,7 +1044,8 @@ text-align-last: center;
     width: 100%;
     z-index: 100;
 }
-/* Loader ends */
+/* Loader ends and showcase ends******************************************************************************/
+
 /* Events page */
 #svgHolder {
     text-align: center;
@@ -903,7 +1057,7 @@ text-align-last: center;
     margin: auto;
     padding-bottom: .5rem;
     text-align: justify;
-/*    color: rgb(0, 0, 0);*/
+    /*    color: rgb(0, 0, 0);*/
 }
 @media screen and (max-width : 767px) {
     .data-event {
@@ -920,12 +1074,12 @@ text-align-last: center;
     text-align: left;
     font-size: 1rem;
     margin: 3rem auto 0;
-/*    color: rgb(0, 0, 0);*/
+    /*    color: rgb(0, 0, 0);*/
     width: 60%;
 }
 .digit-works span {
-/*    color: rgba(0, 0, 0, 0.7);*/
-    color: rgba(255,255,255,0.7);
+    /*    color: rgba(0, 0, 0, 0.7);*/
+    color: rgba(255, 255, 255, 0.7);
     font-weight: bold;
     font-size: 1rem;
 }
@@ -1032,13 +1186,13 @@ text-align-last: center;
 /* ABOUT PAGE BEGIN */
 /*General Code*/
 .tabbingBtn {
-background-color: #1E407C;
-color: white !important;
-border: none;
-padding: 17px 30px;
-display: inline-block;
-font-size: 20px;
-cursor: pointer;
+    background-color: #1E407C;
+    color: white !important;
+    border: none;
+    padding: 17px 30px;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .tabbingBtn:hover {
@@ -1071,6 +1225,7 @@ cursor: pointer;
     padding: 2.5rem 1rem 0.5rem 0;
 }
 
+
 /*ABOUT STUDENT SECTION*/
 
 .aboutImageFormat {
@@ -1087,6 +1242,7 @@ cursor: pointer;
     /*adjust this width to increase image size*/
     width: 70%;
     gap: 100px;
+
 }
 
 .portfolioWrap {
@@ -1190,7 +1346,7 @@ body.about-professors p{
 }
 .dates h5 {
     font-size: 1rem;
-/*    color: rgba(0, 0, 0, 0.7);*/
+    /*    color: rgba(0, 0, 0, 0.7);*/
 }
 table.showCase {
     vertical-align: middle;
@@ -1198,7 +1354,7 @@ table.showCase {
     margin: auto;
 }
 table.showCase tr:nth-child(even) {
-    background-color: /*#dcd0ff*/ /*#dbd7d2*/ /*#c3cde6*/ /*#e0c39e*/ /*#d9cab2*/ /*lightsteelblue*/rgba(148,175,210,0.3);
+    background-color: /*#dcd0ff*/ /*#dbd7d2*/ /*#c3cde6*/ /*#e0c39e*/ /*#d9cab2*/ /*lightsteelblue*/ rgba(148, 175, 210, 0.3);
 }
 th,
 td {
@@ -1207,15 +1363,15 @@ td {
     padding-top: 0.5rem;
     padding-bottom: 1rem;
 }
-iframe.newtfire{
+iframe.newtfire {
     display: block;
     margin: auto;
-    border: none; 
-    width: 80vw; 
-    height: 40vw; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border: none;
+    width: 80vw;
+    height: 40vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: .5vw;
     border-style: solid;
-    border-color: rgb(30,64,124, .8);
+    border-color: rgb(30, 64, 124, .8);
     border-radius: .5vw;
 }

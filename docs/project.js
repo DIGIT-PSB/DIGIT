@@ -13,19 +13,24 @@ window.onload = init;
 function init() {
     //console.log('init is firing');
 
+    //2024-07-24 srr Source for Hoverable Device Detection: https://css-irl.info/detecting-hover-capable-devices/
+    const isHoverableDevice = window.matchMedia('(hover: hover) and (pointer: fine)');
+    // console.log(isHoverableDevice); /* .matches displays boolean*/
+
+    if(isHoverableDevice.matches){
+       for (var i = 0; i < projects.length; i++) {
+           projects[i].addEventListener('mouseover', infoPeek, false);
+       }
+    }
+
 
     for (var i = 0; i < projects.length; i++) {
-        projects[i].addEventListener('mouseover', infoPeek, false);
-        projects[i].addEventListener('mouseout', infoPeekOut, false);//takes class="hover" off of each project
         projects[i].dataset.defaultposition = i + 1;
         projects[i].addEventListener('click', expand, false);
     }
-    // for (var i = 0; i < desc.length; i++){
-    //     desc[i].addEventListener('mouseover', phaseIn, false);
-    // }
-
     console.log(`There are ${desc.length} desc classes present`) //srr: displays 28
 }
+
 
 /* 2022-05-23 ebb Source: https://www.geeksforgeeks.org/how-to-make-the-images-bigger-when-clicked/  */
 function expand() {
@@ -85,46 +90,33 @@ function restore(elements) {
 
 function infoPeek(){
     var w = window.innerWidth;
+
+
     /*console.log(window.innerWidth);*/
     if (w > 455) {
+
         this.classList.add('hover');
-        console.log(this.childNodes[3]);//srr: displays div.desc for some reason
-        this.childNodes[3].classList.add('deschov');
-
-
-        // let work = this;
-        // let thisDesc = this.children;
-        // console.log(`There are ${thisDesc} children`);
-
-        // if(this.children.classList.contains("desc")){
-            // console.log("desc is here");
-            // this.children.classList.add("deschov");
-        // }
-        // else{}
-
+        console.log(this.children[1]);//srr: displays div.desc for some reason
+        console.log(this.classList);
+        this.children[1].classList.add('deschov');
 
 
         if (this.classList.contains("focus")) {
             this.classList.remove("hover");
-            this.childNodes[3].classList.remove('deschov');
-
-
-            // if(this.children.classList.contains("deschov")){
-            //     this.children.classList.remove("deschov");
-            //  }
-            // else{}
-
-
+            this.children[1].classList.remove('deschov');
         } else {}
         // phaseIn(desc);
     }
     else{}
+
+    this.addEventListener('mouseout', infoPeekOut, false);
 }
 
 function infoPeekOut() {
+
     if(this.classList.contains("hover")){
         this.classList.remove("hover");
-        this.childNodes[3].classList.remove('deschov');
+        this.children[1].classList.remove('deschov');
     }
     else{}
 }

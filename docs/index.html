@@ -17,29 +17,73 @@
     </head>
     <body>
         <section id="container">
+            <!--rcc: old video
             <video autoplay="" loop="" muted="">
                 <source src="images/banner-homepage.mp4" type="video/mp4" />
+            </video>-->
+
+            <video id="backgroundVid" loop="" muted="">
+                <source src="images/DIGITShowcaseBackground1080.mp4" type="video/mp4" />
             </video>
+
+            <!-- rcc: This Javascript function should play the video starting at a random time in its duration. Couldn't get it to work in an outside js file, sorry... -->
+            <script>
+                var video = document.getElementById('backgroundVid');
+                video.addEventListener('loadedmetadata', function () {
+                    var duration = video.duration;
+                    var randomTime = Math.random() * duration;
+                    video.currentTime = randomTime;
+                    video.play();
+                });</script>
+
+            <!--
+                rcc: The video showcase was originally implemented with Git LFS, which costs money to upload large enough files so many times. For a free
+                alternative, use this code to link to a YouTube video, while also starting at a random point. It takes a second to load in, and the 
+                YouTube branding is visible for a moment upon startup, but ah well what can you do?
+                
+                <iframe id="backgroundVidIFrame"
+                src="https://www.youtube.com/embed/Virh2-IEFUM?autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=Virh2-IEFUM&amp;start=0"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                
+                <script>
+                function getRandomStartTime() {
+                    return Math.floor(Math.random() * 100);
+                    // Random number between 0 and 99
+                }
+                
+                function updateVideoUrl() {
+                    const videoId = 'Virh2-IEFUM';
+                    const randomStartTime = getRandomStartTime();
+                    const iframe = document.getElementById('backgroundVidIFrame');
+                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=${videoId}&amp;start=${randomStartTime}`;
+                }
+                
+                updateVideoUrl();</script>
+                -->
             <div class="menu" id="myMenu">
                 <a href="index.html" class="active">Home</a>
                 <a href="showcase.html">Our Students</a>
                 <a href="roadmap.html">Education</a>
                 <a href="about.html">About</a>
                 <a href="ev.html">Events</a>
-                <!--                <a href="https://newtfire.org/courses/DIGITShowcase.html" target="_blank">DIGIT Works</a>-->
+                <a href="https://newtfire.org/courses/DIGITShowcase.html" target="_blank">DIGIT
+                    Works</a>
                 <a href="javascript:void(0);" class="icon" onclick="Menubar()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
             <div class="title">
                 <div id="psbLogoDiv">
-                    <img id="behrendLogo" src="images/PSB_logo.png" alt="Nittany Lion Shield Penn State Behrend Mark"/>
+                    <img id="behrendLogo" src="images/PSB_logo.png"
+                        alt="Nittany Lion Shield Penn State Behrend Mark" />
                 </div>
 
                 <div class="header">
                     <h1>DIGIT</h1>
-                    <h2>Digital Media, Arts <br/>and Technology</h2>
-<!--                    <h2>Penn State Behrend</h2>-->
+                    <h2>Digital Media, Arts <br />and Technology</h2>
+                    <!--                    <h2>Penn State Behrend</h2>-->
                 </div>
             </div>
             <div class="scroll">
@@ -49,33 +93,51 @@
         </section>
         <section id="homeBackground">
 
-<!--                    <i class="fa fa-question-circle-o fa-5x" aria-hidden="true"></i>-->
+            <!--                    <i class="fa fa-question-circle-o fa-5x" aria-hidden="true"></i>-->
 
-                <h2>What is DIGIT?</h2>
-                <p> Digital Media, Arts, and Technology (DIGIT) is an interdisciplinary degree
-                    offered at Penn State Behrend, combining the technical skills needed in the
-                    field with the broad perspective of the liberal arts. This degree prepares
-                    students for the real world by giving them a strong coding foundation, teaching
-                    human-oriented design principles, and providing them with the applications
-                    necessary to succeed.
-                </p>
+            <h2 id="second-section">What is DIGIT?</h2>
+            <p> Digital Media, Arts, and Technology (DIGIT) is an interdisciplinary degree offered
+                at Penn State Behrend, combining the technical skills needed in the field with the
+                broad perspective of the liberal arts. This degree prepares students for the real
+                world by giving them a strong coding foundation, teaching human-oriented design
+                principles, and providing them with the applications necessary to succeed. </p>
 
             <!--            banner-homepage.mp4 is just a place holder til we can add Reece's video-->
 
             <div class="videoFormat">
+
+                <!--rcc: old video
+                    <video controls="controls">
+                        <source src="images/banner-homepage.mp4" type="video/mp4" />
+                    </video>
+                -->
                 <video controls="controls">
-                    <source src="images/banner-homepage.mp4" type="video/mp4" />
+                    <source src="images/DIGITShowcase1.mp4" type="video/mp4" />
                 </video>
+
             </div>
+
+            <!--
+                rcc: The video showcase was originally implemented with Git LFS, which costs money to upload large enough files so many times. For a free
+                alternative, use this code to link to a YouTube video:
+                
+                <iframe
+                    src="https://www.youtube.com/embed/Virh2-IEFUM?si=Z_290PzRg2dAgkRR"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen=""></iframe>
+                -->
 
             <!--            What will you study and This Website Sections-->
 
             <h2 class="contactButtonSz">
-                <a href="about-professors.html" class="contactButton" target="_blank"> Contact our Faculty! </a>
+                <a href="about-professors.html"> Contact our Faculty! </a>
             </h2>
             <h2>Annual DIGIT Works Showcase</h2>
             <p>December 2024 Showcase TBA!</p>
             <p><a href="ev.html">Look at Past Showcase Schedules</a></p>
+
 
 
 
@@ -84,7 +146,8 @@
         <footer id="footer-wrap">
             <div class="footer-content">
                 <div class="features">
-                    <img src="images/PSB_logo.png" alt="Nittany Lion Shield Penn State Behrend Mark"/>
+                    <img src="images/PSB_logo.png" alt="Nittany Lion Shield Penn State Behrend Mark"
+                     />
                 </div>
                 <div class="break"></div>
                 <div class="features">
