@@ -1026,7 +1026,7 @@ h1 span {
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
 @media screen and (min-width : 960px) {
     .work h2 {
-        margin-top: 0rem;
+        margin-top: 0;
         margin-bottom: 0.3rem;
         font-size: 1.776rem;
     }
@@ -1199,7 +1199,7 @@ h1 span {
 }
 @media (max-width : 767px) {
     .timeline .event:before {
-        left: 0px;
+        left: 0;
         text-align: left;
     }
 }
@@ -1240,8 +1240,8 @@ h1 span {
     left: 0;
     right: -55.8px;
 }
-/* EVENT PAGE END */
-/* ABOUT PAGE BEGIN */
+/* EVENT PAGE END ********************************************************************************/
+/* ABOUT PAGE BEGIN ******************************************************************************/
 /*General Code*/
 .tabbingBtn {
     background-color: #1E407C;
@@ -1259,16 +1259,14 @@ h1 span {
 
 .tabbingBtnsAlign {
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 275px;
+    margin: 2rem 0;
 }
 
 .about_forms {
-    margin: auto;
-    max-width: 960px;
-    text-align: left;
-    padding: 1rem 0 0 0;
+    /*margin: auto;*/
+    /*max-width: 960px;*/
+    /*text-align: left;*/
+    /*padding: 1rem 0 0 0;*/
 }
 .about_forms li {
     margin: .6rem 0 .6rem 0;
@@ -1365,6 +1363,9 @@ body.about-professors p{
 
 .dropdownFormat{
     padding: 0rem 1rem 2.5rem;
+}
+.dropdownFormat details{
+    margin: 0 0 1rem 0;
 }
 
 .dropdownVersion{
