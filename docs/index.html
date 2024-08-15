@@ -2,9 +2,10 @@
     <head>
         <title>PSB DIGIT Splash</title>
         <meta charset="UTF-8" />
-        <meta name="author" content="Felipe Bassi" />
+        <meta name="author" content="Felipe Bassi, Jessica Salemme, Reece Cullen" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="The PSU Behrend DIGIT site, made by DIGIT students for the interested. DIGIT course info and events. Behrend Trees, data analysis, text archives, student projects, and a few galleries." />
+        <meta name="description"
+            content="The PSU Behrend DIGIT site, made by DIGIT students for the interested. DIGIT course info and events. Behrend Trees, data analysis, text archives, student projects, and a few galleries." />
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?" />
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Special+Elite" rel="stylesheet" />
@@ -16,105 +17,258 @@
     </head>
     <body>
         <section id="container">
+            <!--rcc: old video
             <video autoplay="" loop="" muted="">
                 <source src="images/banner-homepage.mp4" type="video/mp4" />
+            </video>-->
+
+            <video id="backgroundVid" loop="" muted="">
+                <source src="images/DIGITShowcaseBackground1080.mp4" type="video/mp4" />
             </video>
+
+            <!-- rcc: This Javascript function should play the video starting at a random time in its duration. Couldn't get it to work in an outside js file, sorry... -->
+            <script>
+                var video = document.getElementById('backgroundVid');
+                video.addEventListener('loadedmetadata', function () {
+                    var duration = video.duration;
+                    var randomTime = Math.random() * duration;
+                    video.currentTime = randomTime;
+                    video.play();
+                });</script>
+
+            <!--
+                rcc: The video showcase was originally implemented with Git LFS, which costs money to upload large enough files so many times. For a free
+                alternative, use this code to link to a YouTube video, while also starting at a random point. It takes a second to load in, and the 
+                YouTube branding is visible for a moment upon startup, but ah well what can you do?
+                
+                <iframe id="backgroundVidIFrame"
+                src="https://www.youtube.com/embed/Virh2-IEFUM?autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=Virh2-IEFUM&amp;start=0"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                
+                <script>
+                function getRandomStartTime() {
+                    return Math.floor(Math.random() * 100);
+                    // Random number between 0 and 99
+                }
+                
+                function updateVideoUrl() {
+                    const videoId = 'Virh2-IEFUM';
+                    const randomStartTime = getRandomStartTime();
+                    const iframe = document.getElementById('backgroundVidIFrame');
+                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=${videoId}&amp;start=${randomStartTime}`;
+                }
+                
+                updateVideoUrl();</script>
+                -->
             <div class="menu" id="myMenu">
                 <a href="index.html" class="active">Home</a>
-                <a href="about.html">About</a>
-                <a href="roadmap.html">Courses</a>
-                <a href="showcase.html">Students Projects</a>
+                <a href="showcase.html">Our Students</a>
+                <a href="roadmap.html">Education</a>
+                <a href="about-students.html">About</a>
                 <a href="ev.html">Events</a>
+<!--                <a href="https://newtfire.org/courses/DIGITShowcase.html" target="_blank">DIGIT-->
+<!--                    Works</a>-->
                 <a href="javascript:void(0);" class="icon" onclick="Menubar()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
             <div class="title">
+                <div id="psbLogoDiv">
+                    <img id="behrendLogo" src="images/PSB_logo.png"
+                        alt="Nittany Lion Shield Penn State Behrend Mark" />
+                </div>
+
                 <div class="header">
                     <h1>DIGIT</h1>
-                    <h3>Digital Media, Arts <br />and Technology</h3>
-                    <h2>Penn State Behrend</h2>
+                    <h2>Digital Media, Arts <br/>and Technology</h2>
+                    <!--                    <h2>Penn State Behrend</h2>-->
                 </div>
             </div>
             <div class="scroll">
-                <a href="#second-section"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i><br /><p>Scroll</p></a>
+                <a href="#second-section"><i class="fa fa-angle-double-down fa-3x"
+                        aria-hidden="true"></i><br/><p>Scroll</p></a>
             </div>
         </section>
-        <section id="second-section">
-            <div class="content">
-                <div class="left-side">
-                    <i class="fa fa-question-circle-o fa-5x" aria-hidden="true"></i>
-                    <br />
-                    <h4>What is DIGIT?</h4>
-                </div>
-                <div class="right-side"> Digital Media, Arts, and Technology (DIGIT) is an interdisciplinary degree offered at Penn State Behrend, combining the technical skills needed in the field with the broad perspective of the liberal arts. This degree prepares students for the real world by giving them a strong coding foundation, teaching human-oriented design principles, and providing them with the applications necessary to succeed. </div>
+        <section id="homeBackground">
+
+            <!--                    <i class="fa fa-question-circle-o fa-5x" aria-hidden="true"></i>-->
+
+            <h2 id="second-section">What is DIGIT?</h2>
+            <p> Digital Media, Arts, and Technology (DIGIT) is an interdisciplinary degree offered
+                at Penn State Behrend, combining the technical skills needed in the field with the
+                broad perspective of the liberal arts. This degree prepares students for the real
+                world by giving them a strong coding foundation, teaching human-oriented design
+                principles, and providing them with the applications necessary to succeed. </p>
+
+            <!--            banner-homepage.mp4 is just a place holder til we can add Reece's video-->
+
+            <div class="videoFormat">
+
+                <!--rcc: old video
+                    <video controls="controls">
+                        <source src="images/banner-homepage.mp4" type="video/mp4" />
+                    </video>
+                -->
+                <video controls="controls">
+                    <source src="images/DIGITShowcase1.mp4" type="video/mp4" />
+                </video>
+
             </div>
-            <div class="content">
-                <div class="left-side">
-                    <i class="fa fa-book fa-5x" aria-hidden="true"></i>
-                    <br />
-                    <h4>What will you study?</h4>
-                </div>
-                <div class="right-side"> The DIGIT major offers different focuses depending on what our undergraduates hope to achieve. While some courses are required by all DIGIT students, they can choose between <ul>
-                        <li>Data Visualization,</li>
-                        <li>Digital Humanities,</li>
-                        <li>Sound &amp; Motion,</li>
-                        <li>Modeling &amp; Simulation/Human Computer Interaction.</li>
-                    </ul> DIGIT students will choose two categories to focus on out of four listed, gaining experience needed to pursue the careers they want. To see the full DIGIT curriculum, visit the <a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/digital-media-arts-technology-ba/" target="_blank"><i>PSU Undergraduate Bulletin</i></a>.</div>
+
+            <!--
+                rcc: The video showcase was originally implemented with Git LFS, which costs money to upload large enough files so many times. For a free
+                alternative, use this code to link to a YouTube video:
+                
+                <iframe
+                    src="https://www.youtube.com/embed/Virh2-IEFUM?si=Z_290PzRg2dAgkRR"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen=""></iframe>
+                -->
+
+            <div id="creditsP">
+                <h3>Credits<span id="arrow">▼</span></h3>
+                    <span id="more">
+                    <br/> Music:
+                        <ul>
+                            <li>"Real Love" by "V" Reed Coyle V.</li>
+                            <li>Untitled by Parker Pearce Yohe</li>
+                        </ul>
+                    <br/> Featured DIGIT Projects (in order):
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=uq3t5k1neLQ" target="_blank">Stop
+                        Motion Animation</a> by Jacqueline Chan</li>
+                            <li><a href="https://www.youtube.com/watch?v=SmH9_J_efGI" target="_blank">What
+                        Really Happens on the Night Shift</a> by Mia Borgia</li>
+                            <li><a href="https://www.youtube.com/watch?v=u-rXxk5X4nQ" target="_blank"
+                            >BaccaRat</a> by Tyler Akam, Stephen Catledge</li>
+                            <li><a href="https://www.youtube.com/watch?v=lAX6nRM3JtM" target="_blank">VR
+                        Landscape</a> by Reece Cullen</li>
+                            <li><a href="https://www.youtube.com/watch?v=_kRVYOzWCsI" target="_blank">The
+                        Cartographer</a> by Tyler Akam, Ethan Bartley and Stephen Catledge</li>
+                            <li><a href="https://www.youtube.com/watch?v=i1gtU4WhAuI" target="_blank">Slime
+                        Quest</a> by Reece Cullen</li>
+                            <li><a href="https://www.youtube.com/watch?v=efnSRGQMCio" target="_blank">Motion
+                        Slickness</a> by Mia Borgia</li>
+                            <li><a href="https://www.youtube.com/watch?v=eIK2yASMurc" target="_blank">The
+                        Glorps</a> by Reece Cullen</li>
+                            <li><a href="https://mayan.newtfire.org/index.html" target="_blank">Ancient Mayans
+                        Digitized</a> by Samuel Andrew, Mia Borgia, Brett Meyer, Anthony Wlordarczyk</li>
+                            <li><a href="https://www.youtube.com/watch?v=MNiOmQjFND4" target="_blank">Blissful</a> by Noah Stachera and Tyler Akam</li>
+                            <li><a href="https://ztd5049.github.io/Zack-Dominick/videos.html" target="_blank"
+                            >Piano Animations</a> by Zack Dominick</li>
+                            <li><a href="https://purpleninja39.itch.io/we-have-a-problem" target="_blank">WE
+                        HAVE A PROBLEM</a> by Reece Cullen, Liam Dougherty, Roland Grande, Logan
+                        Salas and Andy Zhuang</li>
+                            <li><a href="https://www.youtube.com/watch?v=YrtHZQGzvsA" target="_blank"
+                            >Lorina</a> by Jacqueline Chan</li>
+                            <li><a href="https://graydonk.itch.io/the-way-of-words" target="_blank">The Way of
+                        the Words</a> by Raymond Fogle, Saiid Koroma, Graydon Kupfer, Jeremy
+                         Myers and Paul Pritchard</li>
+                            <li><a href="https://www.youtube.com/watch?v=ndmmKXo-Xuc" target="_blank">Kilgore
+                        and Kozack</a> by Mia Borgia</li>
+                            <li><a href="https://www.youtube.com/watch?v=IBrJg1t4MA0" target="_blank">Routine
+                        Rust</a> by Remington Orange</li>
+                            <li><a href="https://www.youtube.com/watch?v=Zif4hhLf1PU" target="_blank">Angelic
+                        Anguish</a> by Julian Giles</li>
+                            <li><a href="https://youtu.be/cjfzaY3pdJo?si=9qfcRUD6I5DrVdjp" target="_blank"
+                            >Fortune Machine</a> by Tyler Akam, Noah Stachera</li>
+                            <li><a href="https://youtu.be/NS1sqKvisoM?si=1gPTHUXMpsh37XJg" target="_blank">A
+                        Fireside Chat</a> by Tyler Akam</li>
+                            <li><a href="https://graydonk.itch.io/everyday" target="_blank">Everyday</a> by
+                        Graydon Kupfer</li>
+                            <li><a href="https://www.youtube.com/watch?v=Ngz0f-O4pGo" target="_blank">Eclipse
+                        Animation</a> by Noah Stachera</li>
+                            <li><a href="https://www.youtube.com/watch?v=T5IBdmVY5Z0" target="_blank"
+                            >Pandoramerica</a> by Remington Orange</li>
+                            <li><a href="https://youtu.be/whUbrnS_otg?si=VOl6WIx2I7LBpFNo" target="_blank">The
+                        Aquarium in Your Dreams</a> by Mia Borgia</li>
+                            <li><a href="https://www.youtube.com/watch?v=uZYiCB9ex_4" target="_blank">The
+                        Proclaimed Legend of Clayton Rider</a> by Tyler Akam</li>
+
+                        </ul>
+                </span>
+                    <br/>
+
             </div>
-            <div class="content">
-                <div class="left-side">
-                    <i class="fa fa-info-circle fa-5x" aria-hidden="true"></i>
-                    <br />
-                    <h4>This Website</h4>
-                </div>
-                <div class="right-side"> This site hosts student projects, portfolios, and websites from upcoming and current DIGIT graduates, DIGIT-related news and events, and more information about the DIGIT program at Penn State Behrend. </div>
-            </div>
+<!--            <button onclick="creditsExpand()" id="myBtn">Expand</button>-->
+
+
+            <!--            What will you study and This Website Sections-->
+
+            <h2 class="contactButtonSz">
+                <a href="about-professors.html"> Contact our Faculty! </a>
+            </h2>
+            <h2>Annual DIGIT Works Showcase</h2>
+            <p>December 2024 Showcase TBA!</p>
+            <p><a href="ev.html">Look at Past Showcase Schedules</a></p>
+
+
+
+
         </section>
+        <!--        footer-->
         <footer id="footer-wrap">
             <div class="footer-content">
                 <div class="features">
-                    <img src="images/PSB_logo.png" alt="Nittany Lion Shield Penn State Behrend Mark" />
+                    <img src="images/PSB_logo.png" alt="Nittany Lion Shield Penn State Behrend Mark"
+                     />
                 </div>
                 <div class="break"></div>
                 <div class="features">
                     <p>
-                        <strong> Learn More <br />
+                        <strong> Learn More <br/>
                         </strong>
                         <a href="https://behrend.psu.edu/" target="_blank">Penn State Behrend</a>
-                        <br />
-                        <a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/digital-media-arts-technology-ba/" target="_blank">DIGIT PSU Bulletin</a>
-                        <br />
-                        <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs/digital-media-arts-and-technology" target="_blank">Academic Programs</a>
+                        <br/>
+                        <a
+                            href="https://bulletins.psu.edu/undergraduate/colleges/behrend/digital-media-arts-technology-ba/"
+                            target="_blank">DIGIT PSU Bulletin</a>
+                        <br/>
+                        <a
+                            href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs/digital-media-arts-and-technology"
+                            target="_blank">Academic Programs</a>
                     </p>
                 </div>
                 <div class="features">
                     <p>
-                        <strong> Useful Links <br />
+                        <strong> Useful Links <br/>
                         </strong>
-                        <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs-1/digital-media-arts-and-technology/digit-faculty" target="_blank">Faculty</a>
-                        <br />
-                        <a href="https://psu.instructure.com/courses/1871837" target="_blank">Canvas Pride</a>
-                        <br />
+                        <a
+                            href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs-1/digital-media-arts-and-technology/digit-faculty"
+                            target="_blank">Faculty</a>
+                        <br/>
+                        <a href="https://psu.instructure.com/courses/1871837" target="_blank">Canvas
+                            Pride</a>
+                        <br/>
                         <a href="https://digit-psb.github.io/BOLDC/" target="_blank">BOLDC</a>
                     </p>
                 </div>
                 <div class="features">
                     <p>
-                        <strong> Penn State Behrend Campus <br />
-                        </strong> 4701 College Drive <br /> Erie, PA 16563 <br /> (814) 898-6000 </p>
+                        <strong> Penn State Behrend Campus <br/>
+                        </strong> 4701 College Drive <br/> Erie, PA 16563 <br/> (814) 898-6000
+                    </p>
                 </div>
                 <div class="break"></div>
                 <div class="features">
                     <a href="https://github.com/DIGIT-PSB" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24">
-                            <path xmlns="http://www.w3.org/2000/svg" class="cls-11" d="M12,0C5.374,0,0,5.373,0,12c0,5.302,3.438,9.8,8.207,11.387,.599,.111,.793-.261,.793-.577v-2.234c-3.338,.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745,.083-.729,.083-.729,1.205,.084,1.839,1.237,1.839,1.237,1.07,1.834,2.807,1.304,3.492,.997,.107-.775,.418-1.305,.762-1.604-2.665-.305-5.467-1.334-5.467-5.931,0-1.311,.469-2.381,1.236-3.221-.124-.303-.535-1.524,.117-3.176,0,0,1.008-.322,3.301,1.23,.957-.266,1.983-.399,3.003-.404,1.02,.005,2.047,.138,3.006,.404,2.291-1.552,3.297-1.23,3.297-1.23,.653,1.653,.242,2.874,.118,3.176,.77,.84,1.235,1.911,1.235,3.221,0,4.609-2.807,5.624-5.479,5.921,.43,.372,.823,1.102,.823,2.222v3.293c0,.319,.192,.694,.801,.576,4.765-1.589,8.199-6.086,8.199-11.386C24,5.373,18.627,0,12,0Z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"
+                            viewBox="0 0 24 24">
+                            <path xmlns="http://www.w3.org/2000/svg" class="cls-11"
+                                d="M12,0C5.374,0,0,5.373,0,12c0,5.302,3.438,9.8,8.207,11.387,.599,.111,.793-.261,.793-.577v-2.234c-3.338,.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745,.083-.729,.083-.729,1.205,.084,1.839,1.237,1.839,1.237,1.07,1.834,2.807,1.304,3.492,.997,.107-.775,.418-1.305,.762-1.604-2.665-.305-5.467-1.334-5.467-5.931,0-1.311,.469-2.381,1.236-3.221-.124-.303-.535-1.524,.117-3.176,0,0,1.008-.322,3.301,1.23,.957-.266,1.983-.399,3.003-.404,1.02,.005,2.047,.138,3.006,.404,2.291-1.552,3.297-1.23,3.297-1.23,.653,1.653,.242,2.874,.118,3.176,.77,.84,1.235,1.911,1.235,3.221,0,4.609-2.807,5.624-5.479,5.921,.43,.372,.823,1.102,.823,2.222v3.293c0,.319,.192,.694,.801,.576,4.765-1.589,8.199-6.086,8.199-11.386C24,5.373,18.627,0,12,0Z"
+                            />
                         </svg>
                     </a>
                 </div>
             </div>
         </footer>
         <!--</div>-->
-        <script>hideMenu()</script>
+        <script>
+            hideMenu()
+        </script>
     </body>
 </html>
