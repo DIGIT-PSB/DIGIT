@@ -6,7 +6,10 @@ function init() {
   for (var i = 0; i < mainEntries.length; i++) {
     if (mainEntries[i].querySelector("span.dots")) /*if table-row contains element with class="dots" AKA if it has an arrow button*/
       mainEntries[i].addEventListener('click', showMore, false);
-      }
+  }
+  let creditsSpace = document.getElementById("creditsP");
+  creditsSpace.addEventListener('click', creditsExpand, false);
+
 }
 
 
@@ -18,6 +21,33 @@ function Menubar() {
     x.className += " responsive";
   } else {
     x.className = "menu";
+  }
+}
+
+
+function creditsExpand() {
+  let arrow = document.getElementById("arrow");
+  let moreText = document.getElementById("more");
+  let creditsP = document.getElementById("creditsP");
+  // let btnText = document.getElementById("myBtn");
+let  moreTextDisplayInfo = window.getComputedStyle(moreText).getPropertyValue('display');
+
+  if (arrow.innerHTML === "▼") {
+    arrow.innerHTML = "▲";
+    moreText.style.display = "inline";
+    creditsP.style.height = "auto";
+    creditsP.style.overflowY = "auto";
+    console.log(arrow);
+    console.log(moreTextDisplayInfo);
+
+  } else {
+    arrow.innerHTML = "▼";
+    moreText.style.display = "none";
+    creditsP.style.height = "60px";
+    creditsP.style.overflowY = "hidden";
+    console.log(arrow);
+    console.log(moreTextDisplayInfo);
+
   }
 }
 
