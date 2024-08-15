@@ -272,9 +272,11 @@ h1 span {
 }
 #more {
     display: none;
+    padding-left: 20px;
+    width: auto;
 }
 #more a {
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
     display: block;
     text-decoration: none;
     padding-top: 2vh;
@@ -282,13 +284,25 @@ h1 span {
 #more a:hover {
     text-decoration: underline;
 }
+@media screen and (max-width: 455px){
+    #more {
+        font-size: 0.6rem;
+    }
+}
+
 #creditsP {
-    text-align: center;
+    height: 60px;
     max-height: 50vh;
-    min-width: 60vw;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-    padding: 10px;
+    width: 90%;
+    overflow-y: hidden;
+    /*border: 1px solid #1E407C;*/
+    padding: 0 5%;
+    background-color: #1E407C75;
+    margin: 0 0 3rem 0;
+}
+#creditsP h3 {
+    text-align: center;
+    margin: 0.7rem 0;
 }
 #myBtn {
     color: white;
@@ -309,12 +323,11 @@ h1 span {
     background-color: #009CDE;
 }
 .contactButtonSz {
-    padding-top: 60px;
-    padding-bottom: 20px;
     font-size: 1.5rem;
+    background-color: #1E407C;
 }
 .contactButtonSz a{
-    background-color: #1E407C;
+
     color: white !important;
     padding: 20px 34px;
     text-align: center;
@@ -932,7 +945,7 @@ h1 span {
 /* ABOUT PAGE BEGIN ******************************************************************************/
 /*General Code*/
 .tabbingBtn {
-    background-color: #1E407C;
+    background-color: #1E407C75;
     color: white !important;
     border: none;
     padding: 17px 30px;
@@ -941,7 +954,10 @@ h1 span {
     cursor: pointer;
 }
 .tabbingBtn:hover {
-    background-color: #009CDE;
+    background-color: #1E407C;
+}
+.tabbingActive {
+    background-color: #1E407C;
 }
 .tabbingBtnsAlign {
     display: flex;
@@ -1263,6 +1279,31 @@ iframe.newtfire {
         padding: 5vw 20vw;
     }
 }
+@media screen and (min-width : 1440px){
+    .contAlign{
+        margin: 0 0 5rem 0;
+    }
+    .profImage {
+        width: 40%;
+    }
+    .profContainer{
+        margin: 4rem 0;
+    }
+    /*.elliott {*/
+    /*    padding-bottom: 4rem;*/
+    /*}*/
+}
+@media screen and (min-width : 1650px) {
+    /*.contAlign{*/
+    /*    margin: 0 0 10rem 0;*/
+    /*}*/
+    .profImage {
+        width: 30%;
+    }
+    .elliott {
+        padding-bottom: 6rem;
+    }
+}
 @media screen and (min-width : 1700px) {
     .title {
         padding: 0 10vw;
@@ -1270,9 +1311,12 @@ iframe.newtfire {
     #psbLogoDiv{
         padding: 0;
     }
+    .profContainer{
+        margin: 5rem 0;
+    }
 
 }
-@media screen and (min-width : 2000px) {
+@media screen and (min-width : 1980px) {
     .header h1 {
         font-size: 8rem
     }
@@ -1287,6 +1331,9 @@ iframe.newtfire {
     }
     .contAlign{
         padding: 5vw 30vw;
+    }
+    .profContainer{
+        margin: 0rem 0;
     }
 }
 
