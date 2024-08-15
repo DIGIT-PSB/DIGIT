@@ -473,6 +473,44 @@ h1 span {
     letter-spacing: 0.15rem;
     word-spacing: .02rem;
 }
+img.datacaption{
+display:flex;
+width:400px
+
+}
+img.datacaption2{
+display:flex;
+width:350px;
+
+}
+img.datacaption3{
+    display:flex;
+width:300px
+}
+img.datacaption4{
+display:flex;
+width:350px; 
+right: 350px;
+text-align:right
+}
+figcaption.aboutImageCaption{
+color:black    
+}
+div.datagroup2{
+display:flex;
+border-style:solid;
+border-color:black;
+background:lavender;
+border-width:thick;
+text-align:left
+}
+div.graphs{
+display:flex;
+border-style:solid;
+border-color:black;
+background:lavender;
+border-width:thick
+}
 .data p:first-child::first-letter {
     color: lightsteelblue;
     font-weight: bold;
@@ -482,6 +520,21 @@ h1 span {
     padding-right: .4rem;
     margin-top: -.15rem;
 }
+
+div.dataintro{
+text-align:center
+}
+p.dataintro{
+    text-align:center
+}
+@media screen and (max-width : 767px) {
+    .data {
+        width: 80%;
+        padding: 2rem;
+        text-align: left;
+    }
+}
+
 /* title ends */
 /* Courses list******************************************************************* */
 .courseblock {
