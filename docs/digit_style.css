@@ -321,6 +321,12 @@ h1 span {
 }
 #backgroundVid {
     filter: brightness(.4);
+    #backgroundVid {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
 }
 /*rcc: These iframe ids are specifically for the videos featured on the hompage, should git LFS not be a viable option.*/
 #backgroundVidIFrame {
