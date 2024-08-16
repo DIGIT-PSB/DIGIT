@@ -23,7 +23,7 @@
             </video>-->
 
             <video id="backgroundVid" loop="" muted="">
-                <source id="videoSource" src="images/DIGITShowcaseBackground1080.mp4"
+                <source id="videoSource" src="https://github.com/DIGIT-PSB/DIGIT/raw/Reece/docs/images/DIGITShowcaseBackground1080.mp4"
                     type="video/mp4" />
             </video>
 
@@ -44,10 +44,10 @@
                     var source = document.getElementById("videoSource");
                     
                     if (window.innerWidth < 720) {
-                        source.src = "images/DIGITShowcaseBackgroundLOWRES.mp4";
+                        source.src = "https://github.com/DIGIT-PSB/DIGIT/raw/Reece/docs/images/DIGITShowcaseBackgroundLOWRES.mp4";
                         // Low-res video path
                     } else {
-                        source.src = "images/DIGITShowcaseBackground1080.mp4";
+                        source.src = "https://github.com/DIGIT-PSB/DIGIT/raw/Reece/docs/images/DIGITShowcaseBackground1080.mp4";
                         // High-res video path
                     }
                     
@@ -57,7 +57,7 @@
                 }
                 
                 window.addEventListener('load', updateVideoSource);
-                //window.addEventListener('resize', updateVideoSource);
+                //window.addEventListener('resize', updateVideoSource); rcc: I removed this since it was really pesky during testing, as in it looked awful on the site.
             </script>
 
             <!--
