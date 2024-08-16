@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
+    <head>
     <title>PSB DIGIT Splash</title>
     <meta charset="UTF-8" />
-    <meta name="author" content="Felipe Bassi" />
+    <meta name="author" content="Felipe Bassi, Samantha Moniot" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="The PSU Behrend DIGIT site, made by DIGIT students for the interested. DIGIT course info and events. Behrend Trees, data analysis, text archives, student projects, and a few galleries." />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?" />
@@ -15,31 +15,56 @@
     <script src="DIGIT.js"></script>
     <script src="https://use.fontawesome.com/664cfabaeb.js"></script>
   </head>
-  <body id="courses">
-    <section id="preloader"></section>
-    <section>
-      <div class="menu" id="myMenu">
+    <body id="courses">
+        <section id="preloader"></section>
+        <div class="menu" id="myMenu">
         <a href="index.html">Home</a>
         <a href="showcase.html">Our Students</a>
         <a href="roadmap.html" class="active">Education</a>
-        <a href="about.html">About</a>
+        <a href="about-students.html">About</a>
         <a href="ev.html">Events</a>
         <!--                <a href="https://newtfire.org/courses/DIGITShowcase.html" target="_blank">DIGIT Works</a>-->
         <a href="javascript:void(0);" class="icon" onclick="Menubar()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
+        <section class="contAlign">
       <div class="module">
-        <h1>Sound and Motion<br />
-          <span>Courses Offered</span>
+         <h1>Sound and Motion<br/>
+            <span>Courses Offered</span>
         </h1>
-      </div>
-      <div class="data">
-        <p>Tell engaging stories by creating 2D and 3D animation, VR videos, digital music, video games, and professional-quality movies. (See <a href="https://sites.psu.edu/boldc/resources/" target="blank">BOLDC</a> for more information).<strong>All</strong> courses that count for this module are typically offered at <strong>Behrend</strong> every semester unless specified.<br/> Here are a few of minors that relate to sound and motion: <br /><a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/communication-arts-mass-media-minor/#programrequirementstext" target="blank">Communications,Arts and Mass Media</a><br/><a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/media-production-minor/#programrequirementstext" target="blank">Media Production</a><br/><a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/marketing-minor/#programrequirementstext" target="blank">Marketing</a></p>
+          <div class="data">
+            <p>Tell engaging stories by creating 2D and 3D animation, VR videos, digital music, video games, and professional-quality movies. (See <a href="https://sites.psu.edu/boldc/resources/" target="blank">BOLDC</a> for more information).<strong>All</strong> courses that count for this module are typically offered at <strong>Behrend</strong> every semester unless specified.<br/> Here are a few of minors that relate to sound and motion: <br/><a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/communication-arts-mass-media-minor/#programrequirementstext" target="blank">Communications,Arts and Mass Media</a><br/><a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/media-production-minor/#programrequirementstext" target="blank">Media Production</a><br/><a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/marketing-minor/#programrequirementstext" target="blank">Marketing</a></p>
+        </div>
       </div>
       <div class="courseblock">
         <h2>Course Options</h2>
         <ul class="responsive-table">
+<!--
+        TO MAKE SENSE OF THE DESCRIPTIONS OF EACH COURSE
+        There are 2 same descriptions for each course, both are defaulted to `display: none` in the CSS file.
+        The description inside div.moreSmallScr will `display: inherit' if the screen width is smaller than the number set in the JS function showMore().
+        If the screen does not meet the condition above, the description within span.moreBigScr will `display: inherit` when the course is clicked.
+
+        BASIC HTML STRUCTURE------------------------------------------------------
+        <div class="table-row">
+            <div class="cat">
+              <div class="col col-1"></div>
+              <div class="col col-2"></div>
+              <div class="col col-3">
+                NAME
+                <span class="dots">⬇</span>
+                <span class="moreBigScr"><br/>DESCRIPTION FOR LARGE SCREENS</span>
+              </div>
+              <div class="col col-4"></div>
+            </div>
+            <div class="moreSmallScr">
+              <p>DESCRIPTION FOR SMALL SCREENS</p>
+            </div>
+          </div>
+
+
+-->
           <li class="table-header">
             <div class="col col-1">
               <a class="full-text">Subject</a>
@@ -53,80 +78,194 @@
             <div class="col col-4">Credits</div>
           </li>
           <li class="table-row">
-            <div class="col col-1" data-label="Subject">COMM</div>
-            <div class="col col-2" data-label="Number">242</div>
-            <div class="col col-3" data-label="Name">Basic Video/Filmmaking <span class="dots">⬇</span><span class="more"><br />Basic Video/Filmmaking (3) COMM 242 is an introductory course that emphasizes the development of creative expression and technical skills in digital film production. Students will explore modes of moving image representation through screenings, lectures, discussions, and especially through hands-on digital filmmaking. Students are required to construct projects that have both clear intentions and technically competent execution.<br /> The work of the course will facilitate the development of basic skills in image design, editing, and writing as they apply to single camera techniques for documentary, narrative, and experimental film modes. The course will also provide a basic cultural and historical context for the various production modes, and students will be encouraged to consider their own projects in relation to the work of other video and film artists.
-              Creative collaboration and group critique are essential elements of the course. Students will be required to produce some collaborative projects, and to respond critically to the work of the other students in the course. Students will make projects using digital film cameras, microphones, portable lighting, and nonlinear editing stations.<br/>*Course offered in Fa. semesters<br />Prerequisite:<a href="https://bulletins.psu.edu/university-course-descriptions/undergraduate/comm/" target="blank">COMM 150</a></span></div>
-            <div class="col col-4" data-label="Credits">3</div>
+            <div class="cat">
+              <div class="col col-1" data-label="Subject">COMM</div>
+              <div class="col col-2" data-label="Number">242</div>
+              <div class="col col-3" data-label="Name">
+                Basic Video/Filmmaking
+                <span class="dots">⬇</span>
+                <span class="moreBigScr">
+                  <br/>Basic Video/Filmmaking (3) COMM 242 is an introductory course that emphasizes the development of creative expression and technical skills in digital film production. Students will explore modes of moving image representation through screenings, lectures, discussions, and especially through hands-on digital filmmaking. Students are required to construct projects that have both clear intentions and technically competent execution.<br/> The work of the course will facilitate the development of basic skills in image design, editing, and writing as they apply to single camera techniques for documentary, narrative, and experimental film modes. The course will also provide a basic cultural and historical context for the various production modes, and students will be encouraged to consider their own projects in relation to the work of other video and film artists.
+                 Creative collaboration and group critique are essential elements of the course. Students will be required to produce some collaborative projects, and to respond critically to the work of the other students in the course. Students will make projects using digital film cameras, microphones, portable lighting, and nonlinear editing stations.<br/>*Course offered in Fa. semesters<br/>Prerequisite:<a href="https://bulletins.psu.edu/university-course-descriptions/undergraduate/comm/" target="blank">COMM 150</a>
+                </span>
+               </div>
+              <div class="col col-4" data-label="Credits">3</div>
+            </div>
+            <div class="moreSmallScr">
+              <p>Basic Video/Filmmaking (3) COMM 242 is an introductory course that emphasizes the development of creative expression and technical skills in digital film production. Students will explore modes of moving image representation through screenings, lectures, discussions, and especially through hands-on digital filmmaking. Students are required to construct projects that have both clear intentions and technically competent execution.<br/> The work of the course will facilitate the development of basic skills in image design, editing, and writing as they apply to single camera techniques for documentary, narrative, and experimental film modes. The course will also provide a basic cultural and historical context for the various production modes, and students will be encouraged to consider their own projects in relation to the work of other video and film artists.
+                Creative collaboration and group critique are essential elements of the course. Students will be required to produce some collaborative projects, and to respond critically to the work of the other students in the course. Students will make projects using digital film cameras, microphones, portable lighting, and nonlinear editing stations.<br/>*Course offered in Fa. semesters<br/>Prerequisite:<a href="https://bulletins.psu.edu/university-course-descriptions/undergraduate/comm/" target="blank">COMM 150</a></p>
+            </div>
           </li>
           <li class="table-row">
-            <div class="col col-1" data-label="Subject">COMM</div>
-            <div class="col col-2" data-label="Number">481</div>
-            <div class="col col-3" data-label="Name">Advanced Multimedia Production <span class="dots">⬇</span><span class="more"><br /> COMM 481 Advanced Multimedia Production (3) focuses on advanced work in multimedia production using web authoring, video editing, audio editing, image editing and animation software. This course builds on the foundations of multimedia production developed in <a href="https://bulletins.psu.edu/search/?P=COMM%20270" target="blank">COMM 270</a> giving students the opportunities to create multimedia website projects.<br /> Students will apply advanced multimedia concepts and techniques to website production and demonstrate versatility in multimedia software. Working individually and in teams, students will develop projects for clients using multimedia software, including web authoring, video editing, audio editing, image editing and animation software. These projects will be uploaded to the World Wide Web, and will serve as portfolio materials for the students. This course emphasizes skills development in multimedia and visual media in
-              support of program objective to help students develop cross-media skills and versatility in media.<br/>*Consult with your advisor about when this course is offered<br /> Select <strong>one</strong> of the following prerequisites:<br/> <a href="https://bulletins.psu.edu/search/?P=COMM%20270" target="blank">COMM 270</a>(Course typically offered in the Sp. semesters) <br/> <a href="https://bulletins.psu.edu/search/?P=COMM%20242" target="blank">COMM 242</a></span></div>
-            <div class="col col-4" data-label="Credits">3</div>
+            <div class="cat">
+              <div class="col col-1" data-label="Subject">COMM</div>
+              <div class="col col-2" data-label="Number">481</div>
+              <div class="col col-3" data-label="Name">
+                Advanced Multimedia Production
+                <span class="dots">⬇</span>
+                <span class="moreBigScr">
+                  <br/> COMM 481 Advanced Multimedia Production (3) focuses on advanced work in multimedia production using web authoring, video editing, audio editing, image editing and animation software. This course builds on the foundations of multimedia production developed in <a href="https://bulletins.psu.edu/search/?P=COMM%20270" target="blank">COMM 270</a> giving students the opportunities to create multimedia website projects.<br/> Students will apply advanced multimedia concepts and techniques to website production and demonstrate versatility in multimedia software. Working individually and in teams, students will develop projects for clients using multimedia software, including web authoring, video editing, audio editing, image editing and animation software. These projects will be uploaded to the World Wide Web, and will serve as portfolio materials for the students. This course emphasizes skills development in multimedia and visual media in
+              support of program objective to help students develop cross-media skills and versatility in media.<br/>*Consult with your advisor about when this course is offered<br/> Select <strong>one</strong> of the following prerequisites:<br/><a href="https://bulletins.psu.edu/search/?P=COMM%20270" target="blank">COMM 270</a>(Course typically offered in the Sp. semesters) <br/><a href="https://bulletins.psu.edu/search/?P=COMM%20242" target="blank">COMM 242</a>
+                </span>
+              </div>
+              <div class="col col-4" data-label="Credits">3</div>
+              </div>
+            <div class="moreSmallScr">
+                <p>COMM 481 Advanced Multimedia Production (3) focuses on advanced work in multimedia production using web authoring, video editing, audio editing, image editing and animation software. This course builds on the foundations of multimedia production developed in <a href="https://bulletins.psu.edu/search/?P=COMM%20270" target="blank">COMM 270</a> giving students the opportunities to create multimedia website projects.<br/> Students will apply advanced multimedia concepts and techniques to website production and demonstrate versatility in multimedia software. Working individually and in teams, students will develop projects for clients using multimedia software, including web authoring, video editing, audio editing, image editing and animation software. These projects will be uploaded to the World Wide Web, and will serve as portfolio materials for the students. This course emphasizes skills development in multimedia and visual media in
+                support of program objective to help students develop cross-media skills and versatility in media.<br/>*Consult with your advisor about when this course is offered<br/> Select <strong>one</strong> of the following prerequisites:<br/><a href="https://bulletins.psu.edu/search/?P=COMM%20270" target="blank">COMM 270</a>(Course typically offered in the Sp. semesters) <br/><a href="https://bulletins.psu.edu/search/?P=COMM%20242" target="blank">COMM 242</a></p>
+              </div>
           </li>
           <li class="table-row">
-            <div class="col col-1" data-label="Subject">DIGIT</div>
-            <div class="col col-2" data-label="Number">220N</div>
-            <div class="col col-3" data-label="Name">Introduction to 2D and 3D Procedural Animation <span class="dots">⬇</span><span class="more"><br/>This course teaches procedural animation, applying algorithms within animation software to 
-              simulate physics realistically and control how polygonal forms are animated over factors of time.<br/>*Course counts towards <a href="https://bulletins.psu.edu/undergraduate/general-education/course-lists/natural-sciences/">GN</a> and <a href="https://bulletins.psu.edu/undergraduate/general-education/course-lists/arts/">GA</a><br/>*Will be offered starting Sp. 2025.<br/>*Previously taught as Digit 297 Special Topics:Animation</span></div>
-            <div class="col col-4" data-label="Credits">3</div>
+            <div class="cat">
+              <div class="col col-1" data-label="Subject">DIGIT</div>
+              <div class="col col-2" data-label="Number">220N</div>
+              <div class="col col-3" data-label="Name">
+                Introduction to 2D and 3D Procedural Animation
+                <span class="dots">⬇</span>
+                <span class="moreBigScr">
+                  <br/>This course teaches procedural animation, applying algorithms within animation software to
+              simulate physics realistically and control how polygonal forms are animated over factors of time.<br/>*Course counts towards <a href="https://bulletins.psu.edu/undergraduate/general-education/course-lists/natural-sciences/">GN</a> and <a href="https://bulletins.psu.edu/undergraduate/general-education/course-lists/arts/">GA</a><br/>*Will be offered starting Sp. 2025.<br/>*Previously taught as Digit 297 Special Topics:Animation
+                </span>
+              </div>
+              <div class="col col-4" data-label="Credits">3</div>
+            </div>
+            <div class="moreSmallScr">
+              <p>This course teaches procedural animation, applying algorithms within animation software to
+                simulate physics realistically and control how polygonal forms are animated over factors of time.<br/>*Course counts towards <a href="https://bulletins.psu.edu/undergraduate/general-education/course-lists/natural-sciences/">GN</a> and <a href="https://bulletins.psu.edu/undergraduate/general-education/course-lists/arts/">GA</a><br/>*Will be offered starting Sp. 2025.<br/>*Previously taught as Digit 297 Special Topics:Animation</p>
+            </div>
           </li>
           <li class="table-row">
-            <div class="col col-1" data-label="Subject">DIGIT</div>
-            <div class="col col-2" data-label="Number">409</div>
-            <div class="col col-3" data-label="Name">Advanced Digital Creation <span class="dots">⬇</span><span class="more"><br />Students will develop 3d digital creation skills in relation to their field(s) of study. DIGIT 409: Advanced Digital Creations is a problem-based learning class that uses the digital media concepts and tools introduced in Art 168 to develop an in-depth understanding of 3d digital art. They will enhance their creative and philosophical sensibilities in the technology, software, and media relevant to the field(s) of study they are pursuing. Through a series of learning problems, students will synthesize advanced skills and knowledge needed to accomplish techniques used in the creation of digital 3d imagery.<br /> They will integrate 3d sculpting, modeling, animation, and/or painting practices with computer-based image processing for creative, and professionally oriented results. They will develop critical and conceptual sensibilities needed to discuss and
-                evaluate their work and the work of others using these methods. Students will identify, research, and analyze effective professional and creative practices in the field of digital creativity with emphasis on developing skillful digital processing techniques. These practices include creating mockups of concepts, art-making practices for enhanced digital workflow, and choosing the 3d processing techniques most appropriate for the end-use of the work.<br /> The digital medium has a relatively short history, however, as the advancement of digital technology continues these techniques have entered the popular mainstream. This shift has raised challenges in graphic-reliant fields such as the arts, engineering, advertising, simulation, and gaming. This course will give students of these fields the opportunity to develop their artistic skills further than possible in Art 168. Students will analyze and assess the factors related to their fields in in order to make sound design
-              decisions.<br/>*Counts toward supporting 400-level requirement<br/>*Course offered during Sp. semesters<br />Prerequisite:<a href="https://bulletins.psu.edu/search/?P=ART%20168" target="blank">Art 168</a>(Course offered during Fa. and Sp. semesters)</span></div>
-            <div class="col col-4" data-label="Credits">3</div>
-          </li>
-         
-          <li class="table-row">
-            <div class="col col-1" data-label="Subject">GD</div>
-            <div class="col col-2" data-label="Number">100</div>
-            <div class="col col-3" data-label="Name">Introduction to Graphic Design <span class="dots">⬇</span><span class="more"><br />GD 100 Introduction to Graphic Design (3) (GA) is a beginning level graphic design course. Instruction touches on the practice, history, theories, and analysis of the design industry. This course places emphasis on problem solving and observing design, while developing intuition and creativity.<br /> Projects focus on the process of defining the parameters of a design problem, observing examples within the design industry, and critically evaluating examples of effective and ineffective design.The course will help students to: 1. Understand the graphic design industry and the responsibilities of the profession. 2. Develop an appreciation for the practice of design. 3.
-                Begin to develop the ability to define and solve problems. 4. Increase their knowledge of the history of graphic design and typography. 5. Refine their conceptual skills. 6. Learn and understand the vernacular of the industry.<br /> Students will be quizzed on terminology and important facts provided in the readings.<br/>*Course offered during Fa. and Sp. semesters</span></div>
-            <div class="col col-4" data-label="Credits">3</div>
-          </li>
-          <li class="table-row">
-            <div class="col col-1" data-label="Subject">INART</div>
-            <div class="col col-2" data-label="Number">050</div>
-            <div class="col col-3" data-label="Name">Science of Music <span class="dots">⬇</span><span class="more"><br /> INART 050 The Science of Music (3) (GN)(BA) teaches: waves, physics of sound, hearing, musical scales, musical instruments, and room acoustics.  This course meets the Bachelor of Arts degree requirements. This course explores the physical and acoustical bases of sound and music.The physics include a study of vibrating systems and simple harmonic motion, wave propagation, reflection and refraction, superposition, resonant frequencies, harmonics, phase, the relationship of speed and velocity, and spectra. The acoustics portion applies these physical properties to hearing, sound and music, covering the nature of the human auditory system, and correlations of pitch to frequency, loudness to amplitude/power/intensity, timbre to spectra and envelope. An overview of perceptual psychological studies of Gestalt organizational principles and auditory streaming explores how the auditory
-                system organizes sound on a primitive, unlearned level.<br /> NOTE: there is no  math prerequisite for the course. Although high school algebra and trigonometry will be recommended, these topics will be integrated with the rest of the course material. With physical and physiological groundwork laid, the subject matter movea to purely musical areas: the construction of musical scales, the nature of consonance, dissonance, and harmony. Twelve-tone equal temperament, the basis of Western common practice music, is not an absolute, but a decision made to facilitate certain musical choices, and a compromise in terms of optimal consonance.<br /> The nature of the different instruments is then discussed - strings, winds, brass, percussion, and voice. Different instruments naturally produce different scale types and different types of spectra. Students will learn to appreciate the inherent differences in different instrument types. The course then returns to acoustics,
-              exploring the role that performance spaces play in the propagation and reception of sound. The shape and materials of a room determine its characteristic sound.<br /> Students learn about how sound in large auditoriums is characterized by the balance of direct and reflected sound, the distinction between specular and diffuse reflections, the absorptive properties of different building materials, and the nature of reverberation. Smaller performance spaces are subject to standing waves, flutter echo, and comb filtering.<br /> Taking steps to avoid undesirable characteristics is often an easy matter once the nature of these characteristics is understood. The final weeks cover audio technology and the distinctions between analog and digital formats.<br/>*Course counts toward <a href="https://bulletins.psu.edu/undergraduate/general-education/course-lists/ba-natural-sciences/" target="blank">GN requirement</a><br />*Course offered in the Fa. semesters</span></div>
-            <div class="col col-4" data-label="Credits">3</div>
+            <div class="cat">
+              <div class="col col-1" data-label="Subject">DIGIT</div>
+              <div class="col col-2" data-label="Number">409</div>
+              <div class="col col-3" data-label="Name">
+                Advanced Digital Creation
+                <span class="dots">⬇</span>
+                <span class="moreBigScr">
+                  <br/>Students will develop 3d digital creation skills in relation to their field(s) of study. DIGIT 409: Advanced Digital Creations is a problem-based learning class that uses the digital media concepts and tools introduced in Art 168 to develop an in-depth understanding of 3d digital art. They will enhance their creative and philosophical sensibilities in the technology, software, and media relevant to the field(s) of study they are pursuing. Through a series of learning problems, students will synthesize advanced skills and knowledge needed to accomplish techniques used in the creation of digital 3d imagery.<br/> They will integrate 3d sculpting, modeling, animation, and/or painting practices with computer-based image processing for creative, and professionally oriented results. They will develop critical and conceptual sensibilities needed to discuss and
+                evaluate their work and the work of others using these methods. Students will identify, research, and analyze effective professional and creative practices in the field of digital creativity with emphasis on developing skillful digital processing techniques. These practices include creating mockups of concepts, art-making practices for enhanced digital workflow, and choosing the 3d processing techniques most appropriate for the end-use of the work.<br/> The digital medium has a relatively short history, however, as the advancement of digital technology continues these techniques have entered the popular mainstream. This shift has raised challenges in graphic-reliant fields such as the arts, engineering, advertising, simulation, and gaming. This course will give students of these fields the opportunity to develop their artistic skills further than possible in Art 168. Students will analyze and assess the factors related to their fields in in order to make sound design
+              decisions.<br/>*Counts toward supporting 400-level requirement<br/>*Course offered during Sp. semesters<br/>Prerequisite:<a href="https://bulletins.psu.edu/search/?P=ART%20168" target="blank">Art 168</a>(Course offered during Fa. and Sp. semesters)
+                </span>
+              </div>
+              <div class="col col-4" data-label="Credits">3</div>
+            </div>
+            <div class="moreSmallScr">
+              <p>Students will develop 3d digital creation skills in relation to their field(s) of study. DIGIT 409: Advanced Digital Creations is a problem-based learning class that uses the digital media concepts and tools introduced in Art 168 to develop an in-depth understanding of 3d digital art. They will enhance their creative and philosophical sensibilities in the technology, software, and media relevant to the field(s) of study they are pursuing. Through a series of learning problems, students will synthesize advanced skills and knowledge needed to accomplish techniques used in the creation of digital 3d imagery.<br/> They will integrate 3d sculpting, modeling, animation, and/or painting practices with computer-based image processing for creative, and professionally oriented results. They will develop critical and conceptual sensibilities needed to discuss and
+                evaluate their work and the work of others using these methods. Students will identify, research, and analyze effective professional and creative practices in the field of digital creativity with emphasis on developing skillful digital processing techniques. These practices include creating mockups of concepts, art-making practices for enhanced digital workflow, and choosing the 3d processing techniques most appropriate for the end-use of the work.<br/> The digital medium has a relatively short history, however, as the advancement of digital technology continues these techniques have entered the popular mainstream. This shift has raised challenges in graphic-reliant fields such as the arts, engineering, advertising, simulation, and gaming. This course will give students of these fields the opportunity to develop their artistic skills further than possible in Art 168. Students will analyze and assess the factors related to their fields in in order to make sound design
+                decisions.<br/>*Counts toward supporting 400-level requirement<br/>*Course offered during Sp. semesters<br/>Prerequisite:<a href="https://bulletins.psu.edu/search/?P=ART%20168" target="blank">Art 168</a>(Course offered during Fa. and Sp. semesters)</p>
+            </div>
           </li>
           <li class="table-row">
-            <div class="col col-1" data-label="Subject">INART</div>
-            <div class="col col-2" data-label="Number">236</div>
-            <div class="col col-3" data-label="Name">Integrating Music and Animation with Technology <span class="dots">⬇</span><span class="more"><br />An introduction to the theory, design and creation of musical animations.<br />*Course offered in the Sp. semesters</span></div>
-            <div class="col col-4" data-label="Credits">3</div>
+            <div class="cat">
+              <div class="col col-1" data-label="Subject">GD</div>
+              <div class="col col-2" data-label="Number">100</div>
+              <div class="col col-3" data-label="Name">
+                Introduction to Graphic Design
+                <span class="dots">⬇</span>
+                <span class="moreBigScr">
+                  <br/>GD 100 Introduction to Graphic Design (3) (GA) is a beginning level graphic design course. Instruction touches on the practice, history, theories, and analysis of the design industry. This course places emphasis on problem solving and observing design, while developing intuition and creativity.<br/> Projects focus on the process of defining the parameters of a design problem, observing examples within the design industry, and critically evaluating examples of effective and ineffective design.The course will help students to: 1. Understand the graphic design industry and the responsibilities of the profession. 2. Develop an appreciation for the practice of design. 3.
+                Begin to develop the ability to define and solve problems. 4. Increase their knowledge of the history of graphic design and typography. 5. Refine their conceptual skills. 6. Learn and understand the vernacular of the industry.<br/> Students will be quizzed on terminology and important facts provided in the readings.<br/>*Course offered during Fa. and Sp. semesters
+               </span>
+              </div>
+              <div class="col col-4" data-label="Credits">3</div>
+            </div>
+            <div class="moreSmallScr">
+              <p>GD 100 Introduction to Graphic Design (3) (GA) is a beginning level graphic design course. Instruction touches on the practice, history, theories, and analysis of the design industry. This course places emphasis on problem solving and observing design, while developing intuition and creativity.<br/> Projects focus on the process of defining the parameters of a design problem, observing examples within the design industry, and critically evaluating examples of effective and ineffective design.The course will help students to: 1. Understand the graphic design industry and the responsibilities of the profession. 2. Develop an appreciation for the practice of design. 3.
+                Begin to develop the ability to define and solve problems. 4. Increase their knowledge of the history of graphic design and typography. 5. Refine their conceptual skills. 6. Learn and understand the vernacular of the industry.<br/> Students will be quizzed on terminology and important facts provided in the readings.<br/>*Course offered during Fa. and Sp. semesters</p>
+            </div>
           </li>
           <li class="table-row">
-            <div class="col col-1" data-label="Subject">INART</div>
-            <div class="col col-2" data-label="Number">258A</div>
-            <div class="col col-3" data-label="Name">Fundamentals of Digital Audio <span class="dots">⬇</span><span class="more"><br />INART 258A Fundamentals of Digital Audio (3) (GA)(BA) provides  thorough introduction to digital music production technologies, covering fundamentals of how digital musical information is stored, processed and transmitted.<br /> A thorough introduction to digital music production technologies, covering the fundamentals of how musical information is stored and transmitted in digital devices. This course is meant for people who are passionate about working with sound, and who are willing to take on new technical and creative challenges in audio production.<br /> It is the pre-requisite for many more advanced courses in music technology and audio production. Students complete a series of low-stakes audio exercises on fundamental operations, a series of written responses to questions on the underlying
-                theory of digital audio, and a small number of extended creative projects. The software used is at the level of professional audio production workstations. Students complete the course with a set of vocational skills in computer music and audio.<br />*Course offered in the Fa. and Sp. semesters</span></div>
-            <div class="col col-4" data-label="Credits">3</div>
+            <div class="cat">
+              <div class="col col-1" data-label="Subject">INART</div>
+              <div class="col col-2" data-label="Number">050</div>
+              <div class="col col-3" data-label="Name">Science of Music
+                <span class="dots">⬇</span>
+                <span class="moreBigScr">
+                  <br/> INART 050 The Science of Music (3) (GN)(BA) teaches: waves, physics of sound, hearing, musical scales, musical instruments, and room acoustics.  This course meets the Bachelor of Arts degree requirements. This course explores the physical and acoustical bases of sound and music.The physics include a study of vibrating systems and simple harmonic motion, wave propagation, reflection and refraction, superposition, resonant frequencies, harmonics, phase, the relationship of speed and velocity, and spectra. The acoustics portion applies these physical properties to hearing, sound and music, covering the nature of the human auditory system, and correlations of pitch to frequency, loudness to amplitude/power/intensity, timbre to spectra and envelope. An overview of perceptual psychological studies of Gestalt organizational principles and auditory streaming explores how the auditory
+                system organizes sound on a primitive, unlearned level.<br/> NOTE: there is no  math prerequisite for the course. Although high school algebra and trigonometry will be recommended, these topics will be integrated with the rest of the course material. With physical and physiological groundwork laid, the subject matter movea to purely musical areas: the construction of musical scales, the nature of consonance, dissonance, and harmony. Twelve-tone equal temperament, the basis of Western common practice music, is not an absolute, but a decision made to facilitate certain musical choices, and a compromise in terms of optimal consonance.<br/> The nature of the different instruments is then discussed - strings, winds, brass, percussion, and voice. Different instruments naturally produce different scale types and different types of spectra. Students will learn to appreciate the inherent differences in different instrument types. The course then returns to acoustics,
+              exploring the role that performance spaces play in the propagation and reception of sound. The shape and materials of a room determine its characteristic sound.<br/> Students learn about how sound in large auditoriums is characterized by the balance of direct and reflected sound, the distinction between specular and diffuse reflections, the absorptive properties of different building materials, and the nature of reverberation. Smaller performance spaces are subject to standing waves, flutter echo, and comb filtering.<br/> Taking steps to avoid undesirable characteristics is often an easy matter once the nature of these characteristics is understood. The final weeks cover audio technology and the distinctions between analog and digital formats.<br/>*Course counts toward <a href="https://bulletins.psu.edu/undergraduate/general-education/course-lists/ba-natural-sciences/" target="blank">GN requirement</a><br/>*Course offered in the Fa. semesters
+                </span>
+              </div>
+              <div class="col col-4" data-label="Credits">3</div>
+            </div>
+            <div class="moreSmallScr">
+              <p>INART 050 The Science of Music (3) (GN)(BA) teaches: waves, physics of sound, hearing, musical scales, musical instruments, and room acoustics.  This course meets the Bachelor of Arts degree requirements. This course explores the physical and acoustical bases of sound and music.The physics include a study of vibrating systems and simple harmonic motion, wave propagation, reflection and refraction, superposition, resonant frequencies, harmonics, phase, the relationship of speed and velocity, and spectra. The acoustics portion applies these physical properties to hearing, sound and music, covering the nature of the human auditory system, and correlations of pitch to frequency, loudness to amplitude/power/intensity, timbre to spectra and envelope. An overview of perceptual psychological studies of Gestalt organizational principles and auditory streaming explores how the auditory
+                system organizes sound on a primitive, unlearned level.<br/> NOTE: there is no  math prerequisite for the course. Although high school algebra and trigonometry will be recommended, these topics will be integrated with the rest of the course material. With physical and physiological groundwork laid, the subject matter movea to purely musical areas: the construction of musical scales, the nature of consonance, dissonance, and harmony. Twelve-tone equal temperament, the basis of Western common practice music, is not an absolute, but a decision made to facilitate certain musical choices, and a compromise in terms of optimal consonance.<br/> The nature of the different instruments is then discussed - strings, winds, brass, percussion, and voice. Different instruments naturally produce different scale types and different types of spectra. Students will learn to appreciate the inherent differences in different instrument types. The course then returns to acoustics,
+                exploring the role that performance spaces play in the propagation and reception of sound. The shape and materials of a room determine its characteristic sound.<br/> Students learn about how sound in large auditoriums is characterized by the balance of direct and reflected sound, the distinction between specular and diffuse reflections, the absorptive properties of different building materials, and the nature of reverberation. Smaller performance spaces are subject to standing waves, flutter echo, and comb filtering.<br/> Taking steps to avoid undesirable characteristics is often an easy matter once the nature of these characteristics is understood. The final weeks cover audio technology and the distinctions between analog and digital formats.<br/>*Course counts toward <a href="https://bulletins.psu.edu/undergraduate/general-education/course-lists/ba-natural-sciences/" target="blank">GN requirement</a><br/>*Course offered in the Fa. semesters</p>
+            </div>
           </li>
           <li class="table-row">
-            <div class="col col-1" data-label="Subject">MUSIC</div>
-            <div class="col col-2" data-label="Number">008</div>
-            <div class="col col-3" data-label="Name">Rudiments of Music <span class="dots">⬇</span><span class="more"><br />MUSIC 8 Rudiments of Music (3) (GA)(BA) is an introduction to the elements of music such as:notation,scales,meter,rhythm,intervals;basic chord structure and cadences. Learning the rudiments of music can be compared to the learning of a language. Students must learn to hear melodic, harmonic, and rhythmic patterns (audiation) before they sing, play or write in notation.<br /> In this introductory class, students are introduced to melodic, harmonic and rhythmic patterns by imitating the instructor who establishes these patterns at the piano, or by singing or as in the case of rhythm by striking a drum head. Eventually students will take turns "tossing" these patterns to teach other. Basic skills of improvisation can also be taught at this level of audiation by having students expand upon the basic patterns.<br /> As a
-              result of these creative and aesthetic experiences, students will be able to translate the audiation of patterns into musical notation - moving from the smallest unit of a rhythmic motive towards the creation of a coherent rhythmic phrase. Similarly, at the melodic level, the student will begin with intervallic patterns and move towards the creation of a coherent melodic phrase. Intervals are then combined vertically to form harmonies.<br /> At the next stage of learning, students will learn to identify and to write that which they are hearing in dictation. This course in "musical literacy" enables students: (1) to deepen their appreciation of music (2) to begin studying a musical instrument and (3) to enter the rigorous study of music theory required of music majors.<br/>*Course offered in the Fa. and Sp. semesters</span></div>
-            <div class="col col-4" data-label="Credits">3</div>
+            <div class="cat">
+              <div class="col col-1" data-label="Subject">INART</div>
+              <div class="col col-2" data-label="Number">236</div>
+              <div class="col col-3" data-label="Name">
+                Integrating Music and Animation with Technology
+                <span class="dots">⬇</span>
+                <span class="moreBigScr">
+                  <br/>An introduction to the theory, design and creation of musical animations.<br/>*Course offered in the Sp. semesters
+                </span>
+              </div>
+              <div class="col col-4" data-label="Credits">3</div>
+            </div>
+            <div class="moreSmallScr">
+              <p>An introduction to the theory, design and creation of musical animations.<br/>*Course offered in the Sp. semesters</p>
+            </div>
           </li>
           <li class="table-row">
-            <div class="col col-1" data-label="Subject">MUSIC</div>
-            <div class="col col-2" data-label="Number">458</div>
-            <div class="col col-3" data-label="Name">Electronic Music Composition <span class="dots">⬇</span><span class="more"><br />MUSIC 458 Electronic Music Composition (3)(BA) provides an introduction to the art of composition in the electronic audio medium. This course meets the Bachelor of Arts degree requirements.<br /> Music 458 will focus on the creative craft of musical composition in the medium of electronic audio. Topics covered will include but not be limited to: recording, MIDI and digital audio techniques, study of literature and the investigation of the creative process in musical composition.<br /> Students are expected to enter the class with strong fundamentals in both music theory and MIDI and digital audio. The student will be expected to complete several projects that demonstrate both their creativity and their technical competence in the medium.<br/>*Counts toward supporting 400-level requirement<br />*Consult with your advisor about when this course is offered<br />Prerequisite:<a href="https://bulletins.psu.edu/search/?P=INART%20258A" target="blank">INART 258A</a></span></div>
-            <div class="col col-4" data-label="Credits">3</div>
+            <div class="cat">
+              <div class="col col-1" data-label="Subject">INART</div>
+              <div class="col col-2" data-label="Number">258A</div>
+              <div class="col col-3" data-label="Name">
+                Fundamentals of Digital Audio
+                <span class="dots">⬇</span>
+                <span class="moreBigScr">
+                  <br/>INART 258A Fundamentals of Digital Audio (3) (GA)(BA) provides  thorough introduction to digital music production technologies, covering fundamentals of how digital musical information is stored, processed and transmitted.<br/> A thorough introduction to digital music production technologies, covering the fundamentals of how musical information is stored and transmitted in digital devices. This course is meant for people who are passionate about working with sound, and who are willing to take on new technical and creative challenges in audio production.<br/> It is the pre-requisite for many more advanced courses in music technology and audio production. Students complete a series of low-stakes audio exercises on fundamental operations, a series of written responses to questions on the underlying theory of digital audio, and a small number of extended creative projects. The software used is at the level of professional audio production workstations. Students complete the course with a set of vocational skills in computer music and audio.<br/>*Course offered in the Fa. and Sp. semesters
+                </span>
+              </div>
+              <div class="col col-4" data-label="Credits">3</div>
+            </div>
+            <div class="moreSmallScr">
+              <p>INART 258A Fundamentals of Digital Audio (3) (GA)(BA) provides  thorough introduction to digital music production technologies, covering fundamentals of how digital musical information is stored, processed and transmitted.<br/> A thorough introduction to digital music production technologies, covering the fundamentals of how musical information is stored and transmitted in digital devices. This course is meant for people who are passionate about working with sound, and who are willing to take on new technical and creative challenges in audio production.<br/> It is the pre-requisite for many more advanced courses in music technology and audio production. Students complete a series of low-stakes audio exercises on fundamental operations, a series of written responses to questions on the underlying theory of digital audio, and a small number of extended creative projects. The software used is at the level of professional audio production workstations. Students complete the course with a set of vocational skills in computer music and audio.<br/>*Course offered in the Fa. and Sp. semesters</p>
+            </div>
+          </li>
+          <li class="table-row">
+            <div class="cat">
+              <div class="col col-1" data-label="Subject">MUSIC</div>
+              <div class="col col-2" data-label="Number">008</div>
+              <div class="col col-3" data-label="Name">
+                Rudiments of Music
+                <span class="dots">⬇</span>
+                <span class="moreBigScr">
+                  <br/>MUSIC 8 Rudiments of Music (3) (GA)(BA) is an introduction to the elements of music such as:notation,scales,meter,rhythm,intervals;basic chord structure and cadences. Learning the rudiments of music can be compared to the learning of a language. Students must learn to hear melodic, harmonic, and rhythmic patterns (audiation) before they sing, play or write in notation.<br/> In this introductory class, students are introduced to melodic, harmonic and rhythmic patterns by imitating the instructor who establishes these patterns at the piano, or by singing or as in the case of rhythm by striking a drum head. Eventually students will take turns "tossing" these patterns to teach other. Basic skills of improvisation can also be taught at this level of audiation by having students expand upon the basic patterns.<br/> As a result of these creative and aesthetic experiences, students will be able to translate the audiation of patterns into musical notation - moving from the smallest unit of a rhythmic motive towards the creation of a coherent rhythmic phrase. Similarly, at the melodic level, the student will begin with intervallic patterns and move towards the creation of a coherent melodic phrase. Intervals are then combined vertically to form harmonies.<br/> At the next stage of learning, students will learn to identify and to write that which they are hearing in dictation. This course in "musical literacy" enables students: (1) to deepen their appreciation of music (2) to begin studying a musical instrument and (3) to enter the rigorous study of music theory required of music majors.<br/>*Course offered in the Fa. and Sp. semesters
+              </span>
+              </div>
+              <div class="col col-4" data-label="Credits">3</div>
+            </div>
+            <div class="moreSmallScr">
+              <p>MUSIC 8 Rudiments of Music (3) (GA)(BA) is an introduction to the elements of music such as:notation,scales,meter,rhythm,intervals;basic chord structure and cadences. Learning the rudiments of music can be compared to the learning of a language. Students must learn to hear melodic, harmonic, and rhythmic patterns (audiation) before they sing, play or write in notation.<br/> In this introductory class, students are introduced to melodic, harmonic and rhythmic patterns by imitating the instructor who establishes these patterns at the piano, or by singing or as in the case of rhythm by striking a drum head. Eventually students will take turns "tossing" these patterns to teach other. Basic skills of improvisation can also be taught at this level of audiation by having students expand upon the basic patterns.<br/> As a result of these creative and aesthetic experiences, students will be able to translate the audiation of patterns into musical notation - moving from the smallest unit of a rhythmic motive towards the creation of a coherent rhythmic phrase. Similarly, at the melodic level, the student will begin with intervallic patterns and move towards the creation of a coherent melodic phrase. Intervals are then combined vertically to form harmonies.<br/> At the next stage of learning, students will learn to identify and to write that which they are hearing in dictation. This course in "musical literacy" enables students: (1) to deepen their appreciation of music (2) to begin studying a musical instrument and (3) to enter the rigorous study of music theory required of music majors.<br/>*Course offered in the Fa. and Sp. semesters</p>
+            </div>
+          </li>
+          <li class="table-row">
+            <div class="cat">
+              <div class="col col-1" data-label="Subject">MUSIC</div>
+              <div class="col col-2" data-label="Number">458</div>
+              <div class="col col-3" data-label="Name">
+                Electronic Music Composition
+                <span class="dots">⬇</span>
+                <span class="moreBigScr">
+                  <br/>MUSIC 458 Electronic Music Composition (3)(BA) provides an introduction to the art of composition in the electronic audio medium. This course meets the Bachelor of Arts degree requirements.<br/> Music 458 will focus on the creative craft of musical composition in the medium of electronic audio. Topics covered will include but not be limited to: recording, MIDI and digital audio techniques, study of literature and the investigation of the creative process in musical composition.<br/> Students are expected to enter the class with strong fundamentals in both music theory and MIDI and digital audio. The student will be expected to complete several projects that demonstrate both their creativity and their technical competence in the medium.<br/>*Counts toward supporting 400-level requirement<br/>*Consult with your advisor about when this course is offered<br/>Prerequisite:<a href="https://bulletins.psu.edu/search/?P=INART%20258A" target="blank">INART 258A</a>
+                </span>
+                </div>
+              <div class="col col-4" data-label="Credits">3</div>
+            </div>
+            <div class="moreSmallScr">
+              <p>MUSIC 458 Electronic Music Composition (3)(BA) provides an introduction to the art of composition in the electronic audio medium. This course meets the Bachelor of Arts degree requirements.<br/> Music 458 will focus on the creative craft of musical composition in the medium of electronic audio. Topics covered will include but not be limited to: recording, MIDI and digital audio techniques, study of literature and the investigation of the creative process in musical composition.<br/> Students are expected to enter the class with strong fundamentals in both music theory and MIDI and digital audio. The student will be expected to complete several projects that demonstrate both their creativity and their technical competence in the medium.<br/>*Counts toward supporting 400-level requirement<br/>*Consult with your advisor about when this course is offered<br/>Prerequisite:<a href="https://bulletins.psu.edu/search/?P=INART%20258A" target="blank">INART 258A</a></p>
+            </div>
           </li>
         </ul>
       </div>
     </section>
-    <footer id="footer-wrap">
+        <footer id="footer-wrap">
       <div class="footer-content">
         <div class="features">
           <img src="images/PSB_logo.png" alt="Nittany Lion Shield Penn State Behrend Mark" />
@@ -134,30 +273,30 @@
         <div class="break"></div>
         <div class="features">
           <p>
-            <strong> Learn More <br />
+            <strong> Learn More <br/>
             </strong>
             <a href="https://behrend.psu.edu/" target="_blank">Penn State Behrend</a>
-            <br />
+            <br/>
             <a href="https://bulletins.psu.edu/undergraduate/colleges/behrend/digital-media-arts-technology-ba/" target="_blank">DIGIT PSU Bulletin</a>
-            <br />
+            <br/>
             <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs/digital-media-arts-and-technology" target="_blank">Academic Programs</a>
           </p>
         </div>
         <div class="features">
           <p>
-            <strong> Useful Links <br />
+            <strong> Useful Links <br/>
             </strong>
             <a href="https://behrend.psu.edu/school-of-humanities-social-sciences/academic-programs-1/digital-media-arts-and-technology/digit-faculty" target="_blank">Faculty</a>
-            <br />
+            <br/>
             <a href="https://psu.instructure.com/courses/1871837" target="_blank">Canvas Pride</a>
-            <br />
+            <br/>
             <a href="https://digit-psb.github.io/BOLDC/" target="_blank">BOLDC</a>
           </p>
         </div>
         <div class="features">
           <p>
-            <strong> Penn State Behrend Campus <br />
-            </strong> 4701 College Drive <br /> Erie, PA 16563 <br /> (814) 898-6000 </p>
+            <strong> Penn State Behrend Campus <br/>
+            </strong> 4701 College Drive <br/> Erie, PA 16563 <br/> (814) 898-6000 </p>
         </div>
         <div class="break"></div>
         <div class="features">
@@ -169,12 +308,12 @@
         </div>
       </div>
     </footer>
-    <script>
+        <script>
             var loader = document.getElementById("preloader");
             window.addEventListener("load", function () {
                 loader.style.display = "none"
             })
             hideMenu()
     </script>
-  </body>
+    </body>
 </html>

@@ -1,4 +1,13 @@
-/*DELETED ALL CLASS="CONTENT"*/
+
+
+
+
+
+
+
+
+
+
 
 html,
 body {
@@ -45,7 +54,7 @@ h5 {
 p {
     font-size: 1rem;
     margin: .4rem 0 1rem 0;
-    text-align: justify;
+    text-align: left;
 }
 a {
     text-decoration: none;
@@ -68,70 +77,24 @@ li {
     font-size: 1rem;
 }
 h1 span {
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    line-height: 3rem;
-    padding-left: 0.25rem;
-    padding-bottom: .5rem;
+    /*line-height: 3rem;*/
+    /*padding-left: 0.25rem;*/
+    /*padding-bottom: .5rem;*/
 }
-@media screen and (max-width : 767px) {
-    h1 {
-        font-size: 2.5rem;
-        margin: 2rem 1rem 1rem;
-    }
-    h2 {
-        margin: 1rem 0 0.7rem;
-        font-size: 1.7rem;
-    }
-    h3 {
-        margin: 0 0 0.7rem;
-        font-size: 1.35rem;
-    }
-    h4 {
-        font-size: 1rem;
-        margin: 0 0 0.7rem;
-    }
-    h5 {
-        font-size: 0.8rem;
-        margin: 0 0 0.7rem;
-    }
-    p,
-    li {
-        font-size: 0.85rem;
-    }
-}
-@media screen and (max-width : 455px) {
-    h1 {
-        font-size: 1.7rem;
-        margin: .9rem 1rem .6rem;
-    }
-    h2 {
-        margin: 1rem 0 0.5rem;
-        font-size: 1.3rem;
-    }
-    h3 {
-        margin: 0 0 0.4rem;
-        font-size: 1rem;
-    }
-    h4 {
-        font-size: .8rem;
-        margin: 0 0 0.4rem;
-    }
-    h5 {
-        font-size: .7rem;
-        margin: 0 0 0.4rem;
-    }
-    p,
-    li {
-        font-size: 0.6rem;
-    }
-}
+
+
+
 /* Class Shortcuts */
 .center {
     width: fit-content;
     margin: 0 auto;
+}
+.b {
+    font-weight: 600;
 }
 /* Goes on a div element */
 .break {
@@ -143,32 +106,7 @@ h1 span {
     padding: 10vw;
 }
 /* End Universal Font Size********************************************************************************* */
-/* Menu bar responsiveness. Changes the text into a menu icon for mobile *************************************/
-@media screen and (max-width : 960px) {
-    .menu a:not(:first-child) {
-        display: none;
-    }
-    .menu a.icon {
-        float: right;
-        display: block;
-    }
-}
-@media screen and (max-width : 960px) {
-    .menu.responsive {
-        position: relative;
-    }
-    .menu.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .menu.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-        background-color: rgba(0, 0, 0, .8);
-    }
-}
+
 .menu {
     overflow: hidden;
     width: 100%;
@@ -238,24 +176,24 @@ h1 span {
 #psbLogoDiv {
     padding: 0 3rem;
     text-align: left;
+    }
+.header h1 {
+    font-size: 6rem;
+    margin: 4.5rem 1.5rem;
 }
 .header h1 {
     font-size: 6rem;
     margin: 4.5rem 1.5rem;
-
 }
 #behrendLogo {
     max-width: 10rem;
-
 }
 /*srr: class header (only used on home page)**********************************************************/
-
 .header{
     height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 .header h1 {
     font-size: 6rem;
@@ -286,14 +224,7 @@ h1 span {
     margin: 0;
     text-align: center;
 }
-@media screen and (max-width : 455px) {
-    .scroll a {
-        font-size: 0.8rem;
-    }
-    .scroll p {
-        display: none;
-    }
-}
+
 
 
 #homeBackground {
@@ -306,13 +237,9 @@ h1 span {
     flex-direction: column;
     align-items: center;
 }
-
 #homeBackground h2 {
-
     text-align: center;
 }
-
-
 .videoFormat video {
     width: 100%;
     display: block;
@@ -327,10 +254,9 @@ h1 span {
     object-fit: cover;
     display: block;
 }
-}
 /*rcc: These iframe ids are specifically for the videos featured on the hompage, should git LFS not be a viable option.*/
-#backgroundVidIFrame {
-    filter: brightness(.4);
+#backgroundVidIFrame{
+    filter:brightness(.4);
     z-index: -2;
     position: absolute;
     height: auto;
@@ -341,22 +267,21 @@ h1 span {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.videoFormat iframe {
+
+.videoFormat iframe{
     width: 70vw;
     height: 60vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
-#creditsContainer {
-
-}
 #more {
     display: none;
+    padding-left: 20px;
+    width: auto;
 }
 #more a {
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
     display: block;
     text-decoration: none;
     padding-top: 2vh;
@@ -364,27 +289,32 @@ h1 span {
 #more a:hover {
     text-decoration: underline;
 }
+@media screen and (max-width: 455px){
+    #more {
+        font-size: 0.6rem;
+    }
+}
+
 #creditsP {
-    text-align: center;
+    height: 60px;
     max-height: 50vh;
-    min-width: 60vw;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-    padding: 10px;
+    width: 90%;
+    overflow-y: hidden;
+    /*border: 1px solid #1E407C;*/
+    padding: 0 5%;
+    background-color: #1E407C75;
+    margin: 0 0 3rem 0;
+}
+#creditsP h3 {
+    text-align: center;
+    margin: 0.7rem 0;
 }
 #myBtn {
     color: white;
     font-size: 1.2em;
     background-color: #000066;
 }
-
-
-/*@media screen and (max-width: ) {*/
-/*    */
-/*}*/
-
 .contactButton {
-
     background-color: #1E407C;
     color: white !important;
     border: none;
@@ -393,21 +323,16 @@ h1 span {
     display: inline-block;
     margin: 4px 2px;
     cursor: pointer;
-
 }
-
 .contactButton:hover {
     background-color: #009CDE;
 }
-
 .contactButtonSz {
-    padding-top: 60px;
-    padding-bottom: 20px;
     font-size: 1.5rem;
-
+    background-color: #1E407C;
 }
 .contactButtonSz a{
-    background-color: #1E407C;
+
     color: white !important;
     padding: 20px 34px;
     text-align: center;
@@ -416,11 +341,6 @@ h1 span {
 }
 .contactButtonSz:hover {
     background-color: #009CDE;
-}
-
-/* The layout of the second-section can be used in other pages, but is currently not in use */
-#second-section {
-
 }
 
 /*Can delete .contentWithGrid - no longer use*/
@@ -435,7 +355,6 @@ h1 span {
     padding: 2rem;
     line-height: 1.25rem;
 }
-
 
 /*Can delete .right-side - no longer use*/
 .right-side {
@@ -525,147 +444,7 @@ h1 span {
 .features a:hover {
     fill: #fff;
 }
-/* Footer responsiveness*/
-@media screen and (max-width : 960px) {
-    #footer-wrap {
-        padding: 25px 60px;
-    }
-    .footer-content img {
-        width: 200px;
-        height: auto;
-        margin: 0 0 1rem 0;
-    }
-    .footer-content {
-        max-width: 1160px;
-        justify-content: space-evenly;
-    }
-    .footer-content .break {
-        display: flex;
-    }
-    .features {
-        display: flex;
-        justify-content: center;
-    }
-}
-@media screen and (max-width : 600px) {
-    #footer-wrap {
-        padding: 40px 0;
-    }
-    .footer-content {
-        flex-direction: column;
-    }
-    .features {
-        display: flex;
-        justify-content: center;
-    }
-    .features p {
-        text-align: center;
-    }
-}
 /* Footer ends ********************************************************************************/
-
-/*Home Page Content Flexability***********************************************************************/
-/*WIDTH FLEXABILITY*/
-
-@media screen and (max-width : 767px) {
-    .header h1 {
-        margin: 2.5rem 1.5rem;
-        font-size: 3.75rem;
-    }
-    .header h2 {
-        margin: 0 0 1.05rem;
-        font-size: 1.5rem;
-    }
-    .contactButtonSz {
-        font-size: 1rem;
-    }
-}
-@media screen and (max-width : 455px) {
-    .header h1 {
-        font-size: 3rem;
-        margin: 1.5rem 1.5rem;
-    }
-    .header h2 {
-        margin: 0 0 0.1125rem;
-        font-size: 1rem;
-    }
-    .contactButtonSz a{
-        font-size: .8rem;
-        padding: 15px 20px;
-    }
-}
-@media screen and (min-width : 1700px) {
-    .title {
-        padding: 0 10vw;
-    }
-    #psbLogoDiv{
-        padding: 0;
-    }
-
-}
-@media screen and (min-width : 2000px) {
-    .header h1 {
-        font-size: 8rem
-    }
-    .header h2 {
-        font-size: 3rem;
-    }
-    .title {
-        padding: 0 20vw;
-    }
-    #homeBackground {
-        padding: 10vw 20vw;
-    }
-}
-
-/*HEIGHT FLEXIBILITY*/
-@media screen and (max-height: 660px) {
-    .scroll p {
-        display: none;
-    }
-    #psbLogoDiv{
-        padding: .5rem 3rem;
-    }
-}
-@media screen and (max-height: 600px) {
-    .header h1{
-        margin: 2rem;
-    }
-}
-@media screen and (max-height: 500px) {
-    .scroll{
-        display: none;
-    }
-    .header h1{
-        font-size: 3.75rem;
-    }
-    .header h2 {
-        font-size: 1.5rem;
-    }
-    #psbLogoDiv{
-        padding: 1rem 3rem;
-    }
-    .header {
-        height: 50%;
-    }
-}
-@media screen and (max-height: 360px) {
-    .header {
-        height: 40%;
-    }
-}
-@media screen and (max-height: 300px) {
-    .header h1{
-        margin: 1rem;
-    }
-}
-
-
-
-
-
-
-
 
 /* Courses titles */
 #courses {
@@ -673,22 +452,15 @@ h1 span {
     background-position: center top, center;
     background-repeat: repeat-y, no-repeat;
     color: white;
-
-}
-.module {
-    padding-top: 3rem;
 }
 .module h1 span {
-    /*    color: rgba(57, 51, 51, 0.7);*/
     color: rgba(255, 255, 255, 0.7);
 }
-
 .roadtext {
     text-align: center;
     text-align-last: center;
     font-size: 20px;
-    font-family: Verdana, Helvetica, sans-serif
-
+    font-family: Verdana, Helvetica, sans-serif;
 }
 #svgHolder {
     text-align: center;
@@ -696,7 +468,7 @@ h1 span {
     width: 80%;
 }
 .data {
-    width: 60%;
+    /*width: 60%;*/
     margin: auto;
     padding-bottom: 2rem;
     text-align: justify;
@@ -707,7 +479,6 @@ h1 span {
     word-spacing: .02rem;
 }
 .data p:first-child::first-letter {
-    /*    color: #041E42;*/
     color: lightsteelblue;
     font-weight: bold;
     font-size: 3rem;
@@ -716,30 +487,23 @@ h1 span {
     padding-right: .4rem;
     margin-top: -.15rem;
 }
-@media screen and (max-width : 767px) {
-    .data {
-        width: 80%;
-        padding: 2rem;
-        text-align: left;
-    }
-}
 /* title ends */
-/* Courses list */
+/* Courses list******************************************************************* */
 .courseblock {
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
-    padding: .7rem;
     line-height: 1.25rem;
 }
 .courseblock ul {
     color: black;
 }
+.responsive-table {
+    padding: 0;
+}
 .responsive-table li {
     border-radius: 3px;
     padding: 1.25rem 1.5rem;
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 1.25rem;
     font-size: 0.7rem;
 }
@@ -749,9 +513,15 @@ h1 span {
     text-transform: uppercase;
     letter-spacing: 0.03rem;
     color: #fff;
+    display: flex;
+    flex-direction: row;
 }
 .table-header div a {
     color: #fff;
+}
+.table-row {
+    display: flex;
+    flex-direction: column;
 }
 .responsive-table .table-row {
     background-color: #fff;
@@ -760,52 +530,66 @@ h1 span {
 .dots {
     cursor: pointer;
 }
-.more {
+.moreBigScr {
     display: none;
-    text-align: justify;
+}
+.moreSmallScr {
+    display: none;
+}
+.cat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .col-2 {
     text-align: center;
 }
-.responsive-table .col-1 {
-    flex-basis: 10%;
+.table-header{
+    justify-content: space-between;
+    .col-1 {
+        flex-basis: 10%;
+        padding-right: 5px;
+    }
+    .col-2 {
+        flex-basis: 10%;
+        padding-right: 5px;
+    }
+    .col-3 {
+        flex-basis: 65%;
+    }
+    .col-4 {
+        flex-basis: 5%;
+        padding-left: 5px;
+        display: flex;
+        justify-content: center;
+    }
 }
-.responsive-table .col-2 {
-    flex-basis: 10%;
+.table-row {
+    .col-1 {
+        flex-basis: 10%;
+        padding-right: 5px;
+    }
+    .col-2 {
+        flex-basis: 10%;
+        padding-right: 5px;
+    }
+    .col-3 {
+        flex-basis: 65%;
+    }
+    .col-4 {
+        flex-basis: 5%;
+        padding-left: 5px;
+        display: flex;
+        justify-content: center;
+    }
 }
-.responsive-table .col-3 {
-    flex-basis: 65%;
-}
-.responsive-table .col-4 {
-    flex-basis: 25%;
-    display: flex;
-    justify-content: center;
-}
-.col span .more {
+.col span .moreBigScr {
     text-indent: 2rem;
-}
-@media all and (max-width : 600px) {
-    .responsive-table {
-        padding: 0;
-    }
-    .responsive-table li {
-        padding: .75rem 1rem;
-        font-size: .6rem;
-        text-align: left;
-    }
 }
 .short-text {
     display: none;
 }
 
-@media (max-width : 820px) {
-    .short-text {
-        display: inline-block;
-    }
-    .full-text {
-        display: none;
-    }
-}
 /* list ends */
 /* Projects Showcase page Begins*/
 .pcontainer {
@@ -814,18 +598,11 @@ h1 span {
     margin: 0 auto 2rem auto;
     display: flex;
 }
-/* yxj: does not matter */
-/*.projects {
-    position: relative;
-    width: 100%;
-}*/
 .projects {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-
 }
-
 .work {
     transition-timing-function: ease;
     transition-delay: 2s;
@@ -848,10 +625,7 @@ h1 span {
     width: 50%;
     padding: 3%;
     color: #fff;
-
 }
-
-
 .work h2 {
     line-height: 1;
 }
@@ -876,23 +650,16 @@ h1 span {
 .focus {
     display: inherit;
 }
-
 .deschov {
-
     opacity: 0;
     transition: opacity 2000ms;
 }
-
 /*DEFAULT*/
 .deschov:hover{
     opacity: 1;
 }
-
 .hover:hover .desc {
-
     z-index: 99;
-
-
     display: inherit;
     position: absolute;
     top: 0;
@@ -918,37 +685,6 @@ h1 span {
     font-size: .7rem;
     margin: 0;
 }
-
-
-
-
-
-.detection:before {
-    content: 'UNKNOWN';
-    color: red;
-}
-
-@media(hover) { /*if able to use hover*/
-    .detection:before {
-        content: 'YES';
-        color: green;
-    }
-}
-
-@media (hover: none) { /*if NOT able to use hover*/
-    .detection:before {
-        content: 'NO';
-    }
-}
-
-
-
-
-
-
-
-
-
 .desc {
     box-sizing: border-box;
 }
@@ -960,7 +696,6 @@ h1 span {
 }
 /* PROJECT PAGE TABLET/COMPUTER VIEWING */
 @media screen and (min-width : 456px) {
-
     div.focus {
         width: 100%;
         float: left;
@@ -979,13 +714,6 @@ h1 span {
         display: none;
         height: 100%;
     }
-    /********************TESTING**************************/
-    /*.work:hover img{*/
-    /*    filter: blur(100px);*/
-    /*}*/
-    /*.work*/
-    /**********************************************/
-
     .focus div.desc {
         display: block;
         float: left;
@@ -1020,13 +748,10 @@ h1 span {
         left: 3%;
     }
 }
-@media screen and (min-width: 1125px){
-}
-
 /* STOP PAGE RESPONSIVENESS FROM CONTINUING TO GROW */
 @media screen and (min-width : 960px) {
     .work h2 {
-        margin-top: 0rem;
+        margin-top: 0;
         margin-bottom: 0.3rem;
         font-size: 1.776rem;
     }
@@ -1111,18 +836,7 @@ h1 span {
     width: 80%;
 }
 .data-event {
-    width: 60%;
-    margin: auto;
     padding-bottom: .5rem;
-    text-align: justify;
-    /*    color: rgb(0, 0, 0);*/
-}
-@media screen and (max-width : 767px) {
-    .data-event {
-        width: 80%;
-        padding: 2rem;
-        text-align: left;
-    }
 }
 .info {
     margin-top: 1rem;
@@ -1132,20 +846,12 @@ h1 span {
     text-align: left;
     font-size: 1rem;
     margin: 3rem auto 0;
-    /*    color: rgb(0, 0, 0);*/
-    width: 60%;
 }
 .digit-works span {
     /*    color: rgba(0, 0, 0, 0.7);*/
     color: rgba(255, 255, 255, 0.7);
     font-weight: bold;
     font-size: 1rem;
-}
-@media screen and (max-width : 767px) {
-    .digit-works {
-        width: 80%;
-        padding: 2rem;
-    }
 }
 /* DIGIT workspace list */
 .timeline {
@@ -1199,7 +905,7 @@ h1 span {
 }
 @media (max-width : 767px) {
     .timeline .event:before {
-        left: 0px;
+        left: 0;
         text-align: left;
     }
 }
@@ -1240,58 +946,43 @@ h1 span {
     left: 0;
     right: -55.8px;
 }
-/* EVENT PAGE END */
-/* ABOUT PAGE BEGIN */
+/* EVENT PAGE END ********************************************************************************/
+/* ABOUT PAGE BEGIN ******************************************************************************/
 /*General Code*/
 .tabbingBtn {
-    background-color: #1E407C;
+    background-color: #1E407C75;
     color: white !important;
     border: none;
     padding: 17px 30px;
     display: inline-block;
-    font-size: 20px;
+    font-size: 1rem;
     cursor: pointer;
 }
-
 .tabbingBtn:hover {
-    background-color: #009CDE;
+    background-color: #1E407C;
 }
-
+.tabbingActive {
+    background-color: #1E407C;
+}
 .tabbingBtnsAlign {
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 275px;
+    margin: 2rem 0 1rem 0;
 }
-
 .about_forms {
-    margin: auto;
-    max-width: 960px;
-    text-align: left;
-    padding: 1rem 0 0 0;
+    /*margin: auto;*/
+    /*max-width: 960px;*/
+    /*text-align: left;*/
+    /*padding: 1rem 0 0 0;*/
 }
 .about_forms li {
     margin: .6rem 0 .6rem 0;
     list-style: none;
 }
-
-.aboutSubHeading {
-    font-size: 35px;
-    text-align: left;
-    margin: auto;
-    max-width: 960px;
-    padding: 2.5rem 1rem 0.5rem 0;
-}
-
-
 /*ABOUT STUDENT SECTION*/
-
 .aboutImageFormat {
     width: 100%;
     display: block;
 }
-
-
 .aboutGalleryFlex {
     display: flex;
     flex-direction: row;
@@ -1300,18 +991,14 @@ h1 span {
     /*adjust this width to increase image size*/
     width: 70%;
     gap: 100px;
-
 }
-
-.portfolioWrap {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0.5rem 0 2.5rem;
+.aboutGalleryFlex figure{
+    margin: 0;
 }
-.portfolioList {
-    width: 500px;
+.portfolioList ul{
+    column-count: 3;
+    column-gap: 0.5rem;
+    margin: 0 auto;
 }
 .portfolioList li:before {
     content: url('images/footprint.svg');
@@ -1322,62 +1009,36 @@ h1 span {
     list-style: none;
     margin: 0 0 .5rem;
 }
-
 .aboutImageCaption {
     text-align: center;
     padding-top: 10px;
 }
-
 /* ABOUT PROFESSORS SECTION*/
-
-
-.profHeading {
-    font-size: 35px;
-    margin: auto;
-    padding-left: 268px;
-    padding-bottom: 25px;
-    padding-top: 20px;
-}
-
 .profContainer {
-    display: flex;
-    padding: 0rem 0rem 90px 268px;
+    padding: 0 0 3rem 0;
 }
-
-
 .profImage {
-    width: 400px;
+    float: left;
+    margin: 0 1rem 0 0;
+    width: 50%;
     height: auto;
     object-fit: contain;
-
-}
-
-/*figure out how to make font-size smaller for the prof captions*/
-.profCaption {
-    padding-left: 40px;
-    max-width: 50%;
-}
-
-body.about-professors p {
-    font-size: 1vw !important;
 }
 /* ABOUT SITE SECTION*/
-
 .dropdownFormat {
-    padding: 0rem 1rem 2.5rem;
+    padding: 0 1rem 2.5rem;
 }
-
+.dropdownFormat details{
+    margin: 0 0 1rem 0;
+}
 .dropdownVersion {
     font-weight: bold;
 }
-
-
 .dropdownIndent {
     padding-left: 60px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
 /*contributeList not used anymore*/
 .contributeList ul {
     margin: .6rem 0 .6rem 0;
@@ -1387,8 +1048,6 @@ body.about-professors p {
     overflow-y: scroll;
     background: rgba(0, 0, 0, 0.07);
 }
-
-
 /* END ABOUT PAGE */
 /* Archive page */
 .archive {
@@ -1424,12 +1083,354 @@ td {
 iframe.newtfire {
     display: block;
     margin: auto;
-    border: none;
-    width: 80vw;
+    width: 98%;
     height: 40vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: .5vw;
     border-style: solid;
     border-color: rgb(30, 64, 124, .8);
     border-radius: .5vw;
+}
+#archive {
+    text-align: center;
+}
+
+/*ALL @MEDIA QUERIES EXCEPT STUDENT PROJECTS PAGE*************************************************/
+@media screen and (max-width : 767px) {
+    h1 {
+        font-size: 2.5rem;
+        margin: 2rem 1rem 1rem;
+    }
+    h2 {
+        margin: 1rem 0 0.7rem;
+        font-size: 1.7rem;
+    }
+    h3 {
+        margin: 0 0 0.7rem;
+        font-size: 1.35rem;
+    }
+    h4 {
+        font-size: 1rem;
+        margin: 0 0 0.7rem;
+    }
+    h5 {
+        font-size: 0.8rem;
+        margin: 0 0 0.7rem;
+    }
+    p,
+    li {
+        font-size: 0.85rem;
+    }
+    h1 span {
+        font-size: 1rem;
+    }
+    /*Home Page Content Flexability**********************************************/
+    /*WIDTH FLEXABILITY*/
+    .header h1 {
+        margin: 2.5rem 1.5rem;
+        font-size: 3.75rem;
+    }
+    .header h2 {
+        margin: 0 0 1.05rem;
+        font-size: 1.5rem;
+    }
+    .contactButtonSz {
+        font-size: 1rem;
+    }
+    /*ABOUT PAGES**********************/
+    .tabbingBtn{
+        padding: 10px 19px;
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width : 455px) {
+    h1 {
+        font-size: 1.7rem;
+        margin: .9rem 1rem .6rem;
+    }
+    h1 span {
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        line-height: 3rem;
+    }
+    h2 {
+        margin: 1rem 0 0.5rem;
+        font-size: 1.3rem;
+    }
+    h3 {
+        margin: 0 0 0.4rem;
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: .8rem;
+        margin: 0 0 0.4rem;
+    }
+    h5 {
+        font-size: .7rem;
+        margin: 0 0 0.4rem;
+    }
+    p,
+    li {
+        font-size: 0.6rem;
+    }
+    h1 span {
+        font-size: .75rem;
+    }
+    iframe.newtfire {
+        width: 98%;
+        height: 50vh;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: .5vw;
+        border-style: solid;
+        border-color: rgb(30, 64, 124, .8);
+        border-radius: .5vw;
+    }
+}
+/* Menu bar responsiveness. ****************/
+@media screen and (max-width : 960px) {
+    .menu a:not(:first-child) {
+        display: none;
+    }
+    .menu a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width : 960px) {
+    .menu.responsive {
+        position: relative;
+    }
+    .menu.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        background-color: rgba(0, 0, 0, .8);
+    }
+}
+@media screen and (max-width : 455px) {
+    .scroll a {
+        font-size: 0.8rem;
+    }
+    .scroll p {
+        display: none;
+    }
+}
+/* Footer responsiveness*/
+@media screen and (max-width : 960px) {
+    #footer-wrap {
+        padding: 25px 60px;
+    }
+    .footer-content img {
+        width: 200px;
+        height: auto;
+        margin: 0 0 1rem 0;
+    }
+    .footer-content {
+        max-width: 1160px;
+        justify-content: space-evenly;
+    }
+    .footer-content .break {
+        display: flex;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width : 600px) {
+    #footer-wrap {
+        padding: 40px 0;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+    }
+    .features p {
+        text-align: center;
+    }
+}
+/*Home Page Content Flexability**********************************************/
+/*WIDTH FLEXABILITY*/
+
+@media screen and (max-width : 455px) {
+    .header h1 {
+        font-size: 3rem;
+        margin: 1.5rem 1.5rem;
+    }
+    .header h2 {
+        margin: 0 0 0.1125rem;
+        font-size: 1rem;
+    }
+    .contactButtonSz a{
+        font-size: .8rem;
+        padding: 15px 20px;
+    }
+}
+@media screen and (min-width : 1000px) {
+    #homeBackground {
+        padding: 10vw 20vw;
+    }
+    .contAlign{
+        padding: 5vw 20vw;
+    }
+}
+@media screen and (min-width : 1440px){
+    .contAlign{
+        margin: 0 0 5rem 0;
+    }
+    .profImage {
+        width: 40%;
+    }
+    .profContainer{
+        margin: 4rem 0;
+    }
+    /*.elliott {*/
+    /*    padding-bottom: 4rem;*/
+    /*}*/
+}
+@media screen and (min-width : 1650px) {
+    /*.contAlign{*/
+    /*    margin: 0 0 10rem 0;*/
+    /*}*/
+    .profImage {
+        width: 30%;
+    }
+    .elliott {
+        padding-bottom: 6rem;
+    }
+}
+@media screen and (min-width : 1700px) {
+    .title {
+        padding: 0 10vw;
+    }
+    #psbLogoDiv{
+        padding: 0;
+    }
+    .profContainer{
+        margin: 5rem 0;
+    }
+
+}
+@media screen and (min-width : 1980px) {
+    .header h1 {
+        font-size: 8rem
+    }
+    .header h2 {
+        font-size: 3rem;
+    }
+    .title {
+        padding: 0 20vw;
+    }
+    #homeBackground {
+        padding: 10vw 30vw;
+    }
+    .contAlign{
+        padding: 5vw 30vw;
+    }
+    .profContainer{
+        margin: 0rem 0;
+    }
+}
+
+/*HEIGHT FLEXIBILITY*/
+@media screen and (max-height: 660px) {
+    .scroll p {
+        display: none;
+    }
+    #psbLogoDiv{
+        padding: .5rem 3rem;
+    }
+}
+@media screen and (max-height: 600px) {
+    .header h1{
+        margin: 2rem;
+    }
+}
+@media screen and (max-height: 500px) {
+    .scroll{
+        display: none;
+    }
+    .header h1{
+        font-size: 3.75rem;
+    }
+    .header h2 {
+        font-size: 1.5rem;
+    }
+    #psbLogoDiv{
+        padding: 1rem 3rem;
+    }
+    .header {
+        height: 50%;
+    }
+}
+@media screen and (max-height: 360px) {
+    .header {
+        height: 40%;
+    }
+}
+@media screen and (max-height: 300px) {
+    .header h1{
+        margin: 1rem;
+    }
+}
+/*COURSES**************************/
+@media all and (max-width : 600px) {
+    .responsive-table {
+        padding: 0;
+    }
+    .responsive-table li {
+        padding: .75rem 1rem;
+        font-size: .6rem;
+        text-align: left;
+    }
+}
+@media (max-width : 820px) {
+    .short-text {
+        display: inline-block;
+    }
+    .full-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .portfolioList ul{
+        column-count: 2;
+    }
+}
+@media screen and (max-width: 900px){
+    .portfolioList ul{
+        column-count: 1;
+    }
+    .aboutGalleryFlex{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 350px){
+    .tabbingBtn{
+        padding: 7px 15px;
+        font-size: 0.75rem;
+    }
+    .portfolioList ul{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 455px){
+    .profImage {
+        margin: 0 0 1rem 0;
+        width: 100%;
+    }
+    .profContainer {
+        padding: 0 0 2rem 0;
+    }
 }
