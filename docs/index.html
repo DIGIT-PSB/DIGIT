@@ -1,6 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>PSB DIGIT Splash</title>
+        <title>PSB DIGIT</title>
         <meta charset="UTF-8" />
         <meta name="author" content="Felipe Bassi, Jessica Salemme, Reece Cullen" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,18 +23,42 @@
             </video>-->
 
             <video id="backgroundVid" loop="" muted="">
-                <source src="https://github.com/DIGIT-PSB/DIGIT/raw/main/docs/images/DIGITShowcaseBackground1080.mp4" type="video/mp4" />
+                <source id="videoSource" src="https://github.com/DIGIT-PSB/DIGIT/raw/Reece/docs/images/DIGITShowcaseBackground1080.mp4"
+                    type="video/mp4" />
             </video>
 
-            <!-- rcc: This Javascript function should play the video starting at a random time in its duration. Couldn't get it to work in an outside js file, sorry... -->
+            <!-- rcc: This Javascript function should play the video starting at a random time in its duration. Couldn't get it to work in an outside js file, sorry...
+            It will also change the videoSource element if it detects the screen width as being small enough to warrant it the lower res video.-->
             <script>
                 var video = document.getElementById('backgroundVid');
-                video.addEventListener('loadedmetadata', function () {
+                
+                function playRandomly() {
                     var duration = video.duration;
                     var randomTime = Math.random() * duration;
                     video.currentTime = randomTime;
                     video.play();
-                });</script>
+                }
+                
+                function updateVideoSource() {
+                    var video = document.getElementById("backgroundVid");
+                    var source = document.getElementById("videoSource");
+                    
+                    if (window.innerWidth < 720) {
+                        source.src = "https://github.com/DIGIT-PSB/DIGIT/raw/Reece/docs/images/DIGITShowcaseBackgroundLOWRES.mp4";
+                        // Low-res video path
+                    } else {
+                        source.src = "https://github.com/DIGIT-PSB/DIGIT/raw/Reece/docs/images/DIGITShowcaseBackground1080.mp4";
+                        // High-res video path
+                    }
+                    
+                    video.load();
+                    video.addEventListener('loadedmetadata', playRandomly);
+                    // Ensure play after video is reloaded
+                }
+                
+                window.addEventListener('load', updateVideoSource);
+                //window.addEventListener('resize', updateVideoSource); rcc: I removed this since it was really pesky during testing, as in it looked awful on the site.
+            </script>
 
             <!--
                 rcc: The video showcase was originally implemented with Git LFS, which costs money to upload large enough files so many times. For a free
