@@ -478,32 +478,6 @@ display:flex;
 width:400px
 
 }
-img.datacaption2{
-display:flex;
-width:350px;
-
-}
-img.datacaption3{
-    display:flex;
-width:300px
-}
-img.datacaption4{
-display:flex;
-width:350px; 
-right: 350px;
-text-align:right
-}
-figcaption.aboutImageCaption{
-color:black    
-}
-div.datagroup2{
-display:flex;
-border-style:solid;
-border-color:black;
-background:lavender;
-border-width:thick;
-text-align:left
-}
 div.graphs{
 display:flex;
 border-style:solid;
@@ -521,9 +495,7 @@ border-width:thick
     margin-top: -.15rem;
 }
 
-div.dataintro{
-text-align:center
-}
+
 p.dataintro{
     text-align:center
 }
@@ -1037,11 +1009,19 @@ p.dataintro{
     margin: auto;
     justify-content: space-between;
     /*adjust this width to increase image size*/
-    width: 70%;
-    gap: 100px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.aboutGalleryFlex img{
+    max-width: 100%;
+    margin: .5rem 0;
 }
 .aboutGalleryFlex figure{
-    margin: 0;
+    max-width: 48%;
+    margin: 0 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+
 }
 .portfolioList ul{
     column-count: 3;
@@ -1056,10 +1036,6 @@ p.dataintro{
 .portfolioList li {
     list-style: none;
     margin: 0 0 .5rem;
-}
-.aboutImageCaption {
-    text-align: center;
-    padding-top: 10px;
 }
 /* ABOUT PROFESSORS SECTION*/
 .profContainer {
@@ -1166,7 +1142,8 @@ iframe.newtfire {
         margin: 0 0 0.7rem;
     }
     p,
-    li {
+    li,
+    figure{
         font-size: 0.85rem;
     }
     h1 span {
@@ -1220,7 +1197,8 @@ iframe.newtfire {
         margin: 0 0 0.4rem;
     }
     p,
-    li {
+    li,
+    figure {
         font-size: 0.6rem;
     }
     h1 span {
@@ -1323,6 +1301,10 @@ iframe.newtfire {
         font-size: .8rem;
         padding: 15px 20px;
     }
+}
+@media screen and (max-width : 700px){
+    .aboutGalleryFlex figure {
+        max-width: 90%;}
 }
 @media screen and (min-width : 1000px) {
     #homeBackground {
@@ -1450,7 +1432,6 @@ iframe.newtfire {
         display: none;
     }
 }
-
 @media screen and (max-width: 1200px){
     .portfolioList ul{
         column-count: 2;
@@ -1462,7 +1443,10 @@ iframe.newtfire {
     }
     .aboutGalleryFlex{
         flex-direction: column;
+        align-items: center;
     }
+
+
 }
 @media screen and (max-width: 350px){
     .tabbingBtn{
