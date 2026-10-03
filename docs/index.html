@@ -23,9 +23,11 @@
             </video>-->
 
             <video id="backgroundVid" loop="" muted="">
-                <source id="videoSource" src="images/digitShowcaseB.mp4"
+                <source id="videoSource" src="http://github.com/DIGIT-PSB/DIGIT/raw/main/docs/images/digitShowcaseB.mp4"
                     type="video/mp4" />
             </video>
+        <!-- 2026-10-03 ebb: We have to point an absolute link to the raw file on main branch for our Git LFS videos to
+         publish on GitHub Pages.  -->
 
             <!-- rcc: This Javascript function should play the video starting at a random time in its duration. Couldn't get it to work in an outside js file, sorry...
             It will also change the videoSource element if it detects the screen width as being small enough to warrant it the lower res video.-->
@@ -44,10 +46,10 @@
                     var source = document.getElementById("videoSource");
 
                     if (window.innerWidth < 720) {
-                        source.src = "images/digitShowcaseB.mp4";
+                        source.src = "http://github.com/DIGIT-PSB/DIGIT/raw/main/docs/images/digitShowcaseB.mp4";
                         // Low-res video path
                     } else {
-                        source.src = "images/digitShowcaseB.mp4";
+                        source.src = "http://github.com/DIGIT-PSB/DIGIT/raw/main/docs/images/digitShowcaseB.mp4";
                         // High-res video path
                     }
 
